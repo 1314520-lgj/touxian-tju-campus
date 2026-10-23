@@ -3,7 +3,7 @@
 ; 用 ISCC.exe 编译。启动器文件名保持 ASCII（cmd.exe 按控制台代码页解析 .bat）。
 
 #define MyAppName "偷闲·天大版"
-#define MyAppVersion "1.0.0"
+#define MyAppVersion "1.0.1"
 #define MyAppPublisher "偷闲"
 #define MyBundle "..\exe-dist"
 
