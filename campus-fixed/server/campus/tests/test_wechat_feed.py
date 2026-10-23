@@ -102,6 +102,39 @@ def test_feed_body_becomes_candidate_and_original_url_is_kept(campus):
     assert ARTICLE in json.dumps(candidate, ensure_ascii=False)
 
 
+def test_feed_title_wins_when_body_has_no_headline(campus):
+    """公众号正文常无 <h1>（微信阅读器只给正文），标题必须取 feed 条目标题。
+
+    红测背景：真实 feed 的 59 篇里多数 content_html 没有 <h1>，解析出的 title 段
+    会退成账号名（实测「天大学生资助 天大学生资助」），卡片标题因此不可辨识。
+    """
+    source = seeded_source(campus)
+    real_title = "2026年下半年全国大学英语四、六级考试报名通知"
+    body_without_headline = (
+        '<div class="page" id="readability-page-1">'
+        "<p>天大学生资助</p>"
+        "<p>全体本科生请于2026年10月30日前完成报名。</p>"
+        "</div>"
+    )
+    result, _ = fetch(
+        campus,
+        source,
+        [{"url": ARTICLE, "title": real_title, "content_html": body_without_headline}],
+    )
+    snapshot = campus.store.get("snapshots", result["snapshot_ids"][0])
+    assert snapshot["title"] == real_title
+
+    parsed = campus.pipeline.parse_document({"snapshot_id": snapshot["snapshot_id"]})
+    title_segment = next(segment for segment in parsed["segments"] if segment["id"] == "title")
+    assert title_segment["text"] == real_title
+    assert "title_from_feed" in parsed["warnings"]
+
+    candidate = campus.pipeline.extract_candidates({"snapshot_id": snapshot["snapshot_id"]})
+    validate("ExtractionCandidate", candidate)
+    assert candidate["title"] == real_title
+    assert any(deadline["date"] == "2026-10-30" for deadline in candidate["deadlines"])
+
+
 def test_non_wechat_item_url_is_refused(campus):
     source = seeded_source(campus)
     with pytest.raises(FetchError, match="feed_item_outside_wechat"):

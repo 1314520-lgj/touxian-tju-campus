@@ -32,7 +32,7 @@ from .sources import (
     require_snapshot_read,
 )
 
-PARSER_VERSION = "campus-body-1.4"
+PARSER_VERSION = "campus-body-1.5"
 EXTRACTOR_VERSION = "campus-rules-1.13"
 MAX_SEGMENTS, MAX_TEXT, MAX_PAGES, MAX_ARCHIVE_EXPANSION = (
     500,
@@ -378,6 +378,31 @@ def choose_card_title(page_title: str, listing_title: str, source_name: str = ""
     if cleaned:
         return cleaned, "title_unidentifiable"
     return "", "title_unidentifiable"
+
+
+def feed_title_segment(source, snapshot, segments, warnings):
+    """公众号 feed 的条目标题就是文章标题：正文没有 <h1> 时用它补一个 title 段。
+
+    微信读书导出的正文只有段落、没有标题标签；不补这一步，解析出的 title 段会退成
+    账号名（实测「天大学生资助 天大学生资助」），卡片标题不可辨识。
+    标题取自 feed 条目本身（与正文同源，都是运营者提供的 feed 内容），不是从正文猜测；
+    补出来的段落带 ``title_from_feed`` 告警，复核者能看出这是 feed 标题。
+    """
+    from .sources import WECHAT_FEED_ADAPTER
+
+    if not source or source.get("adapter") != WECHAT_FEED_ADAPTER:
+        return segments
+    if not segments:
+        return segments
+    title = " ".join((snapshot.get("title") or "").split())[:300]
+    if not title:
+        return segments
+    existing = next((segment for segment in segments if segment["id"] == "title"), None)
+    if existing is not None and " ".join(existing["text"].split()) == title:
+        return segments
+    remainder = [segment for segment in segments if segment["id"] != "title"]
+    warnings.append("title_from_feed")
+    return [{"id": "title", "text": title, "page": None}] + remainder
 
 
 def _document_title_candidates(soup, root):
@@ -1486,6 +1511,8 @@ sys.stdout.write(json.dumps({'pages':pages,'truncated':remaining<=0}))
         except Exception:
             state = "failed"
             warnings.append("parser_failed")
+        source = self.core.store.get("sources", snapshot["source_id"]) or {}
+        segments = feed_title_segment(source, snapshot, segments, warnings)
         current_segments = {segment["id"]: segment["text"] for segment in segments}
         retained_evidence = [
             e for e in (existing or {}).get("evidence", []) if e["quote"] in current_segments.get(e["segment_id"], "")
