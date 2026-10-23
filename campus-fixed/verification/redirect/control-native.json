@@ -1,0 +1,74 @@
+[
+ {
+  "host": "job.tju.edu.cn",
+  "url": "https://job.tju.edu.cn/recruitment/content/type/1/id/148.html",
+  "stored_title": "10/18 2024 “万企进校园”天津大学2024年秋季大型双选会 举办地点：天津大学卫津路校区体育馆   举办时间：2024/10/18 14:00",
+  "source": "天津大学就业指导中心 · 招聘会信息",
+  "final_url": "https://job.tju.edu.cn/recruitment/content/type/1/id/148.html",
+  "same_url": true,
+  "title": "“万企进校园”天津大学2024年秋季大型双选会",
+  "heading": null,
+  "chars": 6849,
+  "guard": "passed"
+ },
+ {
+  "host": "news.tju.edu.cn",
+  "url": "https://news.tju.edu.cn/info/1003/616929.htm",
+  "stored_title": "“从今天起，我想做你的一位‘新邻居’”——天津大学开展大中小一体化生涯启蒙活动",
+  "source": "天津大学新闻网 · 综合新闻",
+  "final_url": "https://news.tju.edu.cn/info/1003/616929.htm",
+  "same_url": true,
+  "title": "“从今天起，我想做你的一位‘新邻居’”——天津大学开展大中小一体化生涯启蒙活动-天津大学新闻网",
+  "heading": "“从今天起，我想做你的一位‘新邻居’”——天津大学开展大中小一体化生涯启蒙活动",
+  "chars": 2206,
+  "guard": "passed"
+ },
+ {
+  "host": "gs.tju.edu.cn",
+  "url": "https://gs.tju.edu.cn/info/1251/14562.htm",
+  "stored_title": "下载中心",
+  "source": "天津大学研究生院 · 学位通知",
+  "final_url": "https://gs.tju.edu.cn/info/1251/14562.htm",
+  "same_url": true,
+  "title": "校级盲审送审材料说明202509更新-天津大学研究生院官网",
+  "heading": "下载中心",
+  "chars": 784,
+  "guard": "passed"
+ },
+ {
+  "host": "cic.tju.edu.cn",
+  "url": "https://cic.tju.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1518250116&wbfileid=FEEA9BE583A801B69B05256F811FE9AC",
+  "stored_title": "答辩公告_高红运(1).pdf",
+  "source": "天津大学智能与计算学部 · 通知公告",
+  "final_url": "https://cic.tju.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1518250116&wbfileid=FEEA9BE583A801B69B05256F811FE9AC",
+  "same_url": true,
+  "title": "附件下载",
+  "heading": "请输入验证码下载附件",
+  "chars": 15,
+  "guard": "passed"
+ },
+ {
+  "host": "ico.tju.edu.cn",
+  "url": "https://ico.tju.edu.cn/info/1011/5562.htm",
+  "stored_title": "2026年伦敦政治经济学院暑期学分项目报名通知",
+  "source": "天津大学国际处 · 学生项目通知",
+  "final_url": "https://ico.tju.edu.cn/info/1011/5562.htm",
+  "same_url": true,
+  "title": "2026年伦敦政治经济学院暑期学分项目报名通知-国际处",
+  "heading": "2026年伦敦政治经济学院暑期学分项目报名通知",
+  "chars": 2027,
+  "guard": "passed"
+ },
+ {
+  "host": "oaa.tju.edu.cn",
+  "url": "https://oaa.tju.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1727337554&wbfileid=69D22535F73CFE9D97E67C32BE18DD40",
+  "stored_title": "2025秋季-人工智能专题-课程介绍-0605(1).pdf",
+  "source": "天津大学教务处 · 学业指导",
+  "final_url": "https://oaa.tju.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1727337554&wbfileid=69D22535F73CFE9D97E67C32BE18DD40",
+  "same_url": true,
+  "title": "附件下载",
+  "heading": "请输入验证码下载附件",
+  "chars": 15,
+  "guard": "passed"
+ }
+]

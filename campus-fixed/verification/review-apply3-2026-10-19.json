@@ -1,0 +1,1123 @@
+{
+  "counts": {
+    "accept": 182,
+    "error": 4,
+    "reject": 3
+  },
+  "details": [
+    {
+      "candidate_id": "00ffb9e0-d85b-5061-a908-dc1d99a482ce",
+      "title": "关于我校非上海生源在沪就业户籍申请中拥有“专利证书及申请”的毕业生名单公示",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "047222ce-74e1-539a-b814-a3ec5683a6ac",
+      "title": "天津大学机械工程学院2026年专业学位博士研究生拟录取名单公示（第三批）",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "087bf44e-058a-572a-b516-95748e6388cb",
+      "title": "关于诚邀参加第十六届“河北省高层次人才 引进交流大会”的函",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "090cf520-9230-5d5f-ac88-f592fea9378d",
+      "title": "规范研究生学位论文与实践成果中人工智能工具使用指南",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "096a0ec6-fd1c-5d54-b2b5-2cb5258b9510",
+      "title": "天津大学考点关于雅思考试防疫要求的通知",
+      "decision": "accept",
+      "reason": "真实通知，依据完整",
+      "error": "{\"code\":\"cancel_target_required\",\"message\":\"取消通知必须关联原事项\",\"request_id\":\"b15a8922-3e8d-4727-a7a4-c936dee13066\",\"details\":{}}"
+    },
+    {
+      "candidate_id": "09edc45b-61a7-53ea-9a25-2f34340110a7",
+      "title": "转发中国教育国际交流协会《关于邀请参加 2023博士生国际招生面试交流会的函》",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "0b93e6d9-9491-51f2-bbe6-6c43a4f88b0a",
+      "title": "“万企进校园”天津大学2025年春季大型双选会",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "0d313a26-328e-5338-8a4a-3b289214c9e9",
+      "title": "2027年春季学期交换生（第二批）项目通知",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "0d7940af-018e-5902-8dbe-04ea3d5678c3",
+      "title": "《关于规范研究生学位论文与实践成果使用人工智能工具的倡议书》",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "0ef7abd3-68f4-5d89-b392-1db650ec128f",
+      "title": "【非全日制】24251学期研究生公共课考试安排",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "0f257f3e-73a1-5b29-b8ed-23257c0aea13",
+      "title": "习近平给天津大学全体师生回信强调 聚焦国家重大战略需求提高人才培养质量 更好服务经济社会发展",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "0f772e65-0c5d-51bb-8aa7-887ba09e1dad",
+      "title": "【考试安排】2021",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "0ffdb2bd-705b-5e12-b125-88fb4262985a",
+      "title": "关于假期期间第二批次集中派遣时间变更的通知",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "1072aee2-725e-545e-bc26-f79bc03a527b",
+      "title": "化工学院2026化工新工科卓越领军班选拔笔试安排",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "16385fe9-d23b-55f0-89d0-d0c9851b1cb3",
+      "title": "25261学期【非全日制】研究生公共课考试安排",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "175683e0-6d2c-510d-8af0-21bcd88021fb",
+      "title": "关于导师助研金系统功能升级的温馨提示",
+      "decision": "accept",
+      "reason": "真实通知，依据完整",
+      "error": "{\"code\":\"cancel_target_required\",\"message\":\"取消通知必须关联原事项\",\"request_id\":\"4265365f-b070-4858-9904-00833eab39bb\",\"details\":{}}"
+    },
+    {
+      "candidate_id": "1bc4905d-b84f-5f5f-9d69-eddf53bd18b6",
+      "title": "天津大学智能与计算学部2026年工程博士招生办法",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "1f24bd60-1f9c-5491-9592-9ba16f4e00fa",
+      "title": "2027年牛津大学伍斯特学院寒假项目通知",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "20518148-f8d2-50b6-9723-70d3e3ac85a2",
+      "title": "2026年牛津大学伍斯特学院暑期项目报名通知",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "21b746be-3aef-5d11-bc8b-a7ab16e98c4d",
+      "title": "学位审批书、评阅书、评议书及表决票202509",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "244db099-a038-5004-8a15-89e235fc7cfb",
+      "title": "用人单位邀请函丨2026年天津大学化学化工类秋季专场双选会请您参加！",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "25577576-fc0d-592f-87d4-80b3f5a52adb",
+      "title": "天津大学2026年运动训练专业拟录取名单公示",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "25d55ff4-8e29-5ab5-b242-bb3649901eaf",
+      "title": "天津大学机械工程学院2026年专业学位博士研究生拟录取名单公示（第六批）",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "25e34f74-5312-5872-ac55-54d38d698a95",
+      "title": "关于开展2027年寒假剑桥大学学术科研项目 （系统设计与工程思维）报名工作的通知",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "2b159998-c8f2-5fda-a53d-b191fa2bdf2e",
+      "title": "《国际化拔尖创新人才培养计划》课程选课通知",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "2bf82c71-7901-5926-8e59-262e58dcd58a",
+      "title": "操作失败！",
+      "decision": "reject",
+      "reason": "错误页/拦截页"
+    },
+    {
+      "candidate_id": "2d87b867-68dc-5964-a4e0-a8592c26766d",
+      "title": "21222学期研究生公共课补充考试安排（《工程数学基础》、《工程应用英语》）",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "2ee08427-6ff3-5ea0-8243-94155dd22632",
+      "title": "【办事流程】关于研究生课程缓考申请的流程",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "31b4522d-6979-555e-9a01-9394876819e0",
+      "title": "机械工程学院召开学习贯彻习近平总书记给天津大学全体师生重要回信精神一周年工作推进会",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "330d0328-ac5c-5044-b049-e3e973cdaa2f",
+      "title": "【办事流程】关于研究生个人培养计划变更的流程",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "3313a48f-afe4-5f07-9d2a-77f2e378e256",
+      "title": "【考试安排】2021",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "339777e9-2e43-5f62-a91f-337bdb32004a",
+      "title": "“2026年全国大学生先进成图技术与产品信息建模创新大赛天津赛区竞赛”获奖通知",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "33e45014-349f-5d55-95d4-4d0e1ac4fa03",
+      "title": "【转载】关于天津大学2025年拟录取硕士研究生调档函开放下载的通知",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "33fa998d-6dec-5e4f-ac4d-707d065d191a",
+      "title": "天津大学智能与计算学部招收2026级推荐免试研究生（含直博生）工作的说明",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "366eb57a-4612-5dbe-920b-74ac3782551c",
+      "title": "2026级新生缴学宿费的通知",
+      "decision": "accept",
+      "reason": "真实通知，依据完整",
+      "error": "{\"code\":\"cancel_target_required\",\"message\":\"取消通知必须关联原事项\",\"request_id\":\"793db69b-aabe-4c64-afac-e690dc649754\",\"details\":{}}"
+    },
+    {
+      "candidate_id": "37be6a54-6183-5a65-bb5b-5d68c1cb19ec",
+      "title": "【学籍管理】关于对超过最长学习年限研究生进行学籍处理预警的通知",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "37c95caa-c364-5b06-8630-a22c21761abd",
+      "title": "总体情况",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "38d7b339-c4fd-53c8-acdf-d030b3924979",
+      "title": "论文送审平台反馈评阅意见份数统计表（截至2026年10月19日8:54）",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "3935e1ab-1004-5e4f-b839-3b25a53d8ea4",
+      "title": "“百日冲刺”天津大学2025年春季就业实习双选会",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "3a5dca50-5295-522b-a4c7-cc6907f30e5d",
+      "title": "工程类专业学位类别和专业领域名称的中英文对照（建议稿）",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "3f4b2bb6-f85a-5b26-a05e-65f533e581d7",
+      "title": "【课程学习】关于2022级研究生《学术道德规范》在线课程学习的通知",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "4136462a-66a2-5421-befb-7b73ca433b63",
+      "title": "“千企万岗进校园”天津大学2026年春季大型双选会",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "4168537e-b40a-5129-ae2f-cdfc658566d4",
+      "title": "2026年剑桥大学学术科研项目暑期项目报名通知",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "425a0539-f567-5b62-aea0-ec083502fd80",
+      "title": "关于8月25日至8月31日暂停预约驾车进校的温馨提示",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "431f1c74-c7d1-5b01-937d-3a76d4b25b5d",
+      "title": "2026年秋季学期交换生（第二批）项目通知",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "444365e2-51f4-5289-9817-55ba51e6448c",
+      "title": "关于开展“笃学・筑梦・智行",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "444b751c-c528-5428-9b5e-55a1c5b871d2",
+      "title": "天津大学2026",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "4a6e0685-e842-550d-8446-e6443670f71a",
+      "title": "总体情况",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "4bd50cc5-92e3-5f73-894c-05cd16938b82",
+      "title": "2026年布里斯托大学暑期学术科研营（计算在科学与工程中的应用 ）报名通知",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "4c26f152-f0f3-597a-8da0-0531c39a0907",
+      "title": "一级学科博士硕士学位授权点申请基本条件（20170317）",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "4f529917-7fcc-5724-811e-98a0b85898f8",
+      "title": "天津大学2026级新生线上入学教育通知",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "4fa3dd29-2dbb-5b4f-91f7-0740c8409b15",
+      "title": "梅兵向全校离退休老同志致以重阳节问候",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "50c14610-ef2f-59c1-ad1d-cf0dbc18d08d",
+      "title": "学位论文评阅专家聘书",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "54741dd9-67a6-5526-a81b-b8b9fc6d4d46",
+      "title": "天津大学关于2026年强基计划校考工作安排的通知",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "5655216b-c4be-5372-b576-36e3d5ae5fbe",
+      "title": "智能与计算学部2026年推荐优秀应届本科毕业生 免试攻读研究生实施细则",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "569c2b5d-06e3-5160-9992-1e958f510499",
+      "title": "天津大学机械工程学院2026年专业学位博士研究生拟录取名单公示（第五批）",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "5bf64ad4-68e3-5c4f-ac42-3890caef1a30",
+      "title": "2027年慕尼黑工业大学“未来技术”冬季项目报名通知",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "5d41557c-10a5-541d-bc91-0f488efaacf8",
+      "title": "天津大学医科春季专场招聘会邀请函",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "618b4842-c5f5-5a85-bca8-a2700958c48f",
+      "title": "天津大学2025年春季校园招聘活动邀请函",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "6211438b-27c2-5cdc-b2ea-98f47cc89ad5",
+      "title": "天津科技大学党委副书记张春艳一行来校调研交流",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "638149c2-30bd-58e6-8ac5-98ade2dde9b3",
+      "title": "天津大学2026级研究生新生住宿申请须知",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "63d8cdb5-84a0-5be9-86b7-d37d54e22495",
+      "title": "【课程学习】关于2023级研究生《学术道德规范》在线课程学习的通知",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "64091cc9-4001-56e0-8b2a-93a63fa2e1e8",
+      "title": "操作失败！",
+      "decision": "reject",
+      "reason": "错误页/拦截页"
+    },
+    {
+      "candidate_id": "696f06f3-6bc9-59fe-900a-0fcae74f1a4d",
+      "title": "2027年春季学期交换生（第一批）项目通知",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "6980237c-c912-574b-80d2-d2829b876a94",
+      "title": "【校报特稿】党建引领：我校党建与科技创新深度融合探索与创新",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "69fdf06e-9259-5f10-9536-4e67a7b59d84",
+      "title": "“万企进校园”天津大学2024年秋季大型双选会",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "6a5ff1a8-6754-5956-8cd8-5750abeb80ff",
+      "title": "天津大学2024年医科春季专场招聘会",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "6b4979eb-5347-5ffd-ab34-3af63a8b2a25",
+      "title": "【考试安排】2022",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "6f57bf7a-d743-5b7f-91e4-08d7b4526167",
+      "title": "“千企万岗进校园”天津大学2026年秋季大型双选会邀请函",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "6f8b9c17-4dd7-5e35-a5e1-fe90b0582667",
+      "title": "总体情况",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "6f9ff30e-c467-5dd2-a8f9-631ea5c80dc9",
+      "title": "天津大学2024届毕业生“求是奖” 评审结果公示",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "6fb72a3c-86da-55b2-908e-90dcb2b54027",
+      "title": "天津大学关于启动2024级辅修专业报名工作的通知",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "6fbdef82-cf9b-5c0e-8581-5ae84a549a2c",
+      "title": "2025级计算机科学与技术（拔尖班）选拔考试安排",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "733ab5e7-f699-55d6-9a0d-efd53ace55e2",
+      "title": "关于开展2025年“百校千企”线上人才对接 活动（2026届毕业生）的公告",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "7524a6a4-4faa-5c9a-97d8-00513ea726cc",
+      "title": "天津大学2025届优秀毕业生获奖名单公示",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "7635ec30-9a9f-592c-9b30-e6281bd636f1",
+      "title": "2025级计算机科学与技术（拔尖班）选拔面试通知",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "772c9a73-b6f0-5b3f-a5cb-fd4276668c81",
+      "title": "文件来源：http://www.moe.gov.cn/srcsite/A22/s7065/202506/t20250611_1193766.html",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "78d641df-84b0-5032-9fca-57242cc59c3a",
+      "title": "第三届全国大学生职业规划大赛总决赛专场招聘会暨“千校万企供需对接会”",
+      "decision": "accept",
+      "reason": "真实通知，依据完整",
+      "error": "{\"code\":\"cancel_target_required\",\"message\":\"取消通知必须关联原事项\",\"request_id\":\"16aa7b0f-ae00-4c50-b014-3e2cc5eb3ecf\",\"details\":{}}"
+    },
+    {
+      "candidate_id": "7b195e31-0fcd-578d-9bf2-70233863841b",
+      "title": "专治各种“迷茫” 天津大学上线“研究生学习与创新中心”给出全链条解决方案",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "7c69d0b8-4aa0-5f64-8976-cef0227e2637",
+      "title": "“千企万岗进校园”天津大学2025年校友企业专场双选会",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "7cab0b15-6ebb-5137-8d95-785a600f3e52",
+      "title": "湾创未来，粤聚英才！首届粤港澳大湾区创业大赛正式启动",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "7d268832-63d4-517b-86e7-afc85bf86e23",
+      "title": "【办事流程】关于研究生课程成绩复审申请的流程",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "7e40239e-831b-55c5-8886-95934f2fb81d",
+      "title": "2026级新生党员党组织关系转接流程",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "7e9439f6-0284-5c8d-8760-560b391e7fa4",
+      "title": "“万企进校园”天津大学2024年春季就业实习双选会",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "7fdb54bb-9b6b-584a-a6ae-f727a960dbb0",
+      "title": "天津大学新版学位论文封面",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "8360392b-7b20-5e1a-8438-26d22c761ac0",
+      "title": "【办事流程】关于重修选课的流程",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "873426a4-47b2-5b3b-93fa-f57f7191cbdf",
+      "title": "Transactions of Tianjin University系列学术讲座",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "879b5cde-33d6-58e1-9aa5-2951a98617f3",
+      "title": "回应时代三问·深耕南方研究",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "89d4bf24-1190-516d-8f08-f21da5cbae02",
+      "title": "天津大学机械工程学院2026年专业学位博士研究生拟录取名单公示（“三年一万人”专项）",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "8d4ddb09-8b2c-5eb3-94db-94de9147b595",
+      "title": "2026年CCF中国智能机器人学术年会在天津盛大开幕",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "8d805011-d119-527c-99fb-a0f59c187ce8",
+      "title": "“千企万岗进校园”天津大学2026年秋季大型双选会",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "8ed21bc3-b31b-5f07-88ac-87e5ebc7f690",
+      "title": "AI如何赋能基础研究？一场大赛给出了答案 首届“AI+合成生物”创新大赛在天津大学举行",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "8fdc83a4-2d9a-5137-bb3a-2231451f8b4f",
+      "title": "2026年暑期剑桥大学跨学科学术实践项目通知",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "8ff8cf2c-1a16-5b4b-8498-5aa303a40142",
+      "title": "工科试验班(全国新工科教育创新中心)可选大师班培养方案",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "906eaa14-33c9-5d9d-b147-47a7ff8a6677",
+      "title": "【国际交流】Transactions of Tianjin University系列学术讲座",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "944d2974-c48a-5565-9079-1f46af6c78d1",
+      "title": "24252学期研究生公共课考试安排",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "9501343e-cd9d-5e03-9e22-5ff2bb3f98f9",
+      "title": "关于申请2024年秋季学期国际交流资助集中报销的通知",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "967a273f-5ee2-59a4-a69d-d1de6d5f4a48",
+      "title": "天津大学医科秋季专场招聘会",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "9795781f-5e5e-5dc4-9ee1-f574b2733287",
+      "title": "关于拟报送市教委2022年天津市研究生科研创新项目（一般项目和服务产业专项）的校内公示",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "99b26bf9-1ee8-5a7f-811b-d0938c2491f9",
+      "title": "辽宁省水利厅直属事业单位2025年面向部分院校公开招聘拟聘人员公示",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "9b6aa158-b480-58a3-904a-36502f48d8ab",
+      "title": "天津大学智能与计算学部2026年博士研究生招生办法",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "9bea7e9e-5462-5124-b330-bd4c8efd24c5",
+      "title": "天津大学关于公示2026年强基计划录取标准的通知",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "a0878f22-5a7b-54a0-a042-8e43b7d7c648",
+      "title": "关于申请2024年秋季学期国际交流资助集中报销的通知",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "a16e0388-e4ab-5a7f-9e32-0d6de2830e11",
+      "title": "【北洋园校区】中国船舶集团有限公司第七一八研究所2027年人才招聘宣讲会",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "a3b2f55a-d421-5555-b230-684436d60ca9",
+      "title": "转发中国教育国际交流协会《关于邀请参加 2025博士生国际招生面试交流会的函》",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "a6021c55-2f1d-56ef-a672-918c3074b763",
+      "title": "天津大学2026届“国优计划”毕业生双选会暨天津市“三校一院”师范毕业生双选会",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "a7577dcd-3294-5b6e-8392-bce729c166a5",
+      "title": "【重要通知】卫津路校区就业指导中心即日起搬回大学生活动中心",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "a811fae1-f722-59b4-b2e8-2964be8003be",
+      "title": "【办事流程】办理在读证明/中英文成绩单",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "a81fda60-f984-5d6f-8ae6-3f30a90fbfdf",
+      "title": "2026年伦敦政治经济学院暑期学分项目报名通知",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "a83e1a3e-5114-58f1-bf45-5815ed6c6aab",
+      "title": "2026年暑期剑桥大学移动课堂跨学科学术实践项目宣讲会通知",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "a8b417e0-2b0c-552e-a6c4-00966d4313a1",
+      "title": "关于2024级计算机科学拔尖人才培养计划2.0学生遴选的通知（增补）",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "a9e35b60-7e45-5d03-8170-f6d0ffa7210d",
+      "title": "天津大学天津医院召开建院165周年高质量发展大会",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "aa3ba22a-def6-58d3-9828-428cd915cbdc",
+      "title": "天津大学2027届“金秋启航”大型双选会",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "aa5607b7-f5e0-5794-a5f2-2f4902472531",
+      "title": "2027寒假牛津五大门类跨学科学术项目报名通知",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "aaa777b4-c3ab-5481-9c9f-e8a4833e0369",
+      "title": "24252学期同等学力硕士公共课考试安排",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "ab4ff6d4-7cce-5470-a6b8-5e8df7bb6d12",
+      "title": "天津大学2026年本科生招生体检标准",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "ab79ff5c-4a4b-5c5c-9cd7-e4a5171b229f",
+      "title": "关于2019年12月导师助研及研究生助学金发放时间变更的通知",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "ac81ae35-2d7f-57c6-9a73-be82af89b9dc",
+      "title": "智能与计算学部 2025 级智能与计算大类主修专业确认名单",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "ae4ff46a-23fb-5ef8-b99f-2750a19a2504",
+      "title": "梅兵会见青海民族大学党委书记黄世和、校长赵海兴一行",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "b0760844-c78f-553b-a039-5afb2b6e1816",
+      "title": "天津大学医科秋季专场招聘会邀请函",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "b24c6676-4bb8-5453-873b-9ebca5596af2",
+      "title": "天津市2025届毕业生一次性求职补贴申领名单公示",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "b58a3624-4774-5daf-b81f-d69346ee98d3",
+      "title": "天津大学就业指导中心2025年暑假值班安排",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "b6b20c54-03ea-562c-ab6e-4dea189c8ae5",
+      "title": "转发中国教育国际交流协会《关于邀请参加 2024博士生国际招生面试交流会的函》",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "b73cae87-84fa-5c52-b13e-9659611dbd27",
+      "title": "2026年暑期剑桥大学移动课堂跨学科学术实践项目宣讲会通知",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "b959e286-6fff-5dd3-8af1-3190c0de0378",
+      "title": "关于2025级计算机科学拔尖人才培养计划2.0学生遴选的通知",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "b9d76788-acd8-5e8e-be38-5ca6bfc30659",
+      "title": "关于天津大学资助博士研究生短期出国访学的通知",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "ba8f96a0-5c1f-56cd-93d2-e46c07b3c495",
+      "title": "天津大学机械工程学院2026年普通招考类博士研究生及部分专项拟录取名单公示（全日制）",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "bc9d93e2-d94d-5948-8073-f86322c822a7",
+      "title": "Transactions of Tianjin University系列学术讲座",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "bdb74560-1234-543e-bc19-15d38878500e",
+      "title": "关于研究生学位认证的操作步骤",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "bdcf5793-655f-5535-bbfd-ecde915cf5c5",
+      "title": "优博基金验收报告",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "bf7263e3-5886-5713-9eed-0e489f0ab262",
+      "title": "关于正式上线新导师助研金管理系统的通知",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "bf8d369e-5811-598e-bde1-98dd8efa4d8e",
+      "title": "2024级计算机科学与技术（拔尖班）增补选拔考试安排",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "c137ea15-af25-5367-a66f-63155690280d",
+      "title": "关于我校非上海生源在沪就业户籍申请中拥有“专利证书及申请”的毕业生名单公示",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "c16bac76-ed28-54fb-ae01-e30205df6c7f",
+      "title": "2026暑期牛津大学五大门类跨学科项目报名",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "c23c6704-5240-51d0-b7f6-f80d108976df",
+      "title": "天津大学就业指导中心2025年寒假值班安排",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "c3c6eac9-0777-549b-997d-7480b11c0420",
+      "title": "关于我校毕业生十月份派遣工作安排的说明",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "c5cb1566-2f85-5857-8f02-78973c71e6a1",
+      "title": "2027年英国布里斯托大学3+1本硕连读项目报名通知",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "c66b763f-1488-5dc5-8272-21c452366894",
+      "title": "【校报特稿】牢记嘱托 勇担使命：我校召开学习贯彻习近平总书记重要回信精神一周年座谈会",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "c6899792-ed68-504b-9371-4035a42886bd",
+      "title": "智能与计算学部关于开展2026年硕博连读研究生选拔的通知",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "c78188dd-be04-53d1-b935-d1f490b827ca",
+      "title": "关于天津大学资助博士研究生参加国际学术会议的通知",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "c7b6d1b6-fb31-5cec-9d91-7e9224c62e32",
+      "title": "天津大学机械工程学院2026年专业学位博士研究生拟录取名单公示（第四批）",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "cb3f7fe4-12e5-5bd4-aac2-068be9926150",
+      "title": "关于企业入校招聘活动入校方式的通知",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "d2305ddc-2514-5c5d-8698-ba1232cb0327",
+      "title": "下载中心",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "d28fcc76-2d9d-53d4-a681-1582b319de05",
+      "title": "天津大学2026年春季就业实习双选会邀请函",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "d3a54dec-343c-5d51-996c-0632cf99b77c",
+      "title": "关于2026年研究生转专业申请工作的通知",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "d4cef425-63a0-5dff-accf-8778bb67a9e9",
+      "title": "天津大学机械工程学院2026年专业学位博士研究生拟录取名单公示（ZY专项）",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "d5300860-68b7-508d-aa79-b8d80f995481",
+      "title": "天津大学2026年本科生招生章程",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "d55e669b-66bf-5624-8b1c-1aafdb55c518",
+      "title": "“万企进校园”天津大学2025年春季大型双选会",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "d714ba10-5cb3-523c-85bb-135ff4b81028",
+      "title": "天津大学2026年艺术类招生简章",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "d996e852-a4e4-5df3-8ea1-3c5f81b3c0a4",
+      "title": "智能与计算大类2025级本科生主修专业确认实施细则",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "d9e05843-6ce6-5832-899a-c9c6cf3ef27d",
+      "title": "关于研究生助学金发放系统延期开放的通知",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "daa21ecf-579c-55a7-8621-88039cf7e62b",
+      "title": "关于2026级新生直饮水定额补贴领用的通知",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "db3c4ac8-ee4f-565d-b49c-4a4603f30e63",
+      "title": "关于研究生学费管理系统上线的通知",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "dc01c1ed-e150-5a64-a34b-e5853149d7dc",
+      "title": "关于申请2023年秋季学期国际交流资助集中报销的通知",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "dc22b666-64ee-5927-9997-522c7af585b1",
+      "title": "“万企进校园”天津大学2023年秋季大型双选会（第二场）",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "de036a64-0831-5f05-b37d-d58f9cd3609f",
+      "title": "天津大学2024年医科秋季专场招聘会",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "de928430-339d-5326-9a42-120175a42f5a",
+      "title": "天津大学医科春季专场招聘会",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "df02b184-2aa1-5a1f-8241-6899d6ae40bc",
+      "title": "25261学期研究生公共课考试安排",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "e046b481-02c3-5923-b030-57f9d080b01d",
+      "title": "天津大学机械工程学院2027级推免生拟录取名单公示",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "e1e9912d-9f9c-5926-8558-8ca2856552e0",
+      "title": "硕博研究生学位论文答辩公告",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "e4992774-a70a-596f-b911-3e2419545bcc",
+      "title": "天津大学机械工程学院2026年专业学位博士研究生拟录取名单公示（第二批）",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "e876afa7-7b84-5b25-8868-13d29d12ca9f",
+      "title": "“千企万岗进校园”天津大学2025年秋季大型双选会请您参加！",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "e8a9a7d5-5ed6-581e-a2dc-d27747c2661a",
+      "title": "25261学期全日制研究生公共课考试安排2",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "ec198d85-4ff4-59e3-b545-4117b4d427ea",
+      "title": "【国际交流】关于邀请参加2022博士生国际招生面试线上交流会的通知",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "ecb5d4b3-4005-5287-a7d7-2dde17f75648",
+      "title": "【考试安排】2022",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "ecb7e38a-958f-542d-bbce-62c69dfa0ed0",
+      "title": "天津大学研发产教融合信息平台亮相2026年世界职业技术教育发展大会",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "ece92275-d509-5b1a-944c-37dde7ebebd4",
+      "title": "转发中国教育国际交流协会《关于商请贵校协助邀请师生参加2026博士生国际招生面试交流会的函》",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "ed265b4b-61f5-5f5c-95f2-f408ee70602e",
+      "title": "天津大学2027届“金秋启航”大型双选会（第二场）暨津鲁五校2027届毕业生秋季双选会天津大学专场顺利举办",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "edb04c85-6970-5426-aeda-1604f7ca079a",
+      "title": "天津大学学位授权点情况表（供校盲审论文填写二级学科信息用）",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "ede7927f-4ba3-5ad6-9ef2-0a2ee0c9392f",
+      "title": "天津大学机械工程学院2026年联合培养博士研究生拟录取名单公示（崂山实验室专项）",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "eed0f18d-3548-56b8-8884-e6efd7d48bbe",
+      "title": "线上答辩 问卷星答辩评议书模板与EV录屏软件操作",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "efc1620c-18f0-5ee2-a68f-9d0b9ac2cd17",
+      "title": "⟡68 个 CSC 全奖博士专项资源对接",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "f1039256-f96f-5213-b684-df30275be7d4",
+      "title": "【考试安排】2022",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "f17ac53a-11d0-5500-85fc-f5950ca23799",
+      "title": "硕博研究生学位论文答辩公告",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "f1af46ad-9355-5aee-8232-c01fcc352ab0",
+      "title": "天津大学2025年秋季校园招聘活动邀请函",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "f3982531-73eb-543b-ab4d-da30768e2b92",
+      "title": "天津大学技术支撑起世界最大的醋酸乙烯合成反应器",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "f3dfb7c5-012c-5832-9507-68a72d4da7bb",
+      "title": "2026年马德里理工大学暑期学分项目报名通知",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "f8fd46b0-bec6-58d8-b4c8-787e99b94d51",
+      "title": "《国际化拔尖创新人才培养计划》课程选课通知",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "fa3ab5f2-97f5-576c-91f9-15d08766144b",
+      "title": "天津大学博士学位论文国际评阅评审表（含邀请函、评审信息汇总表）",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "fa9c00a1-fafb-5142-b5bb-3a261f82e06c",
+      "title": "天津大学新版学位论文封面发布",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "fb024bc8-a9d0-59d8-9a43-8f206f6e0ff5",
+      "title": "关于往届生录取研究生的相关说明",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "fb495a2e-6409-56ba-8956-94d2c6809406",
+      "title": "1.行业引领的薪资水平",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "fdf2818f-22a2-5013-bb01-cbd90d315a9b",
+      "title": "“万企进校园”天津大学2024年春季大型双选会",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "fe2b166b-5d5c-5509-a153-f741cf9b48a6",
+      "title": "天大校研〔2021〕8号（天津大学硕士、博士学位论文校级盲审办法）",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "fe6410d0-6b7d-5d8f-97c2-2b9394bc2095",
+      "title": "操作失败！",
+      "decision": "reject",
+      "reason": "错误页/拦截页"
+    }
+  ]
+}

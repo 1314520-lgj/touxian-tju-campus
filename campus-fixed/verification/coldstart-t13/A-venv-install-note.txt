@@ -1,0 +1,1 @@
+﻿pip 前两次运行：约 20 分钟未完成（PID 45120 CPU 617s、WS 54MB、无 established 网络连接、site-packages 仍只有 pip 自身），已终止；证据见 A-pip-install.out/.err（因 Python 块缓冲，两文件均为空）

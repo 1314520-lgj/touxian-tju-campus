@@ -1,0 +1,37 @@
+{
+  "read_only": true,
+  "network_requested": false,
+  "checks": [
+    {
+      "check": "deployment_files",
+      "ok": true,
+      "detail": "required files present"
+    },
+    {
+      "check": "image_digests",
+      "ok": true,
+      "detail": "both base images require SHA256 digests"
+    },
+    {
+      "check": "cloud_lock_preserves_core",
+      "ok": true,
+      "detail": "cloud lock must preserve every core package version"
+    },
+    {
+      "check": "secret_exclusions:.gcloudignore",
+      "ok": true,
+      "detail": "secret/runtime patterns excluded"
+    },
+    {
+      "check": "secret_exclusions:Dockerfile.dockerignore",
+      "ok": true,
+      "detail": "secret/runtime patterns excluded"
+    },
+    {
+      "check": "health_contract",
+      "ok": true,
+      "detail": "OpenAPI declares /health/ready"
+    }
+  ],
+  "ok": true
+}

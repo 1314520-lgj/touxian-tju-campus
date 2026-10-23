@@ -1,0 +1,95 @@
+{
+  "status": "manual-reviewed-no-blocker",
+  "reviewed_at_utc": "2026-10-10T08:05:05.426536+00:00",
+  "mode": "Read-only screenshot inspection, pixel validation and matching current stylesheet; no fixture actions",
+  "scope": "Only the visible top authorized attachment dialog at 1440x1000; manually addresses the two axe incomplete rules",
+  "evidence": {
+    "path_basis": "Paths are relative to the release root, so this review can be re-checked on any machine rather than only where it was written.",
+    "screenshot": "verification/reliability/a11y-attachment-replacement.png",
+    "screenshot_sha256": "53838da78d93ff46cb8442c4938a1cafa68a0493c6c70c91c51c92a9b5c42d6a",
+    "screenshot_note": "Re-captured in the 1.8 round. PNG encoding bytes differ between runs, so the hash above is the shipped file, not a rendering fingerprint. The six pixel counts below were re-counted on this exact capture inside the recorded sample boxes and reproduced the original numbers exactly, so the rendering of this dialog is unchanged.",
+    "stylesheet": "src/campus/campus.css",
+    "stylesheet_sha256": "edf18579bc9a0abc35839e88c740626991659e4baa2b74898d5da9ad65e2b3d3",
+    "stylesheet_note": "The stylesheet hash moved when the search-result mark styles and the CJK font fallbacks were added. Neither touches this dialog: the sampled foreground and background colours and all six pixel counts are unchanged, which is why this review still stands.",
+    "axe_report": "verification/reliability/reliability-a11y-report.json"
+  },
+  "font_note": "14px CSS normal text; declared system font stack is Segoe UI/Microsoft YaHei/Noto Sans SC. Resolved fallback font was not queried. The normal-text contrast threshold was used.",
+  "contrast_checks": [
+    {
+      "element": "paragraph",
+      "font_size_px_from_stylesheet": 14,
+      "foreground": "#253047",
+      "background": "#ffffff",
+      "contrast_ratio": 13.187,
+      "minimum_required": 4.5,
+      "foreground_pixels_confirmed": 855,
+      "background_pixels_confirmed": 13432,
+      "sample_box_px": [
+        498,
+        340,
+        930,
+        379
+      ],
+      "result": "pass"
+    },
+    {
+      "element": "link",
+      "font_size_px_from_stylesheet": 14,
+      "foreground": "#3454d6",
+      "background": "#ffffff",
+      "contrast_ratio": 6.204,
+      "minimum_required": 4.5,
+      "foreground_pixels_confirmed": 239,
+      "background_pixels_confirmed": 1288,
+      "sample_box_px": [
+        498,
+        399,
+        615,
+        417
+      ],
+      "result": "pass"
+    },
+    {
+      "element": "textarea",
+      "font_size_px_from_stylesheet": 14,
+      "foreground": "#253047",
+      "background": "#ffffff",
+      "contrast_ratio": 13.187,
+      "minimum_required": 4.5,
+      "foreground_pixels_confirmed": 596,
+      "background_pixels_confirmed": 7597,
+      "sample_box_px": [
+        510,
+        579,
+        911,
+        604
+      ],
+      "result": "pass"
+    }
+  ],
+  "link_non_color_identification": {
+    "result": "pass",
+    "always_visible_cues": [
+      "Standalone action row labelled 查看受限原网页",
+      "Visible outward arrow icon beside link text"
+    ],
+    "additional_css_cues": [
+      "Underline on hover",
+      "3px keyboard focus outline"
+    ],
+    "assessment": "The standalone action wording, layout and arrow identify navigation without relying only on its blue color; it is separate from surrounding paragraph text."
+  },
+  "visual_observations": [
+    "Top dialog has an opaque white surface; paragraph, input text and link are clear and unobscured in the screenshot.",
+    "The empty textarea interior sampled as solid white. The lower dialog is intentionally dimmed and excluded from this visible-layer contrast check."
+  ],
+  "blocking_issues": [],
+  "criteria": [
+    "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html",
+    "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color.html"
+  ],
+  "limits": [
+    "The axe incomplete entries remain automated scan results; this is a separate targeted manual assessment.",
+    "This assessment is not complete WCAG conformance, other viewport coverage, or production service verification."
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "base": "http://127.0.0.1:56914",
+  "mode": "Real browser and HTTP server, no route interception or mocked responses. Only explicitly synthetic source records and demo data; no network collection, WeChat authorization, SMTP or Google deployment is tested.",
+  "checks": [
+    "Real development login and selected-empty subscriptions persist over page reload",
+    "Website and name-only WeChat requests reach the real API and show pending status",
+    "A different authenticated student cannot list or view another student source requests",
+    "An administrator connects the website request to the synthetic ready website",
+    "Mobile administrator rejects the WeChat request with an explanation and bounded keyboard focus",
+    "Refreshing the student page shows resolved statuses and automatically selected website",
+    "Administrator sees bounded backlog and coverage warning through the real API on mobile",
+    "No browser exceptions or HTTP 5xx occurred during real API acceptance"
+  ],
+  "pageErrors": [],
+  "failedResponses": [],
+  "screenshots": [
+    "verification/browser/source-live/artifacts/live-student-pending-desktop.png",
+    "verification/browser/source-live/artifacts/live-admin-rejection-mobile.png",
+    "verification/browser/source-live/artifacts/live-student-resolved-desktop.png",
+    "verification/browser/source-live/artifacts/live-student-resolved-mobile.png",
+    "verification/browser/source-live/artifacts/live-admin-backlog-mobile.png"
+  ],
+  "student_email": "source-live-1792163413707-ac5a2d2e@example.org",
+  "isolated_email": "source-isolated-1792163413707-ac5a2d2e@example.org",
+  "browser": "156.0.8078.4",
+  "synthetic_source_ids": [
+    "96e609db-711a-52fe-9a42-3ddf06224bb3",
+    "d1fcfe69-2888-543b-be47-f3621d2789d4"
+  ],
+  "original_event_types": [],
+  "website_request_id": "9cbb4b06-6304-48b5-ac2f-b341045f49fb",
+  "wechat_request_id": "9322fac2-2c40-45d7-a006-6be0dd51d70f",
+  "status": "passed"
+}

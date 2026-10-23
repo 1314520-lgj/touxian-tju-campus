@@ -1,0 +1,378 @@
+{
+  "base": "http://127.0.0.1:8021",
+  "mode": "Real browser_demo UI and API. Synthetic notices only; no intercepted requests, invented source data or external collection.",
+  "checks": [
+    "1440px public home has real demo notices and no horizontal overflow",
+    "1440px source directory fits the viewport",
+    "1440px real notice search fits the viewport",
+    "768px public home has real demo notices and no horizontal overflow",
+    "768px source directory fits the viewport",
+    "768px real notice search fits the viewport",
+    "390px public home has real demo notices and no horizontal overflow",
+    "390px source directory fits the viewport",
+    "390px real notice search fits the viewport",
+    "320px public home has real demo notices and no horizontal overflow",
+    "320px source directory fits the viewport",
+    "320px real notice search fits the viewport",
+    "mobile navigation has a visible close control and Escape restores keyboard focus",
+    "short-screen navigation scrolls to its bottom and desktop resizing releases the page lock",
+    "resizing with a login modal above the drawer keeps its lock and releases it after the final close",
+    "unique student login and local action form remain usable on a 320px screen",
+    "actual deadline and action text meet 4.5:1 contrast",
+    "reduced-motion preference removes sidebar and control transitions",
+    "long source editor scrolls internally with reachable actions on a short mobile viewport",
+    "no uncaught browser errors or server 5xx"
+  ],
+  "measurements": [
+    {
+      "label": "1440-home",
+      "layout": {
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "offenders": []
+      }
+    },
+    {
+      "label": "1440-sources",
+      "layout": {
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "offenders": []
+      }
+    },
+    {
+      "label": "1440-search",
+      "layout": {
+        "width": 1440,
+        "documentWidth": 1440,
+        "bodyWidth": 1440,
+        "offenders": []
+      }
+    },
+    {
+      "label": "768-home",
+      "layout": {
+        "width": 768,
+        "documentWidth": 768,
+        "bodyWidth": 768,
+        "offenders": []
+      }
+    },
+    {
+      "label": "768-sources",
+      "layout": {
+        "width": 768,
+        "documentWidth": 768,
+        "bodyWidth": 768,
+        "offenders": []
+      }
+    },
+    {
+      "label": "768-search",
+      "layout": {
+        "width": 768,
+        "documentWidth": 768,
+        "bodyWidth": 768,
+        "offenders": []
+      }
+    },
+    {
+      "label": "390-home",
+      "layout": {
+        "width": 390,
+        "documentWidth": 390,
+        "bodyWidth": 390,
+        "offenders": []
+      }
+    },
+    {
+      "label": "390-sources",
+      "layout": {
+        "width": 390,
+        "documentWidth": 390,
+        "bodyWidth": 390,
+        "offenders": []
+      }
+    },
+    {
+      "label": "390-search",
+      "layout": {
+        "width": 390,
+        "documentWidth": 390,
+        "bodyWidth": 390,
+        "offenders": []
+      }
+    },
+    {
+      "label": "320-home",
+      "layout": {
+        "width": 320,
+        "documentWidth": 320,
+        "bodyWidth": 320,
+        "offenders": []
+      }
+    },
+    {
+      "label": "320-sources",
+      "layout": {
+        "width": 320,
+        "documentWidth": 320,
+        "bodyWidth": 320,
+        "offenders": []
+      }
+    },
+    {
+      "label": "320-search",
+      "layout": {
+        "width": 320,
+        "documentWidth": 320,
+        "bodyWidth": 320,
+        "offenders": []
+      }
+    },
+    {
+      "label": "keyboard-menu-focus",
+      "focus": {
+        "visible": true,
+        "outline": "solid",
+        "width": 3,
+        "color": "rgb(39, 72, 199)",
+        "shadow": "none"
+      }
+    },
+    {
+      "label": "320-short-navigation",
+      "navigation": {
+        "top": 335.515625,
+        "bottom": 379.515625,
+        "viewport": 400,
+        "scrollTop": 287
+      }
+    },
+    {
+      "label": "1024-navigation-after-resize",
+      "layout": {
+        "width": 1024,
+        "documentWidth": 1024,
+        "bodyWidth": 1024,
+        "offenders": []
+      }
+    },
+    {
+      "label": "drawer-modal-resize-cleanup",
+      "bodyOverflowAfterClose": ""
+    },
+    {
+      "label": "320-personal-modal",
+      "layout": {
+        "width": 320,
+        "documentWidth": 320,
+        "bodyWidth": 320,
+        "offenders": []
+      }
+    },
+    {
+      "label": "deadline-text",
+      "contrast": [
+        {
+          "text": "2026-10-13截止（原文未提供具体时刻）",
+          "color": "rgb(83, 96, 120)",
+          "background": [
+            255,
+            255,
+            255
+          ],
+          "ratio": 6.3402703704223216,
+          "fontSize": "13px",
+          "images": []
+        },
+        {
+          "text": "2026-10-15截止（原文未提供具体时刻）",
+          "color": "rgb(83, 96, 120)",
+          "background": [
+            255,
+            255,
+            255
+          ],
+          "ratio": 6.3402703704223216,
+          "fontSize": "13px",
+          "images": []
+        },
+        {
+          "text": "2026-10-17截止（原文未提供具体时刻）",
+          "color": "rgb(83, 96, 120)",
+          "background": [
+            255,
+            255,
+            255
+          ],
+          "ratio": 6.3402703704223216,
+          "fontSize": "13px",
+          "images": []
+        }
+      ]
+    },
+    {
+      "label": "action-text",
+      "contrast": [
+        {
+          "text": "【演示】奖学金材料提交",
+          "color": "rgb(83, 96, 120)",
+          "background": [
+            255,
+            255,
+            255
+          ],
+          "ratio": 6.3402703704223216,
+          "fontSize": "14px",
+          "images": []
+        },
+        {
+          "text": "【演示】校园竞赛报名",
+          "color": "rgb(83, 96, 120)",
+          "background": [
+            255,
+            255,
+            255
+          ],
+          "ratio": 6.3402703704223216,
+          "fontSize": "14px",
+          "images": []
+        },
+        {
+          "text": "全体本科生请于2026-10-17前提交选课确认表",
+          "color": "rgb(83, 96, 120)",
+          "background": [
+            255,
+            255,
+            255
+          ],
+          "ratio": 6.3402703704223216,
+          "fontSize": "14px",
+          "images": []
+        }
+      ]
+    },
+    {
+      "label": "reduced-motion",
+      "motion": {
+        "matches": true,
+        "animated": [
+          {
+            "class": "sidebar ",
+            "transitions": "0s",
+            "animations": "0s"
+          },
+          {
+            "class": "topbar",
+            "transitions": "0s",
+            "animations": "0s"
+          },
+          {
+            "class": "primary",
+            "transitions": "0s",
+            "animations": "0s"
+          },
+          {
+            "class": "event-card ",
+            "transitions": "0s",
+            "animations": "0s"
+          },
+          {
+            "class": "card-title",
+            "transitions": "0s",
+            "animations": "0s"
+          },
+          {
+            "class": "event-card ",
+            "transitions": "0s",
+            "animations": "0s"
+          },
+          {
+            "class": "card-title",
+            "transitions": "0s",
+            "animations": "0s"
+          },
+          {
+            "class": "event-card ",
+            "transitions": "0s",
+            "animations": "0s"
+          },
+          {
+            "class": "card-title",
+            "transitions": "0s",
+            "animations": "0s"
+          }
+        ]
+      }
+    },
+    {
+      "label": "320-short-source-modal",
+      "modal": {
+        "top": 10,
+        "bottom": 558,
+        "height": 548,
+        "viewport": 568,
+        "scrollTop": 469
+      }
+    },
+    {
+      "label": "320-short-source-modal",
+      "layout": {
+        "width": 320,
+        "documentWidth": 320,
+        "bodyWidth": 320,
+        "offenders": [
+          {
+            "tag": "BUTTON",
+            "class": "",
+            "text": "发布与撤回"
+          }
+        ]
+      }
+    }
+  ],
+  "screenshots": [
+    "verification/ui-polish/ui-1440-home.png",
+    "verification/ui-polish/ui-1440-sources.png",
+    "verification/ui-polish/ui-1440-search.png",
+    "verification/ui-polish/ui-768-home.png",
+    "verification/ui-polish/ui-768-sources.png",
+    "verification/ui-polish/ui-768-search.png",
+    "verification/ui-polish/ui-390-home.png",
+    "verification/ui-polish/ui-390-sources.png",
+    "verification/ui-polish/ui-390-search.png",
+    "verification/ui-polish/ui-320-home.png",
+    "verification/ui-polish/ui-320-sources.png",
+    "verification/ui-polish/ui-320-search.png",
+    "verification/ui-polish/ui-320-navigation.png",
+    "verification/ui-polish/ui-320-short-navigation.png",
+    "verification/ui-polish/ui-320-personal-form.png",
+    "verification/ui-polish/ui-320-source-editor.png"
+  ],
+  "pageErrors": [],
+  "failedResponses": [],
+  "viewports": [
+    {
+      "width": 1440,
+      "height": 1000
+    },
+    {
+      "width": 768,
+      "height": 1024
+    },
+    {
+      "width": 390,
+      "height": 844
+    },
+    {
+      "width": 320,
+      "height": 740
+    }
+  ],
+  "browser": "156.0.8078.4",
+  "studentEmail": "ui-polish-1791619207701-9e4f4e26@example.org",
+  "status": "passed"
+}

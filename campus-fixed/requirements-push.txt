@@ -1,0 +1,4 @@
+# Product 1.7 uses the standard-library DNS-pinned HTTPS private gateway transport.
+# No extra push dependency is needed after requirements.txt has been installed.
+# The former Apprise/global-broadcast implementation has been replaced.
+# Keep this empty compatibility file for existing installation commands.

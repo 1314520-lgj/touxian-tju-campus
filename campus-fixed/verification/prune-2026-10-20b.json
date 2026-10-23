@@ -1,0 +1,29 @@
+{
+  "collected": false,
+  "prune": {
+    "expired": [],
+    "applied": true,
+    "reason": "截止时间已过（2026-10-20），自动下架"
+  },
+  "sources": [],
+  "totals": {
+    "sources": 22,
+    "documents": 409,
+    "events_published": 125,
+    "events_expired": 0
+  },
+  "command": "prune",
+  "data_dir": "data-operator",
+  "gateway": {
+    "source": "none",
+    "origins": []
+  },
+  "registration": {
+    "new": 0,
+    "existing": 22
+  },
+  "created_directory": false,
+  "started_at": "2026-10-20T06:05:02.897937+00:00",
+  "finished_at": "2026-10-20T06:05:04.121893+00:00",
+  "exit_code": 0
+}

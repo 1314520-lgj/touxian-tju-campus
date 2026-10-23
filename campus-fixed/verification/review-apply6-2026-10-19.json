@@ -1,0 +1,13 @@
+{
+  "counts": {
+    "reject": 1
+  },
+  "details": [
+    {
+      "candidate_id": "096a0ec6-fd1c-5d54-b2b5-2cb5258b9510",
+      "title": "天津大学考点关于雅思考试防疫要求的通知",
+      "decision": "reject",
+      "reason": "取消通知缺少可关联的原事项（需人工关联后再发布）"
+    }
+  ]
+}

@@ -1,0 +1,828 @@
+{
+  "collected": true,
+  "sources": [
+    {
+      "source_id": "b887b3d5-aec8-5185-9547-9eebc0d32f3b",
+      "name": "天津大学化工学院 · 本科教学通知",
+      "status": "ok",
+      "new_snapshots": 0,
+      "parse": {
+        "ok": 0,
+        "partial": 0,
+        "failed": 0
+      },
+      "parse_attachment": {
+        "ok": 0,
+        "partial": 0,
+        "failed": 0
+      },
+      "candidates_new": 0,
+      "candidates_updated": 0,
+      "candidates_unchanged": 0,
+      "skipped_no_body": 0,
+      "errors": [],
+      "parse_errors": [],
+      "candidate_errors": [],
+      "health": "healthy",
+      "last_error_code": null,
+      "backlog": {
+        "known_count": 2,
+        "pending_count": 0,
+        "failed_count": 0,
+        "completed_count": 2,
+        "window_truncated": false,
+        "last_discovered_at": "2026-10-19T05:27:01.647294Z"
+      },
+      "elapsed_seconds": 0.75
+    },
+    {
+      "source_id": "22e1eb54-a004-57fb-a806-0b6b711f9ee9",
+      "name": "天津大学国际处 · 学生项目通知",
+      "status": "degraded",
+      "new_snapshots": 0,
+      "parse": {
+        "ok": 0,
+        "partial": 0,
+        "failed": 0
+      },
+      "parse_attachment": {
+        "ok": 0,
+        "partial": 0,
+        "failed": 0
+      },
+      "candidates_new": 0,
+      "candidates_updated": 0,
+      "candidates_unchanged": 0,
+      "skipped_no_body": 0,
+      "errors": [
+        "attachment_access_restricted",
+        "attachment_access_restricted",
+        "attachment_access_restricted",
+        "attachment_access_restricted",
+        "attachment_access_restricted",
+        "attachment_access_restricted",
+        "attachment_access_restricted",
+        "attachment_access_restricted",
+        "attachment_access_restricted",
+        "attachment_access_restricted",
+        "attachment_access_restricted",
+        "attachment_access_restricted",
+        "attachment_access_restricted",
+        "attachment_access_restricted",
+        "attachment_access_restricted",
+        "attachment_access_restricted",
+        "attachment_access_restricted",
+        "attachment_access_restricted",
+        "attachment_access_restricted"
+      ],
+      "parse_errors": [],
+      "candidate_errors": [],
+      "health": "degraded",
+      "last_error_code": "attachment_access_restricted",
+      "backlog": {
+        "known_count": 15,
+        "pending_count": 0,
+        "failed_count": 15,
+        "completed_count": 0,
+        "window_truncated": false,
+        "last_discovered_at": "2026-10-19T05:27:02.240137Z"
+      },
+      "elapsed_seconds": 24.72
+    },
+    {
+      "source_id": "37e33c84-53a2-5ba9-a793-6f8bd33a46fb",
+      "name": "天津大学就业指导中心 · 招聘会信息",
+      "status": "ok",
+      "new_snapshots": 6,
+      "parse": {
+        "ok": 0,
+        "partial": 6,
+        "failed": 0
+      },
+      "parse_attachment": {
+        "ok": 0,
+        "partial": 0,
+        "failed": 0
+      },
+      "candidates_new": 6,
+      "candidates_updated": 0,
+      "candidates_unchanged": 0,
+      "skipped_no_body": 0,
+      "errors": [],
+      "parse_errors": [],
+      "candidate_errors": [],
+      "health": "healthy",
+      "last_error_code": null,
+      "backlog": {
+        "known_count": 22,
+        "pending_count": 0,
+        "failed_count": 0,
+        "completed_count": 22,
+        "window_truncated": false,
+        "last_discovered_at": "2026-10-19T05:27:27.032678Z"
+      },
+      "elapsed_seconds": 5.61
+    },
+    {
+      "source_id": "c2a586e4-f367-512a-a828-5ca3762b3cb6",
+      "name": "天津大学就业指导中心 · 通知公告",
+      "status": "ok",
+      "new_snapshots": 10,
+      "parse": {
+        "ok": 0,
+        "partial": 8,
+        "failed": 0
+      },
+      "parse_attachment": {
+        "ok": 0,
+        "partial": 0,
+        "failed": 2
+      },
+      "candidates_new": 8,
+      "candidates_updated": 0,
+      "candidates_unchanged": 0,
+      "skipped_no_body": 0,
+      "errors": [],
+      "parse_errors": [],
+      "candidate_errors": [],
+      "health": "healthy",
+      "last_error_code": null,
+      "backlog": {
+        "known_count": 24,
+        "pending_count": 0,
+        "failed_count": 0,
+        "completed_count": 24,
+        "window_truncated": false,
+        "last_discovered_at": "2026-10-19T05:27:32.650436Z"
+      },
+      "elapsed_seconds": 8.36
+    },
+    {
+      "source_id": "fc64db2c-93fb-5ff8-ace0-aa0b0bcbe15c",
+      "name": "天津大学教务处 · 学业指导",
+      "status": "blocked",
+      "new_snapshots": 0,
+      "parse": {
+        "ok": 0,
+        "partial": 0,
+        "failed": 0
+      },
+      "parse_attachment": {
+        "ok": 0,
+        "partial": 0,
+        "failed": 0
+      },
+      "candidates_new": 0,
+      "candidates_updated": 0,
+      "candidates_unchanged": 0,
+      "skipped_no_body": 0,
+      "errors": [
+        "article_redirected_off_pattern"
+      ],
+      "parse_errors": [],
+      "candidate_errors": [],
+      "health": "auth_expired",
+      "last_error_code": "article_redirected_off_pattern",
+      "backlog": {
+        "known_count": 20,
+        "pending_count": 0,
+        "failed_count": 20,
+        "completed_count": 0,
+        "window_truncated": false,
+        "last_discovered_at": "2026-10-19T05:27:40.885043Z"
+      },
+      "elapsed_seconds": 3.92
+    },
+    {
+      "source_id": "56cd6e50-bf3d-5862-b1ce-d7ebaba3d902",
+      "name": "天津大学教务处 · 学生竞赛",
+      "status": "blocked",
+      "new_snapshots": 0,
+      "parse": {
+        "ok": 0,
+        "partial": 0,
+        "failed": 0
+      },
+      "parse_attachment": {
+        "ok": 0,
+        "partial": 0,
+        "failed": 0
+      },
+      "candidates_new": 0,
+      "candidates_updated": 0,
+      "candidates_unchanged": 0,
+      "skipped_no_body": 0,
+      "errors": [
+        "article_redirected_off_pattern"
+      ],
+      "parse_errors": [],
+      "candidate_errors": [],
+      "health": "auth_expired",
+      "last_error_code": "article_redirected_off_pattern",
+      "backlog": {
+        "known_count": 6,
+        "pending_count": 0,
+        "failed_count": 6,
+        "completed_count": 0,
+        "window_truncated": false,
+        "last_discovered_at": "2026-10-19T05:27:44.808791Z"
+      },
+      "elapsed_seconds": 3.02
+    },
+    {
+      "source_id": "3434196e-1203-5543-87bb-d71e1c1fc1b2",
+      "name": "天津大学教务处 · 竞赛科创通知",
+      "status": "blocked",
+      "new_snapshots": 0,
+      "parse": {
+        "ok": 0,
+        "partial": 0,
+        "failed": 0
+      },
+      "parse_attachment": {
+        "ok": 0,
+        "partial": 0,
+        "failed": 0
+      },
+      "candidates_new": 0,
+      "candidates_updated": 0,
+      "candidates_unchanged": 0,
+      "skipped_no_body": 0,
+      "errors": [
+        "article_redirected_off_pattern"
+      ],
+      "parse_errors": [],
+      "candidate_errors": [],
+      "health": "auth_expired",
+      "last_error_code": "article_redirected_off_pattern",
+      "backlog": {
+        "known_count": 20,
+        "pending_count": 0,
+        "failed_count": 20,
+        "completed_count": 0,
+        "window_truncated": false,
+        "last_discovered_at": "2026-10-19T05:27:47.820401Z"
+      },
+      "elapsed_seconds": 3.09
+    },
+    {
+      "source_id": "c4e00274-5b08-5d26-9a6d-19aed0d71571",
+      "name": "天津大学教务处 · 通知公告",
+      "status": "blocked",
+      "new_snapshots": 0,
+      "parse": {
+        "ok": 0,
+        "partial": 0,
+        "failed": 0
+      },
+      "parse_attachment": {
+        "ok": 0,
+        "partial": 0,
+        "failed": 0
+      },
+      "candidates_new": 0,
+      "candidates_updated": 0,
+      "candidates_unchanged": 0,
+      "skipped_no_body": 0,
+      "errors": [
+        "article_redirected_off_pattern"
+      ],
+      "parse_errors": [],
+      "candidate_errors": [],
+      "health": "auth_expired",
+      "last_error_code": "article_redirected_off_pattern",
+      "backlog": {
+        "known_count": 20,
+        "pending_count": 0,
+        "failed_count": 20,
+        "completed_count": 0,
+        "window_truncated": false,
+        "last_discovered_at": "2026-10-19T05:27:50.904331Z"
+      },
+      "elapsed_seconds": 3.22
+    },
+    {
+      "source_id": "ea4fa3a4-90fc-55c4-a5aa-cc6a389cb13d",
+      "name": "天津大学教务处 · 通知公告总览",
+      "status": "blocked",
+      "new_snapshots": 0,
+      "parse": {
+        "ok": 0,
+        "partial": 0,
+        "failed": 0
+      },
+      "parse_attachment": {
+        "ok": 0,
+        "partial": 0,
+        "failed": 0
+      },
+      "candidates_new": 0,
+      "candidates_updated": 0,
+      "candidates_unchanged": 0,
+      "skipped_no_body": 0,
+      "errors": [
+        "article_redirected_off_pattern"
+      ],
+      "parse_errors": [],
+      "candidate_errors": [],
+      "health": "auth_expired",
+      "last_error_code": "article_redirected_off_pattern",
+      "backlog": {
+        "known_count": 15,
+        "pending_count": 0,
+        "failed_count": 15,
+        "completed_count": 0,
+        "window_truncated": false,
+        "last_discovered_at": "2026-10-19T05:27:54.131460Z"
+      },
+      "elapsed_seconds": 3.11
+    },
+    {
+      "source_id": "ba303189-9801-5add-9b5b-924e8c5575b1",
+      "name": "天津大学新闻网 · 综合新闻",
+      "status": "ok",
+      "new_snapshots": 0,
+      "parse": {
+        "ok": 0,
+        "partial": 0,
+        "failed": 0
+      },
+      "parse_attachment": {
+        "ok": 0,
+        "partial": 0,
+        "failed": 0
+      },
+      "candidates_new": 0,
+      "candidates_updated": 0,
+      "candidates_unchanged": 0,
+      "skipped_no_body": 0,
+      "errors": [],
+      "parse_errors": [],
+      "candidate_errors": [],
+      "health": "healthy",
+      "last_error_code": null,
+      "backlog": {
+        "known_count": 15,
+        "pending_count": 0,
+        "failed_count": 0,
+        "completed_count": 15,
+        "window_truncated": false,
+        "last_discovered_at": "2026-10-19T05:27:57.314219Z"
+      },
+      "elapsed_seconds": 1.38
+    },
+    {
+      "source_id": "3ac23043-2575-53d7-8a38-45b8d090b6cc",
+      "name": "天津大学智能与计算学部 · 通知公告",
+      "status": "degraded",
+      "new_snapshots": 0,
+      "parse": {
+        "ok": 0,
+        "partial": 0,
+        "failed": 0
+      },
+      "parse_attachment": {
+        "ok": 0,
+        "partial": 0,
+        "failed": 0
+      },
+      "candidates_new": 0,
+      "candidates_updated": 0,
+      "candidates_unchanged": 0,
+      "skipped_no_body": 0,
+      "errors": [
+        "attachment_access_restricted",
+        "attachment_access_restricted",
+        "attachment_access_restricted",
+        "attachment_access_restricted",
+        "unsafe_address",
+        "unsafe_address",
+        "unsafe_address",
+        "unsafe_address",
+        "attachment_access_restricted",
+        "attachment_access_restricted",
+        "attachment_access_restricted",
+        "attachment_access_restricted",
+        "unsafe_address",
+        "unsafe_address",
+        "unsafe_address",
+        "attachment_access_restricted",
+        "attachment_access_restricted",
+        "attachment_access_restricted",
+        "attachment_access_restricted",
+        "attachment_access_restricted",
+        "attachment_access_restricted"
+      ],
+      "parse_errors": [],
+      "candidate_errors": [],
+      "health": "degraded",
+      "last_error_code": "attachment_access_restricted",
+      "backlog": {
+        "known_count": 15,
+        "pending_count": 0,
+        "failed_count": 11,
+        "completed_count": 4,
+        "window_truncated": false,
+        "last_discovered_at": "2026-10-19T05:27:58.613882Z"
+      },
+      "elapsed_seconds": 2.97
+    },
+    {
+      "source_id": "dca313cc-2acc-5d35-98ff-1cbbf4d03452",
+      "name": "天津大学本科招生网 · 通知公告",
+      "status": "degraded",
+      "new_snapshots": 0,
+      "parse": {
+        "ok": 0,
+        "partial": 0,
+        "failed": 0
+      },
+      "parse_attachment": {
+        "ok": 0,
+        "partial": 0,
+        "failed": 0
+      },
+      "candidates_new": 0,
+      "candidates_updated": 0,
+      "candidates_unchanged": 0,
+      "skipped_no_body": 0,
+      "errors": [
+        "attachment_access_restricted",
+        "attachment_access_restricted",
+        "attachment_access_restricted",
+        "attachment_access_restricted"
+      ],
+      "parse_errors": [],
+      "candidate_errors": [],
+      "health": "degraded",
+      "last_error_code": "attachment_access_restricted",
+      "backlog": {
+        "known_count": 7,
+        "pending_count": 0,
+        "failed_count": 1,
+        "completed_count": 6,
+        "window_truncated": false,
+        "last_discovered_at": "2026-10-19T05:28:01.583619Z"
+      },
+      "elapsed_seconds": 0.89
+    },
+    {
+      "source_id": "31126592-7bce-514c-a018-6e701349e384",
+      "name": "天津大学机械工程学院 · 通知公告",
+      "status": "degraded",
+      "new_snapshots": 0,
+      "parse": {
+        "ok": 0,
+        "partial": 0,
+        "failed": 0
+      },
+      "parse_attachment": {
+        "ok": 0,
+        "partial": 0,
+        "failed": 0
+      },
+      "candidates_new": 0,
+      "candidates_updated": 0,
+      "candidates_unchanged": 0,
+      "skipped_no_body": 0,
+      "errors": [
+        "attachment_access_restricted",
+        "attachment_access_restricted",
+        "attachment_access_restricted",
+        "attachment_access_restricted",
+        "attachment_access_restricted",
+        "attachment_access_restricted",
+        "attachment_access_restricted",
+        "attachment_access_restricted",
+        "attachment_access_restricted"
+      ],
+      "parse_errors": [],
+      "candidate_errors": [],
+      "health": "degraded",
+      "last_error_code": "attachment_access_restricted",
+      "backlog": {
+        "known_count": 15,
+        "pending_count": 0,
+        "failed_count": 11,
+        "completed_count": 4,
+        "window_truncated": false,
+        "last_discovered_at": "2026-10-19T05:28:02.499206Z"
+      },
+      "elapsed_seconds": 2.42
+    },
+    {
+      "source_id": "35bd445b-d3b1-5057-a746-8cd2c08b2be4",
+      "name": "天津大学研究生院 · 国际交流",
+      "status": "degraded",
+      "new_snapshots": 0,
+      "parse": {
+        "ok": 0,
+        "partial": 0,
+        "failed": 0
+      },
+      "parse_attachment": {
+        "ok": 0,
+        "partial": 0,
+        "failed": 0
+      },
+      "candidates_new": 0,
+      "candidates_updated": 0,
+      "candidates_unchanged": 0,
+      "skipped_no_body": 0,
+      "errors": [
+        "attachment_access_restricted",
+        "attachment_access_restricted",
+        "attachment_access_restricted",
+        "attachment_access_restricted",
+        "attachment_access_restricted",
+        "attachment_access_restricted",
+        "attachment_access_restricted",
+        "attachment_access_restricted",
+        "attachment_access_restricted",
+        "attachment_access_restricted",
+        "attachment_access_restricted",
+        "attachment_access_restricted",
+        "attachment_access_restricted",
+        "attachment_access_restricted",
+        "attachment_access_restricted",
+        "attachment_access_restricted",
+        "attachment_access_restricted",
+        "attachment_access_restricted",
+        "attachment_access_restricted"
+      ],
+      "parse_errors": [],
+      "candidate_errors": [],
+      "health": "degraded",
+      "last_error_code": "attachment_access_restricted",
+      "backlog": {
+        "known_count": 10,
+        "pending_count": 0,
+        "failed_count": 8,
+        "completed_count": 2,
+        "window_truncated": false,
+        "last_discovered_at": "2026-10-19T05:28:04.903592Z"
+      },
+      "elapsed_seconds": 3.62
+    },
+    {
+      "source_id": "09ae8359-d53d-5eec-8f90-b976fa6dc011",
+      "name": "天津大学研究生院 · 培养办事流程",
+      "status": "degraded",
+      "new_snapshots": 0,
+      "parse": {
+        "ok": 0,
+        "partial": 0,
+        "failed": 0
+      },
+      "parse_attachment": {
+        "ok": 0,
+        "partial": 0,
+        "failed": 0
+      },
+      "candidates_new": 0,
+      "candidates_updated": 0,
+      "candidates_unchanged": 0,
+      "skipped_no_body": 0,
+      "errors": [
+        "attachment_access_restricted",
+        "attachment_access_restricted",
+        "attachment_access_restricted"
+      ],
+      "parse_errors": [],
+      "candidate_errors": [],
+      "health": "degraded",
+      "last_error_code": "attachment_access_restricted",
+      "backlog": {
+        "known_count": 5,
+        "pending_count": 0,
+        "failed_count": 3,
+        "completed_count": 2,
+        "window_truncated": false,
+        "last_discovered_at": "2026-10-19T05:28:08.546611Z"
+      },
+      "elapsed_seconds": 1.06
+    },
+    {
+      "source_id": "8bd43bba-7ae5-5a05-8c7e-08aa41dcf700",
+      "name": "天津大学研究生院 · 培养通知",
+      "status": "degraded",
+      "new_snapshots": 15,
+      "parse": {
+        "ok": 0,
+        "partial": 4,
+        "failed": 0
+      },
+      "parse_attachment": {
+        "ok": 0,
+        "partial": 0,
+        "failed": 11
+      },
+      "candidates_new": 4,
+      "candidates_updated": 0,
+      "candidates_unchanged": 0,
+      "skipped_no_body": 0,
+      "errors": [
+        "attachment_access_restricted",
+        "attachment_access_restricted",
+        "attachment_access_restricted",
+        "attachment_access_restricted",
+        "attachment_access_restricted",
+        "attachment_access_restricted",
+        "attachment_access_restricted",
+        "attachment_access_restricted",
+        "attachment_access_restricted",
+        "attachment_access_restricted",
+        "attachment_access_restricted",
+        "attachment_access_restricted",
+        "attachment_access_restricted",
+        "attachment_access_restricted",
+        "attachment_access_restricted"
+      ],
+      "parse_errors": [],
+      "candidate_errors": [],
+      "health": "degraded",
+      "last_error_code": "attachment_access_restricted",
+      "backlog": {
+        "known_count": 20,
+        "pending_count": 0,
+        "failed_count": 18,
+        "completed_count": 2,
+        "window_truncated": false,
+        "last_discovered_at": "2026-10-19T05:28:09.590173Z"
+      },
+      "elapsed_seconds": 4.19
+    },
+    {
+      "source_id": "3dd0449a-a81d-5199-a345-9d04a5da1f6e",
+      "name": "天津大学研究生院 · 奖助通知",
+      "status": "ok",
+      "new_snapshots": 0,
+      "parse": {
+        "ok": 0,
+        "partial": 0,
+        "failed": 0
+      },
+      "parse_attachment": {
+        "ok": 0,
+        "partial": 0,
+        "failed": 0
+      },
+      "candidates_new": 0,
+      "candidates_updated": 0,
+      "candidates_unchanged": 0,
+      "skipped_no_body": 0,
+      "errors": [],
+      "parse_errors": [],
+      "candidate_errors": [],
+      "health": "healthy",
+      "last_error_code": null,
+      "backlog": {
+        "known_count": 7,
+        "pending_count": 0,
+        "failed_count": 0,
+        "completed_count": 7,
+        "window_truncated": false,
+        "last_discovered_at": "2026-10-19T05:28:13.772365Z"
+      },
+      "elapsed_seconds": 1.31
+    },
+    {
+      "source_id": "439b89ae-6232-5ea7-b595-e7dd695c1fb3",
+      "name": "天津大学研究生院 · 学位通知",
+      "status": "degraded",
+      "new_snapshots": 5,
+      "parse": {
+        "ok": 1,
+        "partial": 2,
+        "failed": 0
+      },
+      "parse_attachment": {
+        "ok": 0,
+        "partial": 0,
+        "failed": 2
+      },
+      "candidates_new": 3,
+      "candidates_updated": 0,
+      "candidates_unchanged": 0,
+      "skipped_no_body": 0,
+      "errors": [
+        "attachment_access_restricted",
+        "attachment_access_restricted",
+        "attachment_access_restricted",
+        "attachment_access_restricted",
+        "attachment_access_restricted",
+        "attachment_access_restricted",
+        "attachment_access_restricted",
+        "attachment_access_restricted",
+        "attachment_access_restricted",
+        "attachment_access_restricted",
+        "attachment_access_restricted",
+        "attachment_access_restricted",
+        "attachment_access_restricted"
+      ],
+      "parse_errors": [],
+      "candidate_errors": [],
+      "health": "degraded",
+      "last_error_code": "attachment_access_restricted",
+      "backlog": {
+        "known_count": 19,
+        "pending_count": 0,
+        "failed_count": 13,
+        "completed_count": 6,
+        "window_truncated": false,
+        "last_discovered_at": "2026-10-19T05:28:15.117492Z"
+      },
+      "elapsed_seconds": 3.62
+    },
+    {
+      "source_id": "92d2251d-d0cb-5f9d-824d-3b836f8ddf71",
+      "name": "天津大学迎新网 · 本科迎新快讯",
+      "status": "ok",
+      "new_snapshots": 0,
+      "parse": {
+        "ok": 0,
+        "partial": 0,
+        "failed": 0
+      },
+      "parse_attachment": {
+        "ok": 0,
+        "partial": 0,
+        "failed": 0
+      },
+      "candidates_new": 0,
+      "candidates_updated": 0,
+      "candidates_unchanged": 0,
+      "skipped_no_body": 0,
+      "errors": [],
+      "parse_errors": [],
+      "candidate_errors": [],
+      "health": "healthy",
+      "last_error_code": null,
+      "backlog": {
+        "known_count": 4,
+        "pending_count": 0,
+        "failed_count": 0,
+        "completed_count": 4,
+        "window_truncated": false,
+        "last_discovered_at": "2026-10-19T05:28:18.715752Z"
+      },
+      "elapsed_seconds": 1.31
+    }
+  ],
+  "totals": {
+    "sources": 19,
+    "ok": 6,
+    "degraded": 8,
+    "blocked": 5,
+    "failed": 0,
+    "new_snapshots": 36,
+    "documents": 363,
+    "candidates_total": 185,
+    "candidates_new": 21,
+    "candidates_pending": 25,
+    "parse": {
+      "ok": 1,
+      "partial": 20,
+      "failed": 0
+    },
+    "parse_attachments": {
+      "ok": 0,
+      "partial": 0,
+      "failed": 15
+    },
+    "skipped_no_body": 0,
+    "backlog_pending": 0,
+    "backlog_failed": 161,
+    "error_codes": {
+      "article_redirected_off_pattern": 5,
+      "attachment_access_restricted": 96,
+      "unsafe_address": 7
+    }
+  },
+  "command": "collect",
+  "data_dir": "data-operator",
+  "gateway": {
+    "source": "config",
+    "origins": [
+      "https://cic.tju.edu.cn",
+      "https://gs.tju.edu.cn",
+      "https://ico.tju.edu.cn",
+      "https://job.tju.edu.cn",
+      "https://me.tju.edu.cn",
+      "https://mp.weixin.qq.com",
+      "https://news.tju.edu.cn",
+      "https://oaa.tju.edu.cn",
+      "https://scet.tju.edu.cn",
+      "https://yx.tju.edu.cn",
+      "https://zs.tju.edu.cn"
+    ]
+  },
+  "registration": {
+    "new": 0,
+    "existing": 19
+  },
+  "created_directory": false,
+  "started_at": "2026-10-19T05:26:59.839730+00:00",
+  "finished_at": "2026-10-19T05:28:19.975288+00:00",
+  "exit_code": 0
+}

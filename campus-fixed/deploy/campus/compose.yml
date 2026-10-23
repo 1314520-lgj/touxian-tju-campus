@@ -1,0 +1,97 @@
+name: touxian-campus
+
+x-campus-service: &campus-service
+  image: touxian-campus:local
+  build:
+    context: ../..
+    dockerfile: deploy/campus/Dockerfile
+  init: true
+  restart: unless-stopped
+  env_file: .env
+  environment: &campus-environment
+    CAMPUS_ENV: production
+    CAMPUS_DEV_AUTH: "false"
+    CAMPUS_DEMO: "false"
+    CAMPUS_EMBEDDED_WORKER: "false"
+    CAMPUS_DATA_DIR: /var/lib/touxian
+    CAMPUS_DATABASE_URL: postgresql+psycopg://campus:${CAMPUS_POSTGRES_PASSWORD:?Set CAMPUS_POSTGRES_PASSWORD in .env}@postgres:5432/campus
+    CAMPUS_SECRET: ${CAMPUS_SECRET:?Set a strong CAMPUS_SECRET in .env}
+    CAMPUS_ALLOWED_ORIGINS: ${CAMPUS_ALLOWED_ORIGINS:?Set the exact HTTPS origin in .env}
+    CAMPUS_ADMIN_EMAILS: ${CAMPUS_ADMIN_EMAILS:?Set administrator login email in .env}
+    CAMPUS_MEILI_URL: http://meilisearch:7700
+    CAMPUS_MEILI_KEY: ${CAMPUS_MEILI_KEY:?Set a strong CAMPUS_MEILI_KEY in .env}
+    CAMPUS_SMTP_HOST: ${CAMPUS_SMTP_HOST:?Set SMTP host for production login}
+    CAMPUS_SMTP_FROM: ${CAMPUS_SMTP_FROM:?Set SMTP sender for production login}
+  volumes:
+    - campus-data:/var/lib/touxian
+    - ../../config/campus-sources.json:/app/config/campus-sources.json:ro
+  read_only: true
+  tmpfs:
+    - /tmp:size=256m,mode=1777
+  security_opt:
+    - no-new-privileges:true
+  cap_drop:
+    - ALL
+  depends_on:
+    postgres:
+      condition: service_healthy
+    meilisearch:
+      condition: service_started
+
+services:
+  postgres:
+    image: postgres:17.11-bookworm@sha256:3645570cccdfa447589da9f57dd740faa29b30938e861289a5574b6ca6b03826
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: campus
+      POSTGRES_DB: campus
+      POSTGRES_PASSWORD: ${CAMPUS_POSTGRES_PASSWORD:?Set CAMPUS_POSTGRES_PASSWORD in .env}
+      POSTGRES_INITDB_ARGS: --encoding=UTF8 --locale=C.UTF-8
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U \"$$POSTGRES_USER\" -d \"$$POSTGRES_DB\""]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+      start_period: 10s
+
+  meilisearch:
+    image: getmeili/meilisearch:v1.54.3@sha256:e68913ab7d6f5b159529e472cfd362ce3c741fafd3c127961b2142abbe41b3c9
+    restart: unless-stopped
+    environment:
+      MEILI_ENV: production
+      MEILI_NO_ANALYTICS: "true"
+      MEILI_MASTER_KEY: ${CAMPUS_MEILI_KEY:?Set CAMPUS_MEILI_KEY in .env}
+    volumes:
+      - meili-data:/meili_data
+
+  api:
+    <<: *campus-service
+    command:
+      - uvicorn
+      - server.campus_app:create_app
+      - --factory
+      - --host
+      - 0.0.0.0
+      - --port
+      - "8000"
+      - --no-access-log
+      - --proxy-headers
+      - --forwarded-allow-ips
+      - ${CAMPUS_FORWARDED_ALLOW_IPS:-127.0.0.1}
+    ports:
+      - "127.0.0.1:8000:8000"
+    stop_grace_period: 30s
+
+  worker:
+    <<: *campus-service
+    command: ["python", "-m", "server.campus_app", "worker"]
+    healthcheck:
+      disable: true
+    stop_grace_period: 12m
+
+volumes:
+  campus-data:
+  postgres-data:
+  meili-data:

@@ -1,0 +1,36 @@
+{
+ "generated_at": "2026-10-21T14:45:48+08:00",
+ "cycle": "20261021T064548Z",
+ "sources": [
+  {
+   "column": "zs-notices",
+   "action": "created",
+   "id": "bfbb774c-beac-460f-9fb3-f6fe8b267f39",
+   "feed_url": "http://127.0.0.1:8795/feed-zs-notices.json",
+   "fetch": {
+    "id": "4436ee80-bf72-4682-9c32-8f363353e8b0",
+    "kind": "fetch_source",
+    "state": "queued",
+    "idempotency_key": "fetch:234c4efd-eb3a-4660-92d5-cf0b95f905c2:bfbb774c-beac-460f-9fb3-f6fe8b267f39:relay-fetch:bfbb774c-beac-460f-9fb3-f6fe8b267f39:20261021T064548Z",
+    "attempts": 0,
+    "run_at": "2026-10-21T06:45:48.972818Z",
+    "last_error_code": null
+   }
+  },
+  {
+   "column": "oaa-competitions",
+   "action": "created",
+   "id": "1591126e-0683-49f4-a478-745e1d78eb48",
+   "feed_url": "http://127.0.0.1:8795/feed-oaa-competitions.json",
+   "fetch": {
+    "id": "35d5bc5f-aad4-479c-bbc3-a2dfcb061761",
+    "kind": "fetch_source",
+    "state": "queued",
+    "idempotency_key": "fetch:234c4efd-eb3a-4660-92d5-cf0b95f905c2:1591126e-0683-49f4-a478-745e1d78eb48:relay-fetch:1591126e-0683-49f4-a478-745e1d78eb48:20261021T064548Z",
+    "attempts": 0,
+    "run_at": "2026-10-21T06:45:48.993701Z",
+    "last_error_code": null
+   }
+  }
+ ]
+}

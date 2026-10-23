@@ -1,0 +1,49 @@
+{
+ "checked_at": "2026-10-13",
+ "conclusion": "真实接入的阻塞只在本环境出网：官网与公众号文章从有真实 DNS 的网络可达且可解析，采集链路（列表模式、文章模式、公众号正文）已按真实页面核验；本机与托管沙盒均不可达，未做任何放宽网络安全检查的改动。",
+ "environments": [
+  {
+   "where": "开发机（本工作区）",
+   "result": "blocked",
+   "evidence": [
+    "oaa.tju.edu.cn 解析到 198.18.0.133（fake-IP，非全局地址）与 2001:2::80",
+    "直连失败：curl --noproxy 000，6.1s 超时",
+    "本机 HTTP 代理同样失败：000，6.5s（代理不透传天大域名）",
+    "产品 SafeFetcher 正确拒绝：unsafe_address（resolve_public 的全局地址检查，属设计行为）",
+    "SOURCE_FETCH_PROBE.json（2026-10-09）对 15 个来源记录同一错误"
+   ]
+  },
+  {
+   "where": "托管沙盒（公网实例 live 模式，2026-10-13 实测部署）",
+   "result": "blocked",
+   "evidence": [
+    "15 个官方来源注册成功",
+    "健康检查全部失败，采集 0 条事项",
+    "沙盒出网仅达平台自身端点与 pip 镜像"
+   ]
+  },
+  {
+   "where": "服务端抓取（平台 WebFetch，2026-10-13）",
+   "result": "reachable",
+   "evidence": [
+    "https://oaa.tju.edu.cn/bszy/tzgg.htm 返回真实列表（20 条，含 2026-09-14 四六级报名）",
+    "文章页 https://oaa.tju.edu.cn/info/1059/9030.htm 服务端渲染完整：标题、发布时间、正文、截止（2026-04-15 前提交申请材料）、材料与附件指向、联系方式",
+    "公众号文章 https://mp.weixin.qq.com/s/CSniYqr1LfSYobIeCZA6nw 服务端渲染完整：账号「天津大学教务处」、2026-09-14 发布、报名/考试时间、注意事项",
+    "两个页面均无验证码、无登录墙"
+   ]
+  }
+ ],
+ "pipeline_readiness": {
+  "listing_to_article": "config/campus-sources.json 中 3 个教务处来源的 article_url_pattern 已同时接受 /info/<数字>/<数字>.htm 与 mp.weixin.qq.com/s 链接",
+  "wechat_body": "server/campus/content.py 提取 #js_content，并处理微信静态页 JS 揭示前不可见的情况",
+  "real_listing_mix": "真实列表本身就混合官网文章与公众号文章链接，官网接入与公众号文章接入在同一采集链路上"
+ },
+ "public_feeds_checked": {
+  "rsshub.app/wechat/oufenchang": "403（公共实例不提供该路由），2026-10-13",
+  "guidance": "合规接入须用运营方自建 WeRSS/RSSHub 或 authorized_api 端点，见 WECHAT_FEED_GUIDE.md 与 REAL_INGESTION.md"
+ },
+ "not_verified": [
+  "真实采集一轮的端到端结果（需可达主机，见 REAL_INGESTION.md）",
+  "任何公众号的授权 feed（需运营方扫码或提供端点）"
+ ]
+}

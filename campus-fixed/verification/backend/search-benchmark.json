@@ -1,0 +1,87 @@
+{
+  "published_notices": 73,
+  "sample_unchanged": true,
+  "database_sha256": "629d8c61af1c39f0d4d1339d44266dbb18c961d0a76a06642be6fcf00b5bba78",
+  "queries": [
+    {
+      "query": "奖学金",
+      "response_equal": true,
+      "returned_hits": 3,
+      "before": {
+        "median_ms": 162.952,
+        "sql_statements": 608,
+        "samples": 7
+      },
+      "after": {
+        "median_ms": 45.582,
+        "sql_statements": 55,
+        "samples": 7
+      },
+      "speedup": 3.57
+    },
+    {
+      "query": "国家奖学金申请材料",
+      "response_equal": true,
+      "returned_hits": 20,
+      "before": {
+        "median_ms": 463.115,
+        "sql_statements": 1516,
+        "samples": 7
+      },
+      "after": {
+        "median_ms": 413.517,
+        "sql_statements": 1353,
+        "samples": 7
+      },
+      "speedup": 1.12
+    },
+    {
+      "query": "银河计数器",
+      "response_equal": true,
+      "returned_hits": 0,
+      "before": {
+        "median_ms": 182.488,
+        "sql_statements": 584,
+        "samples": 7
+      },
+      "after": {
+        "median_ms": 31.128,
+        "sql_statements": 9,
+        "samples": 7
+      },
+      "speedup": 5.86
+    },
+    {
+      "query": "GPA",
+      "response_equal": true,
+      "returned_hits": 2,
+      "before": {
+        "median_ms": 191.026,
+        "sql_statements": 596,
+        "samples": 7
+      },
+      "after": {
+        "median_ms": 179.746,
+        "sql_statements": 596,
+        "samples": 7
+      },
+      "speedup": 1.06
+    },
+    {
+      "query": "报名",
+      "response_equal": true,
+      "returned_hits": 20,
+      "before": {
+        "median_ms": 370.553,
+        "sql_statements": 1282,
+        "samples": 7
+      },
+      "after": {
+        "median_ms": 331.309,
+        "sql_statements": 1027,
+        "samples": 7
+      },
+      "speedup": 1.12
+    }
+  ]
+}

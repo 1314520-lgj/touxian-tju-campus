@@ -1,0 +1,23 @@
+{
+  "base": "http://127.0.0.1:49860",
+  "mode": "Real loopback browser + API; no route interception. Synthetic configuration only, no external fetch, provider authorization or production deployment.",
+  "checks": [
+    "WeRSS source defaults to original-page retrieval and creates through the real UI/API",
+    "Changing a verified source to authorized full text revokes verification and persists on reload",
+    "Switching back to original-page mode revokes the new verification",
+    "Website adapter forces original-page mode and the selector fits a mobile dialog",
+    "Published authorized-feed evidence and its snapshot label their acquisition method",
+    "No browser exceptions or server 5xx occurred"
+  ],
+  "pending_checks": [],
+  "pageErrors": [],
+  "failedResponses": [],
+  "screenshots": [
+    "verification/browser/feed-mode/artifacts/feed-mode-admin-desktop.png",
+    "verification/browser/feed-mode/artifacts/feed-mode-website-mobile.png",
+    "verification/browser/feed-mode/artifacts/feed-mode-evidence-provenance.png"
+  ],
+  "browser": "156.0.8078.4",
+  "source_id": "bd81cfe9-a0dc-4a24-9ac1-e10d4a6a81fc",
+  "status": "passed"
+}

@@ -1,0 +1,286 @@
+{
+  "base": "http://127.0.0.1:8021",
+  "axe": "4.10.2",
+  "mode": "Real axe-core in a real browser against the labelled synthetic demo. No intercepted requests.",
+  "audits": [
+    {
+      "label": "today-anonymous",
+      "tags": [
+        "wcag2a",
+        "wcag2aa",
+        "wcag21a",
+        "wcag21aa",
+        "best-practice"
+      ],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "count": 18,
+          "nodes": [
+            {
+              "target": ".welcome > div:nth-child(1) > .eyebrow",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": "div:nth-child(1) > h2",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": ".welcome > div:nth-child(1) > p",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": ".workflow-step:nth-child(1) > div > strong",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": ".workflow-step:nth-child(1) > div > span",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "login-dialog",
+      "tags": [
+        "wcag2a",
+        "wcag2aa",
+        "wcag21a",
+        "wcag21aa",
+        "best-practice"
+      ],
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "label": "page-今天",
+      "tags": [
+        "wcag2a",
+        "wcag2aa",
+        "wcag21a",
+        "wcag21aa",
+        "best-practice"
+      ],
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "label": "page-机会",
+      "tags": [
+        "wcag2a",
+        "wcag2aa",
+        "wcag21a",
+        "wcag21aa",
+        "best-practice"
+      ],
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "label": "page-找信息",
+      "tags": [
+        "wcag2a",
+        "wcag2aa",
+        "wcag21a",
+        "wcag21aa",
+        "best-practice"
+      ],
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "label": "page-我的事项",
+      "tags": [
+        "wcag2a",
+        "wcag2aa",
+        "wcag21a",
+        "wcag21aa",
+        "best-practice"
+      ],
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "label": "page-信息来源",
+      "tags": [
+        "wcag2a",
+        "wcag2aa",
+        "wcag21a",
+        "wcag21aa",
+        "best-practice"
+      ],
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "label": "page-我的设置",
+      "tags": [
+        "wcag2a",
+        "wcag2aa",
+        "wcag21a",
+        "wcag21aa",
+        "best-practice"
+      ],
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "label": "event-detail",
+      "tags": [
+        "wcag2a",
+        "wcag2aa",
+        "wcag21a",
+        "wcag21aa",
+        "best-practice"
+      ],
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "label": "event-detail-changes",
+      "tags": [
+        "wcag2a",
+        "wcag2aa",
+        "wcag21a",
+        "wcag21aa",
+        "best-practice"
+      ],
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "count": 2,
+          "nodes": [
+            {
+              "target": ".detail-title > .card-top > .small.muted",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it partially overlaps other elements"
+            },
+            {
+              "target": ".modal-body > .small.muted",
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it partially overlaps other elements"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "mobile-today",
+      "tags": [
+        "wcag2a",
+        "wcag2aa",
+        "wcag21a",
+        "wcag21aa",
+        "best-practice"
+      ],
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "label": "mobile-navigation-drawer",
+      "tags": [
+        "wcag2a",
+        "wcag2aa",
+        "wcag21a",
+        "wcag21aa",
+        "best-practice"
+      ],
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "label": "admin-sources",
+      "tags": [
+        "wcag2a",
+        "wcag2aa",
+        "wcag21a",
+        "wcag21aa",
+        "best-practice"
+      ],
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "label": "admin-候选审核",
+      "tags": [
+        "wcag2a",
+        "wcag2aa",
+        "wcag21a",
+        "wcag21aa",
+        "best-practice"
+      ],
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "label": "admin-后台任务",
+      "tags": [
+        "wcag2a",
+        "wcag2aa",
+        "wcag21a",
+        "wcag21aa",
+        "best-practice"
+      ],
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "label": "admin-接入申请",
+      "tags": [
+        "wcag2a",
+        "wcag2aa",
+        "wcag21a",
+        "wcag21aa",
+        "best-practice"
+      ],
+      "violations": [],
+      "incomplete": []
+    },
+    {
+      "label": "admin-发布与撤回",
+      "tags": [
+        "wcag2a",
+        "wcag2aa",
+        "wcag21a",
+        "wcag21aa",
+        "best-practice"
+      ],
+      "violations": [],
+      "incomplete": []
+    }
+  ],
+  "screenshots": [
+    "verification/a11y/a11y-01-public-home.png",
+    "verification/a11y/a11y-02-login-dialog.png",
+    "verification/a11y/a11y-03-page-today.png",
+    "verification/a11y/a11y-04-page-opportunities.png",
+    "verification/a11y/a11y-05-page-search.png",
+    "verification/a11y/a11y-06-page-my-items.png",
+    "verification/a11y/a11y-07-page-sources.png",
+    "verification/a11y/a11y-08-page-account.png",
+    "verification/a11y/a11y-09-event-detail.png",
+    "verification/a11y/a11y-10-event-detail-changes.png",
+    "verification/a11y/a11y-11-mobile-today.png",
+    "verification/a11y/a11y-12-mobile-navigation-drawer.png",
+    "verification/a11y/a11y-13-admin-sources.png",
+    "verification/a11y/a11y-14-admin-reviews.png",
+    "verification/a11y/a11y-15-admin-jobs.png",
+    "verification/a11y/a11y-16-admin-requests.png",
+    "verification/a11y/a11y-17-admin-publication.png"
+  ],
+  "pageErrors": [],
+  "failedResponses": [],
+  "viewports": [
+    {
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "browser": "156.0.8078.4",
+  "status": "passed"
+}

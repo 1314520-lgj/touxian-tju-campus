@@ -1,0 +1,18 @@
+{
+  "fixture_mode": "Explicit browser route fixtures: UI behavior only; not a backend acceptance claim.",
+  "checks": [
+    "Today keeps future and uncertain deadlines visible while expired/cancelled remain expandable",
+    "Actions on later pages preserve loaded results and show truthful save feedback",
+    "Private deletion has explicit feedback and removes only the selected item",
+    "Private editor preserves opt-in excerpt and clearing consent removes the field before save",
+    "Mobile menu traps keyboard, closes with Escape and hidden sidebar cannot receive Tab",
+    "Mobile edit dialog cycles both directions and restores trigger focus",
+    "Logout removes personal content and active success messages"
+  ],
+  "pageErrors": [],
+  "screenshots": [
+    "verification/browser/ui-review/artifacts/review-desktop-history.png",
+    "verification/browser/ui-review/artifacts/review-mobile-current.png"
+  ],
+  "status": "passed"
+}

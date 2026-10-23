@@ -1,0 +1,1932 @@
+{
+ "generated_at": "2026-10-19T21:52:12+08:00",
+ "relay_sources": [
+  {
+   "column": "oaa-competitions",
+   "id": "6fdaf4bd-3e41-4d05-aa45-acbbbaca07ce",
+   "health": "healthy",
+   "last_success_at": "2026-10-19T13:52:09.436055Z",
+   "last_error_code": null
+  },
+  {
+   "column": "zs-notices",
+   "id": "d76c0e46-ebc1-4a79-8290-7a4017200aa2",
+   "health": "healthy",
+   "last_success_at": "2026-10-19T13:52:09.594651Z",
+   "last_error_code": null
+  }
+ ],
+ "pending_candidates": [
+  {
+   "candidate_id": "047222ce-74e1-539a-b814-a3ec5683a6ac",
+   "revision": 9,
+   "change_kind": "update",
+   "title": "天津大学机械工程学院2026年专业学位博士研究生拟录取名单公示（第三批）",
+   "extractor_version": "campus-rules-1.11",
+   "review_required": true,
+   "action_required": null,
+   "entry_urls": [],
+   "deadlines": [],
+   "materials": [],
+   "warnings": [
+    "action_requirement_unknown"
+   ],
+   "snapshot_ids": [
+    "592b3566-44c1-51d6-8c7b-56ebfa8ba91f"
+   ]
+  },
+  {
+   "candidate_id": "09edc45b-61a7-53ea-9a25-2f34340110a7",
+   "revision": 9,
+   "change_kind": "update",
+   "title": "转发中国教育国际交流协会《关于邀请参加 2023博士生国际招生面试交流会的函》",
+   "extractor_version": "campus-rules-1.11",
+   "review_required": true,
+   "action_required": null,
+   "entry_urls": [
+    "http://www.phdchina.org/phd/english/visitor/list.html"
+   ],
+   "deadlines": [
+    {
+     "kind": "school_deadline",
+     "raw_text": "截至目前",
+     "precision": "unknown",
+     "at": null,
+     "date": null,
+     "timezone": "Asia/Shanghai",
+     "evidence_ids": [
+      "67088165-22e5-576c-b509-c492e0ae86af"
+     ]
+    }
+   ],
+   "materials": [],
+   "warnings": [
+    "ambiguous_deadline_requires_review",
+    "referenced_attachment_missing_requires_review",
+    "action_requirement_unknown"
+   ],
+   "snapshot_ids": [
+    "d3b5c28e-f958-5ec5-b320-ca0ef9fe52ee"
+   ]
+  },
+  {
+   "candidate_id": "0ef7abd3-68f4-5d89-b392-1db650ec128f",
+   "revision": 9,
+   "change_kind": "update",
+   "title": "【非全日制】24251学期研究生公共课考试安排",
+   "extractor_version": "campus-rules-1.11",
+   "review_required": true,
+   "action_required": null,
+   "entry_urls": [],
+   "deadlines": [
+    {
+     "kind": "event_time",
+     "raw_text": "经公共课开课学院、师生前期沟通协调，拟定于24251学期第18周开展非全日制研究生（不含经管学部）公共课考试，考试时间见下表",
+     "precision": "unknown",
+     "at": null,
+     "date": null,
+     "timezone": "Asia/Shanghai",
+     "evidence_ids": [
+      "c86f1eb2-dc6d-53dd-933f-0125b2f47bd4"
+     ]
+    },
+    {
+     "kind": "event_time",
+     "raw_text": "第18周",
+     "precision": "unknown",
+     "at": null,
+     "date": null,
+     "timezone": "Asia/Shanghai",
+     "evidence_ids": [
+      "c86f1eb2-dc6d-53dd-933f-0125b2f47bd4"
+     ]
+    }
+   ],
+   "materials": [],
+   "warnings": [
+    "relative_time_requires_review",
+    "term_week_requires_term_start",
+    "audience_conditions_require_review",
+    "ambiguous_deadline_requires_review",
+    "referenced_attachment_missing_requires_review",
+    "action_requirement_unknown"
+   ],
+   "snapshot_ids": [
+    "2757f286-ac96-5995-adbd-fc9335c7ec95"
+   ]
+  },
+  {
+   "candidate_id": "0f772e65-0c5d-51bb-8aa7-887ba09e1dad",
+   "revision": 9,
+   "change_kind": "update",
+   "title": "【考试安排】2021",
+   "extractor_version": "campus-rules-1.11",
+   "review_required": true,
+   "action_required": null,
+   "entry_urls": [],
+   "deadlines": [],
+   "materials": [],
+   "warnings": [
+    "referenced_attachment_missing_requires_review",
+    "action_requirement_unknown"
+   ],
+   "snapshot_ids": [
+    "63632161-5435-52c0-b902-e12d5ba6f770"
+   ]
+  },
+  {
+   "candidate_id": "21b746be-3aef-5d11-bc8b-a7ab16e98c4d",
+   "revision": 9,
+   "change_kind": "update",
+   "title": "学位审批书、评阅书、评议书及表决票202509",
+   "extractor_version": "campus-rules-1.11",
+   "review_required": true,
+   "action_required": null,
+   "entry_urls": [],
+   "deadlines": [],
+   "materials": [],
+   "warnings": [
+    "action_requirement_unknown"
+   ],
+   "snapshot_ids": [
+    "23545e36-d2c6-581e-958c-81c1fb056a1c"
+   ]
+  },
+  {
+   "candidate_id": "25d55ff4-8e29-5ab5-b242-bb3649901eaf",
+   "revision": 9,
+   "change_kind": "update",
+   "title": "天津大学机械工程学院2026年专业学位博士研究生拟录取名单公示（第六批）",
+   "extractor_version": "campus-rules-1.11",
+   "review_required": true,
+   "action_required": null,
+   "entry_urls": [],
+   "deadlines": [],
+   "materials": [],
+   "warnings": [
+    "action_requirement_unknown"
+   ],
+   "snapshot_ids": [
+    "4d6e284c-443b-5141-9f51-2fae65c24b41"
+   ]
+  },
+  {
+   "candidate_id": "2d87b867-68dc-5964-a4e0-a8592c26766d",
+   "revision": 9,
+   "change_kind": "update",
+   "title": "21222学期研究生公共课补充考试安排（《工程数学基础》、《工程应用英语》）",
+   "extractor_version": "campus-rules-1.11",
+   "review_required": true,
+   "action_required": null,
+   "entry_urls": [],
+   "deadlines": [
+    {
+     "kind": "event_time",
+     "raw_text": "第二周",
+     "precision": "unknown",
+     "at": null,
+     "date": null,
+     "timezone": "Asia/Shanghai",
+     "evidence_ids": [
+      "40a9fcc4-e83f-57ee-ab60-d0ca6d88e7c9"
+     ]
+    }
+   ],
+   "materials": [],
+   "warnings": [
+    "relative_time_requires_review",
+    "term_week_requires_term_start",
+    "ambiguous_deadline_requires_review",
+    "referenced_attachment_missing_requires_review",
+    "action_requirement_unknown"
+   ],
+   "snapshot_ids": [
+    "5dab6f0d-0410-5fe4-accb-cc909815ab7a"
+   ]
+  },
+  {
+   "candidate_id": "2ee08427-6ff3-5ea0-8243-94155dd22632",
+   "revision": 9,
+   "change_kind": "update",
+   "title": "【办事流程】关于研究生课程缓考申请的流程",
+   "extractor_version": "campus-rules-1.11",
+   "review_required": true,
+   "action_required": true,
+   "entry_urls": [],
+   "deadlines": [],
+   "materials": [
+    "《天津大学研究生课程缓考申请表》"
+   ],
+   "warnings": [],
+   "snapshot_ids": [
+    "d856bec3-14c2-589a-afd6-dc08b90ae40c"
+   ]
+  },
+  {
+   "candidate_id": "330d0328-ac5c-5044-b049-e3e973cdaa2f",
+   "revision": 9,
+   "change_kind": "update",
+   "title": "【办事流程】关于研究生个人培养计划变更的流程",
+   "extractor_version": "campus-rules-1.11",
+   "review_required": true,
+   "action_required": true,
+   "entry_urls": [],
+   "deadlines": [],
+   "materials": [
+    "《研究生个人培养计划变更申请表》"
+   ],
+   "warnings": [
+    "correction_requires_review"
+   ],
+   "snapshot_ids": [
+    "ff74f0a8-36e9-5a6c-837b-e7cf48f65fda"
+   ]
+  },
+  {
+   "candidate_id": "3313a48f-afe4-5f07-9d2a-77f2e378e256",
+   "revision": 9,
+   "change_kind": "update",
+   "title": "【考试安排】2021",
+   "extractor_version": "campus-rules-1.11",
+   "review_required": true,
+   "action_required": null,
+   "entry_urls": [],
+   "deadlines": [
+    {
+     "kind": "college_deadline",
+     "raw_text": "对于《工程数学基础》因不能入校、正在隔离等无法校内线下参加考试的考生，需向学院报备并提供相关证明材料，学院审核无误后签字、盖章，需于5月26日16:30前统一上报研究生院",
+     "precision": "minute",
+     "at": "2022-05-26T16:30:00+08:00",
+     "date": null,
+     "timezone": "Asia/Shanghai",
+     "evidence_ids": [
+      "9d4765e1-d209-5b4b-8854-5c176e56d953"
+     ]
+    }
+   ],
+   "materials": [
+    "相关证明材料，学院审核无误后签字、盖章，需于5月26日16:30前统一上报研究生院"
+   ],
+   "warnings": [
+    "referenced_attachment_missing_requires_review",
+    "action_requirement_unknown"
+   ],
+   "snapshot_ids": [
+    "d31165aa-5ce9-54ca-a5c0-1c084e8b83ca"
+   ]
+  },
+  {
+   "candidate_id": "339777e9-2e43-5f62-a91f-337bdb32004a",
+   "revision": 9,
+   "change_kind": "update",
+   "title": "“2026年全国大学生先进成图技术与产品信息建模创新大赛天津赛区竞赛”获奖通知",
+   "extractor_version": "campus-rules-1.11",
+   "review_required": true,
+   "action_required": false,
+   "entry_urls": [],
+   "deadlines": [],
+   "materials": [],
+   "warnings": [],
+   "snapshot_ids": [
+    "6fa39192-d8c3-506f-a947-8835c86bb650"
+   ]
+  },
+  {
+   "candidate_id": "37be6a54-6183-5a65-bb5b-5d68c1cb19ec",
+   "revision": 9,
+   "change_kind": "update",
+   "title": "【学籍管理】关于对超过最长学习年限研究生进行学籍处理预警的通知",
+   "extractor_version": "campus-rules-1.11",
+   "review_required": true,
+   "action_required": true,
+   "entry_urls": [
+    "http://classes.tju.edu.cn",
+    "http://classes.tju.edu.cn/"
+   ],
+   "deadlines": [],
+   "materials": [
+    "《天津大学研究生结业/肄业/退学申请表》"
+   ],
+   "warnings": [
+    "audience_conditions_require_review",
+    "referenced_attachment_missing_requires_review"
+   ],
+   "snapshot_ids": [
+    "5053e035-07be-5867-81d4-9f7d439b7d7e"
+   ]
+  },
+  {
+   "candidate_id": "3a5dca50-5295-522b-a4c7-cc6907f30e5d",
+   "revision": 9,
+   "change_kind": "update",
+   "title": "工程类专业学位类别和专业领域名称的中英文对照（建议稿）",
+   "extractor_version": "campus-rules-1.11",
+   "review_required": true,
+   "action_required": null,
+   "entry_urls": [],
+   "deadlines": [],
+   "materials": [],
+   "warnings": [
+    "correction_requires_review",
+    "referenced_attachment_missing_requires_review",
+    "action_requirement_unknown"
+   ],
+   "snapshot_ids": [
+    "fcc6bd7a-b918-5c93-8b92-6fd732814638"
+   ]
+  },
+  {
+   "candidate_id": "3f4b2bb6-f85a-5b26-a05e-65f533e581d7",
+   "revision": 9,
+   "change_kind": "update",
+   "title": "【课程学习】关于2022级研究生《学术道德规范》在线课程学习的通知",
+   "extractor_version": "campus-rules-1.11",
+   "review_required": true,
+   "action_required": null,
+   "entry_urls": [
+    "http://glearning.tju.edu.cn/（或通过研究生院网站-在校生-教学平台-统一认证系统登录"
+   ],
+   "deadlines": [
+    {
+     "kind": "college_deadline",
+     "raw_text": "往届学生未在规定时间内完成或成绩不及格的，可登陆系统重修、补修，如无法进入课程，联系学院教务老师报名，报名截止日期2022年10月14日",
+     "precision": "date",
+     "at": null,
+     "date": "2022-10-14",
+     "timezone": "Asia/Shanghai",
+     "evidence_ids": [
+      "6a23cc19-c01f-5fdb-9156-c768c8c1e9c0"
+     ]
+    },
+    {
+     "kind": "school_deadline",
+     "raw_text": "由于课程是开放式学习，截止日期前学生随时可以登录学习或参加测试，成绩是实时动态变化的，因此截止日期前不会在研究生教育教学信息系统中发布成绩",
+     "precision": "unknown",
+     "at": null,
+     "date": null,
+     "timezone": "Asia/Shanghai",
+     "evidence_ids": [
+      "fdbb93e8-f1cc-51a1-bb49-de63cc415fa7"
+     ]
+    },
+    {
+     "kind": "school_deadline",
+     "raw_text": "2022年9月21日后完成课程学习的，学生（含重修补修学生）成绩将在课程学习截止（2023年9月14日）后统一导入教育教学信息系统学生成绩单中",
+     "precision": "date",
+     "at": null,
+     "date": "2022-09-21",
+     "timezone": "Asia/Shanghai",
+     "evidence_ids": [
+      "947f8b36-adfc-5a17-a12e-ec1268745997"
+     ]
+    },
+    {
+     "kind": "school_deadline",
+     "raw_text": "学生（含重修补修学生）成绩将在课程学习截止（2023年9月14日）后统一导入教育教学信息系统学生成绩单中",
+     "precision": "date",
+     "at": null,
+     "date": "2023-09-14",
+     "timezone": "Asia/Shanghai",
+     "evidence_ids": [
+      "947f8b36-adfc-5a17-a12e-ec1268745997"
+     ]
+    },
+    {
+     "kind": "school_deadline",
+     "raw_text": "21日后",
+     "precision": "date",
+     "at": null,
+     "date": "2022-10-12",
+     "timezone": "Asia/Shanghai",
+     "evidence_ids": [
+      "947f8b36-adfc-5a17-a12e-ec1268745997"
+     ]
+    }
+   ],
+   "materials": [],
+   "warnings": [
+    "relative_time_requires_review",
+    "days_after",
+    "ambiguous_deadline_requires_review",
+    "multiple_dates_require_review",
+    "referenced_attachment_missing_requires_review",
+    "action_requirement_unknown"
+   ],
+   "snapshot_ids": [
+    "09df1591-efbb-5e44-a832-61b2cf4b86e9"
+   ]
+  },
+  {
+   "candidate_id": "444b751c-c528-5428-9b5e-55a1c5b871d2",
+   "revision": 9,
+   "change_kind": "update",
+   "title": "天津大学2026",
+   "extractor_version": "campus-rules-1.11",
+   "review_required": true,
+   "action_required": true,
+   "entry_urls": [
+    "https://mp.weixin.qq.com/s/1Aw1oYdtwgkdZSccVTWKdw",
+    "http://gs.tju.edu.cn/xwsy/cyxz.htm",
+    "https://tdxl.chsi.com.cn",
+    "https://tdxl.chsi.com.cn/tdxlsqxt/detail000000-3-902.html，若出现在全国信息平台无法提交学位申请的情况，请尽快与学院（部"
+   ],
+   "deadlines": [
+    {
+     "kind": "school_deadline",
+     "raw_text": "4.学位评定分委员会审议及管理系统上报截止时间",
+     "precision": "unknown",
+     "at": null,
+     "date": null,
+     "timezone": "Asia/Shanghai",
+     "evidence_ids": [
+      "a47fe41d-d50b-5029-9790-43a230f08905"
+     ]
+    },
+    {
+     "kind": "school_deadline",
+     "raw_text": "批次 管理系统上报截止时间",
+     "precision": "unknown",
+     "at": null,
+     "date": null,
+     "timezone": "Asia/Shanghai",
+     "evidence_ids": [
+      "b3b1174d-3077-51ae-ad13-033eb49dde99"
+     ]
+    },
+    {
+     "kind": "school_deadline",
+     "raw_text": "5.研究生院审定上会材料截止时间",
+     "precision": "unknown",
+     "at": null,
+     "date": null,
+     "timezone": "Asia/Shanghai",
+     "evidence_ids": [
+      "322e21b1-3548-5c3f-9c89-05dcadebe373"
+     ]
+    },
+    {
+     "kind": "school_deadline",
+     "raw_text": "批次 研究生院审定上会材料截止时间",
+     "precision": "unknown",
+     "at": null,
+     "date": null,
+     "timezone": "Asia/Shanghai",
+     "evidence_ids": [
+      "71796be2-7370-52da-84c9-35f83855dd09"
+     ]
+    },
+    {
+     "kind": "event_time",
+     "raw_text": "一周内",
+     "precision": "date",
+     "at": null,
+     "date": "2026-06-24",
+     "timezone": "Asia/Shanghai",
+     "evidence_ids": [
+      "6db044b8-f395-54b1-9d6d-4a847011af2c"
+     ]
+    }
+   ],
+   "materials": [
+    "学位申请材料时间"
+   ],
+   "warnings": [
+    "audience_conditions_require_review",
+    "relative_time_requires_review",
+    "days_after",
+    "ambiguous_deadline_requires_review",
+    "referenced_attachment_missing_requires_review"
+   ],
+   "snapshot_ids": [
+    "d5e106b1-b6c6-54ce-a371-c3b6e7665466"
+   ]
+  },
+  {
+   "candidate_id": "4c26f152-f0f3-597a-8da0-0531c39a0907",
+   "revision": 9,
+   "change_kind": "update",
+   "title": "一级学科博士硕士学位授权点申请基本条件（20170317）",
+   "extractor_version": "campus-rules-1.11",
+   "review_required": true,
+   "action_required": null,
+   "entry_urls": [],
+   "deadlines": [],
+   "materials": [],
+   "warnings": [
+    "referenced_attachment_missing_requires_review",
+    "action_requirement_unknown"
+   ],
+   "snapshot_ids": [
+    "f742f41c-2db7-5f94-92af-09a9d788fe5f"
+   ]
+  },
+  {
+   "candidate_id": "50c14610-ef2f-59c1-ad1d-cf0dbc18d08d",
+   "revision": 9,
+   "change_kind": "update",
+   "title": "学位论文评阅专家聘书",
+   "extractor_version": "campus-rules-1.11",
+   "review_required": true,
+   "action_required": null,
+   "entry_urls": [],
+   "deadlines": [],
+   "materials": [],
+   "warnings": [
+    "referenced_attachment_missing_requires_review",
+    "action_requirement_unknown"
+   ],
+   "snapshot_ids": [
+    "9e7cd336-4289-5676-a25f-fb5fc5d915ac"
+   ]
+  },
+  {
+   "candidate_id": "5655216b-c4be-5372-b576-36e3d5ae5fbe",
+   "revision": 9,
+   "change_kind": "update",
+   "title": "智能与计算学部2026年推荐优秀应届本科毕业生 免试攻读研究生实施细则",
+   "extractor_version": "campus-rules-1.11",
+   "review_required": true,
+   "action_required": true,
+   "entry_urls": [
+    "http://gj.ncss.cn"
+   ],
+   "deadlines": [
+    {
+     "kind": "college_deadline",
+     "raw_text": "（七）通过初选的学生名单将在学部和学部网站进行公示，公示期为7日，公示期间公示内容不得修改，如有变动，须对变动部分做出说明，并对变动内容另行公示7日",
+     "precision": "unknown",
+     "at": null,
+     "date": null,
+     "timezone": "Asia/Shanghai",
+     "evidence_ids": [
+      "79413fcf-39f9-546e-91fb-45603ac7a328"
+     ]
+    }
+   ],
+   "materials": [
+    "《天津大学推荐免试攻读研究生资格申请表》",
+    "《天津大学推荐免试攻读硕士学位研究生资格申请表》",
+    "材料进行必要的解释说明",
+    "书面说明"
+   ],
+   "warnings": [
+    "html_table_spans_require_review",
+    "audience_conditions_require_review",
+    "ambiguous_deadline_requires_review",
+    "partial_attachment_or_body_requires_review",
+    "referenced_attachment_missing_requires_review"
+   ],
+   "snapshot_ids": [
+    "08e050b7-9590-540a-86bd-09b43efc5aa8"
+   ]
+  },
+  {
+   "candidate_id": "569c2b5d-06e3-5160-9992-1e958f510499",
+   "revision": 9,
+   "change_kind": "update",
+   "title": "天津大学机械工程学院2026年专业学位博士研究生拟录取名单公示（第五批）",
+   "extractor_version": "campus-rules-1.11",
+   "review_required": true,
+   "action_required": null,
+   "entry_urls": [],
+   "deadlines": [],
+   "materials": [],
+   "warnings": [
+    "action_requirement_unknown"
+   ],
+   "snapshot_ids": [
+    "c04b79bb-5894-57b3-9585-bd8c260ea977"
+   ]
+  },
+  {
+   "candidate_id": "63d8cdb5-84a0-5be9-86b7-d37d54e22495",
+   "revision": 9,
+   "change_kind": "update",
+   "title": "【课程学习】关于2023级研究生《学术道德规范》在线课程学习的通知",
+   "extractor_version": "campus-rules-1.11",
+   "review_required": true,
+   "action_required": null,
+   "entry_urls": [
+    "http://glearning.tju.edu.cn/（或通过研究生院网站-在校生-教学平台-统一认证系统登录"
+   ],
+   "deadlines": [
+    {
+     "kind": "college_deadline",
+     "raw_text": "往届学生未在规定时间内完成或成绩不及格的，可登录系统重修、补修，如无法进入课程，联系学院教务老师报名，报名截止日期2023年10月16日",
+     "precision": "date",
+     "at": null,
+     "date": "2023-10-16",
+     "timezone": "Asia/Shanghai",
+     "evidence_ids": [
+      "11024ca6-5d54-5f7a-abed-46446dc187c1"
+     ]
+    },
+    {
+     "kind": "school_deadline",
+     "raw_text": "由于课程是开放式学习，截止日期前学生随时可以登录学习或参加测试，成绩是实时动态变化的，因此截止日期前不会在研究生教育教学信息系统中发布成绩",
+     "precision": "unknown",
+     "at": null,
+     "date": null,
+     "timezone": "Asia/Shanghai",
+     "evidence_ids": [
+      "165a12fd-42d7-50f5-8a7c-ab9c66c89ed1"
+     ]
+    },
+    {
+     "kind": "school_deadline",
+     "raw_text": "2023年9月14日后完成课程学习的，学生（含重修补修）成绩将在本轮课程学习截止（2024年9月27日）后统一导入教育教学信息系统学生成绩单中",
+     "precision": "date",
+     "at": null,
+     "date": "2023-09-14",
+     "timezone": "Asia/Shanghai",
+     "evidence_ids": [
+      "fffdab0c-44f2-587e-8e03-46c45be9c1c1"
+     ]
+    },
+    {
+     "kind": "school_deadline",
+     "raw_text": "学生（含重修补修）成绩将在本轮课程学习截止（2024年9月27日）后统一导入教育教学信息系统学生成绩单中",
+     "precision": "date",
+     "at": null,
+     "date": "2024-09-27",
+     "timezone": "Asia/Shanghai",
+     "evidence_ids": [
+      "fffdab0c-44f2-587e-8e03-46c45be9c1c1"
+     ]
+    },
+    {
+     "kind": "school_deadline",
+     "raw_text": "14日后",
+     "precision": "date",
+     "at": null,
+     "date": "2023-10-23",
+     "timezone": "Asia/Shanghai",
+     "evidence_ids": [
+      "fffdab0c-44f2-587e-8e03-46c45be9c1c1"
+     ]
+    }
+   ],
+   "materials": [],
+   "warnings": [
+    "relative_time_requires_review",
+    "days_after",
+    "ambiguous_deadline_requires_review",
+    "multiple_dates_require_review",
+    "referenced_attachment_missing_requires_review",
+    "action_requirement_unknown"
+   ],
+   "snapshot_ids": [
+    "d195b6ab-d8c4-5630-ab05-977287c44e53"
+   ]
+  },
+  {
+   "candidate_id": "687f3ad0-5edc-5cef-aa84-4a6ee2c89d69",
+   "revision": 1,
+   "change_kind": "new",
+   "title": "天津大学关于2026年强基计划校考工作安排的通知",
+   "extractor_version": "campus-rules-1.11",
+   "review_required": true,
+   "action_required": true,
+   "entry_urls": [
+    "https://bm.chsi.com.cn/jcxkzs/sch/10056"
+   ],
+   "deadlines": [
+    {
+     "kind": "event_time",
+     "raw_text": "天津大学2026年强基计划校考于6月30日在天津大学卫津路校区（天津市南开区卫津路92号）举行",
+     "precision": "date",
+     "at": null,
+     "date": "2026-06-30",
+     "timezone": "Asia/Shanghai",
+     "evidence_ids": [
+      "5431f367-c5be-5ca3-acf5-c4e3c470331c"
+     ]
+    },
+    {
+     "kind": "event_time",
+     "raw_text": "入围考生可于6月28日12:00起登录强基计划报名平台打印准考证",
+     "precision": "minute",
+     "at": "2026-06-28T12:00:00+08:00",
+     "date": null,
+     "timezone": "Asia/Shanghai",
+     "evidence_ids": [
+      "f35e5189-5f03-55d1-9e1e-621ba2ec026b"
+     ]
+    }
+   ],
+   "materials": [],
+   "warnings": [
+    "multiple_dates_require_review"
+   ],
+   "snapshot_ids": [
+    "de3b3088-1642-50a7-a01d-39f2e544f9c3"
+   ]
+  },
+  {
+   "candidate_id": "6a010cb3-5857-565f-99b2-9783d8638682",
+   "revision": 1,
+   "change_kind": "new",
+   "title": "天津大学2026年本科生招生章程",
+   "extractor_version": "campus-rules-1.11",
+   "review_required": true,
+   "action_required": null,
+   "entry_urls": [
+    "https://www.tju.edu.cn",
+    "https://zs.tju.edu.cn"
+   ],
+   "deadlines": [],
+   "materials": [],
+   "warnings": [
+    "action_requirement_unknown"
+   ],
+   "snapshot_ids": [
+    "622a7a0a-689b-5129-969d-ab8c7e7e4197"
+   ]
+  },
+  {
+   "candidate_id": "6b4979eb-5347-5ffd-ab34-3af63a8b2a25",
+   "revision": 9,
+   "change_kind": "update",
+   "title": "【考试安排】2022",
+   "extractor_version": "campus-rules-1.11",
+   "review_required": true,
+   "action_required": null,
+   "entry_urls": [],
+   "deadlines": [],
+   "materials": [],
+   "warnings": [
+    "referenced_attachment_missing_requires_review",
+    "action_requirement_unknown"
+   ],
+   "snapshot_ids": [
+    "845d0280-f847-561f-bf81-bfc94eb2f9b4"
+   ]
+  },
+  {
+   "candidate_id": "6fbdef82-cf9b-5c0e-8581-5ae84a549a2c",
+   "revision": 9,
+   "change_kind": "update",
+   "title": "2025级计算机科学与技术（拔尖班）选拔考试安排",
+   "extractor_version": "campus-rules-1.11",
+   "review_required": true,
+   "action_required": true,
+   "entry_urls": [],
+   "deadlines": [
+    {
+     "kind": "event_time",
+     "raw_text": "时间：2025年9月14日（周日） 9：00-10：30",
+     "precision": "minute",
+     "at": "2025-09-14T09:00:00+08:00",
+     "date": null,
+     "timezone": "Asia/Shanghai",
+     "evidence_ids": [
+      "6a143760-1c1e-5dec-895c-cbedfdbe996c"
+     ]
+    },
+    {
+     "kind": "event_time",
+     "raw_text": "时间：2025年9月14日（周日） 14：00-16：00",
+     "precision": "minute",
+     "at": "2025-09-14T14:00:00+08:00",
+     "date": null,
+     "timezone": "Asia/Shanghai",
+     "evidence_ids": [
+      "8d1d5c80-ca2d-5317-9b47-3c1f7085451c"
+     ]
+    }
+   ],
+   "materials": [],
+   "warnings": [
+    "multiple_dates_require_review",
+    "referenced_attachment_missing_requires_review"
+   ],
+   "snapshot_ids": [
+    "47194c61-bce9-56be-83b9-6c0822cf7442"
+   ]
+  },
+  {
+   "candidate_id": "7635ec30-9a9f-592c-9b30-e6281bd636f1",
+   "revision": 9,
+   "change_kind": "update",
+   "title": "2025级计算机科学与技术（拔尖班）选拔面试通知",
+   "extractor_version": "campus-rules-1.11",
+   "review_required": true,
+   "action_required": null,
+   "entry_urls": [],
+   "deadlines": [
+    {
+     "kind": "event_time",
+     "raw_text": "时间：2025年9月21日（周日） 上午9:00开始",
+     "precision": "minute",
+     "at": "2025-09-21T09:00:00+08:00",
+     "date": null,
+     "timezone": "Asia/Shanghai",
+     "evidence_ids": [
+      "faff90cb-e7e8-5592-a812-0ecd8563f40c"
+     ]
+    }
+   ],
+   "materials": [],
+   "warnings": [
+    "referenced_attachment_missing_requires_review",
+    "action_requirement_unknown"
+   ],
+   "snapshot_ids": [
+    "b71a9741-b270-53c1-b83e-892d2445a4c1"
+   ]
+  },
+  {
+   "candidate_id": "7d268832-63d4-517b-86e7-afc85bf86e23",
+   "revision": 9,
+   "change_kind": "update",
+   "title": "【办事流程】关于研究生课程成绩复审申请的流程",
+   "extractor_version": "campus-rules-1.11",
+   "review_required": true,
+   "action_required": true,
+   "entry_urls": [],
+   "deadlines": [],
+   "materials": [
+    "《天津大学研究生课程成绩复核申请表》"
+   ],
+   "warnings": [],
+   "snapshot_ids": [
+    "fbffbd7e-13cf-54e0-a240-cda493c0733d"
+   ]
+  },
+  {
+   "candidate_id": "7fdb54bb-9b6b-584a-a6ae-f727a960dbb0",
+   "revision": 9,
+   "change_kind": "update",
+   "title": "天津大学新版学位论文封面",
+   "extractor_version": "campus-rules-1.11",
+   "review_required": true,
+   "action_required": null,
+   "entry_urls": [],
+   "deadlines": [],
+   "materials": [],
+   "warnings": [
+    "action_requirement_unknown"
+   ],
+   "snapshot_ids": [
+    "7a44823e-1277-5e42-bdab-8610454e08dd"
+   ]
+  },
+  {
+   "candidate_id": "89d4bf24-1190-516d-8f08-f21da5cbae02",
+   "revision": 9,
+   "change_kind": "update",
+   "title": "天津大学机械工程学院2026年专业学位博士研究生拟录取名单公示（“三年一万人”专项）",
+   "extractor_version": "campus-rules-1.11",
+   "review_required": true,
+   "action_required": null,
+   "entry_urls": [],
+   "deadlines": [],
+   "materials": [],
+   "warnings": [
+    "action_requirement_unknown"
+   ],
+   "snapshot_ids": [
+    "8191a12d-3958-58a7-9c57-d763558dec90"
+   ]
+  },
+  {
+   "candidate_id": "8ff8cf2c-1a16-5b4b-8498-5aa303a40142",
+   "revision": 9,
+   "change_kind": "update",
+   "title": "工科试验班(全国新工科教育创新中心)可选大师班培养方案",
+   "extractor_version": "campus-rules-1.11",
+   "review_required": true,
+   "action_required": null,
+   "entry_urls": [],
+   "deadlines": [],
+   "materials": [],
+   "warnings": [
+    "referenced_attachment_missing_requires_review",
+    "action_requirement_unknown"
+   ],
+   "snapshot_ids": [
+    "0ec0f002-1a6b-5272-a230-bb6ade0483fe"
+   ]
+  },
+  {
+   "candidate_id": "944d2974-c48a-5565-9079-1f46af6c78d1",
+   "revision": 9,
+   "change_kind": "update",
+   "title": "24252学期研究生公共课考试安排",
+   "extractor_version": "campus-rules-1.11",
+   "review_required": true,
+   "action_required": null,
+   "entry_urls": [],
+   "deadlines": [
+    {
+     "kind": "event_time",
+     "raw_text": "经与开课学院沟通协调，拟定于24252学期第15-17周开展多门研究生公共课考试，考试时间见下表",
+     "precision": "unknown",
+     "at": null,
+     "date": null,
+     "timezone": "Asia/Shanghai",
+     "evidence_ids": [
+      "cffbaba7-6b28-5bbf-88d3-35502771bf44"
+     ]
+    }
+   ],
+   "materials": [],
+   "warnings": [
+    "ambiguous_deadline_requires_review",
+    "referenced_attachment_missing_requires_review",
+    "action_requirement_unknown"
+   ],
+   "snapshot_ids": [
+    "a96c3ef3-3052-59c3-a392-65e8b843a15e"
+   ]
+  },
+  {
+   "candidate_id": "9501343e-cd9d-5e03-9e22-5ff2bb3f98f9",
+   "revision": 9,
+   "change_kind": "update",
+   "title": "关于申请2024年秋季学期国际交流资助集中报销的通知",
+   "extractor_version": "campus-rules-1.11",
+   "review_required": true,
+   "action_required": true,
+   "entry_urls": [],
+   "deadlines": [],
+   "materials": [],
+   "warnings": [
+    "referenced_attachment_missing_requires_review"
+   ],
+   "snapshot_ids": [
+    "f289582c-9ccc-5712-9df4-97db7c429f0f"
+   ]
+  },
+  {
+   "candidate_id": "9795781f-5e5e-5dc4-9ee1-f574b2733287",
+   "revision": 9,
+   "change_kind": "update",
+   "title": "关于拟报送市教委2022年天津市研究生科研创新项目（一般项目和服务产业专项）的校内公示",
+   "extractor_version": "campus-rules-1.11",
+   "review_required": true,
+   "action_required": null,
+   "entry_urls": [],
+   "deadlines": [
+    {
+     "kind": "college_deadline",
+     "raw_text": "至申报截止时间，我校共有涉及24个学院（部）的130项一般项目和23项服务产业专项项目拟报送市教委参加全市评选",
+     "precision": "unknown",
+     "at": null,
+     "date": null,
+     "timezone": "Asia/Shanghai",
+     "evidence_ids": [
+      "436abbfa-7aae-5354-9a1b-d3ee3eed21c1"
+     ]
+    },
+    {
+     "kind": "school_deadline",
+     "raw_text": "公示期为自即日起至2022年12月23日",
+     "precision": "date",
+     "at": null,
+     "date": "2022-12-23",
+     "timezone": "Asia/Shanghai",
+     "evidence_ids": [
+      "823eb97c-af56-54d5-8846-a47e91e9eb6b"
+     ]
+    }
+   ],
+   "materials": [],
+   "warnings": [
+    "ambiguous_deadline_requires_review",
+    "action_requirement_unknown"
+   ],
+   "snapshot_ids": [
+    "9906bedb-38b6-5f28-861d-a8f5565a35c4"
+   ]
+  },
+  {
+   "candidate_id": "a3b2f55a-d421-5555-b230-684436d60ca9",
+   "revision": 9,
+   "change_kind": "update",
+   "title": "转发中国教育国际交流协会《关于邀请参加 2025博士生国际招生面试交流会的函》",
+   "extractor_version": "campus-rules-1.11",
+   "review_required": true,
+   "action_required": null,
+   "entry_urls": [],
+   "deadlines": [
+    {
+     "kind": "school_deadline",
+     "raw_text": "截至目前",
+     "precision": "unknown",
+     "at": null,
+     "date": null,
+     "timezone": "Asia/Shanghai",
+     "evidence_ids": [
+      "7b69531a-8d50-5c32-b086-b27562b92f4a"
+     ]
+    }
+   ],
+   "materials": [],
+   "warnings": [
+    "ambiguous_deadline_requires_review",
+    "referenced_attachment_missing_requires_review",
+    "action_requirement_unknown"
+   ],
+   "snapshot_ids": [
+    "25f593ab-c5ac-5ba9-8767-4bbdab8c5926"
+   ]
+  },
+  {
+   "candidate_id": "a8b417e0-2b0c-552e-a6c4-00966d4313a1",
+   "revision": 9,
+   "change_kind": "update",
+   "title": "关于2024级计算机科学拔尖人才培养计划2.0学生遴选的通知（增补）",
+   "extractor_version": "campus-rules-1.11",
+   "review_required": true,
+   "action_required": true,
+   "entry_urls": [
+    "https://pan.tju.edu.cn/link/AA3745A90D41744965A53CFA0B1F72AE1C"
+   ],
+   "deadlines": [
+    {
+     "kind": "school_deadline",
+     "raw_text": "报名时间：2025年6月18日—25日（下午16:30前）",
+     "precision": "minute",
+     "at": "2025-06-25T16:30:00+08:00",
+     "date": null,
+     "timezone": "Asia/Shanghai",
+     "evidence_ids": [
+      "b4731435-04b2-5928-8f74-e340c7c6da5b"
+     ]
+    },
+    {
+     "kind": "school_deadline",
+     "raw_text": "考核时间：2025年6月30日下午",
+     "precision": "date",
+     "at": null,
+     "date": "2025-06-30",
+     "timezone": "Asia/Shanghai",
+     "evidence_ids": [
+      "cedd8073-8852-50e1-9ab4-1ae06975dd9e"
+     ]
+    }
+   ],
+   "materials": [
+    "完申请表后"
+   ],
+   "warnings": [
+    "multiple_dates_require_review",
+    "referenced_attachment_missing_requires_review"
+   ],
+   "snapshot_ids": [
+    "95df3a6d-015c-5043-b480-1fcd6b3829d7"
+   ]
+  },
+  {
+   "candidate_id": "aaa777b4-c3ab-5481-9c9f-e8a4833e0369",
+   "revision": 9,
+   "change_kind": "update",
+   "title": "24252学期同等学力硕士公共课考试安排",
+   "extractor_version": "campus-rules-1.11",
+   "review_required": true,
+   "action_required": null,
+   "entry_urls": [],
+   "deadlines": [
+    {
+     "kind": "event_time",
+     "raw_text": "经与开课学院沟通协调，拟定于24252学期第17周开展同等学力硕士研究生公共课考试，考试时间见下表",
+     "precision": "unknown",
+     "at": null,
+     "date": null,
+     "timezone": "Asia/Shanghai",
+     "evidence_ids": [
+      "feab9629-fea1-5d03-9993-9abc762974bd"
+     ]
+    },
+    {
+     "kind": "event_time",
+     "raw_text": "第17周",
+     "precision": "unknown",
+     "at": null,
+     "date": null,
+     "timezone": "Asia/Shanghai",
+     "evidence_ids": [
+      "feab9629-fea1-5d03-9993-9abc762974bd"
+     ]
+    }
+   ],
+   "materials": [],
+   "warnings": [
+    "relative_time_requires_review",
+    "term_week_requires_term_start",
+    "ambiguous_deadline_requires_review",
+    "referenced_attachment_missing_requires_review",
+    "action_requirement_unknown"
+   ],
+   "snapshot_ids": [
+    "21c5e081-1808-5ac8-9209-46ded69ed0ec"
+   ]
+  },
+  {
+   "candidate_id": "ac81ae35-2d7f-57c6-9a73-be82af89b9dc",
+   "revision": 9,
+   "change_kind": "update",
+   "title": "智能与计算学部 2025 级智能与计算大类主修专业确认名单",
+   "extractor_version": "campus-rules-1.11",
+   "review_required": true,
+   "action_required": null,
+   "entry_urls": [],
+   "deadlines": [
+    {
+     "kind": "college_deadline",
+     "raw_text": "根据《关于做好 2025 级本科生主修专业确认工作的通知》及《智能与计算学部 2025 级本科生主修专业确认实施细则》要求，现将 2025级智能与计算大类主修专业确认名单结果公示如下，公示期为 3 个工作日 （7 月 20 日 12：00—7 月 23 日 12：00）",
+     "precision": "minute",
+     "at": "2026-07-20T12:00:00+08:00",
+     "date": null,
+     "timezone": "Asia/Shanghai",
+     "evidence_ids": [
+      "e2560f1e-938f-50d2-abfa-6ef4a5fba349"
+     ]
+    },
+    {
+     "kind": "college_deadline",
+     "raw_text": "根据《关于做好 2025 级本科生主修专业确认工作的通知》及《智能与计算学部 2025 级本科生主修专业确认实施细则》要求，现将 2025级智能与计算大类主修专业确认名单结果公示如下，公示期为 3 个工作日 （7 月 20 日 12：00—7 月 23 日 12：00）",
+     "precision": "minute",
+     "at": "2026-07-23T12:00:00+08:00",
+     "date": null,
+     "timezone": "Asia/Shanghai",
+     "evidence_ids": [
+      "e2560f1e-938f-50d2-abfa-6ef4a5fba349"
+     ]
+    }
+   ],
+   "materials": [],
+   "warnings": [
+    "multiple_dates_require_review",
+    "action_requirement_unknown"
+   ],
+   "snapshot_ids": [
+    "d0f15777-ef54-5283-8006-c3fc6c539710"
+   ]
+  },
+  {
+   "candidate_id": "b6b20c54-03ea-562c-ab6e-4dea189c8ae5",
+   "revision": 9,
+   "change_kind": "update",
+   "title": "转发中国教育国际交流协会《关于邀请参加 2024博士生国际招生面试交流会的函》",
+   "extractor_version": "campus-rules-1.11",
+   "review_required": true,
+   "action_required": null,
+   "entry_urls": [
+    "https://www.phdworkshop.cn/phd/visitor/list.php"
+   ],
+   "deadlines": [
+    {
+     "kind": "school_deadline",
+     "raw_text": "截至目前",
+     "precision": "unknown",
+     "at": null,
+     "date": null,
+     "timezone": "Asia/Shanghai",
+     "evidence_ids": [
+      "d99b22e9-90cb-54e4-9d3f-b2e993f84eb9"
+     ]
+    }
+   ],
+   "materials": [],
+   "warnings": [
+    "ambiguous_deadline_requires_review",
+    "referenced_attachment_missing_requires_review",
+    "action_requirement_unknown"
+   ],
+   "snapshot_ids": [
+    "3c39b060-ab1b-5350-8d9d-d706b1b06d94"
+   ]
+  },
+  {
+   "candidate_id": "b959e286-6fff-5dd3-8af1-3190c0de0378",
+   "revision": 9,
+   "change_kind": "update",
+   "title": "关于2025级计算机科学拔尖人才培养计划2.0学生遴选的通知",
+   "extractor_version": "campus-rules-1.11",
+   "review_required": true,
+   "action_required": true,
+   "entry_urls": [
+    "https://jinshuju.com/f/RDUcdx进行报名"
+   ],
+   "deadlines": [
+    {
+     "kind": "school_deadline",
+     "raw_text": "报名截止时间为9月7日（周日）13：00",
+     "precision": "minute",
+     "at": "2025-09-07T13:00:00+08:00",
+     "date": null,
+     "timezone": "Asia/Shanghai",
+     "evidence_ids": [
+      "fe332bfb-b8c7-5131-aa2b-4b6b99b2e692"
+     ]
+    }
+   ],
+   "materials": [],
+   "warnings": [
+    "audience_conditions_require_review"
+   ],
+   "snapshot_ids": [
+    "430cda8d-e12f-565e-bf8d-a708f59c1d2b"
+   ]
+  },
+  {
+   "candidate_id": "b9d76788-acd8-5e8e-be38-5ca6bfc30659",
+   "revision": 9,
+   "change_kind": "update",
+   "title": "关于天津大学资助博士研究生短期出国访学的通知",
+   "extractor_version": "campus-rules-1.11",
+   "review_required": true,
+   "action_required": true,
+   "entry_urls": [],
+   "deadlines": [
+    {
+     "kind": "event_time",
+     "raw_text": "3个月后",
+     "precision": "date",
+     "at": null,
+     "date": "2020-02-17",
+     "timezone": "Asia/Shanghai",
+     "evidence_ids": [
+      "6798206e-ca22-5e9a-9f45-0ee9d2c41acf"
+     ]
+    }
+   ],
+   "materials": [],
+   "warnings": [
+    "audience_conditions_require_review",
+    "relative_time_requires_review",
+    "business_days_approximated",
+    "referenced_attachment_missing_requires_review"
+   ],
+   "snapshot_ids": [
+    "683776a6-6645-5178-a181-c516682902c1"
+   ]
+  },
+  {
+   "candidate_id": "ba8f96a0-5c1f-56cd-93d2-e46c07b3c495",
+   "revision": 9,
+   "change_kind": "update",
+   "title": "天津大学机械工程学院2026年普通招考类博士研究生及部分专项拟录取名单公示（全日制）",
+   "extractor_version": "campus-rules-1.11",
+   "review_required": true,
+   "action_required": null,
+   "entry_urls": [],
+   "deadlines": [],
+   "materials": [],
+   "warnings": [
+    "action_requirement_unknown"
+   ],
+   "snapshot_ids": [
+    "998eaa39-84f1-5938-850a-8654b74f6793"
+   ]
+  },
+  {
+   "candidate_id": "bdcf5793-655f-5535-bbfd-ecde915cf5c5",
+   "revision": 9,
+   "change_kind": "update",
+   "title": "优博基金验收报告",
+   "extractor_version": "campus-rules-1.11",
+   "review_required": true,
+   "action_required": null,
+   "entry_urls": [],
+   "deadlines": [],
+   "materials": [],
+   "warnings": [
+    "referenced_attachment_missing_requires_review",
+    "action_requirement_unknown"
+   ],
+   "snapshot_ids": [
+    "be37fcef-dbde-5318-9627-5b95324919ed"
+   ]
+  },
+  {
+   "candidate_id": "bf8d369e-5811-598e-bde1-98dd8efa4d8e",
+   "revision": 9,
+   "change_kind": "update",
+   "title": "2024级计算机科学与技术（拔尖班）增补选拔考试安排",
+   "extractor_version": "campus-rules-1.11",
+   "review_required": true,
+   "action_required": null,
+   "entry_urls": [],
+   "deadlines": [
+    {
+     "kind": "event_time",
+     "raw_text": "时间：2025年6月30日（周一）14：00-17：00",
+     "precision": "minute",
+     "at": "2025-06-30T14:00:00+08:00",
+     "date": null,
+     "timezone": "Asia/Shanghai",
+     "evidence_ids": [
+      "b7b1e788-fe0f-5ca2-a82b-80bbe9803b63"
+     ]
+    }
+   ],
+   "materials": [],
+   "warnings": [
+    "referenced_attachment_missing_requires_review",
+    "action_requirement_unknown"
+   ],
+   "snapshot_ids": [
+    "f9526a65-6118-5da3-93b2-d61e4760d027"
+   ]
+  },
+  {
+   "candidate_id": "c78188dd-be04-53d1-b935-d1f490b827ca",
+   "revision": 9,
+   "change_kind": "update",
+   "title": "关于天津大学资助博士研究生参加国际学术会议的通知",
+   "extractor_version": "campus-rules-1.11",
+   "review_required": true,
+   "action_required": true,
+   "entry_urls": [],
+   "deadlines": [],
+   "materials": [],
+   "warnings": [
+    "audience_conditions_require_review",
+    "referenced_attachment_missing_requires_review"
+   ],
+   "snapshot_ids": [
+    "ad892c78-5b41-5a60-aa9e-cb25a90c0ddf"
+   ]
+  },
+  {
+   "candidate_id": "c7b6d1b6-fb31-5cec-9d91-7e9224c62e32",
+   "revision": 9,
+   "change_kind": "update",
+   "title": "天津大学机械工程学院2026年专业学位博士研究生拟录取名单公示（第四批）",
+   "extractor_version": "campus-rules-1.11",
+   "review_required": true,
+   "action_required": null,
+   "entry_urls": [],
+   "deadlines": [],
+   "materials": [],
+   "warnings": [
+    "action_requirement_unknown"
+   ],
+   "snapshot_ids": [
+    "3dbcd182-3196-5807-be9c-71397687eb36"
+   ]
+  },
+  {
+   "candidate_id": "d2305ddc-2514-5c5d-8698-ba1232cb0327",
+   "revision": 9,
+   "change_kind": "update",
+   "title": "下载中心",
+   "extractor_version": "campus-rules-1.11",
+   "review_required": true,
+   "action_required": null,
+   "entry_urls": [
+    "https://classes.tju.edu.cn/",
+    "http://202.113.8.92/tutor",
+    "http://glearning.tju.edu.cn/",
+    "http://202.113.8.92/bszs/"
+   ],
+   "deadlines": [],
+   "materials": [],
+   "warnings": [
+    "generic_body_fallback_requires_review",
+    "partial_attachment_or_body_requires_review",
+    "action_requirement_unknown"
+   ],
+   "snapshot_ids": [
+    "e2339112-d1bd-575f-a2f5-fe1f09aa70be"
+   ]
+  },
+  {
+   "candidate_id": "d3a54dec-343c-5d51-996c-0632cf99b77c",
+   "revision": 9,
+   "change_kind": "update",
+   "title": "关于2026年研究生转专业申请工作的通知",
+   "extractor_version": "campus-rules-1.11",
+   "review_required": true,
+   "action_required": true,
+   "entry_urls": [
+    "http://classes.tju.edu.cn",
+    "http://classes.tju.edu.cn/"
+   ],
+   "deadlines": [
+    {
+     "kind": "school_deadline",
+     "raw_text": "系统开放时间：2026 年 4 月 21 日 ——4 月 28 日 16:00",
+     "precision": "date",
+     "at": null,
+     "date": "2026-04-21",
+     "timezone": "Asia/Shanghai",
+     "evidence_ids": [
+      "9f36f968-8b69-5eb4-8d74-170aadd2b8a5"
+     ]
+    },
+    {
+     "kind": "school_deadline",
+     "raw_text": "系统开放时间：2026 年 4 月 21 日 ——4 月 28 日 16:00",
+     "precision": "minute",
+     "at": "2026-04-28T16:00:00+08:00",
+     "date": null,
+     "timezone": "Asia/Shanghai",
+     "evidence_ids": [
+      "9f36f968-8b69-5eb4-8d74-170aadd2b8a5"
+     ]
+    }
+   ],
+   "materials": [],
+   "warnings": [
+    "audience_conditions_require_review",
+    "multiple_dates_require_review",
+    "referenced_attachment_missing_requires_review"
+   ],
+   "snapshot_ids": [
+    "8e71f540-7ba1-5ff0-87ec-9b39f23c6d33"
+   ]
+  },
+  {
+   "candidate_id": "d4cef425-63a0-5dff-accf-8778bb67a9e9",
+   "revision": 9,
+   "change_kind": "update",
+   "title": "天津大学机械工程学院2026年专业学位博士研究生拟录取名单公示（ZY专项）",
+   "extractor_version": "campus-rules-1.11",
+   "review_required": true,
+   "action_required": null,
+   "entry_urls": [],
+   "deadlines": [],
+   "materials": [],
+   "warnings": [
+    "action_requirement_unknown"
+   ],
+   "snapshot_ids": [
+    "0c09ceb2-248b-5477-b8b6-1514ed56960f"
+   ]
+  },
+  {
+   "candidate_id": "d67e7f17-4c02-5073-820d-7aeb544ec0c8",
+   "revision": 1,
+   "change_kind": "new",
+   "title": "2026年下半年全国大学英语四、六级考试报名通知",
+   "extractor_version": "campus-rules-1.11",
+   "review_required": true,
+   "action_required": true,
+   "entry_urls": [
+    "http://cet-bm.neea.edu.cn"
+   ],
+   "deadlines": [
+    {
+     "kind": "school_deadline",
+     "raw_text": "四、六级笔试考试报名时间：2026年9月22日7:00—9月24日17:00",
+     "precision": "minute",
+     "at": "2026-09-24T17:00:00+08:00",
+     "date": null,
+     "timezone": "Asia/Shanghai",
+     "evidence_ids": [
+      "9a148563-5041-5c2f-a6ff-af6d193e1cfe"
+     ]
+    },
+    {
+     "kind": "event_time",
+     "raw_text": "笔试考试时间：2026年12月12日",
+     "precision": "date",
+     "at": null,
+     "date": "2026-12-12",
+     "timezone": "Asia/Shanghai",
+     "evidence_ids": [
+      "0e469892-ddc7-58f9-9a94-0692c85e2937"
+     ]
+    },
+    {
+     "kind": "school_deadline",
+     "raw_text": "四、六级口语考试报名时间：2026年9月22日7:00—9月24日17:00",
+     "precision": "minute",
+     "at": "2026-09-24T17:00:00+08:00",
+     "date": null,
+     "timezone": "Asia/Shanghai",
+     "evidence_ids": [
+      "226b6112-18f2-5e27-9eb6-b6394c5a0f1d"
+     ]
+    },
+    {
+     "kind": "college_deadline",
+     "raw_text": "请考生所在学院于2026年12月15日前统一将申请解除限报材料报送教务处（材料包括考生本人向学院提出的申请",
+     "precision": "date",
+     "at": null,
+     "date": "2026-12-15",
+     "timezone": "Asia/Shanghai",
+     "evidence_ids": [
+      "f59853ec-b8f2-5d22-98a1-bd8cb8e41bbc"
+     ]
+    },
+    {
+     "kind": "college_deadline",
+     "raw_text": "应于2026年9月24日（报名结束前）向所在学院（部）提出正式书面申请",
+     "precision": "date",
+     "at": null,
+     "date": "2026-09-24",
+     "timezone": "Asia/Shanghai",
+     "evidence_ids": [
+      "8498e507-3feb-5f50-8816-3a0b829d8055"
+     ]
+    }
+   ],
+   "materials": [
+    "“在校残疾大学生报考全国大学英语四、六级考试合理便利申请表”",
+    "助听器等便利物品参加考试的考生，应申请在校残疾大学生报考全国大学英语四、六级考试合理便利成功后方可携带助听器进入考场参加考试，考试时需向监考老师提供相关证明"
+   ],
+   "warnings": [
+    "audience_conditions_require_review",
+    "correction_requires_review",
+    "multiple_dates_require_review",
+    "referenced_attachment_missing_requires_review"
+   ],
+   "snapshot_ids": [
+    "4530d363-f46b-5b53-a3cd-f1c92f93d77a"
+   ]
+  },
+  {
+   "candidate_id": "dafc6dc9-5b83-562c-be11-c2916414bb24",
+   "revision": 1,
+   "change_kind": "new",
+   "title": "以代码重写生命的语法！“AI+合成生物”创新大赛（2026）报名通道开启",
+   "extractor_version": "campus-rules-1.11",
+   "review_required": true,
+   "action_required": null,
+   "entry_urls": [],
+   "deadlines": [
+    {
+     "kind": "school_deadline",
+     "raw_text": "4月30日报名截止、赛道选择截止",
+     "precision": "date",
+     "at": null,
+     "date": "2026-04-30",
+     "timezone": "Asia/Shanghai",
+     "evidence_ids": [
+      "583f5add-82b7-56cd-9e0c-d99f03bbd94b"
+     ]
+    }
+   ],
+   "materials": [],
+   "warnings": [
+    "action_requirement_unknown"
+   ],
+   "snapshot_ids": [
+    "d016df62-8ec5-5628-bf36-58739b2c30b8"
+   ]
+  },
+  {
+   "candidate_id": "dc01c1ed-e150-5a64-a34b-e5853149d7dc",
+   "revision": 9,
+   "change_kind": "update",
+   "title": "关于申请2023年秋季学期国际交流资助集中报销的通知",
+   "extractor_version": "campus-rules-1.11",
+   "review_required": true,
+   "action_required": true,
+   "entry_urls": [],
+   "deadlines": [
+    {
+     "kind": "college_deadline",
+     "raw_text": "学院审核（审核流程详见附件）无误后请于10月19日前提交",
+     "precision": "date",
+     "at": null,
+     "date": "2023-10-19",
+     "timezone": "Asia/Shanghai",
+     "evidence_ids": [
+      "5dba8658-c0a2-516a-88a7-09257ddc191c"
+     ]
+    },
+    {
+     "kind": "event_time",
+     "raw_text": "7个工作日内",
+     "precision": "date",
+     "at": null,
+     "date": "2023-11-09",
+     "timezone": "Asia/Shanghai",
+     "evidence_ids": [
+      "1516206a-7069-5af5-a95f-c339895b6c42"
+     ]
+    }
+   ],
+   "materials": [],
+   "warnings": [
+    "relative_time_requires_review",
+    "business_days_approximated",
+    "multiple_dates_require_review",
+    "referenced_attachment_missing_requires_review"
+   ],
+   "snapshot_ids": [
+    "dcce8028-19f7-55b5-9697-42ee71d24bae"
+   ]
+  },
+  {
+   "candidate_id": "df02b184-2aa1-5a1f-8241-6899d6ae40bc",
+   "revision": 9,
+   "change_kind": "update",
+   "title": "25261学期研究生公共课考试安排",
+   "extractor_version": "campus-rules-1.11",
+   "review_required": true,
+   "action_required": null,
+   "entry_urls": [],
+   "deadlines": [
+    {
+     "kind": "event_time",
+     "raw_text": "经与开课学院沟通协调，拟定于25261学期第12-13周开展多门研究生公共课考试，考试时间见下表",
+     "precision": "date",
+     "at": null,
+     "date": "2025-12-13",
+     "timezone": "Asia/Shanghai",
+     "evidence_ids": [
+      "62bdeda5-1e54-5c44-9ece-dd1910a64850"
+     ]
+    }
+   ],
+   "materials": [],
+   "warnings": [
+    "referenced_attachment_missing_requires_review",
+    "action_requirement_unknown"
+   ],
+   "snapshot_ids": [
+    "7da72b6d-e0d6-561f-a1a3-17c3be387be0"
+   ]
+  },
+  {
+   "candidate_id": "e046b481-02c3-5923-b030-57f9d080b01d",
+   "revision": 9,
+   "change_kind": "update",
+   "title": "天津大学机械工程学院2027级推免生拟录取名单公示",
+   "extractor_version": "campus-rules-1.11",
+   "review_required": true,
+   "action_required": null,
+   "entry_urls": [],
+   "deadlines": [],
+   "materials": [],
+   "warnings": [
+    "action_requirement_unknown"
+   ],
+   "snapshot_ids": [
+    "0cb2b309-2eba-53bc-9fc5-98c4d50e3031"
+   ]
+  },
+  {
+   "candidate_id": "e1e9912d-9f9c-5926-8558-8ca2856552e0",
+   "revision": 9,
+   "change_kind": "update",
+   "title": "硕博研究生学位论文答辩公告",
+   "extractor_version": "campus-rules-1.11",
+   "review_required": true,
+   "action_required": null,
+   "entry_urls": [],
+   "deadlines": [],
+   "materials": [],
+   "warnings": [
+    "referenced_attachment_missing_requires_review",
+    "action_requirement_unknown"
+   ],
+   "snapshot_ids": [
+    "42f97dd7-c34f-5d9f-874f-f6052a01dafe"
+   ]
+  },
+  {
+   "candidate_id": "e4992774-a70a-596f-b911-3e2419545bcc",
+   "revision": 9,
+   "change_kind": "update",
+   "title": "天津大学机械工程学院2026年专业学位博士研究生拟录取名单公示（第二批）",
+   "extractor_version": "campus-rules-1.11",
+   "review_required": true,
+   "action_required": null,
+   "entry_urls": [],
+   "deadlines": [],
+   "materials": [],
+   "warnings": [
+    "action_requirement_unknown"
+   ],
+   "snapshot_ids": [
+    "e47b75aa-6064-5144-9023-c63db7d8563a"
+   ]
+  },
+  {
+   "candidate_id": "ec198d85-4ff4-59e3-b545-4117b4d427ea",
+   "revision": 9,
+   "change_kind": "update",
+   "title": "【国际交流】关于邀请参加2022博士生国际招生面试线上交流会的通知",
+   "extractor_version": "campus-rules-1.11",
+   "review_required": true,
+   "action_required": true,
+   "entry_urls": [
+    "http://www.phdchina.org"
+   ],
+   "deadlines": [
+    {
+     "kind": "school_deadline",
+     "raw_text": "三、海外院校报名情况：截至目前",
+     "precision": "unknown",
+     "at": null,
+     "date": null,
+     "timezone": "Asia/Shanghai",
+     "evidence_ids": [
+      "2be44c4f-cf49-5d1a-bd22-261760da0f9e"
+     ]
+    },
+    {
+     "kind": "school_deadline",
+     "raw_text": "注册截止日期：2022年11月10日",
+     "precision": "date",
+     "at": null,
+     "date": "2022-11-10",
+     "timezone": "Asia/Shanghai",
+     "evidence_ids": [
+      "48af695f-d757-551c-a4de-b5f9c2ece2f8"
+     ]
+    }
+   ],
+   "materials": [],
+   "warnings": [
+    "html_table_spans_require_review",
+    "ambiguous_deadline_requires_review",
+    "partial_attachment_or_body_requires_review"
+   ],
+   "snapshot_ids": [
+    "2f258661-0dcb-5073-ad95-73c13991230f"
+   ]
+  },
+  {
+   "candidate_id": "ecb5d4b3-4005-5287-a7d7-2dde17f75648",
+   "revision": 9,
+   "change_kind": "update",
+   "title": "【考试安排】2022",
+   "extractor_version": "campus-rules-1.11",
+   "review_required": true,
+   "action_required": null,
+   "entry_urls": [],
+   "deadlines": [],
+   "materials": [],
+   "warnings": [
+    "referenced_attachment_missing_requires_review",
+    "action_requirement_unknown"
+   ],
+   "snapshot_ids": [
+    "3f2ca4ac-94a7-5ca2-8470-7951a28a707d"
+   ]
+  },
+  {
+   "candidate_id": "ece92275-d509-5b1a-944c-37dde7ebebd4",
+   "revision": 9,
+   "change_kind": "update",
+   "title": "转发中国教育国际交流协会《关于商请贵校协助邀请师生参加2026博士生国际招生面试交流会的函》",
+   "extractor_version": "campus-rules-1.11",
+   "review_required": true,
+   "action_required": null,
+   "entry_urls": [],
+   "deadlines": [
+    {
+     "kind": "school_deadline",
+     "raw_text": "截至目前",
+     "precision": "unknown",
+     "at": null,
+     "date": null,
+     "timezone": "Asia/Shanghai",
+     "evidence_ids": [
+      "47a3bf41-5bb7-533c-b48a-956a6bbb3873"
+     ]
+    }
+   ],
+   "materials": [],
+   "warnings": [
+    "ambiguous_deadline_requires_review",
+    "referenced_attachment_missing_requires_review",
+    "action_requirement_unknown"
+   ],
+   "snapshot_ids": [
+    "fb256f3b-ff05-5944-a6b6-d4c9cde1497e"
+   ]
+  },
+  {
+   "candidate_id": "edb04c85-6970-5426-aeda-1604f7ca079a",
+   "revision": 9,
+   "change_kind": "update",
+   "title": "天津大学学位授权点情况表（供校盲审论文填写二级学科信息用）",
+   "extractor_version": "campus-rules-1.11",
+   "review_required": true,
+   "action_required": null,
+   "entry_urls": [],
+   "deadlines": [],
+   "materials": [],
+   "warnings": [
+    "referenced_attachment_missing_requires_review",
+    "action_requirement_unknown"
+   ],
+   "snapshot_ids": [
+    "feeae8a1-d4c4-51fb-9629-f6a50bdf5eca"
+   ]
+  },
+  {
+   "candidate_id": "ede7927f-4ba3-5ad6-9ef2-0a2ee0c9392f",
+   "revision": 9,
+   "change_kind": "update",
+   "title": "天津大学机械工程学院2026年联合培养博士研究生拟录取名单公示（崂山实验室专项）",
+   "extractor_version": "campus-rules-1.11",
+   "review_required": true,
+   "action_required": null,
+   "entry_urls": [],
+   "deadlines": [],
+   "materials": [],
+   "warnings": [
+    "action_requirement_unknown"
+   ],
+   "snapshot_ids": [
+    "cc311391-ac62-5e44-98cc-10eca5b8c3f1"
+   ]
+  },
+  {
+   "candidate_id": "eed0f18d-3548-56b8-8884-e6efd7d48bbe",
+   "revision": 9,
+   "change_kind": "update",
+   "title": "线上答辩 问卷星答辩评议书模板与EV录屏软件操作",
+   "extractor_version": "campus-rules-1.11",
+   "review_required": true,
+   "action_required": null,
+   "entry_urls": [],
+   "deadlines": [],
+   "materials": [],
+   "warnings": [
+    "referenced_attachment_missing_requires_review",
+    "action_requirement_unknown"
+   ],
+   "snapshot_ids": [
+    "a62ce9fd-a4bf-5dc0-a175-ada1d9257545"
+   ]
+  },
+  {
+   "candidate_id": "f1039256-f96f-5213-b684-df30275be7d4",
+   "revision": 9,
+   "change_kind": "update",
+   "title": "【考试安排】2022",
+   "extractor_version": "campus-rules-1.11",
+   "review_required": true,
+   "action_required": null,
+   "entry_urls": [],
+   "deadlines": [],
+   "materials": [],
+   "warnings": [
+    "referenced_attachment_missing_requires_review",
+    "action_requirement_unknown"
+   ],
+   "snapshot_ids": [
+    "2a5ab3ee-dbd9-5b71-9511-35237c8f5301"
+   ]
+  },
+  {
+   "candidate_id": "f17ac53a-11d0-5500-85fc-f5950ca23799",
+   "revision": 9,
+   "change_kind": "update",
+   "title": "硕博研究生学位论文答辩公告",
+   "extractor_version": "campus-rules-1.11",
+   "review_required": true,
+   "action_required": null,
+   "entry_urls": [],
+   "deadlines": [],
+   "materials": [],
+   "warnings": [
+    "referenced_attachment_missing_requires_review",
+    "action_requirement_unknown"
+   ],
+   "snapshot_ids": [
+    "c8b90b20-fd07-5b92-b2f0-7b9feedc1c66"
+   ]
+  },
+  {
+   "candidate_id": "fa3ab5f2-97f5-576c-91f9-15d08766144b",
+   "revision": 9,
+   "change_kind": "update",
+   "title": "天津大学博士学位论文国际评阅评审表（含邀请函、评审信息汇总表）",
+   "extractor_version": "campus-rules-1.11",
+   "review_required": true,
+   "action_required": null,
+   "entry_urls": [],
+   "deadlines": [],
+   "materials": [],
+   "warnings": [
+    "referenced_attachment_missing_requires_review",
+    "action_requirement_unknown"
+   ],
+   "snapshot_ids": [
+    "f02096a4-73a1-5a15-8f05-72886d44e634"
+   ]
+  },
+  {
+   "candidate_id": "fe2b166b-5d5c-5509-a153-f741cf9b48a6",
+   "revision": 9,
+   "change_kind": "update",
+   "title": "天大校研〔2021〕8号（天津大学硕士、博士学位论文校级盲审办法）",
+   "extractor_version": "campus-rules-1.11",
+   "review_required": true,
+   "action_required": null,
+   "entry_urls": [],
+   "deadlines": [],
+   "materials": [],
+   "warnings": [
+    "referenced_attachment_missing_requires_review",
+    "action_requirement_unknown"
+   ],
+   "snapshot_ids": [
+    "a5e28302-9066-522c-996a-daee6bafda6b"
+   ]
+  }
+ ]
+}

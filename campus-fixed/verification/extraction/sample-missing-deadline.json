@@ -1,0 +1,1776 @@
+{
+ "counts": {
+  "C 裸日期串（必须保持不确定）": 50,
+  "正文没有日期串": 50,
+  "B 只有「日期前」写法": 5,
+  "A 有期限 cue 却没抽出来": 2
+ },
+ "cases": [
+  {
+   "candidate_id": "01d45234-20cb-5e4b-b99e-d17f9097ad1f",
+   "title": "关于征集2025届新工科毕业设计研究与实践项目选题的通知",
+   "review_status": "pending",
+   "warnings": [
+    "attachment_access_restricted",
+    "relative_entry_link_requires_review",
+    "extractor_upgrade_requires_review",
+    "partial_attachment_or_body_requires_review"
+   ],
+   "kind": "C 裸日期串（必须保持不确定）",
+   "snapshot_ids": [
+    "3e442e10-9150-57ac-a026-14e612a55175",
+    "24c99d15-7132-54c4-8dc9-62ab488b30db",
+    "9468c8b4-508d-5054-9e2e-6a431468ba63",
+    "da9fb5a4-a84f-5f79-b5c2-19b1c59a52ab",
+    "db964fa4-ebd6-5b2a-bd71-98a8c9bf58df"
+   ],
+   "hits": [
+    {
+     "kind": "C 裸日期串（必须保持不确定）",
+     "quote": "请各学院(部)于2024年9月27日(周五)16：00前，将已审核通过的选题申报材料汇总后通过办公网发至",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": false
+    },
+    {
+     "kind": "C 裸日期串（必须保持不确定）",
+     "quote": "2024年9月20日",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": false
+    }
+   ]
+  },
+  {
+   "candidate_id": "06b96051-16d9-5310-a314-9e61d99745d5",
+   "title": "关于8月25日至8月31日暂停预约驾车进校的温馨提示",
+   "review_status": "pending",
+   "warnings": [
+    "generic_body_fallback_requires_review",
+    "relative_entry_link_requires_review",
+    "partial_attachment_or_body_requires_review",
+    "action_requirement_unknown"
+   ],
+   "kind": "C 裸日期串（必须保持不确定）",
+   "snapshot_ids": [
+    "67aa1f28-382b-553e-83c9-8a218c969ce1"
+   ],
+   "hits": [
+    {
+     "kind": "C 裸日期串（必须保持不确定）",
+     "quote": "关于8月25日至8月31日暂停预约驾车进校的温馨提示",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": false
+    },
+    {
+     "kind": "C 裸日期串（必须保持不确定）",
+     "quote": "为维护校园通行秩序，保障迎新工作平稳开展，8月25日至8月31日学校将暂停驾车进校预约",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": false
+    }
+   ]
+  },
+  {
+   "candidate_id": "0d313a26-328e-5338-8a4a-3b289214c9e9",
+   "title": "2027年春季学期交换生（第二批）项目通知",
+   "review_status": "pending",
+   "warnings": [
+    "attachment_access_restricted",
+    "extractor_upgrade_requires_review",
+    "partial_attachment_or_body_requires_review"
+   ],
+   "kind": "B 只有「日期前」写法",
+   "snapshot_ids": [
+    "b8cc1a84-5f7d-589e-838e-9b88791c58a5",
+    "15c93b6a-745b-59cd-82d9-6966d09b15c4"
+   ],
+   "hits": [
+    {
+     "kind": "B 只有「日期前」写法",
+     "quote": "10月16日12:00前，有意向申请本项目的同学请登录境外院校官网查询相关专业及课程信息，确认拟就读专业及课程后，填写线上报名表“2027年春季学期境外交换生报名（第二批次）”，同时填写《学生境外交流项目申请表》（本科生+研究生）、《学分对照表》（限本科生），将纸质版交至所在学院负责教务/外事老师处",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": true
+    },
+    {
+     "kind": "B 只有「日期前」写法",
+     "quote": "10月19日12:00前，各学院相关负责老师初审材料后确定推荐学生人选，填写《院级单位推荐意见表》，将学生申请材料及学院推荐意见提交至国际处暨港澳台办交流科（新校区1895行政楼A324）或发送材料扫描件至邮箱ies@tju.edu.cn",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": true
+    }
+   ]
+  },
+  {
+   "candidate_id": "0d7940af-018e-5902-8dbe-04ea3d5678c3",
+   "title": "《关于规范研究生学位论文与实践成果使用人工智能工具的倡议书》",
+   "review_status": "pending",
+   "warnings": [
+    "generic_body_fallback_requires_review",
+    "extractor_upgrade_requires_review",
+    "partial_attachment_or_body_requires_review",
+    "action_requirement_unknown"
+   ],
+   "kind": "C 裸日期串（必须保持不确定）",
+   "snapshot_ids": [
+    "20cefbff-a882-5e7b-8852-56cb383da81a"
+   ],
+   "hits": [
+    {
+     "kind": "C 裸日期串（必须保持不确定）",
+     "quote": "发布日期：2025年11月14日",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": false
+    }
+   ]
+  },
+  {
+   "candidate_id": "0f257f3e-73a1-5b29-b8ed-23257c0aea13",
+   "title": "习近平给天津大学全体师生回信强调 聚焦国家重大战略需求提高人才培养质量 更好服务经济社会发展",
+   "review_status": "pending",
+   "warnings": [
+    "extractor_upgrade_requires_review",
+    "action_requirement_unknown"
+   ],
+   "kind": "C 裸日期串（必须保持不确定）",
+   "snapshot_ids": [
+    "4beaf5a5-7c5e-5e65-ac78-ddd10babfbf1"
+   ],
+   "hits": [
+    {
+     "kind": "C 裸日期串（必须保持不确定）",
+     "quote": "新华社北京10月2日电 近日，中共中央总书记、国家主席、中央军委主席习近平给天津大学全体师生回信，在天津大学建校130周年之际，向全体师生员工、广大校友表示祝贺",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": false
+    },
+    {
+     "kind": "C 裸日期串（必须保持不确定）",
+     "quote": "2025年9月30日",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": false
+    }
+   ]
+  },
+  {
+   "candidate_id": "16385fe9-d23b-55f0-89d0-d0c9851b1cb3",
+   "title": "25261学期【非全日制】研究生公共课考试安排",
+   "review_status": "pending",
+   "warnings": [
+    "extractor_upgrade_requires_review",
+    "referenced_attachment_missing_requires_review",
+    "action_requirement_unknown"
+   ],
+   "kind": "C 裸日期串（必须保持不确定）",
+   "snapshot_ids": [
+    "17fce346-e43e-592c-b9f2-f1fdee0be88d"
+   ],
+   "hits": [
+    {
+     "kind": "C 裸日期串（必须保持不确定）",
+     "quote": "1月17日 14:00-16:30 工程数学基础（2.5h）",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": false
+    },
+    {
+     "kind": "C 裸日期串（必须保持不确定）",
+     "quote": "1月18日 8:00-10:00 新中特",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": false
+    },
+    {
+     "kind": "C 裸日期串（必须保持不确定）",
+     "quote": "1月18日 10:15-12:15 自辩/方法论",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": false
+    },
+    {
+     "kind": "C 裸日期串（必须保持不确定）",
+     "quote": "1月18日 13:45-16:45 英语机考（3h）",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": false
+    },
+    {
+     "kind": "C 裸日期串（必须保持不确定）",
+     "quote": "2026年1月4日",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": false
+    }
+   ]
+  },
+  {
+   "candidate_id": "175683e0-6d2c-510d-8af0-21bcd88021fb",
+   "title": "关于导师助研金系统功能升级的温馨提示",
+   "review_status": "pending",
+   "warnings": [
+    "extractor_upgrade_requires_review",
+    "audience_conditions_require_review",
+    "action_requirement_unknown"
+   ],
+   "kind": "C 裸日期串（必须保持不确定）",
+   "snapshot_ids": [
+    "faea1f99-5f7f-58c8-ba17-953fe1bbfac3"
+   ],
+   "hits": [
+    {
+     "kind": "C 裸日期串（必须保持不确定）",
+     "quote": "2026年1月5日",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": false
+    }
+   ]
+  },
+  {
+   "candidate_id": "176829a3-1832-5b97-8243-39934c05348a",
+   "title": "关于8月25日至8月31日暂停预约驾车进校的温馨提示",
+   "review_status": "pending",
+   "warnings": [
+    "generic_body_fallback_requires_review",
+    "relative_entry_link_requires_review",
+    "extractor_upgrade_requires_review",
+    "partial_attachment_or_body_requires_review",
+    "action_requirement_unknown"
+   ],
+   "kind": "C 裸日期串（必须保持不确定）",
+   "snapshot_ids": [
+    "a3bf8016-52d7-5517-b603-a7b5f371770b"
+   ],
+   "hits": [
+    {
+     "kind": "C 裸日期串（必须保持不确定）",
+     "quote": "关于8月25日至8月31日暂停预约驾车进校的温馨提示",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": false
+    },
+    {
+     "kind": "C 裸日期串（必须保持不确定）",
+     "quote": "为维护校园通行秩序，保障迎新工作平稳开展，8月25日至8月31日学校将暂停驾车进校预约",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": false
+    }
+   ]
+  },
+  {
+   "candidate_id": "1f24bd60-1f9c-5491-9592-9ba16f4e00fa",
+   "title": "2027年牛津大学伍斯特学院寒假项目通知",
+   "review_status": "pending",
+   "warnings": [
+    "attachment_access_restricted",
+    "relative_entry_link_requires_review",
+    "extractor_upgrade_requires_review",
+    "partial_attachment_or_body_requires_review"
+   ],
+   "kind": "C 裸日期串（必须保持不确定）",
+   "snapshot_ids": [
+    "c324d073-1700-523c-a0a0-32df67d04206",
+    "1024cb3b-f535-500e-8993-d4f7111e7843",
+    "c1e308bf-bb94-5359-9c4e-3c8b8de8f22c",
+    "d1c18894-8845-5f21-a4a4-14a2a71cbd36",
+    "eab4bbbf-fdfd-51d0-bd86-42b103eabca6"
+   ],
+   "hits": [
+    {
+     "kind": "C 裸日期串（必须保持不确定）",
+     "quote": "l2027年1月22日 – 2月3日",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": false
+    },
+    {
+     "kind": "C 裸日期串（必须保持不确定）",
+     "quote": "项目采取滚动录取，至2026年11月15日",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": false
+    }
+   ]
+  },
+  {
+   "candidate_id": "20518148-f8d2-50b6-9723-70d3e3ac85a2",
+   "title": "2026年牛津大学伍斯特学院暑期项目报名通知",
+   "review_status": "pending",
+   "warnings": [
+    "attachment_access_restricted",
+    "relative_entry_link_requires_review",
+    "extractor_upgrade_requires_review",
+    "partial_attachment_or_body_requires_review"
+   ],
+   "kind": "C 裸日期串（必须保持不确定）",
+   "snapshot_ids": [
+    "0a845319-fd7a-51c8-a377-584511818c5b",
+    "0905823a-1610-5d63-a14c-7f99001ea62e",
+    "1159753b-e13b-5aee-8fb0-6c5b8cc78bd6",
+    "65c2b8c4-8137-5d3b-969c-76a425690be6"
+   ],
+   "hits": [
+    {
+     "kind": "C 裸日期串（必须保持不确定）",
+     "quote": "Ø第一期：2026年7月19日 – 8月1日",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": false
+    },
+    {
+     "kind": "C 裸日期串（必须保持不确定）",
+     "quote": "Ø第二期：2026年8月2日 – 8月15日",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": false
+    },
+    {
+     "kind": "C 裸日期串（必须保持不确定）",
+     "quote": "Ø第三期：2026年8月16日 – 8月29日",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": false
+    },
+    {
+     "kind": "C 裸日期串（必须保持不确定）",
+     "quote": "项目采取滚动录取，至2026年4月30日",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": false
+    }
+   ]
+  },
+  {
+   "candidate_id": "2538daf8-f09f-5517-b031-467301ea031a",
+   "title": "图书馆档案馆党委组织学习贯彻习近平总书记给天津大学全体师生重要回信精神一周年专题师德师能培训",
+   "review_status": "pending",
+   "warnings": [
+    "extractor_upgrade_requires_review",
+    "action_requirement_unknown"
+   ],
+   "kind": "C 裸日期串（必须保持不确定）",
+   "snapshot_ids": [
+    "49870015-1146-5534-bca3-9b308b1f6c1f"
+   ],
+   "hits": [
+    {
+     "kind": "C 裸日期串（必须保持不确定）",
+     "quote": "10月16日至18日，图书馆档案馆党委主办的师德师能专题培训在河南开封举行，两馆30名党员干部和业务骨干参加",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": false
+    }
+   ]
+  },
+  {
+   "candidate_id": "25577576-fc0d-592f-87d4-80b3f5a52adb",
+   "title": "天津大学2026年运动训练专业拟录取名单公示",
+   "review_status": "pending",
+   "warnings": [
+    "extractor_upgrade_requires_review",
+    "action_requirement_unknown"
+   ],
+   "kind": "C 裸日期串（必须保持不确定）",
+   "snapshot_ids": [
+    "29e0c848-3d30-5c4a-a6c7-d93517c8ae94"
+   ],
+   "hits": [
+    {
+     "kind": "C 裸日期串（必须保持不确定）",
+     "quote": "根据国家体育总局、教育部有关规定和《天津大学2026年运动训练专业招生简章》要求，现将我校2026年运动训练专业拟录取名单予以公示，公示时间为2026年5月28日-6月1日",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": false
+    },
+    {
+     "kind": "C 裸日期串（必须保持不确定）",
+     "quote": "2026年5月28日",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": false
+    }
+   ]
+  },
+  {
+   "candidate_id": "339777e9-2e43-5f62-a91f-337bdb32004a",
+   "title": "“2026年全国大学生先进成图技术与产品信息建模创新大赛天津赛区竞赛”获奖通知",
+   "review_status": "pending",
+   "warnings": [
+    "extractor_upgrade_requires_review"
+   ],
+   "kind": "C 裸日期串（必须保持不确定）",
+   "snapshot_ids": [
+    "6fa39192-d8c3-506f-a947-8835c86bb650"
+   ],
+   "hits": [
+    {
+     "kind": "C 裸日期串（必须保持不确定）",
+     "quote": "由天津市教育委员会主办，天津大学、天津仁爱学院和天津市图学学会共同承办的“2026年全国大学生先进成图技术与产品信息建模创新大赛天津赛区竞赛”于2026年5月30日顺利举行，评选出获奖团队、学生、 教师公布如附件1所示，参赛学校获得全国决赛名额数如附件2所示",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": false
+    },
+    {
+     "kind": "C 裸日期串（必须保持不确定）",
+     "quote": "2026年6月15日",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": false
+    }
+   ]
+  },
+  {
+   "candidate_id": "33e45014-349f-5d55-95d4-4d0e1ac4fa03",
+   "title": "【转载】关于天津大学2025年拟录取硕士研究生调档函开放下载的通知",
+   "review_status": "pending",
+   "warnings": [
+    "extractor_upgrade_requires_review",
+    "audience_conditions_require_review",
+    "action_requirement_unknown"
+   ],
+   "kind": "B 只有「日期前」写法",
+   "snapshot_ids": [
+    "9b29c2b4-4a73-5a57-a946-062765132589"
+   ],
+   "hits": [
+    {
+     "kind": "B 只有「日期前」写法",
+     "quote": "我校2025年拟录取全日制非定向硕士研究生新生请登录天津大学招生管理系统（https://sszs.tju.edu.cn/10056/main/user/index）下载调档函，打印后交人事档案管理部门或学习工作单位，8月31日之前将人事档案原件寄送至我校",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": true
+    },
+    {
+     "kind": "A 有期限 cue 却没抽出来",
+     "quote": "2.考生单位将考生档案于2025年8月31日前（以寄出地邮戳日期为准）寄往我校，逾期不予接收",
+     "deadline_cue": true,
+     "date_cue": true,
+     "before_date_cue": true,
+     "trailing_before": true
+    }
+   ]
+  },
+  {
+   "candidate_id": "33fa998d-6dec-5e4f-ac4d-707d065d191a",
+   "title": "天津大学智能与计算学部招收2026级推荐免试研究生（含直博生）工作的说明",
+   "review_status": "pending",
+   "warnings": [
+    "attachment_fetch_unsafe_address",
+    "html_table_spans_require_review",
+    "extractor_upgrade_requires_review",
+    "audience_conditions_require_review",
+    "partial_attachment_or_body_requires_review",
+    "referenced_attachment_missing_requires_review"
+   ],
+   "kind": "C 裸日期串（必须保持不确定）",
+   "snapshot_ids": [
+    "cbeefbcf-5e6f-5d38-96d9-28cd68f4ea87"
+   ],
+   "hits": [
+    {
+     "kind": "C 裸日期串（必须保持不确定）",
+     "quote": "9月10日24点之前，有意参加我学部推免考核的考生（含本校生）须通过我校推免申请系统（网址：http://202.113.8.92/gstms）填报志愿",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": false
+    },
+    {
+     "kind": "C 裸日期串（必须保持不确定）",
+     "quote": "9月22日教育部“推免申请系统”开通之前，凡有意申请天津大学2026级直接攻博生的学生（含本校生）：",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": false
+    },
+    {
+     "kind": "C 裸日期串（必须保持不确定）",
+     "quote": "（一）9月8日-9月12日登录我校博士报名网址：",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": false
+    },
+    {
+     "kind": "C 裸日期串（必须保持不确定）",
+     "quote": "1.申请人必须在教育部“推免服务系统”（网址：http://yz.chsi.com.cn/tm）开通期间（2025年9月22日-10月20日），对我校相关专业提出申请",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": false
+    },
+    {
+     "kind": "C 裸日期串（必须保持不确定）",
+     "quote": "2025年9月10日",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": false
+    }
+   ]
+  },
+  {
+   "candidate_id": "37be6a54-6183-5a65-bb5b-5d68c1cb19ec",
+   "title": "【学籍管理】关于对超过最长学习年限研究生进行学籍处理预警的通知",
+   "review_status": "pending",
+   "warnings": [
+    "extractor_upgrade_requires_review",
+    "audience_conditions_require_review",
+    "referenced_attachment_missing_requires_review"
+   ],
+   "kind": "B 只有「日期前」写法",
+   "snapshot_ids": [
+    "5053e035-07be-5867-81d4-9f7d439b7d7e"
+   ],
+   "hits": [
+    {
+     "kind": "B 只有「日期前」写法",
+     "quote": "2026年6月30日前未办理结业、肄业相关手续的，学校将依据《天津大学研究生学籍管理办法》作退学处理",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": true
+    },
+    {
+     "kind": "C 裸日期串（必须保持不确定）",
+     "quote": "2026年4月22日",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": false
+    }
+   ]
+  },
+  {
+   "candidate_id": "394f5c57-89e7-598d-bc7a-9e0dd3bc331a",
+   "title": "湾创未来，粤聚英才！首届粤港澳大湾区创业大赛正式启动",
+   "review_status": "pending",
+   "warnings": [
+    "generic_body_fallback_requires_review",
+    "relative_entry_link_requires_review",
+    "audience_conditions_require_review",
+    "partial_attachment_or_body_requires_review",
+    "action_requirement_unknown"
+   ],
+   "kind": "C 裸日期串（必须保持不确定）",
+   "snapshot_ids": [
+    "fcd55016-a4ab-5ab2-9473-3b20d2e4604d"
+   ],
+   "hits": [
+    {
+     "kind": "C 裸日期串（必须保持不确定）",
+     "quote": "本次大赛报名通道即日起至7月31日全面开启，诚邀广大创业者登录大赛官网（http://dwqds.newjobs.com.cn/）报名参赛",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": false
+    },
+    {
+     "kind": "C 裸日期串（必须保持不确定）",
+     "quote": "已成立经营主体的项目，成立时间需在2020年1月1日（含）以后",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": false
+    }
+   ]
+  },
+  {
+   "candidate_id": "3d7bd26a-d570-5676-bb1f-0828be26f785",
+   "title": "关于开展天津大学新工科毕业设计项目指导教师及学生申报通知",
+   "review_status": "pending",
+   "warnings": [
+    "attachment_access_restricted",
+    "extractor_upgrade_requires_review",
+    "partial_attachment_or_body_requires_review",
+    "action_requirement_unknown"
+   ],
+   "kind": "C 裸日期串（必须保持不确定）",
+   "snapshot_ids": [
+    "cf5ffa1f-8356-5337-a5c1-639ea630fbb8",
+    "34c7fdf0-e423-555a-bd9d-6ca88532fa6e",
+    "d9982733-a916-51c3-b965-301e5cf04bcc"
+   ],
+   "hits": [
+    {
+     "kind": "C 裸日期串（必须保持不确定）",
+     "quote": "2022年10月26日",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": false
+    }
+   ]
+  },
+  {
+   "candidate_id": "425a0539-f567-5b62-aea0-ec083502fd80",
+   "title": "关于8月25日至8月31日暂停预约驾车进校的温馨提示",
+   "review_status": "pending",
+   "warnings": [
+    "generic_body_fallback_requires_review",
+    "relative_entry_link_requires_review",
+    "extractor_upgrade_requires_review",
+    "partial_attachment_or_body_requires_review",
+    "action_requirement_unknown"
+   ],
+   "kind": "C 裸日期串（必须保持不确定）",
+   "snapshot_ids": [
+    "61f61db4-5cb7-5397-a1a1-d18b26a14f3a"
+   ],
+   "hits": [
+    {
+     "kind": "C 裸日期串（必须保持不确定）",
+     "quote": "关于8月25日至8月31日暂停预约驾车进校的温馨提示",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": false
+    },
+    {
+     "kind": "C 裸日期串（必须保持不确定）",
+     "quote": "为维护校园通行秩序，保障迎新工作平稳开展，8月25日至8月31日学校将暂停驾车进校预约",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": false
+    }
+   ]
+  },
+  {
+   "candidate_id": "431f1c74-c7d1-5b01-937d-3a76d4b25b5d",
+   "title": "2026年秋季学期交换生（第二批）项目通知",
+   "review_status": "pending",
+   "warnings": [
+    "attachment_access_restricted",
+    "extractor_upgrade_requires_review",
+    "partial_attachment_or_body_requires_review"
+   ],
+   "kind": "B 只有「日期前」写法",
+   "snapshot_ids": [
+    "08435066-90a4-54dd-a9ef-4309db709ba6",
+    "d70c014e-afaa-5a65-a902-3236cb215b4f"
+   ],
+   "hits": [
+    {
+     "kind": "B 只有「日期前」写法",
+     "quote": "4月10日12:00前，有意向申请本项目的同学请登录境外院校官网查询相关专业及课程信息，确认拟就读专业及课程后，填写线上报名表“2026秋季学期境外交换生报名（第一批次）”，同时填写《学生境外交流项目申请表》（本科生+研究生）、《学分对照表》（限本科生），将纸质版交至所在学院负责教务/外事老师处",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": true
+    },
+    {
+     "kind": "B 只有「日期前」写法",
+     "quote": "4月10日12:00前，各学院相关负责老师初审材料后确定推荐学生人选，填写《院级单位推荐意见表》，将学生申请材料及学院推荐意见提交至国际处暨港澳台办交流科（新校区1895行政楼A324）",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": true
+    }
+   ]
+  },
+  {
+   "candidate_id": "4c51a2a6-2a4a-58a1-8017-0eb8c9f8a2b4",
+   "title": "关于企业入校招聘活动入校方式的通知",
+   "review_status": "pending",
+   "warnings": [
+    "generic_body_fallback_requires_review",
+    "relative_entry_link_requires_review",
+    "extractor_upgrade_requires_review",
+    "partial_attachment_or_body_requires_review"
+   ],
+   "kind": "C 裸日期串（必须保持不确定）",
+   "snapshot_ids": [
+    "ed0f458e-4fea-51c6-9604-d59703401b37"
+   ],
+   "hits": [
+    {
+     "kind": "C 裸日期串（必须保持不确定）",
+     "quote": "2025年8月12日",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": false
+    }
+   ]
+  },
+  {
+   "candidate_id": "4f529917-7fcc-5724-811e-98a0b85898f8",
+   "title": "天津大学2026级新生线上入学教育通知",
+   "review_status": "pending",
+   "warnings": [
+    "generic_body_fallback_requires_review",
+    "extractor_upgrade_requires_review",
+    "partial_attachment_or_body_requires_review"
+   ],
+   "kind": "C 裸日期串（必须保持不确定）",
+   "snapshot_ids": [
+    "527a1a53-99fb-5eb6-aa5e-8a577cf628a7",
+    "538803be-0a66-5c94-a3ed-a201984f93d4"
+   ],
+   "hits": [
+    {
+     "kind": "C 裸日期串（必须保持不确定）",
+     "quote": "2026年8月10日至9月28日",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": false
+    },
+    {
+     "kind": "C 裸日期串（必须保持不确定）",
+     "quote": "1.自8月10日开始，天津大学新生入学教育网站（http://coursera.twt.edu.cn）将开通使用，全日制新生可凭录取通知书号或学号和身份证号后六位，登录网站，查阅《天津大学2026级新生入学教育课程安排》（以下简称《课程安排》），学习相应内容",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": false
+    }
+   ]
+  },
+  {
+   "candidate_id": "4fa3dd29-2dbb-5b4f-91f7-0740c8409b15",
+   "title": "梅兵向全校离退休老同志致以重阳节问候",
+   "review_status": "pending",
+   "warnings": [
+    "extractor_upgrade_requires_review",
+    "action_requirement_unknown"
+   ],
+   "kind": "C 裸日期串（必须保持不确定）",
+   "snapshot_ids": [
+    "f6e53eb9-bda8-5c9a-92c6-156146858920"
+   ],
+   "hits": [
+    {
+     "kind": "C 裸日期串（必须保持不确定）",
+     "quote": "在中国传统节日重阳节即将到来之际，10月16日，“情暖金秋 乐享重阳”天津大学离退休教职工重阳节文艺展演暨北洋老年大学成立十周年汇报演出在卫津路校区大学生活动中心隆重举行，天津大学党委书记梅兵、党委常务副书记雷鸣出席",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": false
+    }
+   ]
+  },
+  {
+   "candidate_id": "52e6d93d-5c51-5a28-94fb-7bd4b345a001",
+   "title": "湾创未来，粤聚英才！首届粤港澳大湾区创业大赛正式启动",
+   "review_status": "pending",
+   "warnings": [
+    "generic_body_fallback_requires_review",
+    "relative_entry_link_requires_review",
+    "extractor_upgrade_requires_review",
+    "audience_conditions_require_review",
+    "partial_attachment_or_body_requires_review",
+    "action_requirement_unknown"
+   ],
+   "kind": "C 裸日期串（必须保持不确定）",
+   "snapshot_ids": [
+    "2caa03a1-81bc-51e3-863c-8f4bde51175a"
+   ],
+   "hits": [
+    {
+     "kind": "C 裸日期串（必须保持不确定）",
+     "quote": "本次大赛报名通道即日起至7月31日全面开启，诚邀广大创业者登录大赛官网（http://dwqds.newjobs.com.cn/）报名参赛",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": false
+    },
+    {
+     "kind": "C 裸日期串（必须保持不确定）",
+     "quote": "已成立经营主体的项目，成立时间需在2020年1月1日（含）以后",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": false
+    }
+   ]
+  },
+  {
+   "candidate_id": "6211438b-27c2-5cdc-b2ea-98f47cc89ad5",
+   "title": "天津科技大学党委副书记张春艳一行来校调研交流",
+   "review_status": "pending",
+   "warnings": [
+    "extractor_upgrade_requires_review",
+    "action_requirement_unknown"
+   ],
+   "kind": "C 裸日期串（必须保持不确定）",
+   "snapshot_ids": [
+    "4f3dd1fb-483b-56bf-ba1f-84ed06694a16"
+   ],
+   "hits": [
+    {
+     "kind": "C 裸日期串（必须保持不确定）",
+     "quote": "10月15日，天津科技大学党委副书记张春艳一行来校就学生工作开展调研，校党委副书记韩庆华与代表团座谈交流，两校相关部处班子成员，院级单位学生工作副书记代表参加调研",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": false
+    }
+   ]
+  },
+  {
+   "candidate_id": "696f06f3-6bc9-59fe-900a-0fcae74f1a4d",
+   "title": "2027年春季学期交换生（第一批）项目通知",
+   "review_status": "pending",
+   "warnings": [
+    "attachment_access_restricted",
+    "extractor_upgrade_requires_review",
+    "partial_attachment_or_body_requires_review"
+   ],
+   "kind": "B 只有「日期前」写法",
+   "snapshot_ids": [
+    "7a7a7772-bbf7-5979-8032-eadf72bd5529",
+    "d15e964a-1c0d-5693-a892-d774f6e0fb6e"
+   ],
+   "hits": [
+    {
+     "kind": "B 只有「日期前」写法",
+     "quote": "9月11日12:00前，有意向申请本项目的同学请登录境外院校官网查询相关专业及课程信息，确认拟就读专业及课程后，填写线上报名表“2027年春季学期境外交换生报名（第一批次）”，同时填写《学生境外交流项目申请表》（本科生+研究生）、《学分对照表》（限本科生），将纸质版交至所在学院负责教务/外事老师处",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": true
+    },
+    {
+     "kind": "C 裸日期串（必须保持不确定）",
+     "quote": "9月8日13：30-16：30，国际处进行第一批交换生线上答疑，请有问题的同学通过 #腾讯会议：479-247-007入会",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": false
+    },
+    {
+     "kind": "B 只有「日期前」写法",
+     "quote": "9月11日12:00前，各学院相关负责老师初审材料后确定推荐学生人选，填写《院级单位推荐意见表》，将学生申请材料及学院推荐意见提交至国际处暨港澳台办交流科（新校区1895行政楼A324）或发送材料扫描件至邮箱ies@tju.edu.cn",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": true
+    }
+   ]
+  },
+  {
+   "candidate_id": "69a622cc-cb19-59f1-ad0c-4d81ab46d054",
+   "title": "天津大学技术支撑起世界最大的醋酸乙烯合成反应器",
+   "review_status": "pending",
+   "warnings": [
+    "extractor_upgrade_requires_review",
+    "action_requirement_unknown"
+   ],
+   "kind": "C 裸日期串（必须保持不确定）",
+   "snapshot_ids": [
+    "0d3826c3-e05f-59b8-b022-c9c3b3730350"
+   ],
+   "hits": [
+    {
+     "kind": "C 裸日期串（必须保持不确定）",
+     "quote": "10月16日上午，在江苏皖维新材料有限公司装置现场，年产40万吨醋酸乙烯合成反应器在来自企业、地方政府、建设单位的共同见证下成功完成了吊装，天津大学石化中心主任张敏华教授作为技术提供方代表参加了庆祝仪式",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": false
+    }
+   ]
+  },
+  {
+   "candidate_id": "6c8465b6-ec64-5f02-8387-aad29bb71686",
+   "title": "图书馆档案馆党委组织学习贯彻习近平总书记给天津大学全体师生重要回信精神一周年专题师德师能培训",
+   "review_status": "pending",
+   "warnings": [
+    "action_requirement_unknown"
+   ],
+   "kind": "C 裸日期串（必须保持不确定）",
+   "snapshot_ids": [
+    "c5ccf7ac-a019-54ac-b629-b68c155a353b"
+   ],
+   "hits": [
+    {
+     "kind": "C 裸日期串（必须保持不确定）",
+     "quote": "10月16日至18日，图书馆档案馆党委主办的师德师能专题培训在河南开封举行，两馆30名党员干部和业务骨干参加",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": false
+    }
+   ]
+  },
+  {
+   "candidate_id": "6fb72a3c-86da-55b2-908e-90dcb2b54027",
+   "title": "天津大学关于启动2024级辅修专业报名工作的通知",
+   "review_status": "pending",
+   "warnings": [
+    "attachment_access_restricted",
+    "relative_entry_link_requires_review",
+    "extractor_upgrade_requires_review",
+    "audience_conditions_require_review",
+    "partial_attachment_or_body_requires_review"
+   ],
+   "kind": "C 裸日期串（必须保持不确定）",
+   "snapshot_ids": [
+    "9699b421-91a5-5ecb-b463-269fb32e41d1",
+    "30bc9295-d30c-5052-ae04-6c434cfdb3df",
+    "7fc40f9e-625c-59e8-aa13-ad8a5cd1e308",
+    "bc5bc641-9746-552a-aba2-16ac5deb505b",
+    "fd29e65b-59b5-5d83-a30c-6f96b8c82167"
+   ],
+   "hits": [
+    {
+     "kind": "C 裸日期串（必须保持不确定）",
+     "quote": "时间安排：12月02日13:30—12月11日23:59",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": false
+    },
+    {
+     "kind": "C 裸日期串（必须保持不确定）",
+     "quote": "时间安排：12月12日—12月15日",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": false
+    },
+    {
+     "kind": "C 裸日期串（必须保持不确定）",
+     "quote": "时间安排：12月16日—12月22日",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": false
+    },
+    {
+     "kind": "C 裸日期串（必须保持不确定）",
+     "quote": "时间安排：12月23日13:30—12月24日23:59",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": false
+    },
+    {
+     "kind": "C 裸日期串（必须保持不确定）",
+     "quote": "时间安排：12月25日—12月26日",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": false
+    },
+    {
+     "kind": "C 裸日期串（必须保持不确定）",
+     "quote": "2025年11月28日",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": false
+    }
+   ]
+  },
+  {
+   "candidate_id": "7689e05e-d67a-58a9-9c86-c0baffb55e0e",
+   "title": "辽宁省水利厅直属事业单位2025年面向部分院校公开招聘拟聘人员公示",
+   "review_status": "pending",
+   "warnings": [
+    "generic_body_fallback_requires_review",
+    "relative_entry_link_requires_review",
+    "partial_attachment_or_body_requires_review",
+    "action_requirement_unknown"
+   ],
+   "kind": "C 裸日期串（必须保持不确定）",
+   "snapshot_ids": [
+    "120e5b84-ac25-574b-9d8e-79f2361f0848",
+    "532b51b8-9348-57a2-a0f4-ef42aac5c5c9"
+   ],
+   "hits": [
+    {
+     "kind": "C 裸日期串（必须保持不确定）",
+     "quote": "2025年5月28日",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": false
+    }
+   ]
+  },
+  {
+   "candidate_id": "772c9a73-b6f0-5b3f-a5cb-fd4276668c81",
+   "title": "文件来源：http://www.moe.gov.cn/srcsite/A22/s7065/202506/t20250611_1193766.html",
+   "review_status": "pending",
+   "warnings": [
+    "html_table_spans_require_review",
+    "extractor_upgrade_requires_review",
+    "partial_attachment_or_body_requires_review",
+    "action_requirement_unknown"
+   ],
+   "kind": "C 裸日期串（必须保持不确定）",
+   "snapshot_ids": [
+    "c1ea974e-d86e-53e5-9733-5df036c07a56"
+   ],
+   "hits": [
+    {
+     "kind": "C 裸日期串（必须保持不确定）",
+     "quote": "2025年1月26日",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": false
+    }
+   ]
+  },
+  {
+   "candidate_id": "792bbcd6-9b28-50f3-9ff6-f901f4ced1cc",
+   "title": "【重要通知】卫津路校区就业指导中心即日起搬回大学生活动中心",
+   "review_status": "pending",
+   "warnings": [
+    "generic_body_fallback_requires_review",
+    "relative_entry_link_requires_review",
+    "extractor_upgrade_requires_review",
+    "partial_attachment_or_body_requires_review",
+    "action_requirement_unknown"
+   ],
+   "kind": "C 裸日期串（必须保持不确定）",
+   "snapshot_ids": [
+    "31749f0c-0163-5842-8a24-c87d1ed386bd"
+   ],
+   "hits": [
+    {
+     "kind": "C 裸日期串（必须保持不确定）",
+     "quote": "卫津路校区大学生活动中心装修改造已经结束，卫津路校区就业指导中心即日起搬回大学生活动中心，于2024年11月4日（周一）正式对企业师生办理各项业务服务工作，敬请互相转告",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": false
+    },
+    {
+     "kind": "C 裸日期串（必须保持不确定）",
+     "quote": "2024年11月2日",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": false
+    }
+   ]
+  },
+  {
+   "candidate_id": "7cab0b15-6ebb-5137-8d95-785a600f3e52",
+   "title": "湾创未来，粤聚英才！首届粤港澳大湾区创业大赛正式启动",
+   "review_status": "pending",
+   "warnings": [
+    "generic_body_fallback_requires_review",
+    "relative_entry_link_requires_review",
+    "extractor_upgrade_requires_review",
+    "audience_conditions_require_review",
+    "partial_attachment_or_body_requires_review",
+    "action_requirement_unknown"
+   ],
+   "kind": "C 裸日期串（必须保持不确定）",
+   "snapshot_ids": [
+    "8864c16c-438e-5af9-b00b-9da6efe1a8d5"
+   ],
+   "hits": [
+    {
+     "kind": "C 裸日期串（必须保持不确定）",
+     "quote": "本次大赛报名通道即日起至7月31日全面开启，诚邀广大创业者登录大赛官网（http://dwqds.newjobs.com.cn/）报名参赛",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": false
+    },
+    {
+     "kind": "C 裸日期串（必须保持不确定）",
+     "quote": "已成立经营主体的项目，成立时间需在2020年1月1日（含）以后",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": false
+    }
+   ]
+  },
+  {
+   "candidate_id": "873426a4-47b2-5b3b-93fa-f57f7191cbdf",
+   "title": "Transactions of Tianjin University系列学术讲座",
+   "review_status": "pending",
+   "warnings": [
+    "extractor_upgrade_requires_review",
+    "action_requirement_unknown"
+   ],
+   "kind": "C 裸日期串（必须保持不确定）",
+   "snapshot_ids": [
+    "242fa849-5611-534d-b05d-d29a41f3e66c"
+   ],
+   "hits": [
+    {
+     "kind": "C 裸日期串（必须保持不确定）",
+     "quote": "2023年3月22日上午8点，天津大学学报（英文版）系列学术讲座第42期将在科研云Bilibili和邃瞳科学云微信视频号平台上线",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": false
+    }
+   ]
+  },
+  {
+   "candidate_id": "879b5cde-33d6-58e1-9aa5-2951a98617f3",
+   "title": "回应时代三问·深耕南方研究",
+   "review_status": "pending",
+   "warnings": [
+    "extractor_upgrade_requires_review",
+    "action_requirement_unknown"
+   ],
+   "kind": "C 裸日期串（必须保持不确定）",
+   "snapshot_ids": [
+    "f5011046-661d-50a8-bba8-2c9ddf1516ca"
+   ],
+   "hits": [
+    {
+     "kind": "C 裸日期串（必须保持不确定）",
+     "quote": "10月16日，2026年天津大学博士生交叉学术论坛——区域国别学分论坛在天津大学北洋园校区举行",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": false
+    }
+   ]
+  },
+  {
+   "candidate_id": "883162fd-23f5-5121-98b4-c09e57c9b3f6",
+   "title": "校史博物馆提升一年来融入立德树人中心工作成效显著",
+   "review_status": "pending",
+   "warnings": [
+    "extractor_upgrade_requires_review",
+    "action_requirement_unknown"
+   ],
+   "kind": "C 裸日期串（必须保持不确定）",
+   "snapshot_ids": [
+    "39ca54e2-43e5-5c1c-aca9-01a1517006be"
+   ],
+   "hits": [
+    {
+     "kind": "C 裸日期串（必须保持不确定）",
+     "quote": "自2025年9月27日历经两年展陈提升改造的天津大学校史博物馆正式焕新开馆以来，这座承载百卅北洋文脉的文化殿堂已崭新运行整整一年",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": false
+    }
+   ]
+  },
+  {
+   "candidate_id": "906eaa14-33c9-5d9d-b147-47a7ff8a6677",
+   "title": "【国际交流】Transactions of Tianjin University系列学术讲座",
+   "review_status": "pending",
+   "warnings": [
+    "extractor_upgrade_requires_review",
+    "action_requirement_unknown"
+   ],
+   "kind": "C 裸日期串（必须保持不确定）",
+   "snapshot_ids": [
+    "be9b8621-aa01-5b85-9cee-4fcc5f7fa57f"
+   ],
+   "hits": [
+    {
+     "kind": "C 裸日期串（必须保持不确定）",
+     "quote": "2023年3月22日上午8点，天津大学学报（英文版）系列学术讲座第42期将在科研云Bilibili和邃瞳科学云微信视频号平台上线",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": false
+    }
+   ]
+  },
+  {
+   "candidate_id": "9376c828-4c73-5dac-9534-84da025aa2b5",
+   "title": "教育部等五部门关于印发《普通高等教育学科专业设置调整优化改革方案》的通知",
+   "review_status": "pending",
+   "warnings": [
+    "extractor_upgrade_requires_review",
+    "action_requirement_unknown"
+   ],
+   "kind": "C 裸日期串（必须保持不确定）",
+   "snapshot_ids": [
+    "e210e633-059c-5ab1-a5fa-2315244b34c0"
+   ],
+   "hits": [
+    {
+     "kind": "C 裸日期串（必须保持不确定）",
+     "quote": "2023年2月21日",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": false
+    }
+   ]
+  },
+  {
+   "candidate_id": "9501343e-cd9d-5e03-9e22-5ff2bb3f98f9",
+   "title": "关于申请2024年秋季学期国际交流资助集中报销的通知",
+   "review_status": "pending",
+   "warnings": [
+    "extractor_upgrade_requires_review",
+    "referenced_attachment_missing_requires_review"
+   ],
+   "kind": "A 有期限 cue 却没抽出来",
+   "snapshot_ids": [
+    "f289582c-9ccc-5712-9df4-97db7c429f0f"
+   ],
+   "hits": [
+    {
+     "kind": "A 有期限 cue 却没抽出来",
+     "quote": "请进入报账程序的项目务必于2024年11月15日前完成报账流程",
+     "deadline_cue": true,
+     "date_cue": true,
+     "before_date_cue": true,
+     "trailing_before": false
+    }
+   ]
+  },
+  {
+   "candidate_id": "99b26bf9-1ee8-5a7f-811b-d0938c2491f9",
+   "title": "辽宁省水利厅直属事业单位2025年面向部分院校公开招聘拟聘人员公示",
+   "review_status": "pending",
+   "warnings": [
+    "generic_body_fallback_requires_review",
+    "relative_entry_link_requires_review",
+    "extractor_upgrade_requires_review",
+    "partial_attachment_or_body_requires_review",
+    "action_requirement_unknown"
+   ],
+   "kind": "C 裸日期串（必须保持不确定）",
+   "snapshot_ids": [
+    "dc6db2ec-3a9e-5f14-b5ab-ba93cc3ea9ff",
+    "0ce521ae-fea6-556c-aa11-86602fe115f7"
+   ],
+   "hits": [
+    {
+     "kind": "C 裸日期串（必须保持不确定）",
+     "quote": "2025年5月28日",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": false
+    }
+   ]
+  },
+  {
+   "candidate_id": "9bea7e9e-5462-5124-b330-bd4c8efd24c5",
+   "title": "天津大学关于公示2026年强基计划录取标准的通知",
+   "review_status": "pending",
+   "warnings": [
+    "extractor_upgrade_requires_review",
+    "action_requirement_unknown"
+   ],
+   "kind": "C 裸日期串（必须保持不确定）",
+   "snapshot_ids": [
+    "d46513a5-ede0-5fcd-ac27-cd779b2c727e"
+   ],
+   "hits": [
+    {
+     "kind": "C 裸日期串（必须保持不确定）",
+     "quote": "2026年7月3日",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": false
+    }
+   ]
+  },
+  {
+   "candidate_id": "9d307122-a759-564d-bc8a-d4ca42e2fe0f",
+   "title": "关于企业入校招聘活动入校方式的通知",
+   "review_status": "pending",
+   "warnings": [
+    "generic_body_fallback_requires_review",
+    "relative_entry_link_requires_review",
+    "partial_attachment_or_body_requires_review"
+   ],
+   "kind": "C 裸日期串（必须保持不确定）",
+   "snapshot_ids": [
+    "1f461e1e-91b2-58fb-b8a2-248f44abae75"
+   ],
+   "hits": [
+    {
+     "kind": "C 裸日期串（必须保持不确定）",
+     "quote": "2025年8月12日",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": false
+    }
+   ]
+  },
+  {
+   "candidate_id": "a0878f22-5a7b-54a0-a042-8e43b7d7c648",
+   "title": "关于申请2024年秋季学期国际交流资助集中报销的通知",
+   "review_status": "pending",
+   "warnings": [
+    "extractor_upgrade_requires_review",
+    "referenced_attachment_missing_requires_review"
+   ],
+   "kind": "A 有期限 cue 却没抽出来",
+   "snapshot_ids": [
+    "d5ac9887-225d-5917-b6a3-d3644d2cb877"
+   ],
+   "hits": [
+    {
+     "kind": "A 有期限 cue 却没抽出来",
+     "quote": "请进入报账程序的项目务必于2024年11月15日前完成报账流程",
+     "deadline_cue": true,
+     "date_cue": true,
+     "before_date_cue": true,
+     "trailing_before": false
+    }
+   ]
+  },
+  {
+   "candidate_id": "a7577dcd-3294-5b6e-8392-bce729c166a5",
+   "title": "【重要通知】卫津路校区就业指导中心即日起搬回大学生活动中心",
+   "review_status": "pending",
+   "warnings": [
+    "generic_body_fallback_requires_review",
+    "relative_entry_link_requires_review",
+    "extractor_upgrade_requires_review",
+    "partial_attachment_or_body_requires_review",
+    "action_requirement_unknown"
+   ],
+   "kind": "C 裸日期串（必须保持不确定）",
+   "snapshot_ids": [
+    "a4eea757-f14e-5cb4-ad06-f6b6594ece5e"
+   ],
+   "hits": [
+    {
+     "kind": "C 裸日期串（必须保持不确定）",
+     "quote": "卫津路校区大学生活动中心装修改造已经结束，卫津路校区就业指导中心即日起搬回大学生活动中心，于2024年11月4日（周一）正式对企业师生办理各项业务服务工作，敬请互相转告",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": false
+    },
+    {
+     "kind": "C 裸日期串（必须保持不确定）",
+     "quote": "2024年11月2日",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": false
+    }
+   ]
+  },
+  {
+   "candidate_id": "ae4ff46a-23fb-5ef8-b99f-2750a19a2504",
+   "title": "梅兵会见青海民族大学党委书记黄世和、校长赵海兴一行",
+   "review_status": "pending",
+   "warnings": [
+    "extractor_upgrade_requires_review",
+    "action_requirement_unknown"
+   ],
+   "kind": "C 裸日期串（必须保持不确定）",
+   "snapshot_ids": [
+    "f0092cf8-3f4b-5ca7-b412-5bea7660b7f7"
+   ],
+   "hits": [
+    {
+     "kind": "C 裸日期串（必须保持不确定）",
+     "quote": "10月14日，天津大学党委书记梅兵在卫津路校区会见青海民族大学党委书记黄世和、校长赵海兴一行",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": false
+    }
+   ]
+  },
+  {
+   "candidate_id": "b904035b-cb60-55e0-b6b9-814737267a53",
+   "title": "【重要通知】卫津路校区就业指导中心即日起搬回大学生活动中心",
+   "review_status": "pending",
+   "warnings": [
+    "generic_body_fallback_requires_review",
+    "relative_entry_link_requires_review",
+    "partial_attachment_or_body_requires_review",
+    "action_requirement_unknown"
+   ],
+   "kind": "C 裸日期串（必须保持不确定）",
+   "snapshot_ids": [
+    "a7bc5e5e-c0e3-5f03-8846-f1e7b68da2ee"
+   ],
+   "hits": [
+    {
+     "kind": "C 裸日期串（必须保持不确定）",
+     "quote": "卫津路校区大学生活动中心装修改造已经结束，卫津路校区就业指导中心即日起搬回大学生活动中心，于2024年11月4日（周一）正式对企业师生办理各项业务服务工作，敬请互相转告",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": false
+    },
+    {
+     "kind": "C 裸日期串（必须保持不确定）",
+     "quote": "2024年11月2日",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": false
+    }
+   ]
+  },
+  {
+   "candidate_id": "bc9d93e2-d94d-5948-8073-f86322c822a7",
+   "title": "Transactions of Tianjin University系列学术讲座",
+   "review_status": "pending",
+   "warnings": [
+    "extractor_upgrade_requires_review",
+    "action_requirement_unknown"
+   ],
+   "kind": "C 裸日期串（必须保持不确定）",
+   "snapshot_ids": [
+    "caff7551-19ca-5d7d-a923-89bd0aec9f30"
+   ],
+   "hits": [
+    {
+     "kind": "C 裸日期串（必须保持不确定）",
+     "quote": "2023年3月15日上午10点，天津大学学报（英文版）系列学术讲座第41期将在科研云Bilibili和邃瞳科学云微信视频号平台上线",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": false
+    }
+   ]
+  },
+  {
+   "candidate_id": "bf7263e3-5886-5713-9eed-0e489f0ab262",
+   "title": "关于正式上线新导师助研金管理系统的通知",
+   "review_status": "pending",
+   "warnings": [
+    "extractor_upgrade_requires_review"
+   ],
+   "kind": "C 裸日期串（必须保持不确定）",
+   "snapshot_ids": [
+    "f0d76704-f0cb-5548-8e33-dd7eaf89a380"
+   ],
+   "hits": [
+    {
+     "kind": "C 裸日期串（必须保持不确定）",
+     "quote": "请各学院（部）于9月29日（周一）中午12点前通过办公网将院级党政联席会审批通过的《导师助研金院级管理人员及阈值标准信息表》（电子版、扫描版）发至“研究生院综合管理办公室”，逾期将影响10月份导师助研金发放，请务必按时提交",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": false
+    },
+    {
+     "kind": "C 裸日期串（必须保持不确定）",
+     "quote": "2025年9月20日",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": false
+    }
+   ]
+  },
+  {
+   "candidate_id": "c201ca13-1139-590e-9dc0-b0829c2067bb",
+   "title": "湖南省人大常委会党组成员、副主任陈飞一行来访我校",
+   "review_status": "pending",
+   "warnings": [
+    "action_requirement_unknown"
+   ],
+   "kind": "C 裸日期串（必须保持不确定）",
+   "snapshot_ids": [
+    "00cea7db-48c8-5721-968a-d9fb245aad54"
+   ],
+   "hits": [
+    {
+     "kind": "C 裸日期串（必须保持不确定）",
+     "quote": "10月20日，湖南省人大常委会党组成员、副主任陈飞一行来访我校调研交流，校长柴立元出席座谈交流会",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": false
+    }
+   ]
+  },
+  {
+   "candidate_id": "cb3f7fe4-12e5-5bd4-aac2-068be9926150",
+   "title": "关于企业入校招聘活动入校方式的通知",
+   "review_status": "pending",
+   "warnings": [
+    "generic_body_fallback_requires_review",
+    "relative_entry_link_requires_review",
+    "extractor_upgrade_requires_review",
+    "partial_attachment_or_body_requires_review"
+   ],
+   "kind": "C 裸日期串（必须保持不确定）",
+   "snapshot_ids": [
+    "64ede02d-3e58-54a8-95ec-ee15a7b3f4c4"
+   ],
+   "hits": [
+    {
+     "kind": "C 裸日期串（必须保持不确定）",
+     "quote": "2025年8月12日",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": false
+    }
+   ]
+  },
+  {
+   "candidate_id": "d2305ddc-2514-5c5d-8698-ba1232cb0327",
+   "title": "下载中心",
+   "review_status": "pending",
+   "warnings": [
+    "generic_body_fallback_requires_review",
+    "extractor_upgrade_requires_review",
+    "partial_attachment_or_body_requires_review",
+    "action_requirement_unknown"
+   ],
+   "kind": "C 裸日期串（必须保持不确定）",
+   "snapshot_ids": [
+    "e2339112-d1bd-575f-a2f5-fe1f09aa70be"
+   ],
+   "hits": [
+    {
+     "kind": "C 裸日期串（必须保持不确定）",
+     "quote": "发布日期：2019年11月26日",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": false
+    }
+   ]
+  },
+  {
+   "candidate_id": "d8477aad-48a7-57d0-a9b9-df238f6bf3fd",
+   "title": "关于8月25日至8月31日暂停预约驾车进校的温馨提示",
+   "review_status": "pending",
+   "warnings": [
+    "generic_body_fallback_requires_review",
+    "relative_entry_link_requires_review",
+    "partial_attachment_or_body_requires_review",
+    "action_requirement_unknown"
+   ],
+   "kind": "C 裸日期串（必须保持不确定）",
+   "snapshot_ids": [
+    "a86acc33-95e4-51a4-9d75-0f0ab673554e"
+   ],
+   "hits": [
+    {
+     "kind": "C 裸日期串（必须保持不确定）",
+     "quote": "关于8月25日至8月31日暂停预约驾车进校的温馨提示",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": false
+    },
+    {
+     "kind": "C 裸日期串（必须保持不确定）",
+     "quote": "为维护校园通行秩序，保障迎新工作平稳开展，8月25日至8月31日学校将暂停驾车进校预约",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": false
+    }
+   ]
+  },
+  {
+   "candidate_id": "e1393bc3-bcc0-55f4-b9aa-9f739bfade36",
+   "title": "辽宁省水利厅直属事业单位2025年面向部分院校公开招聘拟聘人员公示",
+   "review_status": "pending",
+   "warnings": [
+    "generic_body_fallback_requires_review",
+    "relative_entry_link_requires_review",
+    "extractor_upgrade_requires_review",
+    "partial_attachment_or_body_requires_review",
+    "action_requirement_unknown"
+   ],
+   "kind": "C 裸日期串（必须保持不确定）",
+   "snapshot_ids": [
+    "29510838-d353-5e8b-9b52-46252b31c3d2",
+    "2159531f-b168-58d5-bd29-36597bd8d081"
+   ],
+   "hits": [
+    {
+     "kind": "C 裸日期串（必须保持不确定）",
+     "quote": "2025年5月28日",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": false
+    }
+   ]
+  },
+  {
+   "candidate_id": "e889e297-42df-574c-9296-7caf131db382",
+   "title": "关于企业入校招聘活动入校方式的通知",
+   "review_status": "pending",
+   "warnings": [
+    "generic_body_fallback_requires_review",
+    "relative_entry_link_requires_review",
+    "partial_attachment_or_body_requires_review"
+   ],
+   "kind": "C 裸日期串（必须保持不确定）",
+   "snapshot_ids": [
+    "abf54fb5-45ef-5fc2-9b71-c5ba2e16077b"
+   ],
+   "hits": [
+    {
+     "kind": "C 裸日期串（必须保持不确定）",
+     "quote": "2025年8月12日",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": false
+    }
+   ]
+  },
+  {
+   "candidate_id": "e8a9a7d5-5ed6-581e-a2dc-d27747c2661a",
+   "title": "25261学期全日制研究生公共课考试安排2",
+   "review_status": "pending",
+   "warnings": [
+    "html_table_spans_require_review",
+    "extractor_upgrade_requires_review",
+    "partial_attachment_or_body_requires_review",
+    "referenced_attachment_missing_requires_review",
+    "action_requirement_unknown"
+   ],
+   "kind": "C 裸日期串（必须保持不确定）",
+   "snapshot_ids": [
+    "81f1ddfb-d04c-55e0-8ed5-f9a4b661baca"
+   ],
+   "hits": [
+    {
+     "kind": "C 裸日期串（必须保持不确定）",
+     "quote": "12月14日 9:00-11:00 应用泛函分析",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": false
+    },
+    {
+     "kind": "C 裸日期串（必须保持不确定）",
+     "quote": "12月26日-12月28日 全日制英语机考",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": false
+    },
+    {
+     "kind": "C 裸日期串（必须保持不确定）",
+     "quote": "1月10日 9:00-11:30 工程数学基础（2.5h）",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": false
+    },
+    {
+     "kind": "C 裸日期串（必须保持不确定）",
+     "quote": "1月10日 14:00-16:30 应用数学基础（2.5h）",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": false
+    },
+    {
+     "kind": "C 裸日期串（必须保持不确定）",
+     "quote": "1月14日 14:00-16:00 管理运筹学（随堂考，23楼302）",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": false
+    },
+    {
+     "kind": "C 裸日期串（必须保持不确定）",
+     "quote": "1月21日 13:30-15:30 工程中的测试理论与方法",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": false
+    }
+   ]
+  },
+  {
+   "candidate_id": "ed265b4b-61f5-5f5c-95f2-f408ee70602e",
+   "title": "天津大学2027届“金秋启航”大型双选会（第二场）暨津鲁五校2027届毕业生秋季双选会天津大学专场顺利举办",
+   "review_status": "pending",
+   "warnings": [
+    "extractor_upgrade_requires_review",
+    "action_requirement_unknown"
+   ],
+   "kind": "C 裸日期串（必须保持不确定）",
+   "snapshot_ids": [
+    "625db19f-5ef3-513e-9a64-e51c253c3bfb"
+   ],
+   "hits": [
+    {
+     "kind": "C 裸日期串（必须保持不确定）",
+     "quote": "为落实教育部2027届高校毕业生“金秋启航”校园招聘月活动工作部署，扎实推进高校毕业生就业工作，搭建校企人才供需对接桥梁，10月16日，天津大学2027届“金秋启航”大型双选会（第二场）暨津鲁五校2027届毕业生秋季双选会天津大学专场顺利举办",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": false
+    },
+    {
+     "kind": "C 裸日期串（必须保持不确定）",
+     "quote": "津鲁五校2027届毕业生秋季双选会采用校际巡回招聘模式，于10月15日至20日，先后在南开大学、天津大学、山东大学、中国海洋大学、哈尔滨工业大学（威海）依次举办",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": false
+    }
+   ]
+  },
+  {
+   "candidate_id": "f3982531-73eb-543b-ab4d-da30768e2b92",
+   "title": "天津大学技术支撑起世界最大的醋酸乙烯合成反应器",
+   "review_status": "pending",
+   "warnings": [
+    "extractor_upgrade_requires_review",
+    "action_requirement_unknown"
+   ],
+   "kind": "C 裸日期串（必须保持不确定）",
+   "snapshot_ids": [
+    "f192bb00-ded8-516d-b54f-b681f4366d65"
+   ],
+   "hits": [
+    {
+     "kind": "C 裸日期串（必须保持不确定）",
+     "quote": "10月16日上午，在江苏皖维新材料有限公司装置现场，年产40万吨醋酸乙烯合成反应器在来自企业、地方政府、建设单位的共同见证下成功完成了吊装，天津大学石化中心主任张敏华教授作为技术提供方代表参加了庆祝仪式",
+     "deadline_cue": false,
+     "date_cue": false,
+     "before_date_cue": false,
+     "trailing_before": false
+    }
+   ]
+  }
+ ]
+}

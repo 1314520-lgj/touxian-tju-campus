@@ -1,0 +1,16 @@
+{
+  "product_version": "1.8.0",
+  "checks": [
+    "Standalone app:app boots from packaged assets and public sample",
+    "Public entry disables development login; unavailable SMTP is explicit; admin/docs blocked",
+    "All 73 historical published notices and quality/history responses validate",
+    "Real historical search and signed snapshot bytes work from standalone copy",
+    "Restart preserves persisted signing key and previously issued snapshot capability",
+    "Packaged public data stays unchanged and excludes authentication/private/queue/audit secrets"
+  ],
+  "public_sample_only": true,
+  "production_deployment": false,
+  "published_events": 73,
+  "events_with_incomplete_documents": 57,
+  "status": "passed"
+}

@@ -1,0 +1,30 @@
+{
+  "collected": false,
+  "reextract": {
+    "scanned": 0,
+    "upgraded": 0,
+    "failed": [],
+    "extractor_version": "campus-rules-1.9"
+  },
+  "sources": [],
+  "totals": {
+    "sources": 19,
+    "documents": 363,
+    "candidates_total": 185,
+    "candidates_pending": 4
+  },
+  "command": "reextract",
+  "data_dir": "data-operator",
+  "gateway": {
+    "source": "none",
+    "origins": []
+  },
+  "registration": {
+    "new": 0,
+    "existing": 19
+  },
+  "created_directory": false,
+  "started_at": "2026-10-19T05:31:40.377498+00:00",
+  "finished_at": "2026-10-19T05:31:41.646431+00:00",
+  "exit_code": 0
+}

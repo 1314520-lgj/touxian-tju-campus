@@ -1,0 +1,81 @@
+{
+ "collected_at": "2026-10-13T21:20:00+08:00",
+ "operator": "WorkBuddy AI acting as the network-reachable operator component",
+ "mode": "operator (CAMPUS_CLOUD_MODE=operator, CAMPUS_DATA_DIR=./data-operator, CAMPUS_TRUSTED_GATEWAY_ORIGINS=http://127.0.0.1:8791)",
+ "method_note": "第一个完整运营周期：运营方从两个真实官网栏目逐篇取证（原样暂存）→ 中继构建授权 feed → 产品在自己的安全规则下采集、解析、抽取 → 人工审核 → 发布。产品 SafeFetcher 只放行 CAMPUS_TRUSTED_GATEWAY_ORIGINS 指定的回环源；feed 条目 URL 全部是真实官网地址，中继是传输不是身份。",
+ "architecture": {
+  "relay_feed_origin": "http://127.0.0.1:8791",
+  "product_origin": "http://127.0.0.1:8000",
+  "columns": ["zs-notices", "oaa-competitions"],
+  "transport_contract": "deploy/operator/OPERATIONS.md"
+ },
+ "registration": {
+  "cycle": "20261013T122529Z",
+  "evidence_file": "deploy/operator/registration.json",
+  "sources": [
+   {"column": "zs-notices", "id": "b073859b-5ca7-4a15-a3c0-abd3b152e2fc", "feed_url": "http://127.0.0.1:8791/feed-zs-notices.json", "fetch_job": "3381269b-bc59-4382-a17d-78e653f6db8c", "fetch_state": "succeeded"},
+   {"column": "oaa-competitions", "id": "66641f20-8e72-44b3-845e-f39d3db06631", "feed_url": "http://127.0.0.1:8791/feed-oaa-competitions.json", "fetch_job": "6848d877-d7f2-4683-b15d-ba99282c9655", "fetch_state": "succeeded"}
+  ],
+  "source_health": {"health": "healthy", "verification": "verified_official", "last_error_code": null},
+  "idempotency": "create=relay-create:<identity>; mode=relay-mode:<id>; verification=relay-verify:<id>:<day>; fetch=relay-fetch:<id>:<cycle>"
+ },
+ "integrity_chain": {
+  "verified": true,
+  "checks": [
+   "relay.py build 重建的 feed 与出站 feed 逐字节一致（provenance.json 仅 generated_at 不同）",
+   "每篇快照 sha256(blob) == snapshot.content_hash",
+   "中继原样正文（<p> 包裹的逐字文本）完整出现在产品归档文档内，未改写",
+   "归档文档 = 产品固有外壳（h1 真实标题 + article:published_time 运营方记录的发布时间）+ 中继正文",
+   "capture.method=authorized_feed, capture.feed_origin=http://127.0.0.1:8791"
+  ],
+  "snapshots": [
+   {"source_url": "https://zs.tju.edu.cn/info/1116/4549.htm", "title": "天津大学2026年本科生招生章程", "published_at": "2026-05-29"},
+   {"source_url": "https://zs.tju.edu.cn/info/1116/4819.htm", "title": "天津大学关于2026年强基计划校考工作安排的通知", "published_at": "2026-06-26"},
+   {"source_url": "https://mp.weixin.qq.com/s/CSniYqr1LfSYobIeCZA6nw", "title": "2026年下半年全国大学英语四、六级考试报名通知", "published_at": "2026-09-14"},
+   {"source_url": "https://mp.weixin.qq.com/s/G1WO_Pd68kpuBbS7MTMgvg", "title": "以代码重写生命的语法！“AI+合成生物”创新大赛（2026）报名通道开启", "published_at": "2026-04-20"}
+  ]
+ },
+ "candidates": [
+  {"candidate_id": "1332a3c5-0f21-50dd-bd7d-fd93a3880318", "title": "2026年下半年全国大学英语四、六级考试报名通知", "extractor": "campus-rules-1.6", "deadlines": 7, "key_rows": ["school_deadline minute at=2026-09-24T17:00:00+08:00（报名窗口 9月22日7:00—9月24日17:00 的结束时刻）", "college_deadline 2026-12-15（学院限报解除，第 7 轮 BEFORE_DATE_CUE 修复在真实原文上的复现）", "college_deadline 2026-09-24（残疾考生合理便利申请）", "event_time 2026-12-12（笔试）", "2 行 precision=unknown（补报名截止表述，如实体警）"]},
+  {"candidate_id": "48c3f48d-6b45-5149-9ad7-48c19a6221d1", "title": "以代码重写生命的语法！“AI+合成生物”创新大赛（2026）报名通道开启", "extractor": "campus-rules-1.6", "deadlines": 1, "key_rows": ["school_deadline 2026-04-30（4月30日报名截止，年份由标题（2026）锚定）"]},
+  {"candidate_id": "5f20d6d7-66b8-5100-a097-f2dd8a549dab", "title": "天津大学2026年本科生招生章程", "extractor": "campus-rules-1.6", "deadlines": 0, "key_rows": ["规则性公告无办理截止，属正常；entry_urls 指向官网站点"]},
+  {"candidate_id": "ae65769c-af65-532d-b9c6-373e756d3027", "title": "天津大学关于2026年强基计划校考工作安排的通知", "extractor": "campus-rules-1.6", "deadlines": 0, "key_rows": ["原文含校考6月30日、报到6月30日13:00-13:30、入围查询6月28日12:00三处日程，一条未抽取（EVENT_TIME_CUE/DEADLINE_CUE 词表缺日程型句式）——已立 T19"]}
+ ],
+ "review_decisions": [
+  {"candidate_id": "1332a3c5-0f21-50dd-bd7d-fd93a3880318", "decision": "accept", "reason": "逐条核对官网原文：报名窗口按分钟精度落在窗口结束时刻，笔试12月12日为event_time，学院限报解除12月15日正确归类college_deadline，合理便利申请9月24日前均为原文引文，无改写"},
+  {"candidate_id": "48c3f48d-6b45-5149-9ad7-48c19a6221d1", "decision": "accept", "reason": "4月30日报名截止与原文一致，年份由标题（2026）锚定；warnings仅action_requirement_unknown，不影响该条截止时间发布"},
+  {"candidate_id": "5f20d6d7-66b8-5100-a097-f2dd8a549dab", "decision": "accept", "reason": "招生章程为规则性公告，无办理截止属正常；entry_urls指向官网站点，证据链完整，同意发布"},
+  {"candidate_id": "ae65769c-af65-532d-b9c6-373e756d3027", "decision": "reject", "reason": "抽取不完整：原文含校考6月30日、报到6月30日13:00-13:30、入围查询6月28日12:00三处日程，候选deadlines为空（cue词表缺日程型句式，已立T19）。发布无日期的校考安排会误导考生，待T19修复后随下周期重新发布"}
+ ],
+ "published_events": [
+  {"event_id": "a042a91c-6ed5-439d-a983-5902ebf87cb1", "title": "2026年下半年全国大学英语四、六级考试报名通知", "publication_state": "published", "deadlines": 7, "evidence_source_url": "https://mp.weixin.qq.com/s/CSniYqr1LfSYobIeCZA6nw"},
+  {"event_id": "174f21d5-d2ba-48d1-b44a-3b5bfa4fff5b", "title": "以代码重写生命的语法！“AI+合成生物”创新大赛（2026）报名通道开启", "publication_state": "published", "deadlines": 1, "evidence_source_url": "https://mp.weixin.qq.com/s/G1WO_Pd68kpuBbS7MTMgvg"},
+  {"event_id": "5fe6e0f2-c98d-4348-9be0-738aa1215f5f", "title": "天津大学2026年本科生招生章程", "publication_state": "published", "deadlines": 0, "evidence_source_url": "https://zs.tju.edu.cn/info/1116/4549.htm"}
+ ],
+ "verification": {
+  "events_api": "GET /api/v1/events -> 3 条 published（拒绝的强基计划无事件）",
+  "event_detail": "GET /api/v1/events/<id> -> published，deadlines 7/1/0 与审核对象一致",
+  "search": "GET /api/v1/search?q=四六级|报名|合成生物|招生章程 -> 各 1-2 条命中，index_status=current；本地 FTS5 索引（operator 模式未配 MeiliSearch）",
+  "review_records": "reviews 集合 4 条：3 accept + 1 reject，均带理由"
+ },
+ "fixes_made_this_cycle": [
+  "relay.py 写端点显式传 Idempotency-Key（create/mode/verification/fetch/decision 各自稳定语义）",
+  "relay.py report/decide 改用候选真实形状（candidate_id/revision，决策路径 /admin/reviews/{candidate_id}/decision），并清掉 report 里遗留的未定义 health 字典",
+  "relay.py AdminSession 持久化会话 cookie（session.json，已 gitignore）：dev-auth 每邮箱每小时 6 个验证码、30 秒不重发，逐子命令登录会把自己锁在门外",
+  "tools/build_release_manifest.py：拒绝 deploy/operator/session.json（活凭证），排除 data-operator/ 与 deploy/operator/out/（4 例先红后绿钉住）"
+ ],
+ "new_tasks": [
+  "T19：日程型日期（校考/报到/查询开启）抽取缺口——EVENT_TIME_CUE 仅匹配 活动|项目|会议|考试|讲座|举办|举行 时间 与行首 时间：；DEADLINE_CUE 缺日程句式"
+ ],
+ "suite": {
+  "console": "657 passed, 8 skipped, 1 warning, 130 subtests passed in 200.22s (0:03:20)",
+  "junit": {"tests": 795, "failures": 0, "errors": 0, "skipped": 8},
+  "note": "较第 8 轮 642 +9 test_operator_relay +2 operator 模式启动器 +4 清单守卫 = 657；第 8 轮证据运行早于中继工具链，本轮为其补齐覆盖。全套件须以 --basetemp 指向工程内空目录运行，否则沙箱 safe-delete 拦截器会在收尾清理系统临时目录时注入标记并杀死 pytest（ junit 已写、退出码 1 的假失败）"
+ },
+ "not_verified": [
+  "发布事件的截止时间正确性由运营方逐条读原文确认，属人工审核结论，无第二机器证据",
+  "operator 模式搜索走本地 FTS5；MeiliSearch 链路未在本次周期启用",
+  "强基计划候选待 T19 修复后于下一周期重新采集发布",
+  "i.tju.edu.cn / zzzx.tju.edu.cn 域名用途仍待运营方确认；16 个失效公众号链接仍待替换来源"
+ ]
+}

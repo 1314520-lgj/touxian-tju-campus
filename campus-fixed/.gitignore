@@ -1,0 +1,18 @@
+data/
+data-operator/
+.campus*/
+.review*/
+.test-temp*/
+.snapshot-tmp*/
+node_modules/
+__pycache__/
+.pytest_cache/
+*.pyc
+.env
+dist/
+web/
+
+# Operator relay: the session cookie is a live credential and the feeds are
+# build output regenerated from staging/ by ``relay.py build``.
+deploy/operator/session.json
+deploy/operator/out/

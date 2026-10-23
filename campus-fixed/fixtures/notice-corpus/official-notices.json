@@ -1,0 +1,427 @@
+{
+  "schema_version": "1.0",
+  "verified_on": "2026-10-08",
+  "scope": "short_official_excerpts",
+  "notice": "人工挑选的 20 条官方页面短摘录，用于发现规则缺陷；不是随机测试集、完整公告准确率或生产采集成功证明。title 是人工简写标签。snippet 保持公开页面渲染文字，表格分隔符可能由浏览工具生成。全部需要结合原文复核。",
+  "items": [
+    {
+      "id": "gs-plan",
+      "title": "培养计划变更",
+      "source_url": "https://gs.tju.edu.cn/info/1131/14012.htm",
+      "published_at": "2025-05-27T00:00:00+08:00",
+      "snippet": "需填写《研究生个人培养计划变更申请表》",
+      "expected": {
+        "date_mentions": [],
+        "materials": [
+          "《研究生个人培养计划变更申请表》"
+        ],
+        "requires_review": true,
+        "reason": "只提供材料片段，签字与证明要求仍需原文"
+      },
+      "limits": [
+        "短摘录，非完整通知；人工标注仅以可见片段和已核实发布日期为依据。"
+      ],
+      "published_date_precision": "day"
+    },
+    {
+      "id": "gs-deferred",
+      "title": "缓考申请",
+      "source_url": "https://gs.tju.edu.cn/info/1131/14022.htm",
+      "published_at": "2025-05-27T00:00:00+08:00",
+      "snippet": "填写《天津大学研究生课程缓考申请表》",
+      "expected": {
+        "date_mentions": [],
+        "materials": [
+          "《天津大学研究生课程缓考申请表》"
+        ],
+        "requires_review": true,
+        "reason": "考试前的相对时点不等于固定日期"
+      },
+      "limits": [
+        "短摘录，非完整通知；人工标注仅以可见片段和已核实发布日期为依据。"
+      ],
+      "published_date_precision": "day"
+    },
+    {
+      "id": "gs-score-review",
+      "title": "成绩复核期限",
+      "source_url": "https://gs.tju.edu.cn/info/1131/14032.htm",
+      "published_at": "2025-05-27T00:00:00+08:00",
+      "snippet": "一般为成绩公布后的十个工作日",
+      "expected": {
+        "date_mentions": [],
+        "materials": [],
+        "requires_review": true,
+        "reason": "缺成绩公布日期及工作日日历，不推算绝对截止"
+      },
+      "limits": [
+        "短摘录，非完整通知；人工标注仅以可见片段和已核实发布日期为依据。"
+      ],
+      "published_date_precision": "day"
+    },
+    {
+      "id": "gs-retake-waiver",
+      "title": "选修重修材料豁免",
+      "source_url": "https://gs.tju.edu.cn/info/1131/14042.htm",
+      "published_at": "2025-05-27T00:00:00+08:00",
+      "snippet": "选修课重修无须提交重修报名确认表",
+      "expected": {
+        "date_mentions": [],
+        "materials": [],
+        "requires_review": true,
+        "reason": "限定选修课，不能列为必交材料"
+      },
+      "limits": [
+        "短摘录，非完整通知；人工标注仅以可见片段和已核实发布日期为依据。"
+      ],
+      "published_date_precision": "day"
+    },
+    {
+      "id": "gs-self-print",
+      "title": "自助证明打印",
+      "source_url": "https://gs.tju.edu.cn/info/1131/14052.htm",
+      "published_at": "2025-05-27T00:00:00+08:00",
+      "snippet": "可打印研究生在读证明和中英文对照成绩单",
+      "expected": {
+        "date_mentions": [],
+        "materials": [],
+        "requires_review": true,
+        "reason": "输出证明不等于申请者需提交的材料"
+      },
+      "limits": [
+        "短摘录，非完整通知；人工标注仅以可见片段和已核实发布日期为依据。"
+      ],
+      "published_date_precision": "day"
+    },
+    {
+      "id": "gs-transfer-close",
+      "title": "转专业系统关闭",
+      "source_url": "https://gs.tju.edu.cn/info/1111/18052.htm",
+      "published_at": "2026-04-21T00:00:00+08:00",
+      "snippet": "4 月 28 日 16:00，逾期系统关闭不再受理",
+      "expected": {
+        "date_mentions": [
+          {
+            "text": "4 月 28 日",
+            "iso_date": "2026-04-28",
+            "kind": "deadline"
+          }
+        ],
+        "materials": [],
+        "requires_review": true,
+        "reason": "原文有另一学院报送节点，不能合并为一个学生截止"
+      },
+      "limits": [
+        "短摘录，非完整通知；人工标注仅以可见片段和已核实发布日期为依据。"
+      ],
+      "published_date_precision": "day"
+    },
+    {
+      "id": "gs-essay",
+      "title": "征文学院报送",
+      "source_url": "https://gs.tju.edu.cn/info/1271/21622.htm",
+      "published_at": "2026-09-14T00:00:00+08:00",
+      "snippet": "截止时间不晚于10月15日。",
+      "expected": {
+        "date_mentions": [
+          {
+            "text": "10月15日",
+            "iso_date": "2026-10-15",
+            "kind": "deadline"
+          }
+        ],
+        "materials": [],
+        "requires_review": true,
+        "reason": "此为学院汇总后报送上限，学生须核实学院更早节点"
+      },
+      "limits": [
+        "短摘录，非完整通知；人工标注仅以可见片段和已核实发布日期为依据。"
+      ],
+      "published_date_precision": "day"
+    },
+    {
+      "id": "gs-stipend",
+      "title": "助研金人工填报优先",
+      "source_url": "https://gs.tju.edu.cn/info/1271/17832.htm",
+      "published_at": "2026-01-05T00:00:00+08:00",
+      "snippet": "若导师当月已人工填报该生助研金",
+      "expected": {
+        "date_mentions": [],
+        "materials": [],
+        "requires_review": true,
+        "reason": "条件句且主语为导师，不应生成学生办理截止"
+      },
+      "limits": [
+        "短摘录，非完整通知；人工标注仅以可见片段和已核实发布日期为依据。"
+      ],
+      "published_date_precision": "day"
+    },
+    {
+      "id": "ico-cambridge",
+      "title": "寒假项目报名",
+      "source_url": "https://ico.tju.edu.cn/info/1011/5862.htm",
+      "published_at": "2026-09-23T00:00:00+08:00",
+      "snippet": "报名截止  | 2026年12月1日",
+      "expected": {
+        "date_mentions": [
+          {
+            "text": "2026年12月1日",
+            "iso_date": "2026-12-01",
+            "kind": "deadline"
+          }
+        ],
+        "materials": [],
+        "requires_review": true,
+        "reason": "网页表格渲染片段；费用与适用对象未包含"
+      },
+      "limits": [
+        "短摘录，非完整通知；人工标注仅以可见片段和已核实发布日期为依据。"
+      ],
+      "published_date_precision": "day"
+    },
+    {
+      "id": "ico-oxford-capacity",
+      "title": "满额提前停止招生",
+      "source_url": "https://ico.tju.edu.cn/info/1011/5852.htm",
+      "published_at": "2026-09-20T00:00:00+08:00",
+      "snippet": "报名截止：各模块名额满即停止招生",
+      "expected": {
+        "date_mentions": [],
+        "materials": [],
+        "requires_review": true,
+        "reason": "存在名额条件，不能保证固定日期前一直可报名"
+      },
+      "limits": [
+        "短摘录，非完整通知；人工标注仅以可见片段和已核实发布日期为依据。"
+      ],
+      "published_date_precision": "day"
+    },
+    {
+      "id": "ico-madrid",
+      "title": "暑期交流申请材料",
+      "source_url": "https://ico.tju.edu.cn/info/1011/5572.htm",
+      "published_at": "2026-03-24T00:00:00+08:00",
+      "snippet": "完整填写附件《天津大学境外交流申请表》",
+      "expected": {
+        "date_mentions": [],
+        "materials": [
+          "《天津大学境外交流申请表》"
+        ],
+        "requires_review": true,
+        "reason": "附件有本科生与研究生版本，需结合身份选择"
+      },
+      "limits": [
+        "短摘录，非完整通知；人工标注仅以可见片段和已核实发布日期为依据。"
+      ],
+      "published_date_precision": "day"
+    },
+    {
+      "id": "ico-munich",
+      "title": "暑期项目时间区间",
+      "source_url": "https://ico.tju.edu.cn/info/1011/5472.htm",
+      "published_at": "2026-03-13T00:00:00+08:00",
+      "snippet": "项目时间：2026年7月20日-8月2日",
+      "expected": {
+        "date_mentions": [
+          {
+            "text": "2026年7月20日",
+            "iso_date": "2026-07-20",
+            "kind": "event_time"
+          },
+          {
+            "text": "8月2日",
+            "iso_date": "2026-08-02",
+            "kind": "event_time"
+          }
+        ],
+        "materials": [],
+        "requires_review": true,
+        "reason": "属于项目发生区间，不能当作报名截止"
+      },
+      "limits": [
+        "短摘录，非完整通知；人工标注仅以可见片段和已核实发布日期为依据。"
+      ],
+      "published_date_precision": "day"
+    },
+    {
+      "id": "ico-guangzhou",
+      "title": "留学申报截止",
+      "source_url": "https://ico.tju.edu.cn/info/1011/4684.htm",
+      "published_at": "2025-03-11T00:00:00+08:00",
+      "snippet": "申报提交截止时间为2025年6月30日。",
+      "expected": {
+        "date_mentions": [
+          {
+            "text": "2025年6月30日",
+            "iso_date": "2025-06-30",
+            "kind": "deadline"
+          }
+        ],
+        "materials": [],
+        "requires_review": true,
+        "reason": "另有校内咨询节点，需读原文安排"
+      },
+      "limits": [
+        "短摘录，非完整通知；人工标注仅以可见片段和已核实发布日期为依据。"
+      ],
+      "published_date_precision": "day"
+    },
+    {
+      "id": "ico-leuven",
+      "title": "联合培养申请期限",
+      "source_url": "https://ico.tju.edu.cn/info/1011/5452.htm",
+      "published_at": "2026-03-11T00:00:00+08:00",
+      "snippet": "申请截止日期为202 6年4月1日前",
+      "expected": {
+        "date_mentions": [
+          {
+            "text": "202 6年4月1日",
+            "iso_date": "2026-04-01",
+            "kind": "deadline"
+          }
+        ],
+        "materials": [],
+        "requires_review": true,
+        "reason": "数字间空格来自公开网页文本；日前的时刻未明确"
+      },
+      "limits": [
+        "短摘录，非完整通知；人工标注仅以可见片段和已核实发布日期为依据。"
+      ],
+      "published_date_precision": "day"
+    },
+    {
+      "id": "cic-selection",
+      "title": "拔尖计划报名",
+      "source_url": "https://cic.tju.edu.cn/info/1041/5956.htm",
+      "published_at": "2025-08-30T00:00:00+08:00",
+      "snippet": "报名截止时间为9月7日（周日）13：00。",
+      "expected": {
+        "date_mentions": [
+          {
+            "text": "9月7日",
+            "iso_date": "2025-09-07",
+            "kind": "deadline"
+          }
+        ],
+        "materials": [],
+        "requires_review": true,
+        "reason": "仅摘录截止，未包含适用年级与选拔条件"
+      },
+      "limits": [
+        "短摘录，非完整通知；人工标注仅以可见片段和已核实发布日期为依据。"
+      ],
+      "published_date_precision": "day"
+    },
+    {
+      "id": "me-phd",
+      "title": "博士秋季批次截止",
+      "source_url": "https://me.tju.edu.cn/info/1041/46461.htm",
+      "published_at": null,
+      "snippet": "2026年1月5日（晚24时截止）",
+      "expected": {
+        "date_mentions": [
+          {
+            "text": "2026年1月5日",
+            "iso_date": "2026-01-05",
+            "kind": "deadline"
+          }
+        ],
+        "materials": [],
+        "requires_review": true,
+        "reason": "24时需以当日结束核对，且存在另一批次"
+      },
+      "limits": [
+        "短摘录，非完整通知；人工标注仅以可见片段和已核实发布日期为依据。"
+      ],
+      "published_date_precision": "unknown"
+    },
+    {
+      "id": "scet-summer",
+      "title": "夏令营寄出期限",
+      "source_url": "https://scet.tju.edu.cn/info/1019/9418.htm",
+      "published_at": null,
+      "snippet": "截止时间（7月4日）以寄出时间为准。",
+      "expected": {
+        "date_mentions": [
+          {
+            "text": "7月4日",
+            "iso_date": null,
+            "kind": "deadline"
+          }
+        ],
+        "materials": [],
+        "requires_review": true,
+        "reason": "未保存可核实发布日期，不仅凭届别推断年份；寄出与签收不同"
+      },
+      "limits": [
+        "短摘录，非完整通知；人工标注仅以可见片段和已核实发布日期为依据。"
+      ],
+      "published_date_precision": "unknown"
+    },
+    {
+      "id": "job-dispatch-change",
+      "title": "假期派遣时间变更",
+      "source_url": "https://job.tju.edu.cn/news/content/id/2728.html",
+      "published_at": "2026-07-27T00:00:00+08:00",
+      "snippet": "申请截止时间提前至8月2日16：30",
+      "expected": {
+        "date_mentions": [
+          {
+            "text": "8月2日",
+            "iso_date": "2026-08-02",
+            "kind": "deadline"
+          }
+        ],
+        "materials": [],
+        "requires_review": true,
+        "reason": "提前通知须复核替代关系，不能保留旧期限继续提醒"
+      },
+      "limits": [
+        "短摘录，非完整通知；人工标注仅以可见片段和已核实发布日期为依据。"
+      ],
+      "published_date_precision": "day"
+    },
+    {
+      "id": "job-employer-fair",
+      "title": "面向用人单位的双选会",
+      "source_url": "https://job.tju.edu.cn/news/content/id/2730.html",
+      "published_at": "2026-08-20T00:00:00+08:00",
+      "snippet": "时间：2026年9月18日（星期五）",
+      "expected": {
+        "date_mentions": [
+          {
+            "text": "2026年9月18日",
+            "iso_date": "2026-09-18",
+            "kind": "event_time"
+          }
+        ],
+        "materials": [],
+        "requires_review": true,
+        "reason": "报名流程主要面向用人单位，学生不能套用雇主申请任务"
+      },
+      "limits": [
+        "短摘录，非完整通知；人工标注仅以可见片段和已核实发布日期为依据。"
+      ],
+      "published_date_precision": "day"
+    },
+    {
+      "id": "oaa-withdraw",
+      "title": "放弃辅修申请材料",
+      "source_url": "https://oaa.tju.edu.cn/info/1056/5688.htm",
+      "published_at": null,
+      "snippet": "请填写《天津大学本科生放弃辅修双学位申请表》",
+      "expected": {
+        "date_mentions": [],
+        "materials": [
+          "《天津大学本科生放弃辅修双学位申请表》"
+        ],
+        "requires_review": true,
+        "reason": "历史通知仅作规则评估，不能当作当前办理入口"
+      },
+      "limits": [
+        "短摘录，非完整通知；人工标注仅以可见片段和已核实发布日期为依据。"
+      ],
+      "published_date_precision": "unknown"
+    }
+  ]
+}

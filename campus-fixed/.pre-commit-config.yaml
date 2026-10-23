@@ -1,0 +1,39 @@
+# Pre-commit hooks for 偷闲·天大版 (https://pre-commit.com)
+#
+# Run `pre-commit install` once per clone; afterwards hooks gate every commit.
+#
+# What is deliberately NOT enabled: any end-of-line normalizer. The tree
+# intentionally mixes LF and CRLF per file (AI_PROJECT_CONTEXT section 3.6) and
+# RELEASE_MANIFEST.json must ship as pure LF -- rewriting line endings tree-wide
+# would bury real changes and break that assertion.
+
+repos:
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.17.0
+    hooks:
+      - id: ruff
+        args: [--fix]
+      - id: ruff-format
+
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v6.0.0
+    hooks:
+      - id: trailing-whitespace
+        # docs 与脚本里有大量中文全角空格之外的布局空格也在这个名单外；
+        # 用 exclude 守住 CRLF 文件与 JSON。
+        exclude: |
+          (?x)^(
+            .*\.json$|
+            data/.*
+          )$
+      - id: end-of-file-fixer
+        exclude: |
+          (?x)^(
+            .*\.json$|
+            data/.*
+          )$
+      - id: check-json
+      - id: check-yaml
+      - id: check-merge-conflict
+      - id: check-added-large-files
+        args: [--maxkb=20480]

@@ -1,0 +1,162 @@
+{
+  "counts": {
+    "accept": 25,
+    "error": 4
+  },
+  "details": [
+    {
+      "candidate_id": "096a0ec6-fd1c-5d54-b2b5-2cb5258b9510",
+      "title": "天津大学考点关于雅思考试防疫要求的通知",
+      "decision": "accept",
+      "reason": "真实通知，依据完整",
+      "error": "{\"code\":\"cancel_target_required\",\"message\":\"取消通知必须关联原事项\",\"request_id\":\"6791aa8a-6a53-4c98-a264-cb78d68aa228\",\"details\":{}}"
+    },
+    {
+      "candidate_id": "0b93e6d9-9491-51f2-bbe6-6c43a4f88b0a",
+      "title": "“万企进校园”天津大学2025年春季大型双选会",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "0f772e65-0c5d-51bb-8aa7-887ba09e1dad",
+      "title": "【考试安排】2021",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "175683e0-6d2c-510d-8af0-21bcd88021fb",
+      "title": "关于导师助研金系统功能升级的温馨提示",
+      "decision": "accept",
+      "reason": "真实通知，依据完整",
+      "error": "{\"code\":\"cancel_target_required\",\"message\":\"取消通知必须关联原事项\",\"request_id\":\"05663293-9ac0-4696-aaf4-357df7b818e5\",\"details\":{}}"
+    },
+    {
+      "candidate_id": "2d87b867-68dc-5964-a4e0-a8592c26766d",
+      "title": "21222学期研究生公共课补充考试安排（《工程数学基础》、《工程应用英语》）",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "3313a48f-afe4-5f07-9d2a-77f2e378e256",
+      "title": "【考试安排】2021",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "366eb57a-4612-5dbe-920b-74ac3782551c",
+      "title": "2026级新生缴学宿费的通知",
+      "decision": "accept",
+      "reason": "真实通知，依据完整",
+      "error": "{\"code\":\"cancel_target_required\",\"message\":\"取消通知必须关联原事项\",\"request_id\":\"6e50d076-8841-4d2f-b2eb-9e6a87cc7fce\",\"details\":{}}"
+    },
+    {
+      "candidate_id": "3a5dca50-5295-522b-a4c7-cc6907f30e5d",
+      "title": "工程类专业学位类别和专业领域名称的中英文对照（建议稿）",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "3f4b2bb6-f85a-5b26-a05e-65f533e581d7",
+      "title": "【课程学习】关于2022级研究生《学术道德规范》在线课程学习的通知",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "618b4842-c5f5-5a85-bca8-a2700958c48f",
+      "title": "天津大学2025年春季校园招聘活动邀请函",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "69fdf06e-9259-5f10-9536-4e67a7b59d84",
+      "title": "“万企进校园”天津大学2024年秋季大型双选会",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "6a5ff1a8-6754-5956-8cd8-5750abeb80ff",
+      "title": "天津大学2024年医科春季专场招聘会",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "6f9ff30e-c467-5dd2-a8f9-631ea5c80dc9",
+      "title": "天津大学2024届毕业生“求是奖” 评审结果公示",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "78d641df-84b0-5032-9fca-57242cc59c3a",
+      "title": "第三届全国大学生职业规划大赛总决赛专场招聘会暨“千校万企供需对接会”",
+      "decision": "accept",
+      "reason": "真实通知，依据完整",
+      "error": "{\"code\":\"cancel_target_required\",\"message\":\"取消通知必须关联原事项\",\"request_id\":\"1a573f16-9a6e-4973-b3ba-6e210c0d169f\",\"details\":{}}"
+    },
+    {
+      "candidate_id": "7e9439f6-0284-5c8d-8760-560b391e7fa4",
+      "title": "“万企进校园”天津大学2024年春季就业实习双选会",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "99b26bf9-1ee8-5a7f-811b-d0938c2491f9",
+      "title": "辽宁省水利厅直属事业单位2025年面向部分院校公开招聘拟聘人员公示",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "a7577dcd-3294-5b6e-8392-bce729c166a5",
+      "title": "【重要通知】卫津路校区就业指导中心即日起搬回大学生活动中心",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "b24c6676-4bb8-5453-873b-9ebca5596af2",
+      "title": "天津市2025届毕业生一次性求职补贴申领名单公示",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "b58a3624-4774-5daf-b81f-d69346ee98d3",
+      "title": "天津大学就业指导中心2025年暑假值班安排",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "c23c6704-5240-51d0-b7f6-f80d108976df",
+      "title": "天津大学就业指导中心2025年寒假值班安排",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "d2305ddc-2514-5c5d-8698-ba1232cb0327",
+      "title": "下载中心",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "dc22b666-64ee-5927-9997-522c7af585b1",
+      "title": "“万企进校园”天津大学2023年秋季大型双选会（第二场）",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "de036a64-0831-5f05-b37d-d58f9cd3609f",
+      "title": "天津大学2024年医科秋季专场招聘会",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "fa9c00a1-fafb-5142-b5bb-3a261f82e06c",
+      "title": "天津大学新版学位论文封面发布",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    },
+    {
+      "candidate_id": "fdf2818f-22a2-5013-bb01-cbd90d315a9b",
+      "title": "“万企进校园”天津大学2024年春季大型双选会",
+      "decision": "accept",
+      "reason": "真实通知，依据完整"
+    }
+  ]
+}

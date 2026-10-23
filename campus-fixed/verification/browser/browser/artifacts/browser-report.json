@@ -1,0 +1,44 @@
+{
+  "base": "http://127.0.0.1:61616",
+  "checks": [
+    "desktop public demo, three synthetic notices",
+    "student OTP login through visible development code",
+    "real catalog profile and saved settings survive tab changes",
+    "public event save/complete/reopen and evidence snapshot file",
+    "full-text search and citation-grounded answer",
+    "local text extraction sends nothing until confirmation and no raw excerpt by default",
+    "browser OCR recognizes synthetic image locally before confirmed save",
+    "calendar preferences, valid ICS and immediate revocation",
+    "mobile public layout, keyboard modal close, login and menu",
+    "admin withdrawal removes public detail/search then restores version",
+    "no uncaught browser exceptions or server 5xx"
+  ],
+  "pageErrors": [],
+  "failedResponses": [],
+  "ocr": "passed; real Tesseract worker and downloaded chi_sim+eng model recognized synthetic Chinese PNG without API POST",
+  "screenshots": [
+    "verification/browser/browser/artifacts/01-desktop-public.png",
+    "verification/browser/browser/artifacts/02-desktop-profile.png",
+    "verification/browser/browser/artifacts/03-desktop-evidence.png",
+    "verification/browser/browser/artifacts/04-desktop-answer.png",
+    "verification/browser/browser/artifacts/05-desktop-private.png",
+    "verification/browser/browser/artifacts/05b-desktop-ocr.png",
+    "verification/browser/browser/artifacts/06-desktop-calendar.png",
+    "verification/browser/browser/artifacts/07-mobile-profile.png",
+    "verification/browser/browser/artifacts/08-mobile-search.png",
+    "verification/browser/browser/artifacts/09-admin-withdrawal.png"
+  ],
+  "browser": "156.0.8078.4",
+  "viewports": [
+    {
+      "width": 1440,
+      "height": 1000
+    },
+    {
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "personalItemId": "a24a69c1-f43d-40ee-90f3-cba98d97c3a2",
+  "status": "passed"
+}

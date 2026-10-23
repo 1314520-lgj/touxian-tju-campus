@@ -1,0 +1,86 @@
+{
+  "base": "http://127.0.0.1:8021",
+  "query": "奖学金申请材料",
+  "mode": "Real browser_demo search results. Synthetic notices only; no intercepted requests.",
+  "min_contrast_required": 4.5,
+  "hits": [
+    {
+      "event_id": "bf545991-4990-45db-a0b3-3b5dc6d63fc0",
+      "title": "【演示】奖学金材料提交",
+      "excerpt": "全体本科生请于2026-10-13前提交奖学金申请表、成绩单。办理入口：https://example.org/demo/scholarship。这是功能演示，不能用于真实办理。"
+    },
+    {
+      "event_id": "66aa7f45-440f-42d9-a8ea-6b5e7d76f4b1",
+      "title": "【演示】校园竞赛报名",
+      "excerpt": "【演示】校园竞赛报名"
+    }
+  ],
+  "marks": [
+    {
+      "region": "title",
+      "text": "奖学金材料",
+      "color": "rgb(37, 48, 71)",
+      "background": "rgb(219, 227, 255)",
+      "contrast": 10.33,
+      "padding_top": "0px",
+      "padding_bottom": "0px",
+      "padding_left": "0px",
+      "padding_right": "0px",
+      "border_top": "0px",
+      "border_bottom": "0px",
+      "border_left": "0px",
+      "border_right": "0px"
+    },
+    {
+      "region": "excerpt",
+      "text": "奖学金申请",
+      "color": "rgb(83, 96, 120)",
+      "background": "rgb(219, 227, 255)",
+      "contrast": 4.96,
+      "padding_top": "0px",
+      "padding_bottom": "0px",
+      "padding_left": "0px",
+      "padding_right": "0px",
+      "border_top": "0px",
+      "border_bottom": "0px",
+      "border_left": "0px",
+      "border_right": "0px"
+    }
+  ],
+  "contrast": [
+    {
+      "region": "title",
+      "text": "奖学金材料",
+      "contrast": 10.33,
+      "background": "rgb(219, 227, 255)"
+    },
+    {
+      "region": "excerpt",
+      "text": "奖学金申请",
+      "contrast": 4.96,
+      "background": "rgb(219, 227, 255)"
+    }
+  ],
+  "screenshots": [
+    "verification/highlight/highlight-contrast.png"
+  ],
+  "pageErrors": [],
+  "failedResponses": [],
+  "browser": "156.0.8078.4",
+  "worst_contrast": {
+    "region": "excerpt",
+    "text": "奖学金申请",
+    "color": "rgb(83, 96, 120)",
+    "background": "rgb(219, 227, 255)",
+    "contrast": 4.96,
+    "padding_top": "0px",
+    "padding_bottom": "0px",
+    "padding_left": "0px",
+    "padding_right": "0px",
+    "border_top": "0px",
+    "border_bottom": "0px",
+    "border_left": "0px",
+    "border_right": "0px"
+  },
+  "status": "passed"
+}

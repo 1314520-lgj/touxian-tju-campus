@@ -1,0 +1,842 @@
+{
+  "product_version": "1.8.0",
+  "contract_version": "1.5.0",
+  "backend": {
+    "passed": 908,
+    "passed_subtests": 151,
+    "skipped": 8,
+    "failed": 0,
+    "junit_total": 1067,
+    "junit": "verification/backend.xml",
+    "skip_reason": "No isolated PostgreSQL test connection was supplied; concurrency and lease cases not executed",
+    "console_summary": "908 passed, 8 skipped, 0 failed, 151 subtests (junit tests=1067)",
+    "exit_code": 0,
+    "round_24_rerun": "2026-10-21 13:14, on the frozen tree this delivery ships: 908 passed / 8 skipped / 0 failed / 151 subtests, exit 0, 326.9s; junit tests=1067 failures=0 errors=0 skipped=8 (1067 = 908 cases + 151 subtests + 8 skips). Command: python -m pytest server/campus/tests -q --junitxml=verification/backend.xml --basetemp=.test-temp-final19/basetemp, with PYTHONUTF8=1 and the basetemp parent pre-created (without PYTHONUTF8 the two prune cases fail on cp936 decoding; without the parent pytest reports FileNotFoundError noise). The 8 skips are the PostgreSQL cases.",
+    "round_18_rerun": "2026-10-21 02:05:57, on the tree this delivery ships: 881 passed / 8 skipped / 0 failed / 132 subtests, exit 0, 225.7s; junit tests=1021 failures=0 errors=0 skipped=8, hostname=localhost after normalisation. The 8 skips are the PostgreSQL cases (no isolated PG test URL supplied). The fresh XML carried 9 build-machine paths (the skip messages print the checkout path) and tools/normalize_evidence_paths.py rewrote them; a second --check run reports 0, and test_evidence_tree_hygiene.py passes (5 passed). Frontend unit tests: 36 passed.",
+    "note": "Round 14 ran the whole suite on the tree that ships twice: once for the extraction fixes (758) and once after the real-data publishing pass (797). Delta 680 -> 797 (+117 cases, all built from real pages or real notices): +8 anti-scraping interstitials, +7 deadline quote, +5 self-deriving quote, +7 headline over body, +9 宣讲会, +28 materials/event type, +14 collection entry point, +8 error pages, +4 listing priority, +9 cancellation mention, +7 action required, +3 blocked sources, +5 re-extraction command. junit: tests=935, failures=0, errors=0, skipped=8. Final gate for the shipping tree: 816 passed / 8 skipped / 0 failed / 132 subtests, junit tests=956."
+  },
+  "api_contract": {
+    "operations": 59,
+    "success_responses_validated": 59
+  },
+  "frontend": {
+    "passed": 36,
+    "failed": 0,
+    "production_build": "passed",
+    "command": "node --test src/campus/tests/*.test.mjs (33 at round 14, 36 after the round-18 deadline-ordering cases)",
+    "bundle": "dist/ rebuilt and mirrored byte-for-byte into web/ (10 files each), pinned by test_bootstrap.py::ShippedFrontendParityTests"
+  },
+  "search_highlight": {
+    "entry": "src/campus/tests/highlight-contrast.e2e.mjs",
+    "report": "verification/highlight/highlight-report.json",
+    "query": "奖学金申请材料",
+    "marks_rendered": 2,
+    "hits_rendered": 2,
+    "worst_contrast": 4.96,
+    "required_contrast": 4.5,
+    "title_contrast": 10.33,
+    "invariants": [
+      "Highlighted title and excerpt equal the API values character for character, so evidence excerpts stay substring-verifiable",
+      "Every marked run is a concatenation of query substrings; adjacent matches merge into one mark",
+      "The mark adds zero padding and zero border, so it cannot change line breaking",
+      "Contrast measured from computed styles with alpha compositing up the ancestor chain"
+    ],
+    "known_limit": "A result reached only through near-synonym expansion (for example 报名 for 申请) carries no highlight, because the highlight only knows the literal query. Ranking already keeps literal matches ahead of synonym-only matches; the response contract is frozen at 1.5.0 and was not changed to expose matched terms."
+  },
+  "concurrent_startup": {
+    "defect": "Two cores opening one fresh WAL database at once could fail outright: BEGIN IMMEDIATE in the schema bootstrap was answered with SQLITE_READONLY rather than SQLITE_BUSY, which busy_timeout does not cover",
+    "measured_before": "13 failures in 320 two-core attempts (6/200 and 7/120), all 'attempt to write a readonly database'",
+    "measured_after": "300/300 two-core attempts converged (120/120 and 180/180)",
+    "fix": "server/campus/db.py Store._bootstrap retries transient SQLite contention and disposes the pool between attempts, because a connection that lost the race stays read-only for its lifetime",
+    "regression_tests": [
+      "ConcurrentStartupTests.test_bootstrap_retries_a_transient_readonly_race",
+      "ConcurrentStartupTests.test_bootstrap_does_not_retry_a_real_failure",
+      "ConcurrentStartupTests.test_two_cores_open_a_fresh_database_together"
+    ]
+  },
+  "browser": {
+    "entries": 9,
+    "assertions_passed": 84,
+    "per_entry": {
+      "browser": 11,
+      "a11y": 17,
+      "ui-polish": 20,
+      "ui-review": 7,
+      "highlight-contrast": 1,
+      "source-live": 8,
+      "source-selection": 8,
+      "feed-mode": 6,
+      "reliability": 6
+    },
+    "screenshots": 74,
+    "uncaught_errors": 0,
+    "server_5xx": 0,
+    "evidence": "verification/browser/<entry>/run.log",
+    "method": "Round 3 ran all nine entries in one command: tools/ai_round.py --browser --ocr. Each entry still gets its own freshly seeded loopback server, because the auth challenge has a 30 second per-email cooldown and a 6/hour cap: sharing one server made later entries fail with 429 rather than exercise the product. The browser entry ran with real Chinese OCR enabled; the OCR model download is what keeps it opt-in.",
+    "round3_note": "Two entries had previously never passed here and were fixed in the runner, not the product: feed-mode needed the driver to pass --feed-event-info plus CAMPUS_E2E_FEED_ORIGIN and to trust the fixture origin through CAMPUS_TRUSTED_GATEWAY_ORIGINS (create_source rejects non-default ports otherwise), and reliability needed reliability_demo's --manifest/CAMPUS_E2E_FIXTURE and a data directory that does not exist yet. Both contracts are now a pure unit-tested function (test_ai_round_browser_plan.py)."
+  },
+  "accessibility": {
+    "scenarios": 19,
+    "determined_violations": 0,
+    "automatic_judgment_limits": [
+      {
+        "scenario": "today-anonymous",
+        "rules": [
+          "color-contrast"
+        ]
+      },
+      {
+        "scenario": "event-detail-changes",
+        "rules": [
+          "color-contrast"
+        ]
+      },
+      {
+        "scenario": "authorized attachment replacement form",
+        "rules": [
+          "color-contrast",
+          "link-in-text-block"
+        ]
+      }
+    ],
+    "full_wcag_conformance_claimed": false,
+    "targeted_manual_review": "verification/reliability/manual-a11y-review.json"
+  },
+  "standalone": {
+    "product_version": "1.8.0",
+    "checks": [
+      "Standalone app:app boots from packaged assets and public sample",
+      "Public entry disables development login; unavailable SMTP is explicit; admin/docs blocked",
+      "All 73 historical published notices and quality/history responses validate",
+      "Real historical search and signed snapshot bytes work from standalone copy",
+      "Restart preserves persisted signing key and previously issued snapshot capability",
+      "Packaged public data stays unchanged and excludes authentication/private/queue/audit secrets"
+    ],
+    "public_sample_only": true,
+    "production_deployment": false,
+    "published_events": 73,
+    "events_with_incomplete_documents": 57,
+    "status": "passed"
+  },
+  "production_deployed": false,
+  "sample": {
+    "source": "User supplied public historical sample, 2026-10-09",
+    "auth_private_jobs_outbox_secrets_removed": true,
+    "sources_enabled": false,
+    "counts": {
+      "catalog": 1,
+      "sources": 15,
+      "documents": 345,
+      "snapshots": 345,
+      "fetch_runs": 78,
+      "parsed": 345,
+      "parse_inputs": 345,
+      "evidence": 2531,
+      "candidates": 163,
+      "candidate_inputs": 429,
+      "candidate_versions": 266,
+      "reviews": 103,
+      "events": 75,
+      "event_versions": 77,
+      "event_snapshots": 75,
+      "event_snapshot_versions": 77,
+      "event_receipts": 75,
+      "publication_audits": 2,
+      "snapshot_files": 345
+    },
+    "database_sha256": "629d8c61af1c39f0d4d1339d44266dbb18c961d0a76a06642be6fcf00b5bba78",
+    "review_decision_chain_retained": true,
+    "redacted_actor_fields": {
+      "reviews": [
+        "reviewer_id"
+      ],
+      "publication_audits": [
+        "actor_id"
+      ]
+    }
+  },
+  "release_manifest": {
+    "file_count": 1018,
+    "round_24": "Rebuilt 2026-10-21 13:3x on the delivery tree: 1018 files (round 18 shipped 963). The added files are the team round's products: the review workbench (scripts/review_queue.py) and its runbook section, the four new official college sources and their config entries, the exit-code semantics tests, the redirect / sources / exitcode / mobile-adjacent evidence trees, the acceptance and freshness verification scripts, and this record. Exclusion check on the written manifest (measured, not assumed): node_modules, __pycache__, .pytest_cache, .venv, venv, data-operator, session.json, .server-secret, -wal, -shm, .test-temp*, .review*, .snapshot-tmp*, .git/ all appear 0 times; the only substring hit for '.campus' is the legitimate template .env.campus.example. The manifest itself is LF-only.",
+    "round_18": "Rebuilt 2026-10-21 on the delivery tree: 963 files (round 14 shipped 814). The added files are the daily-update command and its tests, the Windows task installer, the mobile / firstscreen / coldstart-t13 / launcher evidence trees, the rebuilt frontend, and round 18 documents. Exclusion check on the written manifest: node_modules, .dsh-npm-cache, .dsh-pnpm-store, .venv/, .test-temp*, __pycache__, .pytest_cache, data-operator, .server-secret and session.json all appear 0 times; the manifest itself is LF-only (4826 LF, 0 CRLF).",
+    "note": "814 files ship after round 14 (+20: scripts/campus_collect.py, scripts/verify_real_use.py, docs/DIAGNOSIS-REAL-USE.md, docs/REAL_DATA_RUNBOOK, docs/REAL_USE_GUIDE.md, five new regression test files, and the round-14 verification evidence). data-operator/, deploy/operator/out/ and the .campus*/.test-temp*/.review* scratch prefixes are excluded by the builder's own walk; .server-secret and deploy/operator/session.json are refused, so a live credential stops the build instead of shipping. Round 14 also deleted leftover .realtest* / .t6-accept scratch directories that the builder's prefix rules did not cover.",
+    "packaging": "tools/package_release.py writes the deliverable ZIP from the manifest's own file list and verifies it against the manifest before writing the .sha256 sidecar, so the archive cannot silently disagree with what it carries."
+  },
+  "release_archive_verification": {
+    "found": "2026-10-11, first autonomous maintenance round, by running the documented command against the delivered ZIP itself",
+    "defect": "verify() read ZIP entry names straight from zipfile, which decodes a name as cp437 unless the entry sets the UTF-8 flag (bit 0x800). Python's zipfile sets that flag, so this project's own archives were always fine; the delivered ZIP was written by another tool that omits it, so 源码导航.md arrived as µ║Éτáüσ»╝Φê¬.md and the verifier reported that single file as both absent from the archive and unexpected in it.",
+    "impact": "Two problems and a non-zero exit on a completely intact archive. A reviewer following the documented verification command was told the release had failed, which costs trust in a good artifact and invites repairing something that was never broken.",
+    "reproduction": "python tools/build_release_manifest.py --root <baseline manifest> --verify 偷闲天大版-2.0-品位版.zip -> FAIL, 2 problems, exit 1",
+    "fix": "tools/build_release_manifest.py gains archive_entry_name(), which re-decodes the name as UTF-8 when the flag is absent and keeps what zipfile returned when that is not valid UTF-8, so an archive whose names really are cp437 is left alone.",
+    "verified": "The same command now reports OK: 752 files verified, exit 0.",
+    "regression_tests": 6,
+    "red_first": "With the one-line fix reverted, exactly one of the six cases fails and the real ZIP reproduces the identical two problems; with it, all six pass.",
+    "not_fixed_earlier": "A damaged entry used to surface as an uncaught BadZipFile rather than a printed FAIL. The archive was rejected either way -- non-zero exit, and no .sha256 sidecar is written -- so this was cosmetic; it was fixed in round 2 (T15): verify() now wraps the archive open and entry read in try/except BadZipFile and prints a one-line FAIL with exit 1, pinned by three regression tests including a file that is not an archive at all.",
+    "test_file": "server/campus/tests/test_release_manifest_verify.py"
+  },
+  "release_notes": "docs/archive/UPGRADE_1_9.md",
+  "time_parsing": {
+    "month_qualifier_consumed": true,
+    "term_relative_not_anchored_to_publication": true,
+    "chinese_numeral_clock_resolved": true,
+    "regression_cases_added": 14,
+    "deadline_quote_is_the_matching_clause": true,
+    "deadline_quote_re_derives_its_own_date": true,
+    "cancellation_requires_a_real_target_or_is_not_a_cancellation": true,
+    "action_required_uses_one_obligation_vocabulary_for_extraction_and_validation": true
+  },
+  "date_parsing_regression": {
+    "found": "2026-10-11, first autonomous maintenance round",
+    "defect": "The numeric-year date pattern (2026.11.30 / 2026-11-30 / 2026/11/30) carried no trailing boundary. The day alternation reads [0-2]?\\d before 3[01], so a bare 3 won over 30 and 31: 2026.11.30 parsed as 2026-11-03, a valid date at date precision, silently 27 days early.",
+    "reached_shipped_data": "Yes. In data/campus.sqlite3 a notice reading 毕业时间：2026.09.01-2027.08.31 had 2027-08-31 stored as 2027-08-03.",
+    "fix": "server/campus/date_patterns.py adds the (?!\\d) boundary to the numeric-year pattern, matching the boundary the yearless pattern always carried.",
+    "second_defect": "24:00, how Chinese notices name the end of a day, was refused as an impossible clock and the date was dropped with it, so 11月30日24:00 reached the reader as 截止时间待确认. server/campus/content.py::_deadline_row now reads 24:00 as the next day at 00:00; every other out-of-range clock (24:30, 25:00) is still refused rather than guessed.",
+    "regression_tests": 10,
+    "red_first": "8 of the 10 new cases failed before the fix; all 10 pass after.",
+    "regression_sweep": "17 previously-correct forms (11月30日前, 11.30, 2026年11月30日, 中午12点, the cross-year range 2026年12月25日至1月5日 and others) are unchanged.",
+    "negative_controls": "24:30 and 25:00 still resolve to unknown.",
+    "known_residual": "The already-stored 2027-08-03 in the shipped public sample is left as delivered. Re-extracting it would rewrite reviewed historical records, which is a human-approval operation and was not performed.",
+    "occurrences_in_shipped_sample": "24:00 appears 0 times in the shipped sample, so that half of the fix protects future notices rather than repairing stored data; the truncation half did hit stored data."
+  },
+  "backend_optimization": {
+    "baseline_passed": 532,
+    "added_test_instances": 30,
+    "stages": [
+      {
+        "task": "manual_acceptance_required",
+        "passed": 541,
+        "failed": 0,
+        "skipped": 8,
+        "added": 9
+      },
+      {
+        "task": "standalone_read_transactions",
+        "passed": 553,
+        "failed": 0,
+        "skipped": 8,
+        "added": 12
+      },
+      {
+        "task": "consistent_index_receipts_and_early_narrowing",
+        "passed": 562,
+        "failed": 0,
+        "skipped": 8,
+        "added": 9
+      }
+    ],
+    "benchmarks": [
+      "verification/backend/reads-benchmark.json",
+      "verification/backend/search-benchmark.json"
+    ],
+    "protected_files_audit": "verification/backend/protected-files.json",
+    "commits": [
+      "fc0b6565d769d8ab798063360e6839224b4669cd fix: require human acceptance before candidate publication",
+      "7fc6e83816fee1c47e22ed4238938b047f9986c2 perf: keep standalone reads off the SQLite writer lock",
+      "1f2dc4a289484a2bd0d377199c856a9ba87de7bf perf: narrow search before reads with atomic index receipts"
+    ],
+    "production_deployed": false
+  },
+  "verification_scope": {
+    "current_run": [
+      "full_backend_suite",
+      "frontend_unit_tests",
+      "release_archive_verification",
+      "protected_byte_parity",
+      "cloudrun_local_preflight",
+      "sqlite_read_contention",
+      "historical_sample_search_benchmark",
+      "real_data_end_to_end",
+      "collection_idempotency",
+      "served_instance_endpoints"
+    ],
+    "inherited_from_input": [
+      "production_frontend_build",
+      "browser",
+      "accessibility",
+      "standalone"
+    ],
+    "not_run": [
+      "isolated_postgresql",
+      "container_image_build",
+      "production_load",
+      "live_meilisearch",
+      "live_cloud",
+      "browser_against_real_backend"
+    ]
+  },
+  "independent_audit": {
+    "date": "2026-10-11",
+    "scope": "Re-derived the previous round's three backend claims from evidence that does not reuse its fixtures, and ran the shipped browser acceptance end to end.",
+    "added_tests": {
+      "test_search_narrowing_corpus.py": 17,
+      "test_review_gate_outbox.py": 3,
+      "test_evidence_tree_hygiene.py": 5
+    },
+    "narrowing_equivalence": "On a temporary copy of the shipped 73-notice database, the narrowed path and the forced full scan return identical hits for 11 fixed queries and for a Han bigram taken from every published title; the run also asserts the accelerator was actually engaged.",
+    "review_gate": "A 1.3-era candidate.accepted outbox row (not only a queue job) is refused with candidate_not_accepted and publishes nothing, while the same path still publishes after a real human accept.",
+    "benchmarks_remeasured": {
+      "reads_median_ms": {
+        "published": [
+          180.063,
+          0.315
+        ],
+        "remeasured": [
+          167.488,
+          0.432
+        ]
+      },
+      "search_speedup": {
+        "奖学金": 3.91,
+        "银河计数器": 4.91,
+        "GPA": 1.0,
+        "报名": 1.12
+      },
+      "responses_equal": true,
+      "evidence": [
+        "verification/audit/benchmark-reads.json",
+        "verification/audit/benchmark-search.json"
+      ]
+    },
+    "defects_fixed": [
+      "The closed mobile drawer stayed focusable for ~200ms of its slide-out; the same CSS is byte-identical in 1.8.0, so this is pre-existing, not a regression. Fixed with inert when the drawer is closed and the viewport is <=760px.",
+      "a11y audited mid-animation: stable() waited 2 frames (~32ms) while the card entrance animation runs 280ms, so axe read blended colours and reported 12 serious contrast violations that vanish once the animation settles. stable() now awaits finite animations.",
+      "ui-review asserted the closed-drawer tab order at t=0 and then clicked through a focused skip link; it now waits for the drawer to leave the tab order and releases focus.",
+      "Delivered evidence named the build machine. Browser reports, run logs and backend.xml stored absolute paths; the JSON-escaped screenshot arrays are the ones the 1.8.0 pass missed. Reports now record repository-relative paths through a shared helper, tools/normalize_evidence_paths.py normalises what already shipped, and test_evidence_tree_hygiene.py pins it. Three superseded failure screenshots sitting beside passing reports were removed.",
+      "RELEASE_MANIFEST.json was rebuilt with CRLF line endings: Path.write_text() translates \\n to os.linesep, so every line of the manifest changed and the real content change was buried in a whole-file diff. Recorded as a pitfall in an earlier round and hit again here. tools/build_release_manifest.py now opens the file with newline='\\n', and a fifth guard test pins the manifest to LF-only (flipping it back to CRLF fails exactly that one test)."
+    ],
+    "path_hygiene": {
+      "evidence": "verification/audit/path-hygiene.json",
+      "files_normalised": 30,
+      "paths_normalised": 183,
+      "e2e_entries_updated": 9,
+      "residual_machine_identifying_paths": 0,
+      "invalid_json_or_xml_after": 0,
+      "guard_tests": 5,
+      "tool_defects_found_by_its_own_output": 4,
+      "manifest_line_endings": "LF-only, enforced by the builder and pinned by a guard test"
+    },
+    "rebuilt_assets": {
+      "campus_js": "campus-ClSaRR9g.js -> campus-CrW0rOa2.js (+266 bytes)",
+      "css": "unchanged",
+      "dist_equals_web": true
+    }
+  },
+  "cloud_launch": {
+    "launched": true,
+    "launched_at": "2026-10-13",
+    "mode": "demo",
+    "share_link": "https://6923f20ced0940368b177758e4938cef.sg2.agentos-app.run",
+    "entry": "serve_cloud.py (CAMPUS_CLOUD_MODE=demo); python serve_cloud.py, PORT injected, 0.0.0.0",
+    "public_verification": [
+      "GET /api/v1/health/ready 200 (demo_data true)",
+      "GET / (campus.html) and /assets/* 200",
+      "GET /api/v1/events 200 with 3 labeled demo notices; event detail 200",
+      "GET /api/v1/search hits with excerpts for 选课/奖学金/提交/报名",
+      "POST /api/v1/auth/challenges + /auth/sessions with the site's own Origin 201/200, session cookie issued; /api/v1/me/feed 200",
+      "demo-admin@touxian.local login reaches /api/v1/admin/jobs 200",
+      "GET /openapi.json 404 (docs unexposed)",
+      "a forged cross-site Origin is rejected with 403 ORIGIN_FORBIDDEN"
+    ],
+    "live_mode_attempted": {
+      "result": "registered 15 sources, all health checks failed, 0 notices collected",
+      "cause": "the hosting sandbox egress reaches only the platform's own endpoints and the pip mirror; *.tju.edu.cn is unreachable",
+      "guidance": "real collection needs CAMPUS_CLOUD_MODE=live on a host that can reach the campus network"
+    },
+    "persistence": "sandbox filesystem retention across restarts/redeploys is host-determined and was not verified",
+    "product_code_changes": "none; serve_cloud.py plus its tests are the only added files"
+  },
+  "source_reachability": {
+    "checked_at": "2026-10-13",
+    "evidence": "verification/source-reachability-2026-10-13.json",
+    "runbook": "docs/archive/REAL_INGESTION.md",
+    "result": "server-side reachable and parseable; developer machine and hosting sandbox blocked (no security checks loosened); public rsshub wechat route 403",
+    "product_changes": "none"
+  },
+  "public_real_snapshot": {
+    "launched": true,
+    "share_link": "https://ec728a4b88f943a7b3f2bc39b7d22d52.sg2.agentos-app.run",
+    "mode": "live",
+    "data": "Cycle-1 real-data snapshot (3 published events, 4 review decisions), data cutoff 2026-10-13",
+    "code_provenance": "Round-5 release package deployed unmodified; not one line of product code changed",
+    "checks": {
+      "home": "GET / -> 200",
+      "events": "GET /api/v1/events?limit=10 -> 3 published events, real entry_urls (zs.tju.edu.cn, mp.weixin.qq.com)",
+      "evidence": "GET /api/v1/evidence/<id> -> 200, source_url is the original official notice URL",
+      "search": "GET /api/v1/search?q=招生 -> hits from the real pages, index_status current",
+      "auth": "POST /api/v1/auth/challenges -> no X-Dev-Login-Code header (live mode forces dev auth off); login endpoints return 503",
+      "worker": "CAMPUS_EMBEDDED_WORKER=false: no collection worker, snapshot does not pretend to update"
+    },
+    "privacy_scrub": "Before packing: deleted 7 collections from the live operator store (sessions, challenges, users, profiles, subscriptions, digests, idempotency); snapshot taken with SQLite backup + WAL checkpoint",
+    "known_old_issue": "The round-5 demo instance (6923f20c...) still returns a dev login code header publicly; synthetic data only, scheduled for a live-mode redeploy; the snapshot instance has no such issue",
+    "round13_deploy_prep": {
+      "date": "2026-10-16",
+      "goal": "ship round-12 code (SearchHit ended + feed-consistent folding) and a clean real-data snapshot to the public instance; the deploy itself runs on the operator's channel",
+      "public_instance_status": "snapshot instance (ec728a4b...) online with round-10 code: health 200 demo_data false, home 200, /api/v1/events returns 3 cycle-1 real events; demo instance (6923f20c...) returned 400 (presumed reclaimed, not confirmed with host)",
+      "snapshot": "deploy/snapshot/campus-snapshot-2026-10-16.sqlite3 sha256 6d8786e30112217e2cc62e367e16e6836e2b7dc569dee1d2c0cc816ae080c7c7; consistent backup of the data-operator live DB (WAL included); 7 privacy collections scrubbed on the copy (sessions/challenges/users/profiles/subscriptions/digests/idempotency, 35 rows); PRAGMA integrity_check ok; live DB untouched; 224 records retained incl. 3 published events",
+      "release_package": "偷闲天大版-2.0-品位版-第12轮发布包.zip (795 entries incl. manifest; authoritative SHA-256 is the <archive>.sha256 sidecar next to the package, written by package_release.py after verify; privacy-leakage check CLEAN: no data-operator/, session.json, .server-secret, -wal/-shm, deploy/operator/out)",
+      "runbook": "deploy/snapshot/DEPLOY.md with a 9-point post-deploy verification checklist (health/home+frontend/events/search ended/auth 503 no dev code/cross-site 403/openapi 404/no sidecar leak)",
+      "deployed_by_operator": false,
+      "pending": "operator deploys and backfills new URL + 9 checks; qiangji candidate re-verify next cycle; demo 400 cause unconfirmed; sandbox filesystem persistence host-determined"
+    }
+  },
+  "round_14_real_use": {
+    "objective": "Make the product usable with real Tianjin University notices, not only demo data.",
+    "defects_fixed": [
+      "The headline came from a column heading inside the body container (gs template printed 「培养工作」), so every notice in that column had the same wrong title.",
+      "WeChat anti-scraping challenge pages (环境异常 / wappoc_appmsgcaptcha) became notices; the product now recognizes and refuses them and never forges a UA or cookie.",
+      "A deadline quote was the whole paragraph instead of the clause containing the date.",
+      "申请材料 / 报名材料 (category words) were not extractable materials.",
+      "招生/招录/推免 notices fell through to \"other\"; a usable headline is no longer overridden by incidental body vocabulary, and 宣讲会 is no longer always a job event."
+    ],
+    "real_data_end_to_end": {
+      "command": "python scripts/verify_real_use.py --source 智能与计算 --source 培养办事流程 --limit 4",
+      "exit_code": 0,
+      "sources": 2,
+      "documents_persisted": 25,
+      "candidates": 8,
+      "accepted": 4,
+      "published": 4,
+      "search_hits": 12,
+      "events_with_structured_fields": 3,
+      "example_event": {
+        "title": "天津大学智能与计算学部2026年博士研究生招生办法",
+        "event_type": "activity",
+        "deadlines": 4,
+        "materials": 1
+      },
+      "evidence": "verification/real-collect-init-2026-10-19.json, verification/real-collect-second-2026-10-19.json"
+    },
+    "collection_is_idempotent": {
+      "command": "python scripts/campus_collect.py collect --source 奖助 (same data dir, second run)",
+      "first_run": {
+        "new_snapshots": 7,
+        "new_candidates": 7,
+        "total_candidates": 7
+      },
+      "second_run": {
+        "new_snapshots": 0,
+        "new_candidates": 0,
+        "total_candidates": 7
+      }
+    },
+    "served_instance_checked": "With the collected data served in operator mode, GET / returned the app shell, GET /api/v1/events returned the 4 published real notices (the 招生办法 carrying 4 deadlines and 1 material), and GET /api/v1/search?q=招生 returned 2 hits pointing at https://cic.tju.edu.cn/info/1041/6196.htm and .../6206.htm. The original-notice link lives in evidence[].source_url, not on the event's top-level fields.",
+    "known_unverified": [
+      "No full run across all 19 configured sources; only 2-3 sources were sampled per command.",
+      "No multi-day / scheduled operation was observed; the daily run is a manual command and the operator supplies the cron or Windows scheduled task.",
+      "An authorized WeChat official-account feed was never available, so only the rejection of anti-scraping pages is verified, not the successful ingestion of an authorized feed.",
+      "The frontend was verified through its build artifacts and the endpoints it calls, not by clicking through pages in a browser; this session had no browser automation available.",
+      "Deadline quotes can still be long when the date sits inside a long parenthetical: the quote must independently re-derive the same deadline, so verifiability outranks brevity.",
+      "The --json-out summary of campus_collect.py has no external contract and no schema check."
+    ]
+  },
+  "round_14_real_data": {
+    "dataset": {
+      "sources_registered": 20,
+      "source_health": {
+        "healthy": 10,
+        "degraded": 7,
+        "auth_expired": 3
+      },
+      "documents": 397,
+      "snapshots": 438,
+      "notice_snapshots": 237,
+      "attachment_snapshots": 201,
+      "candidates": 236,
+      "candidate_status": {
+        "accepted": 232,
+        "rejected": 4
+      },
+      "published_events": 198,
+      "events_with_deadlines": 96,
+      "events_with_materials": 29,
+      "events_with_steps": 109,
+      "events_requiring_action": 87,
+      "event_type_distribution": {
+        "other": 76,
+        "activity": 33,
+        "assignment": 2,
+        "meeting": 8,
+        "employment": 37,
+        "competition": 5,
+        "academic": 35,
+        "scholarship": 2
+      }
+    },
+    "commands": [
+      "scripts/campus_collect.py init --data-dir data-operator --gateway-from-config",
+      "scripts/campus_collect.py collect --data-dir data-operator --gateway-from-config",
+      "scripts/review_and_publish.py --data-dir data-operator --apply",
+      "scripts/campus_collect.py reextract --data-dir data-operator"
+    ],
+    "blocked_sources_explained": "Two 教务处 competition columns (cxsj/xsjs.htm, tzgg/js_kc.htm) publish only mp.weixin.qq.com posts, which answer an unauthenticated fetch with an anti-scraping challenge. Rather than stop at authorization-required, the same competition notices were located on the official native column of the 新工科教育创新中心 (eee.tju.edu.cn/tztg/tz.htm, secretariat inside 教务处): 10 list items, 0 WeChat links, article body 4664 chars with an attachment. It is now a registered source, so competition coverage no longer depends on an authorized WeChat channel.",
+    "browser_verification": {
+      "engine": "Chromium 1248 (Playwright build), headless",
+      "artifacts": [
+        "verification/browser/real-home-8142.png",
+        "verification/browser/real-home-8142-dom.html"
+      ],
+      "observed": "The student page rendered real published notices with category filters (教务/作业/奖助/竞赛/活动/就业/会议/其他), 需要行动 and 待核实 badges, and a real deadline label 「2025-10-21（未注明时刻）」. No 「连接不到服务」 error block."
+    },
+    "known_unverified": [
+      "Only 2-3 sources are exercised end to end by verify_real_use.py; the full 20-source run is reported by campus_collect.py, but per-notice extraction was not manually spot-checked across all 198 published events.",
+      "No multi-day or scheduled operation was observed; the daily run is a manual command and the cron task is the operator to install.",
+      "An authorized WeChat feed is still unavailable. Two 教务处 columns publish only WeChat links; their competition content is now covered by the native 新工科教育创新中心 column, but a notice that exists ONLY as a WeChat post is still not collected.",
+      "Attachment files behind the download.jsp captcha are not extracted; the notice itself stays usable and the product reports the restriction honestly instead of guessing.",
+      "Browser verification is a headless render plus DOM assertions, not an interactive click-through of every page (no Playwright module is installed here)."
+    ]
+  },
+  "round_14_relay_cycle": {
+    "purpose": "Collect the notices that exist only as mp.weixin.qq.com posts. Direct collection correctly refuses those (anti-scraping challenge); the operator relay is the documented authorized channel, so the gap is closable without weakening any guard.",
+    "commands": [
+      "python deploy/operator/relay.py stage",
+      "python deploy/operator/relay.py build",
+      "python deploy/operator/relay.py serve --port 8791",
+      "CAMPUS_TRUSTED_GATEWAY_ORIGINS=http://127.0.0.1:8791 python serve_cloud.py (operator mode)",
+      "python deploy/operator/relay.py register --api ... --feed-origin ... --email operator@tju.edu.cn",
+      "python deploy/operator/relay.py report --api ...",
+      "python deploy/operator/relay.py decide --candidate <id> --decision accept --reason ..."
+    ],
+    "defect_fixed": "relay.py AdminSession._restore() validated the cached cookie against the API base URL but not against --email, so a session saved for operator@touxian.local was reused under operator@tju.edu.cn; the product authenticated as the old account and refused writes with 403, which reads like a permissions bug. A cached session is now only reused for the identity it was created for (test_relay_session_identity.py, 3 cases).",
+    "four_level_acceptance": {
+      "L1_transmission": "4/4 feed payloads match their provenance sha256; every item URL is the real official article page",
+      "L2_collection": "both relay sources health=healthy, verification=verified_official, last_success recorded",
+      "L3_extraction": "CET notice 5 deadlines (date + minute precision) and 2 materials, 0 missing quotes; competition notice 1 deadline, 0 missing quotes",
+      "L4_publication": "both published; evidence links point back at the original mp.weixin.qq.com posts",
+      "evidence": "verification/relay-cycle-acceptance-2026-10-19.txt"
+    },
+    "delivered_notices": [
+      {
+        "title": "2026年下半年全国大学英语四、六级考试报名通知",
+        "event_type": "academic",
+        "deadlines": 5,
+        "materials": 2,
+        "action_steps": 44,
+        "source_url": "https://mp.weixin.qq.com/s/CSniYqr1LfSYobIeCZA6nw"
+      },
+      {
+        "title": "以代码重写生命的语法！“AI+合成生物”创新大赛（2026）报名通道开启",
+        "event_type": "competition",
+        "deadlines": 1,
+        "materials": 0,
+        "action_steps": 2,
+        "source_url": "https://mp.weixin.qq.com/s/G1WO_Pd68kpuBbS7MTMgvg"
+      }
+    ],
+    "still_unverified": [
+      "The relay carries only what an operator stages by hand; it is not an automated WeChat ingestion pipeline, and no authorized feed for a 天津大学 official account was supplied.",
+      "The WeChat official freepublish API (/cgi-bin/freepublish/getarticle) requires being the account operator with its own appid/secret; this product does not own those accounts."
+    ]
+  },
+  "round_14_student_features": {
+    "purpose": "Not 'the endpoint exists' but 'a student can actually use it': every student-facing capability was driven over HTTP against the real-data operator instance, exactly as the web client does. 22/22 checks pass on the shipping build.",
+    "script": "scripts/verify_student_features.py",
+    "command": "python scripts/verify_student_features.py http://127.0.0.1:8162",
+    "checks": [
+      "登录（邮箱验证码，复用会话避免消耗限额）",
+      "学院目录 36 个学院",
+      "保存/读回学生画像（学院、年级、校区）",
+      "今日清单 20 条，条目带 classification 与 deadline_label",
+      "公开事项列表（未登录可看）",
+      "事项详情 + 原文证据链（source_url 指回真实官网）",
+      "全文检索 15 条命中",
+      "提问：返回 grounded + 引用真实原文",
+      "收藏事项并持久化",
+      "标记完成（待办，乐观并发 revision 校验）",
+      "新建个人事项并出现在列表",
+      "生成日历订阅链接，ICS 可下载且含 2 个事件",
+      "提醒偏好、推送状态、订阅设置可读"
+    ],
+    "defect_fixed_1": {
+      "symptom": "问「四六级什么时候报名截止」answered 「原文存在同类期限冲突，请核对来源」",
+      "cause": "The answer path grouped deadlines by kind and declared a conflict whenever one kind had more than one date. The real 四六级 notice states 报名截止 9/24、考试 12/12、报送材料 12/15—— all school/college level, so it was reported as a conflict instead of answered.",
+      "fix": "A conflict now means the same *purpose* with different dates: the quote is normalised by removing the date itself, and only a repeated skeleton with differing values counts.",
+      "test": "server/campus/tests/test_answer_deadline_conflict.py (6 cases)"
+    },
+    "defect_fixed_2": {
+      "symptom": "An unrelated ambiguous notice made every answer empty",
+      "cause": "The answer returned immediately on the first conflicting event, discarding all other hits that could answer the question cleanly.",
+      "fix": "The conflicting notice is skipped and named in the answer ('原文期限存在冲突…未采纳'), the remaining notices still answer, and status is conflicting_sources only when nothing usable is left.",
+      "test": "server/campus/tests/test_answer_deadline_conflict.py"
+    },
+    "observed_after_fix": "「四六级什么时候报名截止？」 -> grounded, text lists 学校期限 2026-09-24T17:00 / 活动时间 2026-12-12 / 学院期限 2026-12-15 / 学院期限 2026-09-24, citations quote the original mp.weixin.qq.com article verbatim, plus an honest note that another notice was skipped.",
+    "still_unverified": [
+      "Push delivery is unavailable on this instance (CAMPUS push unconfigured); the status endpoint correctly reports available=false, so no delivery path was exercised.",
+      "The interactive click-through of the web UI was not repeated here; these are the same HTTP calls the client makes, run against the real instance."
+    ],
+    "defect_fixed_3": {
+      "symptom": "一个活会话 cookie 被写进仓库根，并被打进了发布包",
+      "cause": "manifest 构建器只排除 .test-temp* 目录，不排除同前缀的文件；scripts/verify_student_features.py 把会话缓存写到了仓库根",
+      "fix": "会话缓存改到系统临时目录；构建器新增 _is_session_credential()，任何 *session.json / session.json 一律拒发（test_scratch_file_guards.py 2 例）"
+    }
+  },
+  "round_15_daily_use": {
+    "purpose": "The product is meant to be opened every day, so an expired notice is not just noise: measured on real data, 200 published notices contained only 8 that were still actionable, and the list led with the oldest deadlines (2019-2023). 76 expired notices were withdrawn and the ordering was corrected.",
+    "commands": [
+      "python scripts/campus_collect.py prune --data-dir data-operator --skip-dns-check  (dry run)",
+      "python scripts/campus_collect.py prune --data-dir data-operator --apply --skip-dns-check"
+    ],
+    "rule": {
+      "withdraw": "every stated deadline is in the past",
+      "keep_any_future_deadline": "one 报名截止 may be past while the 考试 date is still ahead",
+      "keep_undated": "no stated date means nothing has expired (操作步骤 style reference)"
+    },
+    "mechanism": "The product's own withdrawn publication state: writes publication_audits with actor and reason, emits public_event.changed, and removes the notice from feed, public list, detail, search and answers. Records and evidence stay in the store, so it is reversible and no subscriber is left holding a link to a hard-deleted row.",
+    "measured_effect": {
+      "events_before": 200,
+      "published_after": 124,
+      "withdrawn": 76,
+      "expired_still_public": 0,
+      "audits_written": 76,
+      "actor_recorded": "operator:operator@tju.edu.cn",
+      "still_valid_kept": 8,
+      "public_list_leak": 0,
+      "withdrawn_detail_http": 404,
+      "search_hits_for_withdrawn": 0
+    },
+    "defect_fixed": {
+      "symptom": "The daily list ordered by the earliest deadline a notice mentions, so a notice whose 报名 window closed 2026-09-30 but whose 考试 is 2026-12-20 led the list, headed by a date that had already passed. The card's deadline_label also opened with that stale date.",
+      "fix": "sort_key and the label both now use the next deadline that is still ahead (events.py), undated notices sort last as reference material.",
+      "verified": "After the fix the feed's first 30 items are: 6 dated and ascending (2026-10-25 → 2027-01-18) with zero expired leakage, then 24 undated.",
+      "tests": "server/campus/tests/test_feed_ordering.py (3 cases)"
+    },
+    "known_tradeoff": "Among the 76 withdrawn notices, 57 carried a real school/college deadline while 19 only had an informational event_time (past job fairs, past exam schedules). A few of those 19 were arguably evergreen reference (研究生学位认证的操作步骤 2022-09-26, 新版学位论文封面发布 2021-09-01, 学费管理系统上线 2022-08-31). They are now withdrawn and therefore not searchable either. That is the cost of 'delete expired' chosen for a daily-use product; if reference material should survive, the rule needs a small allowlist by event_type.",
+    "still_unverified": [
+      "No scheduled/task-scheduler run was observed; prune was run by hand against the operator store.",
+      "Push delivery remains unconfigured on this instance (status endpoint reports available=false)."
+    ]
+  },
+  "round_16_content_integrity": {
+    "purpose": "Answering 'can it be used' by measuring, not by summarising: a real daily collection was run and the review queue inspected. Two faults were found that no earlier round had surfaced, and both were silently costing real content.",
+    "defect_1_a_real_notice_was_silently_dropped": {
+      "symptom": "A live recruitment notice (【北洋园校区】辽宁省水资源管理和生态环保产业集团2026, deadline 2026-11-13) was extracted as change_kind=cancel. A cancellation candidate without a linkable original can never be published, so a real notice with a future deadline disappeared without a trace.",
+      "cause": "The standard reservation-of-rights clause in the posting — '集团有权根据岗位需求变化及报名情况等因素，调整、取消或终止个别岗位的招聘工作' — was read as a cancellation. cancellation_value() already excluded conditionals, negations, capability modal and UI actions, but a disclaimer whose right sits in the preceding clause slipped through.",
+      "fix": "Two new exclusions, both scoped to the sentence: a sentence that reserves a right (有权 / 保留…权利 / 最终解释权) is skipped as a whole, and a coordinated list of the organiser's options (调整、取消或终止) is recognised as a capability, not an act.",
+      "rule_bump": "EXTRACTOR_VERSION campus-rules-1.11 -> campus-rules-1.12",
+      "test": "server/campus/tests/test_cancellation_disclaimer.py (5 cases)",
+      "verified": "After re-extraction the notice is published and appears in the live list (actionable notices went 8 -> 9); cancellation-classified candidates went 2 -> 1, and the one that remains is the genuine '取消2022年12月份针对社会面的雅思考试'."
+    },
+    "defect_2_the_review_policy_could_not_tell_notices_from_noise": {
+      "symptom": "Of 79 waiting candidates the policy accepted 78, but only one had a deadline still ahead. Publishing the rest would have put a 2021 exam schedule, the column fragment '【考试安排】2021' and a news piece into a list meant to answer 'what do I do today', and the next sweep would have taken most of them straight back down.",
+      "fix": "classify() now answers three questions instead of one and returns three verdicts: reject (error page, column name/fragment, form or attachment title, news piece, unlinkable cancellation, or every deadline already past), accept only when a deadline still lies ahead, and review — left pending for a human — for everything else. Undated reference material and stale documents look identical to a regex, so the machine no longer decides what a student sees; it publishes only what it can prove is actionable today.",
+      "test": "server/campus/tests/test_review_policy.py (16 cases)",
+      "measured_on_real_queue": {
+        "before": "accept 78 · reject 1",
+        "after": "accept 11 · reject 129 · review 109 (of 249 re-extracted candidates)"
+      }
+    },
+    "invariant_now_holds": "Publishing only notices with a future deadline means the expiry sweep finds nothing to do: running prune --apply right after review reported '没有已过期的事项，无需下架'. The gate and the sweep now agree, so a daily run stops churning.",
+    "reporting_fix": "reextract reported 8 'failures' that were duplicate rows for documents whose current-rules candidate already existed — extraction resolves by (snapshot, rules), so a stale duplicate has nothing to update. They now report as superseded, with the content confirmed covered, instead of making a healthy 249-candidate run look broken.",
+    "final_state": {
+      "published": 125,
+      "with_future_deadline": 9,
+      "undated_reference": 116,
+      "expired_still_public": 0,
+      "candidates": 257,
+      "pending_for_a_human": 109,
+      "accepted": 19,
+      "rejected": 129,
+      "candidate_versions": {
+        "campus-rules-1.12": 249,
+        "campus-rules-1.11": 8
+      },
+      "review_policy_measured": "accept 11 · reject 129 · review 109"
+    },
+    "still_unverified": [
+      "The 109 candidates left for a human were not reviewed; they are the operator's queue by design.",
+      "No scheduled run was observed; collect, review and prune were each run by hand.",
+      "Push delivery remains unconfigured (available=false), and the public deployment still needs an operator environment with a reachable host — neither is a code problem."
+    ],
+    "packaging_fix": {
+      "symptom": "仓库根的 .test-temp-srv9.log 被打进发布包",
+      "cause": "构建器只排除 .test-temp* 目录，不排除同前缀文件",
+      "fix": "iter_shipped 现在也排除 scratch 文件；但会话文件仍穿过过滤器，好让 build() 大声拒发",
+      "test": "server/campus/tests/test_scratch_file_guards.py（新增 1 例）"
+    }
+  },
+  "round_17_single_user_usability": {
+    "purpose": "Ran the product the way a student would instead of re-reading my own summaries. Three P0-level problems surfaced that no earlier round had found, because every earlier check started from a server I had already configured by hand.",
+    "defect_1_the_launcher_produced_an_unloginnable_app": {
+      "symptom": "start-campus.ps1 without a .env answered POST /api/v1/auth/challenges with 503 LOGIN_DELIVERY_UNAVAILABLE: dev_auth defaults to false and no SMTP is configured, so the app started fine but nobody could get past the login screen.",
+      "fix": "The local single-user profile now sets CAMPUS_ENV=development, CAMPUS_DEV_AUTH=true, a persistent CAMPUS_DATA_DIR and an operator mailbox, only where the environment does not already answer, and refuses to run that profile under CAMPUS_ENV=production. The server still binds 127.0.0.1 only. The login mailbox is printed on startup.",
+      "verified": "Started with exactly those variables: dev code returned, login 200, item created.",
+      "test": "server/campus/tests/test_launcher_login.py (3 cases)"
+    },
+    "defect_2_the_public_list_still_carried_old_junk": {
+      "symptom": "Opening the app on a phone showed 【考试安排】2022 three times, 总体情况, 下载中心, a bare '文件来源：http://www.moe.gov.cn/…' and several news pieces on the public list. They were published under the earlier lenient gate; hardening the review gate only governs new candidates.",
+      "measured": "25 of 125 published notices failed today's policy; none of them had a future deadline.",
+      "fix": "Title rules moved to server/campus/hygiene.py so the review gate and a new withdrawal sweep share one definition, and Events.withdraw_unusable() takes back published non-notices. The sweep refuses to touch any notice that still has a deadline ahead: something a student can still act on outranks tidiness. Wired into the daily 'campus_collect.py prune' so one command keeps both expiry and quality in order.",
+      "verified": "After the sweep: 100 published, 0 with a non-notice title, 25 audited withdrawals.",
+      "test": "server/campus/tests/test_published_hygiene.py (8 cases)"
+    },
+    "verified_this_round": {
+      "restart_persistence": "Real process kill and restart against data-operator: the personal item and the saved notice were still there afterwards (scripts/verify_persistence.py).",
+      "login": "dev code returned over HTTP; session 200; CSRF usable for writes.",
+      "launcher_contract": "the script sets the four single-user defaults and respects an explicit environment."
+    },
+    "still_unverified": [
+      "Mobile layout was inspected through the DOM at a phone viewport but no screenshot-level pass at 360/390/430 was completed, so horizontal overflow there is not proven absent.",
+      "No scheduled run was observed; collect, review and prune remain manual commands.",
+      "Push delivery is unconfigured; public deployment still needs an operator host."
+    ]
+  },
+  "round_18_daily_operation": {
+    "purpose": "A product meant to be opened every day has to update itself. The three stages (collect, review+publish, withdraw) became one command that runs unattended, and a Windows scheduled task runs it every morning.",
+    "command": "python scripts/daily_update.py [--apply] --data-dir data-operator --gateway-from-config [--json-out <path>]",
+    "properties": {
+      "dry_run_by_default": "no --apply means read-only; the summary says so",
+      "process_lock": "<data-dir>/.daily-update.lock (msvcrt on Windows, flock elsewhere), non-blocking: the second instance exits immediately and prints why",
+      "exit_codes": "0 everything fine / 1 partial failure but not blocking / 2 usage error",
+      "per_stage_isolation": "collect, review and withdraw each have their own try/except, so one unreachable source cannot stop the rest"
+    },
+    "measured_on_a_fresh_copy_of_the_data_directory": {
+      "run_1": "new snapshots 160, new candidates 109 -> accept 7, reject 44, left for a human 58 -> published 7, exit 0",
+      "run_2": "new snapshots 26, new candidates 15 -> accept 2, reject 60 -> published 3 (already published ones are not counted twice), exit 0",
+      "public_list": "7 items before and after, 0 new titles, 0 duplicate titles, events collection holds exactly 7 records",
+      "broken_source": "one source origin rewritten to https://broken-t13.invalid/notice/list.htm: it reports unsafe_address, the other 19 sources are unaffected (20 sources: 17 ok, 2 degraded, 1 failed), exit 1, review and withdraw still run, existing data intact (events 7, event_versions 9, record store 5510 -> 5958)",
+      "evidence": [
+        "verification/coldstart-t13/README.md",
+        "verification/coldstart-t13/B-daily-1.json",
+        "verification/coldstart-t13/B-daily-2.json"
+      ]
+    },
+    "scheduled_task": {
+      "installer": "tools/install_daily_task.ps1 (-Install / -Uninstall / -Status / -RunNow, -Time to change the hour)",
+      "registered_on_this_machine": "TouxianCampusDaily, daily 07:30, LogonType=S4U, RunLevel HighestAvailable, MultipleInstancesPolicy IgnoreNew, StartWhenAvailable=False",
+      "verified": "-Status exit 0 (also run from the packaged tree); the scheduler triggered it twice and wrote logs/daily-YYYYMMDD.log, logs/daily-YYYYMMDD.json and logs/last-run.json; an overlapping second instance exited within 1s with the lock message; DISABLE/ENABLE round-trip measured; -Install is idempotent",
+      "interpreter_selection": "-Python > CAMPUS_PYTHON > the interpreter recorded in an existing task > repo .venv > PATH > %LOCALAPPDATA%\\Programs\\Python\\Python3*; every candidate must really import fastapi, bs4 and sqlalchemy, and rejected candidates are printed with the reason",
+      "evidence": "docs/REAL-DATA-RUNBOOK.md sections 4.0-4.3; verification/coldstart-t13/commands.txt"
+    },
+    "still_unverified": [
+      "The machine was never really rebooted, so persistence rests on the S4U registration rather than on an observed reboot.",
+      "The non-administrator permission branch was not exercised (this session is elevated).",
+      "Sleep/wake catch-up behaviour was not measured; StartWhenAvailable=False is a registration, not an observation."
+    ]
+  },
+  "round_18_mobile": {
+    "purpose": "The product is read on a phone. Three widths, five pages, real clicks, plus an independent re-check by a different member who started their own server and wrote their own probe.",
+    "widths": "360 / 390 / 430 (also 375x667, 360x640 and the real-device visible heights 360x536 / 375x553)",
+    "measured": {
+      "horizontal_scroll": "scrollWidth == innerWidth on every page at every width, 0 overflowing elements",
+      "touch_targets": "0 controls under 40x40 (the floor was raised from 24-36px for chips, card actions, the search field, checkbox rows and text buttons)",
+      "first_screen": "a card with a deadline is inside the first screen without scrolling",
+      "independent_review": "a second member reproduced all five acceptance points with their own server, browser session and probes (82 measurements, 28 screenshots) and raised 6 findings"
+    },
+    "evidence": "verification/mobile/ (README.md, summary.md, measurements.jsonl, 36 screenshots)"
+  },
+  "round_18_first_screen": {
+    "purpose": "Independent re-verification, required because the fix was written by another member: does the anonymous home lead with a FUTURE deadline, and is a deadline visible without scrolling at phone sizes?",
+    "verifier": "the delivery integrator, with its own server on 127.0.0.1:8441 (copy of the operator data directory), its own browser session and its own account (t14verify@tju.edu.cn, distinct from the author's)",
+    "claim_1_ordering": {
+      "measured": "anonymous home, first card 天津大学医科秋季专场招聘会邀请函 shows 10月22日 10:00 -> 2026-10-22, later than the page's own campus date 2026-10-21; the first eight cards read 2026-10-22 / 2026-10-25 / 2026-10-30 / 2026-11-05 / 2026-11-13 and contain 0 past deadlines",
+      "result": "pass"
+    },
+    "claim_2_first_screen": {
+      "measured": "the first card's deadline line sits at top=463 at 360x640, 375x667, 360x536 and 375x553 (all four viewports), so it is inside the visible area without scrolling; scrollWidth == viewport width at every one of them; 100 published cards present",
+      "result": "pass"
+    },
+    "logged_in_check": {
+      "measured": "360x640 after logging in with the verifier's own account: default view is 全部相关信息 (100 items), first card deadline 10月22日 10:00 at top=616 inside the 640px viewport",
+      "result": "pass with a note: 616px leaves roughly no margin at 640px logged in; the anonymous case, which is what the claim covers, has a wide margin"
+    },
+    "self_authored_parts": "The 40x40 touch floor and the mobile first-screen compression come from the same member's earlier work, so those are only re-measured here, not independently reviewed. The deadline-ordering fix belongs to another member and this re-check is independent of their summary.",
+    "still_unverified": "real iOS/Android hardware; the JavaScript e2e suite (src/campus/tests/*.e2e.mjs) was not run end to end"
+  },
+  "round_18_cold_start": {
+    "purpose": "Verify the delivered artifact the way a new operator meets it: unpack into a fresh directory, follow the documents, and check that the daily loop closes.",
+    "measured": {
+      "unpack": "876 files from the 2026-10-20 package (which was missing scripts/daily_update.py, tools/install_daily_task.ps1 and verification/mobile/, and shipped a pre-t11 frontend — the release-blocking gap this delivery closes)",
+      "startup": "the documented run-demo.bat path reached /healthz {\"status\":\"ok\"} and the login page, and a development login code was accepted",
+      "walk": "login, real notice with a future deadline and an original link, add to todo, search, manual add",
+      "restart": "the process was really killed (port released) and restarted with the same command: the session, the personal item and the todo state were all still there",
+      "daily_update": "two --apply runs on a fresh data directory: 7 published items before and after, 0 duplicate titles",
+      "broken_source": "readable unsafe_address error, other sources unaffected, existing data intact"
+    },
+    "found_while_testing": [
+      "The 2026-10-20 package predated the daily-update command and the mobile fixes (fixed by this delivery: the manifest was rebuilt and the archive repackaged).",
+      "start-campus.ps1 could not be parsed at all by Windows PowerShell 5.1 (11 parse errors: BOM-less UTF-8 with Chinese strings read as ANSI) — fixed in round 18, see round_18_launcher.",
+      "run-demo.bat's first dependency install stalled for 20+ minutes on this machine (pip's default cache sits on a junctioned D: volume); --no-cache-dir with a domestic mirror finished in 3 minutes. PyPI and two mirrors answered HEAD 200 in ~1s, so it is not the network.",
+      "The first screen after a cold start was empty because the default filter asked for items that need action (fixed in round 18: the default view now shows the library).",
+      "pytest --basetemp pointing at a not-yet-existing directory reports 226 setup errors (FileNotFoundError) instead of failures — now documented in AGENTS.md with the mkdir step."
+    ],
+    "evidence": "verification/coldstart-t13/ (README.md, commands.txt, 19 screenshots, 3 daily-update summaries)"
+  },
+  "round_18_launcher_encoding": {
+    "purpose": "The one-click local launcher had to become runnable by Windows PowerShell 5.1, which reads a BOM-less file with the ANSI code page and mangled the Chinese string literals until the script would not parse.",
+    "measured_by_the_integrator": {
+      "size_bytes": 5305,
+      "has_utf8_bom": true,
+      "sha256": "fefe18c1863762cba4afe84fee36bb88fcb957a0f690070c8997c9676a170fdc",
+      "powershell_51_parse_errors": 0,
+      "line_endings": "CRLF (89 CRLF / 89 LF); the LF-only rule applies to RELEASE_MANIFEST.json, not to this file"
+    },
+    "rechecked_after_packaging": "the same three numbers are re-measured on the copy extracted from the delivered ZIP",
+    "still_unverified": [
+      "the packaged copy was parsed but not executed on a machine other than this one"
+    ]
+  },
+  "round_18_default_view": {
+    "purpose": "A first-time student opened the app and saw 当前没有需要处理的信息 while the store held notices: the default filter treated 需要我行动 as if it were the library.",
+    "fix": "The Today view defaults to 全部相关信息 (the library), 需要我行动 stays the first chip with a count badge and highlights when items need action, and the empty states are split three ways: empty library (explains that sources are off and links to 信息来源), only-expired library (points at the collapsed history), and an explicitly filtered view that is empty (says it is a filter result and offers 看全部相关信息).",
+    "measured": {
+      "cold_start_default": "7 real cards visible, no .empty in the DOM, 全部相关信息 selected",
+      "explicit_action_filter": "empty state reads 「当前没有需要你行动的事项」 with 「这是『需要我行动』筛选的结果，不是库空了：库里还有 7 条未截止通知…」 and a 看全部相关信息 button that restores the 7 cards",
+      "empty_library": "fresh empty data directory: 「还没有可看的公开通知 / 来源默认停用，需要运营者启用采集后才会入库…」 with a 查看信息来源 button that really navigates",
+      "prominence": "after saving one real notice the chip reads 需要我行动 1 with the needs-action highlight (border rgb(232,128,109) against rgb(61,70,87)) and filters to that one notice",
+      "mobile": "360x640: chips 92/126/87 x 40, no horizontal scroll, first deadline at top=570 inside the viewport, 0 controls under 40x40"
+    },
+    "evidence": "verification/firstscreen/ (README.md, probe.js, measure.ps1, measurements.jsonl, 13 screenshots)"
+  },
+  "t14_delivery": {
+    "purpose": "Turn round 18 into a deliverable: documents that match behaviour, numbers read from the gates, an updated verification record, a rebuilt manifest and archive, and a desktop copy whose hashes match.",
+    "artifact": {
+      "manifest": "RELEASE_MANIFEST.json rebuilt 2026-10-21, 963 files, LF-only",
+      "archive": "campus-fixed-realuse.zip written by tools/package_release.py, which verifies the archive against the manifest before writing the .sha256 sidecar",
+      "desktop_copy": "the operator's Desktop delivery folder 偷闲天大版-交付-2026-10-19 (its absolute location is written in the delivery note inside that folder, which lives outside this repository)"
+    },
+    "commands_run": [
+      "python tools/build_release_manifest.py -> 963 files",
+      "python tools/package_release.py --root . --out ../campus-fixed-realuse.zip",
+      "python -m pytest server/campus/tests -q --junitxml=verification/backend.xml --basetemp=.test-temp-final/basetemp -> 881 passed",
+      "python tools/normalize_evidence_paths.py --root . -> 9 paths in verification/backend.xml, then 0 on --check"
+    ],
+    "unfinished_or_unverified_in_this_delivery": [
+      "Real iOS/Android hardware was never used; mobile evidence is a desktop Edge viewport emulation.",
+      "The machine was never really rebooted, so the daily task's persistence rests on its S4U registration.",
+      "The non-administrator permission branch of the task installer was not exercised.",
+      "Sleep/wake catch-up was not measured.",
+      "The admin workbench's deeper pages were not walked page by page.",
+      "The JavaScript e2e suite (src/campus/tests/*.e2e.mjs) was not run end to end; only the 36 unit tests were.",
+      "Push/email delivery is unconfigured on the operator instance, so no delivery path was exercised.",
+      "No public deployment was performed or re-verified in this round; the public snapshot instance still runs round-10 code."
+    ]
+  },
+  "round_24_team_delivery": {
+    "purpose": "Turn the ten team-round changes (t18-t26) into a deliverable and bind the previous acceptance (t24) to concrete bytes: it had recorded its verdict without a hash, so the release could not tell whether the shipped revision was the one that was checked.",
+    "student_visible_gain": "Measured, not estimated: a full daily update on a read-only copy of the operator data directory moved the public list 100 -> 100 with 0 new visible items (t24), and a cold start (fresh directory, --apply) makes 8 items visible on day one. After t26 registered four college columns, the first run on a copy moved it 100 -> 104 (4 new visible items, 0 lost).",
+    "mechanism_gains": "Collection no longer fails whole notices over a captcha-walled attachment (six backlog items went failed -> completed); the daily exit code means something again (an unstarted relay feed is skipped, real failures still exit 1, pinned by test_daily_exit_codes.py); the attachment/address gap that cost the 智能与计算学部 source six attachments is closed via an explicit trusted origin; deadline extraction no longer reads '3月15日前后' as a deadline; the review workbench (ordering, machine reasons, reasoned decisions, controlled batch) and queue dedup are ready.",
+    "bottleneck": "Measured: of the 100 visible items, 63 carry an original publication date older than 90 days and only 4 are within 7 days. The daily fresh-and-actionable gain is 0 measured before the new sources, 5 on their first run, and an estimated 0.02-0.15/day in steady state (column publication rate 0.30/day x 8%-50% still-actionable, see verification/freshness/README.md). Not a collection failure: the collected content is mostly old.",
+    "human_queue": "127 candidates left to a human (94 groups after dedup) still need a decision; the machine auto-accepted 1 in the measured run, 5 with the new sources.",
+    "content_binding": {
+      "start_campus_ps1": "5305 bytes, UTF-8 BOM, 89 CRLF, sha256 fefe18c1863762cba4afe84fee36bb88fcb957a0f690070c8997c9676a170fdc (byte-identical to what t16 delivered)",
+      "dist_web_parity": "dist/ and web/ each hold 10 files and are byte-identical (assets rebuilt this round: campus-DD9lfKaG.js, campus-Nw7gaN1n.css; parity invariant unchanged)",
+      "manifest": "RELEASE_MANIFEST.json, 1018 files, LF-only; rebuilt on the delivery tree and verified file-by-file by the packager",
+      "archive": "campus-fixed-realuse.zip written by tools/package_release.py, which verifies the archive against the manifest before writing the sidecar; the concrete sha256 is the value in the .sha256 sidecar and is also written into the desktop delivery note (it cannot live inside the archive it hashes)"
+    },
+    "t24_rebinding": {
+      "method": "verification/final/rebind_t24.py: in-process app (create_app + TestClient, no port, no worker) over a read-only copy, anonymous GET /api/v1/events paged to the end.",
+      "public_list": "data-operator itself still holds 100 published items (unchanged state, it has not been written since the 07:30 run); with the new sources a run on a copy gives 104. t24's '+0' described the behaviour with no new sources and still holds there.",
+      "first_card": "CHANGED (for the better): now 《【2027博招】环境科学与工程学院2027级硕博连读研究生选拔的通知》 (deadline 2026-11-15, updated by this run) instead of t24's 《天津大学医科秋季专场招聘会邀请函》. Actionable items visible: 9 -> 13.",
+      "exit_codes": "Unchanged and still enforced: test_daily_exit_codes.py 11 passed / 9 subtests on the current bytes; a real run on a copy reports 成功 12 · 降级 10 · 需授权 2 · 跳过 2 · 失败 0 and exits 0. The 07:30 scheduled run exited 1 on pre-fix code; the scheduler has not yet run the fixed code."
+    },
+    "gate": "python -m pytest server/campus/tests -q --junitxml=verification/backend.xml --basetemp=.test-temp-final19/basetemp with PYTHONUTF8=1: 908 passed / 8 skipped / 0 failed / 151 subtests, exit 0; junit tests=1067 failures=0 errors=0 skipped=8.",
+    "known_unverified": [
+      "The steady-state daily gain is an estimate (0.02-0.15/day): only the first run with the new sources was observed, no multi-day observation.",
+      "The still-actionable ratio for the new columns comes from one day and 60 candidates; its 50% upper bound is an assumption, not a measurement.",
+      "How much the 研招网 column would add after its missing per-article title is fixed, and how much the WeChat relay would add, were not measured.",
+      "The scheduled task has not yet run the fixed exit-code code (next 07:30 is the first unattended run of the fix).",
+      "The frontend assets were rebuilt this round; the t15 mobile conclusions were measured on the previous assets and were not re-run on the final ones (t23/t25 changed dedup and the queue, not the mobile styles - that is an inference, not a measurement).",
+      "Carried forward unchanged: real iOS/Android hardware, the isolated PostgreSQL suite, container image build, production load, live Meilisearch, public cloud deployment (production_deployed=false), the relay's feed-failure path with the relay actually running, persistence across a real reboot (S4U registration only), the non-admin permission branch, and sleep/wake catch-up."
+    ],
+    "record_format_fix": "round_18_launcher_encoding.still_unverified stored a sentence as a string, so iterating it yielded single characters; it is now a single-element array with the same text."
+  }
+}

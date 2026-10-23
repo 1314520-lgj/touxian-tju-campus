@@ -1,0 +1,532 @@
+{
+  "today": "2026-10-23",
+  "hosts": [
+    "arch.tju.edu.cn",
+    "earth.tju.edu.cn",
+    "law.tju.edu.cn",
+    "math.tju.edu.cn",
+    "mse.tju.edu.cn",
+    "seea.tju.edu.cn",
+    "sme.tju.edu.cn",
+    "soe.tju.edu.cn",
+    "scs.tju.edu.cn",
+    "sai.tju.edu.cn",
+    "imas.tju.edu.cn",
+    "jgxy.tju.edu.cn",
+    "jyxy.tju.edu.cn",
+    "marine.tju.edu.cn",
+    "esse.tju.edu.cn",
+    "xschool.tju.edu.cn",
+    "tiei2014.tju.edu.cn",
+    "snmc.tju.edu.cn"
+  ],
+  "rows": 51,
+  "active": 3,
+  "results": [
+    {
+      "host": "arch.tju.edu.cn",
+      "url": "https://arch.tju.edu.cn/xwzx/xyxw.htm",
+      "anchor": "新闻中心",
+      "page_title": "学院新闻-天津大学建筑学院",
+      "list_items": 144,
+      "newest": null,
+      "age_days": null,
+      "tier": "dead"
+    },
+    {
+      "host": "arch.tju.edu.cn",
+      "url": "https://arch.tju.edu.cn/xwzx/tzgg.htm",
+      "anchor": "通知公告",
+      "page_title": "通知公告-天津大学建筑学院",
+      "list_items": 144,
+      "newest": null,
+      "age_days": null,
+      "tier": "dead"
+    },
+    {
+      "host": "arch.tju.edu.cn",
+      "url": "https://arch.tju.edu.cn/kxyj/tztg.htm",
+      "anchor": "通知通告",
+      "page_title": "通知通告-天津大学建筑学院",
+      "list_items": 122,
+      "newest": null,
+      "age_days": null,
+      "tier": "dead"
+    },
+    {
+      "host": "arch.tju.edu.cn",
+      "url": "https://arch.tju.edu.cn/gjjl/tztg.htm",
+      "anchor": "通知通告",
+      "page_title": "通知通告-天津大学建筑学院",
+      "list_items": 132,
+      "newest": null,
+      "age_days": null,
+      "tier": "dead"
+    },
+    {
+      "host": "arch.tju.edu.cn",
+      "url": "https://arch.tju.edu.cn/dtgh/tztg.htm",
+      "anchor": "通知通告",
+      "page_title": "通知通告-天津大学建筑学院",
+      "list_items": 134,
+      "newest": null,
+      "age_days": null,
+      "tier": "dead"
+    },
+    {
+      "host": "arch.tju.edu.cn",
+      "url": "https://arch.tju.edu.cn/info/1255/4460.htm",
+      "anchor": "重要通知 |《城市学报》全面启用在线投稿系统",
+      "page_title": "重要通知 |《城市学报》全面启用在线投稿系统-天津大学建筑学院",
+      "list_items": 105,
+      "newest": null,
+      "age_days": null,
+      "tier": "dead"
+    },
+    {
+      "host": "law.tju.edu.cn",
+      "url": "https://law.tju.edu.cn/dtjs/xsdt.htm",
+      "anchor": "学生动态",
+      "page_title": "学生动态-天津大学法学院",
+      "list_items": 67,
+      "newest": null,
+      "age_days": null,
+      "tier": "dead"
+    },
+    {
+      "host": "law.tju.edu.cn",
+      "url": "https://law.tju.edu.cn/info/1064/7030.htm",
+      "anchor": "天津大学法学院2027级推免生拟录取名单公示",
+      "page_title": "天津大学法学院2027级推免生拟录取名单公示-天津大学法学院",
+      "list_items": 36,
+      "newest": null,
+      "age_days": null,
+      "tier": "dead"
+    },
+    {
+      "host": "math.tju.edu.cn",
+      "url": "https://math.tju.edu.cn/info/1072/9806.htm",
+      "anchor": "天津大学数学学院2027级推免生拟录取名单公示",
+      "page_title": "天津大学数学学院2027级推免生拟录取名单公示-天津大学数学学院",
+      "list_items": 61,
+      "newest": null,
+      "age_days": null,
+      "tier": "dead"
+    },
+    {
+      "host": "mse.tju.edu.cn",
+      "url": "https://mse.tju.edu.cn/xszj1/tztg.htm",
+      "anchor": "通知通告",
+      "page_title": "通知通告-天津大学材料科学与工程学院",
+      "list_items": 77,
+      "newest": null,
+      "age_days": null,
+      "tier": "dead"
+    },
+    {
+      "host": "seea.tju.edu.cn",
+      "url": "https://seea.tju.edu.cn/xwzx.htm",
+      "anchor": "新闻中心",
+      "page_title": "新闻中心-电气自动化与信息工程学院官网",
+      "list_items": 83,
+      "newest": null,
+      "age_days": null,
+      "tier": "dead"
+    },
+    {
+      "host": "seea.tju.edu.cn",
+      "url": "https://seea.tju.edu.cn/xwzx/xyxw.htm",
+      "anchor": "学院新闻",
+      "page_title": "学院新闻-电气自动化与信息工程学院官网",
+      "list_items": 84,
+      "newest": null,
+      "age_days": null,
+      "tier": "dead"
+    },
+    {
+      "host": "seea.tju.edu.cn",
+      "url": "https://seea.tju.edu.cn/xwzx/tzgg.htm",
+      "anchor": "通知公告",
+      "page_title": "通知公告-电气自动化与信息工程学院官网",
+      "list_items": 94,
+      "newest": null,
+      "age_days": null,
+      "tier": "dead"
+    },
+    {
+      "host": "seea.tju.edu.cn",
+      "url": "https://seea.tju.edu.cn/yjsjy/tzgg.htm",
+      "anchor": "通知公告",
+      "page_title": "通知公告-电气自动化与信息工程学院官网",
+      "list_items": 97,
+      "newest": null,
+      "age_days": null,
+      "tier": "dead"
+    },
+    {
+      "host": "seea.tju.edu.cn",
+      "url": "https://seea.tju.edu.cn/yjsjy/dspx_xptz.htm",
+      "anchor": "导师培训、选聘通知",
+      "page_title": "导师培训、选聘通知-电气自动化与信息工程学院官网",
+      "list_items": 72,
+      "newest": null,
+      "age_days": null,
+      "tier": "dead"
+    },
+    {
+      "host": "seea.tju.edu.cn",
+      "url": "https://seea.tju.edu.cn/xsgz/hdxw.htm",
+      "anchor": "活动新闻",
+      "page_title": "活动新闻-电气自动化与信息工程学院官网",
+      "list_items": 83,
+      "newest": null,
+      "age_days": null,
+      "tier": "dead"
+    },
+    {
+      "host": "seea.tju.edu.cn",
+      "url": "https://seea.tju.edu.cn/xyzj/xydt.htm",
+      "anchor": "校友动态",
+      "page_title": "校友动态-电气自动化与信息工程学院官网",
+      "list_items": 93,
+      "newest": null,
+      "age_days": null,
+      "tier": "dead"
+    },
+    {
+      "host": "seea.tju.edu.cn",
+      "url": "https://seea.tju.edu.cn/info/1031/9333.htm",
+      "anchor": "学院2027级推免生拟录取名单公示",
+      "page_title": "学院2027级推免生拟录取名单公示-电气自动化与信息工程学院官网",
+      "list_items": 75,
+      "newest": null,
+      "age_days": null,
+      "tier": "dead"
+    },
+    {
+      "host": "sme.tju.edu.cn",
+      "url": "https://sme.tju.edu.cn/zhxw/zhxw.htm",
+      "anchor": "综合新闻",
+      "page_title": "综合新闻-微电子学院官网",
+      "list_items": 191,
+      "newest": "2026-10-21",
+      "age_days": 2,
+      "tier": "active"
+    },
+    {
+      "host": "sme.tju.edu.cn",
+      "url": "https://sme.tju.edu.cn/rcpy/bks/swtz.htm",
+      "anchor": "事务通知",
+      "page_title": "事务通知-微电子学院官网",
+      "list_items": 174,
+      "newest": "2022-11-21",
+      "age_days": 1432,
+      "tier": "dead"
+    },
+    {
+      "host": "sme.tju.edu.cn",
+      "url": "https://sme.tju.edu.cn/zhxw/tztg.htm",
+      "anchor": "通知通告 MORE",
+      "page_title": "通知通告-微电子学院官网",
+      "list_items": 196,
+      "newest": "2026-01-19",
+      "age_days": 277,
+      "tier": "dead"
+    },
+    {
+      "host": "soe.tju.edu.cn",
+      "url": "https://soe.tju.edu.cn/jlhz/jldt.htm",
+      "anchor": "交流动态",
+      "page_title": "交流动态-天津大学教育学院",
+      "list_items": 113,
+      "newest": null,
+      "age_days": null,
+      "tier": "dead"
+    },
+    {
+      "host": "soe.tju.edu.cn",
+      "url": "https://soe.tju.edu.cn/gdpx/pxdt.htm",
+      "anchor": "培训动态",
+      "page_title": "培训动态-天津大学教育学院",
+      "list_items": 114,
+      "newest": "2026-09-13",
+      "age_days": 40,
+      "tier": "low"
+    },
+    {
+      "host": "scs.tju.edu.cn",
+      "url": "https://scs.tju.edu.cn/xwgg/xwdt.htm",
+      "anchor": "新闻动态",
+      "page_title": "新闻动态-软件学院",
+      "list_items": 68,
+      "newest": null,
+      "age_days": null,
+      "tier": "dead"
+    },
+    {
+      "host": "scs.tju.edu.cn",
+      "url": "https://scs.tju.edu.cn/xwgg/tzgg.htm",
+      "anchor": "通知公告",
+      "page_title": "通知公告-软件学院",
+      "list_items": 64,
+      "newest": null,
+      "age_days": null,
+      "tier": "dead"
+    },
+    {
+      "host": "scs.tju.edu.cn",
+      "url": "https://scs.tju.edu.cn/kxyj/kydt.htm",
+      "anchor": "科研动态",
+      "page_title": "科研动态-软件学院",
+      "list_items": 52,
+      "newest": null,
+      "age_days": null,
+      "tier": "dead"
+    },
+    {
+      "host": "sai.tju.edu.cn",
+      "url": "https://sai.tju.edu.cn/dtjs/dtdt.htm",
+      "anchor": "党团动态",
+      "page_title": "党团动态-人工智能学院",
+      "list_items": 41,
+      "newest": null,
+      "age_days": null,
+      "tier": "dead"
+    },
+    {
+      "host": "sai.tju.edu.cn",
+      "url": "https://sai.tju.edu.cn/xyzj/xydt.htm",
+      "anchor": "校友动态",
+      "page_title": "校友动态-人工智能学院",
+      "list_items": 35,
+      "newest": null,
+      "age_days": null,
+      "tier": "dead"
+    },
+    {
+      "host": "sai.tju.edu.cn",
+      "url": "https://sai.tju.edu.cn/info/1151/6001.htm",
+      "anchor": "硕博研究生学位论文答辩公告",
+      "page_title": "硕博研究生学位论文答辩公告-人工智能学院",
+      "list_items": 38,
+      "newest": null,
+      "age_days": null,
+      "tier": "dead"
+    },
+    {
+      "host": "jgxy.tju.edu.cn",
+      "url": "https://jgxy.tju.edu.cn/jyjx/bksjy/tzgg.htm",
+      "anchor": "通知公告",
+      "page_title": "通知公告-天津大学建筑工程学院",
+      "list_items": 91,
+      "newest": null,
+      "age_days": null,
+      "tier": "dead"
+    },
+    {
+      "host": "jgxy.tju.edu.cn",
+      "url": "https://jgxy.tju.edu.cn/jyjx/yjsjy/tzgg.htm",
+      "anchor": "通知公告",
+      "page_title": "通知公告-天津大学建筑工程学院",
+      "list_items": 111,
+      "newest": null,
+      "age_days": null,
+      "tier": "dead"
+    },
+    {
+      "host": "jgxy.tju.edu.cn",
+      "url": "https://jgxy.tju.edu.cn/jyjx/jxjyzx/tztg.htm",
+      "anchor": "通知通告",
+      "page_title": "通知通告-天津大学建筑工程学院",
+      "list_items": 86,
+      "newest": null,
+      "age_days": null,
+      "tier": "dead"
+    },
+    {
+      "host": "jgxy.tju.edu.cn",
+      "url": "https://jgxy.tju.edu.cn/ddjs/djdt.htm",
+      "anchor": "党建动态",
+      "page_title": "党建动态-天津大学建筑工程学院",
+      "list_items": 107,
+      "newest": null,
+      "age_days": null,
+      "tier": "dead"
+    },
+    {
+      "host": "jgxy.tju.edu.cn",
+      "url": "https://jgxy.tju.edu.cn/xsgz/xgxw.htm",
+      "anchor": "学工新闻",
+      "page_title": "学工新闻-天津大学建筑工程学院",
+      "list_items": 107,
+      "newest": null,
+      "age_days": null,
+      "tier": "dead"
+    },
+    {
+      "host": "jgxy.tju.edu.cn",
+      "url": "https://jgxy.tju.edu.cn/info/1073/4191.htm",
+      "anchor": "关于报送学校重要会议及活动的通知",
+      "page_title": "关于报送学校重要会议及活动的通知-天津大学建筑工程学院",
+      "list_items": 89,
+      "newest": null,
+      "age_days": null,
+      "tier": "dead"
+    },
+    {
+      "host": "jgxy.tju.edu.cn",
+      "url": "https://jgxy.tju.edu.cn/xwtg.htm",
+      "anchor": "新闻投稿",
+      "page_title": "新闻投稿-天津大学建筑工程学院",
+      "list_items": 83,
+      "newest": null,
+      "age_days": null,
+      "tier": "dead"
+    },
+    {
+      "host": "marine.tju.edu.cn",
+      "url": "https://marine.tju.edu.cn/jyjx/tzgg.htm",
+      "anchor": "通知公告",
+      "page_title": "通知公告-天津大学海洋科学与技术学院",
+      "list_items": 135,
+      "newest": "2025-03-13",
+      "age_days": 589,
+      "tier": "dead"
+    },
+    {
+      "host": "marine.tju.edu.cn",
+      "url": "https://marine.tju.edu.cn/djgz/gggs.htm",
+      "anchor": "公告公示",
+      "page_title": "公告公示-天津大学海洋科学与技术学院",
+      "list_items": 117,
+      "newest": null,
+      "age_days": null,
+      "tier": "dead"
+    },
+    {
+      "host": "marine.tju.edu.cn",
+      "url": "https://marine.tju.edu.cn/xygz/xydt.htm",
+      "anchor": "校友动态",
+      "page_title": "校友动态-天津大学海洋科学与技术学院",
+      "list_items": 126,
+      "newest": "2025-07-17",
+      "age_days": 463,
+      "tier": "dead"
+    },
+    {
+      "host": "esse.tju.edu.cn",
+      "url": "https://esse.tju.edu.cn/kxyj/xsdt.htm",
+      "anchor": "学术动态",
+      "page_title": "学术动态-天津大学-能源学院",
+      "list_items": 94,
+      "newest": "2025-12-05",
+      "age_days": 322,
+      "tier": "dead"
+    },
+    {
+      "host": "esse.tju.edu.cn",
+      "url": "https://esse.tju.edu.cn/djtd/zbxw.htm",
+      "anchor": "支部新闻",
+      "page_title": "支部新闻-天津大学-能源学院",
+      "list_items": 89,
+      "newest": "2026-05-26",
+      "age_days": 150,
+      "tier": "dead"
+    },
+    {
+      "host": "esse.tju.edu.cn",
+      "url": "https://esse.tju.edu.cn/xyzj/xydt.htm",
+      "anchor": "校友动态",
+      "page_title": "校友动态-天津大学-能源学院",
+      "list_items": 74,
+      "newest": null,
+      "age_days": null,
+      "tier": "dead"
+    },
+    {
+      "host": "esse.tju.edu.cn",
+      "url": "https://esse.tju.edu.cn/xwzx/ptxw.htm",
+      "anchor": "新闻动态 查看更多",
+      "page_title": "平台新闻-天津大学-能源学院",
+      "list_items": 95,
+      "newest": "2026-10-21",
+      "age_days": 2,
+      "tier": "active"
+    },
+    {
+      "host": "esse.tju.edu.cn",
+      "url": "https://esse.tju.edu.cn/xwzx/tzgg.htm",
+      "anchor": "通知公告 查看更多",
+      "page_title": "通知公告-天津大学-能源学院",
+      "list_items": 82,
+      "newest": null,
+      "age_days": null,
+      "tier": "dead"
+    },
+    {
+      "host": "xschool.tju.edu.cn",
+      "stage": "home",
+      "error": "upstream_http_502"
+    },
+    {
+      "host": "tiei2014.tju.edu.cn",
+      "url": "https://tiei2014.tju.edu.cn/xwtz.htm",
+      "anchor": "新闻通知",
+      "page_title": "新闻通知-国际工程师学院中文官网",
+      "list_items": 1,
+      "newest": null,
+      "age_days": null,
+      "tier": "dead"
+    },
+    {
+      "host": "tiei2014.tju.edu.cn",
+      "url": "https://tiei2014.tju.edu.cn/xwtz/xyxw.htm",
+      "anchor": "学院新闻",
+      "page_title": "学院新闻-国际工程师学院中文官网",
+      "list_items": 42,
+      "newest": null,
+      "age_days": null,
+      "tier": "dead"
+    },
+    {
+      "host": "tiei2014.tju.edu.cn",
+      "url": "https://tiei2014.tju.edu.cn/xwtz/tzgg.htm",
+      "anchor": "通知公告",
+      "page_title": "通知公告-国际工程师学院中文官网",
+      "list_items": 40,
+      "newest": null,
+      "age_days": null,
+      "tier": "dead"
+    },
+    {
+      "host": "snmc.tju.edu.cn",
+      "url": "https://snmc.tju.edu.cn/djgz/gzdt.htm",
+      "anchor": "工作动态",
+      "page_title": "工作动态-天津大学新媒体与传播学院",
+      "list_items": 78,
+      "newest": "2026-10-15",
+      "age_days": 8,
+      "tier": "active"
+    },
+    {
+      "host": "snmc.tju.edu.cn",
+      "url": "https://snmc.tju.edu.cn/szdw/xwcb.htm",
+      "anchor": "新闻传播",
+      "page_title": "新闻传播-天津大学新媒体与传播学院",
+      "list_items": 76,
+      "newest": "2024-12-27",
+      "age_days": 665,
+      "tier": "dead"
+    },
+    {
+      "host": "snmc.tju.edu.cn",
+      "url": "https://snmc.tju.edu.cn/news.htm",
+      "anchor": "学院动态",
+      "page_title": "学院动态-天津大学新媒体与传播学院",
+      "list_items": 1,
+      "newest": null,
+      "age_days": null,
+      "tier": "dead"
+    }
+  ]
+}

@@ -1,0 +1,1494 @@
+{
+  "command": "daily_update",
+  "apply": true,
+  "today": "2026-10-21",
+  "data_dir": "data-operator",
+  "gateway": {
+    "source": "config",
+    "origins": [
+      "https://cic.tju.edu.cn",
+      "https://eee.tju.edu.cn",
+      "https://gs.tju.edu.cn",
+      "https://ico.tju.edu.cn",
+      "https://job.tju.edu.cn",
+      "https://me.tju.edu.cn",
+      "https://mp.weixin.qq.com",
+      "https://news.tju.edu.cn",
+      "https://oaa.tju.edu.cn",
+      "https://scet.tju.edu.cn",
+      "https://yx.tju.edu.cn",
+      "https://zs.tju.edu.cn"
+    ]
+  },
+  "missing_directory": true,
+  "started_at": "2026-10-20T16:51:44.042394+00:00",
+  "stages": {
+    "collect": {
+      "applied": true,
+      "registration": {
+        "new": 20,
+        "existing": 0
+      },
+      "rows": [
+        {
+          "source_id": "b887b3d5-aec8-5185-9547-9eebc0d32f3b",
+          "name": "天津大学化工学院 · 本科教学通知",
+          "status": "ok",
+          "new_snapshots": 2,
+          "parse": {
+            "ok": 2,
+            "partial": 0,
+            "failed": 0
+          },
+          "parse_attachment": {
+            "ok": 0,
+            "partial": 0,
+            "failed": 0
+          },
+          "candidates_new": 2,
+          "candidates_updated": 0,
+          "candidates_unchanged": 0,
+          "skipped_no_body": 0,
+          "errors": [],
+          "parse_errors": [],
+          "candidate_errors": [],
+          "health": "healthy",
+          "last_error_code": null,
+          "backlog": {
+            "known_count": 2,
+            "pending_count": 0,
+            "failed_count": 0,
+            "completed_count": 2,
+            "window_truncated": false,
+            "last_discovered_at": "2026-10-20T16:51:45.569885Z"
+          },
+          "elapsed_seconds": 0.88
+        },
+        {
+          "source_id": "22e1eb54-a004-57fb-a806-0b6b711f9ee9",
+          "name": "天津大学国际处 · 学生项目通知",
+          "status": "degraded",
+          "new_snapshots": 27,
+          "parse": {
+            "ok": 0,
+            "partial": 8,
+            "failed": 0
+          },
+          "parse_attachment": {
+            "ok": 0,
+            "partial": 0,
+            "failed": 19
+          },
+          "candidates_new": 8,
+          "candidates_updated": 0,
+          "candidates_unchanged": 0,
+          "skipped_no_body": 0,
+          "errors": [
+            "attachment_access_restricted",
+            "attachment_access_restricted",
+            "attachment_access_restricted",
+            "attachment_access_restricted",
+            "attachment_access_restricted",
+            "attachment_access_restricted",
+            "attachment_access_restricted",
+            "attachment_access_restricted",
+            "attachment_access_restricted",
+            "attachment_access_restricted",
+            "attachment_access_restricted",
+            "attachment_access_restricted",
+            "attachment_access_restricted",
+            "attachment_access_restricted",
+            "attachment_access_restricted",
+            "attachment_access_restricted",
+            "attachment_access_restricted",
+            "attachment_access_restricted",
+            "attachment_access_restricted"
+          ],
+          "parse_errors": [],
+          "candidate_errors": [],
+          "health": "degraded",
+          "last_error_code": "attachment_access_restricted",
+          "backlog": {
+            "known_count": 15,
+            "pending_count": 7,
+            "failed_count": 8,
+            "completed_count": 0,
+            "window_truncated": false,
+            "last_discovered_at": "2026-10-20T16:51:46.386783Z"
+          },
+          "elapsed_seconds": 7.14
+        },
+        {
+          "source_id": "37e33c84-53a2-5ba9-a793-6f8bd33a46fb",
+          "name": "天津大学就业指导中心 · 招聘会信息",
+          "status": "ok",
+          "new_snapshots": 14,
+          "parse": {
+            "ok": 0,
+            "partial": 8,
+            "failed": 0
+          },
+          "parse_attachment": {
+            "ok": 1,
+            "partial": 4,
+            "failed": 1
+          },
+          "candidates_new": 8,
+          "candidates_updated": 0,
+          "candidates_unchanged": 0,
+          "skipped_no_body": 0,
+          "errors": [],
+          "parse_errors": [],
+          "candidate_errors": [],
+          "health": "healthy",
+          "last_error_code": null,
+          "backlog": {
+            "known_count": 22,
+            "pending_count": 14,
+            "failed_count": 0,
+            "completed_count": 8,
+            "window_truncated": false,
+            "last_discovered_at": "2026-10-20T16:51:53.778283Z"
+          },
+          "elapsed_seconds": 8.53
+        },
+        {
+          "source_id": "c2a586e4-f367-512a-a828-5ca3762b3cb6",
+          "name": "天津大学就业指导中心 · 通知公告",
+          "status": "ok",
+          "new_snapshots": 9,
+          "parse": {
+            "ok": 0,
+            "partial": 7,
+            "failed": 1
+          },
+          "parse_attachment": {
+            "ok": 0,
+            "partial": 1,
+            "failed": 0
+          },
+          "candidates_new": 7,
+          "candidates_updated": 0,
+          "candidates_unchanged": 0,
+          "skipped_no_body": 1,
+          "errors": [],
+          "parse_errors": [],
+          "candidate_errors": [],
+          "health": "healthy",
+          "last_error_code": null,
+          "backlog": {
+            "known_count": 24,
+            "pending_count": 16,
+            "failed_count": 0,
+            "completed_count": 8,
+            "window_truncated": false,
+            "last_discovered_at": "2026-10-20T16:52:02.295214Z"
+          },
+          "elapsed_seconds": 4.84
+        },
+        {
+          "source_id": "fc64db2c-93fb-5ff8-ace0-aa0b0bcbe15c",
+          "name": "天津大学教务处 · 学业指导",
+          "status": "degraded",
+          "new_snapshots": 11,
+          "parse": {
+            "ok": 0,
+            "partial": 3,
+            "failed": 0
+          },
+          "parse_attachment": {
+            "ok": 0,
+            "partial": 0,
+            "failed": 8
+          },
+          "candidates_new": 3,
+          "candidates_updated": 0,
+          "candidates_unchanged": 0,
+          "skipped_no_body": 0,
+          "errors": [
+            "attachment_access_restricted",
+            "attachment_access_restricted",
+            "attachment_access_restricted",
+            "attachment_access_restricted",
+            "attachment_access_restricted",
+            "attachment_access_restricted",
+            "attachment_access_restricted",
+            "attachment_access_restricted",
+            "article_redirected_off_pattern",
+            "article_redirected_off_pattern",
+            "article_redirected_off_pattern",
+            "article_redirected_off_pattern",
+            "article_redirected_off_pattern"
+          ],
+          "parse_errors": [],
+          "candidate_errors": [],
+          "health": "degraded",
+          "last_error_code": "attachment_access_restricted",
+          "backlog": {
+            "known_count": 20,
+            "pending_count": 12,
+            "failed_count": 8,
+            "completed_count": 0,
+            "window_truncated": false,
+            "last_discovered_at": "2026-10-20T16:52:06.914105Z"
+          },
+          "elapsed_seconds": 4.8
+        },
+        {
+          "source_id": "56cd6e50-bf3d-5862-b1ce-d7ebaba3d902",
+          "name": "天津大学教务处 · 学生竞赛",
+          "status": "blocked",
+          "new_snapshots": 0,
+          "parse": {
+            "ok": 0,
+            "partial": 0,
+            "failed": 0
+          },
+          "parse_attachment": {
+            "ok": 0,
+            "partial": 0,
+            "failed": 0
+          },
+          "candidates_new": 0,
+          "candidates_updated": 0,
+          "candidates_unchanged": 0,
+          "skipped_no_body": 0,
+          "errors": [
+            "article_redirected_off_pattern"
+          ],
+          "parse_errors": [],
+          "candidate_errors": [],
+          "health": "auth_expired",
+          "last_error_code": "article_redirected_off_pattern",
+          "backlog": {
+            "known_count": 6,
+            "pending_count": 0,
+            "failed_count": 6,
+            "completed_count": 0,
+            "window_truncated": false,
+            "last_discovered_at": "2026-10-20T16:52:11.708144Z"
+          },
+          "elapsed_seconds": 2.66
+        },
+        {
+          "source_id": "3434196e-1203-5543-87bb-d71e1c1fc1b2",
+          "name": "天津大学教务处 · 竞赛科创通知",
+          "status": "blocked",
+          "new_snapshots": 0,
+          "parse": {
+            "ok": 0,
+            "partial": 0,
+            "failed": 0
+          },
+          "parse_attachment": {
+            "ok": 0,
+            "partial": 0,
+            "failed": 0
+          },
+          "candidates_new": 0,
+          "candidates_updated": 0,
+          "candidates_unchanged": 0,
+          "skipped_no_body": 0,
+          "errors": [
+            "article_redirected_off_pattern"
+          ],
+          "parse_errors": [],
+          "candidate_errors": [],
+          "health": "auth_expired",
+          "last_error_code": "article_redirected_off_pattern",
+          "backlog": {
+            "known_count": 20,
+            "pending_count": 12,
+            "failed_count": 8,
+            "completed_count": 0,
+            "window_truncated": false,
+            "last_discovered_at": "2026-10-20T16:52:14.366511Z"
+          },
+          "elapsed_seconds": 3.33
+        },
+        {
+          "source_id": "c4e00274-5b08-5d26-9a6d-19aed0d71571",
+          "name": "天津大学教务处 · 通知公告",
+          "status": "degraded",
+          "new_snapshots": 5,
+          "parse": {
+            "ok": 0,
+            "partial": 2,
+            "failed": 0
+          },
+          "parse_attachment": {
+            "ok": 0,
+            "partial": 0,
+            "failed": 3
+          },
+          "candidates_new": 2,
+          "candidates_updated": 0,
+          "candidates_unchanged": 0,
+          "skipped_no_body": 0,
+          "errors": [
+            "attachment_access_restricted",
+            "attachment_access_restricted",
+            "attachment_access_restricted",
+            "article_redirected_off_pattern",
+            "article_redirected_off_pattern",
+            "article_redirected_off_pattern",
+            "article_redirected_off_pattern",
+            "article_redirected_off_pattern",
+            "article_redirected_off_pattern"
+          ],
+          "parse_errors": [],
+          "candidate_errors": [],
+          "health": "degraded",
+          "last_error_code": "attachment_access_restricted",
+          "backlog": {
+            "known_count": 20,
+            "pending_count": 12,
+            "failed_count": 8,
+            "completed_count": 0,
+            "window_truncated": false,
+            "last_discovered_at": "2026-10-20T16:52:17.681437Z"
+          },
+          "elapsed_seconds": 3.61
+        },
+        {
+          "source_id": "ea4fa3a4-90fc-55c4-a5aa-cc6a389cb13d",
+          "name": "天津大学教务处 · 通知公告总览",
+          "status": "degraded",
+          "new_snapshots": 3,
+          "parse": {
+            "ok": 0,
+            "partial": 1,
+            "failed": 0
+          },
+          "parse_attachment": {
+            "ok": 0,
+            "partial": 0,
+            "failed": 2
+          },
+          "candidates_new": 1,
+          "candidates_updated": 0,
+          "candidates_unchanged": 0,
+          "skipped_no_body": 0,
+          "errors": [
+            "attachment_access_restricted",
+            "attachment_access_restricted",
+            "article_redirected_off_pattern",
+            "article_redirected_off_pattern",
+            "article_redirected_off_pattern",
+            "article_redirected_off_pattern",
+            "article_redirected_off_pattern",
+            "article_redirected_off_pattern",
+            "article_redirected_off_pattern"
+          ],
+          "parse_errors": [],
+          "candidate_errors": [],
+          "health": "degraded",
+          "last_error_code": "attachment_access_restricted",
+          "backlog": {
+            "known_count": 15,
+            "pending_count": 7,
+            "failed_count": 8,
+            "completed_count": 0,
+            "window_truncated": false,
+            "last_discovered_at": "2026-10-20T16:52:21.298935Z"
+          },
+          "elapsed_seconds": 3.61
+        },
+        {
+          "source_id": "5a11fe0a-949d-5beb-9541-fd0771ba7451",
+          "name": "天津大学新工科教育创新中心 · 竞赛通知",
+          "status": "degraded",
+          "new_snapshots": 14,
+          "parse": {
+            "ok": 4,
+            "partial": 4,
+            "failed": 0
+          },
+          "parse_attachment": {
+            "ok": 0,
+            "partial": 0,
+            "failed": 6
+          },
+          "candidates_new": 8,
+          "candidates_updated": 0,
+          "candidates_unchanged": 0,
+          "skipped_no_body": 0,
+          "errors": [
+            "attachment_access_restricted",
+            "attachment_access_restricted",
+            "attachment_access_restricted",
+            "attachment_access_restricted",
+            "attachment_access_restricted",
+            "attachment_access_restricted"
+          ],
+          "parse_errors": [],
+          "candidate_errors": [],
+          "health": "degraded",
+          "last_error_code": "attachment_access_restricted",
+          "backlog": {
+            "known_count": 10,
+            "pending_count": 2,
+            "failed_count": 3,
+            "completed_count": 5,
+            "window_truncated": false,
+            "last_discovered_at": "2026-10-20T16:52:24.891310Z"
+          },
+          "elapsed_seconds": 4.08
+        },
+        {
+          "source_id": "ba303189-9801-5add-9b5b-924e8c5575b1",
+          "name": "天津大学新闻网 · 综合新闻",
+          "status": "ok",
+          "new_snapshots": 8,
+          "parse": {
+            "ok": 8,
+            "partial": 0,
+            "failed": 0
+          },
+          "parse_attachment": {
+            "ok": 0,
+            "partial": 0,
+            "failed": 0
+          },
+          "candidates_new": 8,
+          "candidates_updated": 0,
+          "candidates_unchanged": 0,
+          "skipped_no_body": 0,
+          "errors": [],
+          "parse_errors": [],
+          "candidate_errors": [],
+          "health": "healthy",
+          "last_error_code": null,
+          "backlog": {
+            "known_count": 15,
+            "pending_count": 7,
+            "failed_count": 0,
+            "completed_count": 8,
+            "window_truncated": false,
+            "last_discovered_at": "2026-10-20T16:52:29.032897Z"
+          },
+          "elapsed_seconds": 2.48
+        },
+        {
+          "source_id": "3ac23043-2575-53d7-8a38-45b8d090b6cc",
+          "name": "天津大学智能与计算学部 · 通知公告",
+          "status": "degraded",
+          "new_snapshots": 8,
+          "parse": {
+            "ok": 7,
+            "partial": 1,
+            "failed": 0
+          },
+          "parse_attachment": {
+            "ok": 0,
+            "partial": 0,
+            "failed": 0
+          },
+          "candidates_new": 8,
+          "candidates_updated": 0,
+          "candidates_unchanged": 0,
+          "skipped_no_body": 0,
+          "errors": [
+            "unsafe_address",
+            "unsafe_address",
+            "unsafe_address",
+            "unsafe_address"
+          ],
+          "parse_errors": [],
+          "candidate_errors": [],
+          "health": "degraded",
+          "last_error_code": "unsafe_address",
+          "backlog": {
+            "known_count": 15,
+            "pending_count": 7,
+            "failed_count": 1,
+            "completed_count": 7,
+            "window_truncated": false,
+            "last_discovered_at": "2026-10-20T16:52:31.479387Z"
+          },
+          "elapsed_seconds": 3.8
+        },
+        {
+          "source_id": "dca313cc-2acc-5d35-98ff-1cbbf4d03452",
+          "name": "天津大学本科招生网 · 通知公告",
+          "status": "ok",
+          "new_snapshots": 7,
+          "parse": {
+            "ok": 7,
+            "partial": 0,
+            "failed": 0
+          },
+          "parse_attachment": {
+            "ok": 0,
+            "partial": 0,
+            "failed": 0
+          },
+          "candidates_new": 7,
+          "candidates_updated": 0,
+          "candidates_unchanged": 0,
+          "skipped_no_body": 0,
+          "errors": [],
+          "parse_errors": [],
+          "candidate_errors": [],
+          "health": "healthy",
+          "last_error_code": null,
+          "backlog": {
+            "known_count": 7,
+            "pending_count": 0,
+            "failed_count": 0,
+            "completed_count": 7,
+            "window_truncated": false,
+            "last_discovered_at": "2026-10-20T16:52:35.345787Z"
+          },
+          "elapsed_seconds": 2.52
+        },
+        {
+          "source_id": "31126592-7bce-514c-a018-6e701349e384",
+          "name": "天津大学机械工程学院 · 通知公告",
+          "status": "ok",
+          "new_snapshots": 8,
+          "parse": {
+            "ok": 6,
+            "partial": 2,
+            "failed": 0
+          },
+          "parse_attachment": {
+            "ok": 0,
+            "partial": 0,
+            "failed": 0
+          },
+          "candidates_new": 8,
+          "candidates_updated": 0,
+          "candidates_unchanged": 0,
+          "skipped_no_body": 0,
+          "errors": [],
+          "parse_errors": [],
+          "candidate_errors": [],
+          "health": "healthy",
+          "last_error_code": null,
+          "backlog": {
+            "known_count": 15,
+            "pending_count": 7,
+            "failed_count": 0,
+            "completed_count": 8,
+            "window_truncated": false,
+            "last_discovered_at": "2026-10-20T16:52:37.808843Z"
+          },
+          "elapsed_seconds": 2.98
+        },
+        {
+          "source_id": "35bd445b-d3b1-5057-a746-8cd2c08b2be4",
+          "name": "天津大学研究生院 · 国际交流",
+          "status": "ok",
+          "new_snapshots": 8,
+          "parse": {
+            "ok": 8,
+            "partial": 0,
+            "failed": 0
+          },
+          "parse_attachment": {
+            "ok": 0,
+            "partial": 0,
+            "failed": 0
+          },
+          "candidates_new": 8,
+          "candidates_updated": 0,
+          "candidates_unchanged": 0,
+          "skipped_no_body": 0,
+          "errors": [],
+          "parse_errors": [],
+          "candidate_errors": [],
+          "health": "healthy",
+          "last_error_code": null,
+          "backlog": {
+            "known_count": 10,
+            "pending_count": 2,
+            "failed_count": 0,
+            "completed_count": 8,
+            "window_truncated": false,
+            "last_discovered_at": "2026-10-20T16:52:40.789351Z"
+          },
+          "elapsed_seconds": 3.08
+        },
+        {
+          "source_id": "09ae8359-d53d-5eec-8f90-b976fa6dc011",
+          "name": "天津大学研究生院 · 培养办事流程",
+          "status": "ok",
+          "new_snapshots": 5,
+          "parse": {
+            "ok": 5,
+            "partial": 0,
+            "failed": 0
+          },
+          "parse_attachment": {
+            "ok": 0,
+            "partial": 0,
+            "failed": 0
+          },
+          "candidates_new": 5,
+          "candidates_updated": 0,
+          "candidates_unchanged": 0,
+          "skipped_no_body": 0,
+          "errors": [],
+          "parse_errors": [],
+          "candidate_errors": [],
+          "health": "healthy",
+          "last_error_code": null,
+          "backlog": {
+            "known_count": 5,
+            "pending_count": 0,
+            "failed_count": 0,
+            "completed_count": 5,
+            "window_truncated": false,
+            "last_discovered_at": "2026-10-20T16:52:43.886135Z"
+          },
+          "elapsed_seconds": 1.61
+        },
+        {
+          "source_id": "8bd43bba-7ae5-5a05-8c7e-08aa41dcf700",
+          "name": "天津大学研究生院 · 培养通知",
+          "status": "ok",
+          "new_snapshots": 8,
+          "parse": {
+            "ok": 7,
+            "partial": 1,
+            "failed": 0
+          },
+          "parse_attachment": {
+            "ok": 0,
+            "partial": 0,
+            "failed": 0
+          },
+          "candidates_new": 8,
+          "candidates_updated": 0,
+          "candidates_unchanged": 0,
+          "skipped_no_body": 0,
+          "errors": [],
+          "parse_errors": [],
+          "candidate_errors": [],
+          "health": "healthy",
+          "last_error_code": null,
+          "backlog": {
+            "known_count": 20,
+            "pending_count": 12,
+            "failed_count": 0,
+            "completed_count": 8,
+            "window_truncated": false,
+            "last_discovered_at": "2026-10-20T16:52:45.465808Z"
+          },
+          "elapsed_seconds": 2.92
+        },
+        {
+          "source_id": "3dd0449a-a81d-5199-a345-9d04a5da1f6e",
+          "name": "天津大学研究生院 · 奖助通知",
+          "status": "ok",
+          "new_snapshots": 7,
+          "parse": {
+            "ok": 7,
+            "partial": 0,
+            "failed": 0
+          },
+          "parse_attachment": {
+            "ok": 0,
+            "partial": 0,
+            "failed": 0
+          },
+          "candidates_new": 7,
+          "candidates_updated": 0,
+          "candidates_unchanged": 0,
+          "skipped_no_body": 0,
+          "errors": [],
+          "parse_errors": [],
+          "candidate_errors": [],
+          "health": "healthy",
+          "last_error_code": null,
+          "backlog": {
+            "known_count": 7,
+            "pending_count": 0,
+            "failed_count": 0,
+            "completed_count": 7,
+            "window_truncated": false,
+            "last_discovered_at": "2026-10-20T16:52:48.393364Z"
+          },
+          "elapsed_seconds": 2.58
+        },
+        {
+          "source_id": "439b89ae-6232-5ea7-b595-e7dd695c1fb3",
+          "name": "天津大学研究生院 · 学位通知",
+          "status": "ok",
+          "new_snapshots": 8,
+          "parse": {
+            "ok": 4,
+            "partial": 3,
+            "failed": 1
+          },
+          "parse_attachment": {
+            "ok": 0,
+            "partial": 0,
+            "failed": 0
+          },
+          "candidates_new": 7,
+          "candidates_updated": 0,
+          "candidates_unchanged": 0,
+          "skipped_no_body": 1,
+          "errors": [],
+          "parse_errors": [],
+          "candidate_errors": [],
+          "health": "healthy",
+          "last_error_code": null,
+          "backlog": {
+            "known_count": 19,
+            "pending_count": 11,
+            "failed_count": 0,
+            "completed_count": 8,
+            "window_truncated": false,
+            "last_discovered_at": "2026-10-20T16:52:51.065716Z"
+          },
+          "elapsed_seconds": 3.14
+        },
+        {
+          "source_id": "92d2251d-d0cb-5f9d-824d-3b836f8ddf71",
+          "name": "天津大学迎新网 · 本科迎新快讯",
+          "status": "ok",
+          "new_snapshots": 8,
+          "parse": {
+            "ok": 0,
+            "partial": 4,
+            "failed": 0
+          },
+          "parse_attachment": {
+            "ok": 2,
+            "partial": 1,
+            "failed": 1
+          },
+          "candidates_new": 4,
+          "candidates_updated": 0,
+          "candidates_unchanged": 0,
+          "skipped_no_body": 0,
+          "errors": [],
+          "parse_errors": [],
+          "candidate_errors": [],
+          "health": "healthy",
+          "last_error_code": null,
+          "backlog": {
+            "known_count": 4,
+            "pending_count": 0,
+            "failed_count": 0,
+            "completed_count": 4,
+            "window_truncated": false,
+            "last_discovered_at": "2026-10-20T16:52:54.102604Z"
+          },
+          "elapsed_seconds": 3.8
+        }
+      ],
+      "totals": {
+        "sources": 20,
+        "ok": 12,
+        "degraded": 6,
+        "blocked": 2,
+        "failed": 0,
+        "new_snapshots": 160,
+        "documents": 160,
+        "candidates_total": 109,
+        "candidates_new": 109,
+        "candidates_pending": 109,
+        "parse": {
+          "ok": 65,
+          "partial": 44,
+          "failed": 2
+        },
+        "parse_attachments": {
+          "ok": 3,
+          "partial": 6,
+          "failed": 40
+        },
+        "skipped_no_body": 2,
+        "backlog_pending": 128,
+        "backlog_failed": 50,
+        "error_codes": {
+          "article_redirected_off_pattern": 20,
+          "attachment_access_restricted": 38,
+          "unsafe_address": 4
+        }
+      },
+      "exit_code": 0
+    },
+    "review": {
+      "applied": true,
+      "pending": 109,
+      "accept": 7,
+      "reject": 44,
+      "review": 58,
+      "error": 0,
+      "reconciled": 7,
+      "published": 7,
+      "publish_errors": [],
+      "rows": [
+        {
+          "candidate_id": "01d45234-20cb-5e4b-b99e-d17f9097ad1f",
+          "title": "关于征集2025届新工科毕业设计研究与实践项目选题的通知",
+          "decision": "review",
+          "reason": "没有可核对的截止时间：可能是长期参考，也可能是陈旧文档，留给人判断"
+        },
+        {
+          "candidate_id": "01f50c4b-834d-5b2d-ac11-2e1a7f8ad15b",
+          "title": "关于企业入校招聘活动入校方式的通知",
+          "decision": "review",
+          "reason": "没有可核对的截止时间：可能是长期参考，也可能是陈旧文档，留给人判断"
+        },
+        {
+          "candidate_id": "090cf520-9230-5d5f-ac88-f592fea9378d",
+          "title": "规范研究生学位论文与实践成果中人工智能工具使用指南",
+          "decision": "review",
+          "reason": "没有可核对的截止时间：可能是长期参考，也可能是陈旧文档，留给人判断"
+        },
+        {
+          "candidate_id": "096a0ec6-fd1c-5d54-b2b5-2cb5258b9510",
+          "title": "天津大学考点关于雅思考试防疫要求的通知",
+          "decision": "reject",
+          "reason": "取消通知缺少可关联的原事项（需人工关联后再发布）"
+        },
+        {
+          "candidate_id": "0990c7cc-eedc-5b62-a4ab-a1cf46712388",
+          "title": "承前启后 再出发——地方高校新工科建设湘潭高峰论坛",
+          "decision": "review",
+          "reason": "没有可核对的截止时间：可能是长期参考，也可能是陈旧文档，留给人判断"
+        },
+        {
+          "candidate_id": "09edc45b-61a7-53ea-9a25-2f34340110a7",
+          "title": "转发中国教育国际交流协会《关于邀请参加 2023博士生国际招生面试交流会的函》",
+          "decision": "review",
+          "reason": "没有可核对的截止时间：可能是长期参考，也可能是陈旧文档，留给人判断"
+        },
+        {
+          "candidate_id": "0d313a26-328e-5338-8a4a-3b289214c9e9",
+          "title": "2027年春季学期交换生（第二批）项目通知",
+          "decision": "review",
+          "reason": "没有可核对的截止时间：可能是长期参考，也可能是陈旧文档，留给人判断"
+        },
+        {
+          "candidate_id": "0d7940af-018e-5902-8dbe-04ea3d5678c3",
+          "title": "《关于规范研究生学位论文与实践成果使用人工智能工具的倡议书》",
+          "decision": "review",
+          "reason": "没有可核对的截止时间：可能是长期参考，也可能是陈旧文档，留给人判断"
+        },
+        {
+          "candidate_id": "0ed4dbe3-6477-526f-ba44-9417d46549cb",
+          "title": "关于往届生录取研究生的相关说明",
+          "decision": "reject",
+          "reason": "所有截止时间都已过去（最晚 2026-05-30），对今天无事可办"
+        },
+        {
+          "candidate_id": "0ef7abd3-68f4-5d89-b392-1db650ec128f",
+          "title": "【非全日制】24251学期研究生公共课考试安排",
+          "decision": "review",
+          "reason": "没有可核对的截止时间：可能是长期参考，也可能是陈旧文档，留给人判断"
+        },
+        {
+          "candidate_id": "0f257f3e-73a1-5b29-b8ed-23257c0aea13",
+          "title": "习近平给天津大学全体师生回信强调 聚焦国家重大战略需求提高人才培养质量 更好服务经济社会发展",
+          "decision": "review",
+          "reason": "没有可核对的截止时间：可能是长期参考，也可能是陈旧文档，留给人判断"
+        },
+        {
+          "candidate_id": "1072aee2-725e-545e-bc26-f79bc03a527b",
+          "title": "化工学院2026化工新工科卓越领军班选拔笔试安排",
+          "decision": "reject",
+          "reason": "所有截止时间都已过去（最晚 2026-09-01），对今天无事可办"
+        },
+        {
+          "candidate_id": "1167cbdc-78d9-5bd9-b8cd-59de1c47dcfe",
+          "title": "天津电视台《天津新闻》：【校馆弦歌】走进天大图书馆 感受历史传承",
+          "decision": "review",
+          "reason": "没有可核对的截止时间：可能是长期参考，也可能是陈旧文档，留给人判断"
+        },
+        {
+          "candidate_id": "16385fe9-d23b-55f0-89d0-d0c9851b1cb3",
+          "title": "25261学期【非全日制】研究生公共课考试安排",
+          "decision": "review",
+          "reason": "没有可核对的截止时间：可能是长期参考，也可能是陈旧文档，留给人判断"
+        },
+        {
+          "candidate_id": "16f3db49-e20b-5925-b9c7-6d08f540eaa8",
+          "title": "天津大学2027届“金秋启航”大型双选会",
+          "decision": "reject",
+          "reason": "所有截止时间都已过去（最晚 2026-10-16），对今天无事可办"
+        },
+        {
+          "candidate_id": "175683e0-6d2c-510d-8af0-21bcd88021fb",
+          "title": "关于导师助研金系统功能升级的温馨提示",
+          "decision": "review",
+          "reason": "没有可核对的截止时间：可能是长期参考，也可能是陈旧文档，留给人判断"
+        },
+        {
+          "candidate_id": "1bc4905d-b84f-5f5f-9d69-eddf53bd18b6",
+          "title": "天津大学智能与计算学部2026年工程博士招生办法",
+          "decision": "review",
+          "reason": "没有可核对的截止时间：可能是长期参考，也可能是陈旧文档，留给人判断"
+        },
+        {
+          "candidate_id": "1f24bd60-1f9c-5491-9592-9ba16f4e00fa",
+          "title": "2027年牛津大学伍斯特学院寒假项目通知",
+          "decision": "review",
+          "reason": "没有可核对的截止时间：可能是长期参考，也可能是陈旧文档，留给人判断"
+        },
+        {
+          "candidate_id": "1f72cfe8-7e85-5166-9148-8add92ceca83",
+          "title": "“千企万岗进校园”天津大学2026年秋季大型双选会",
+          "decision": "reject",
+          "reason": "所有截止时间都已过去（最晚 2026-09-18），对今天无事可办"
+        },
+        {
+          "candidate_id": "21b746be-3aef-5d11-bc8b-a7ab16e98c4d",
+          "title": "学位审批书、评阅书、评议书及表决票202509",
+          "decision": "reject",
+          "reason": "标题是表格/附件类文档名，不是通知"
+        },
+        {
+          "candidate_id": "229e4dbb-2761-589b-8952-e4388096c4af",
+          "title": "市教委关于举办 2026 年天津市大学生新工科实践创新大赛的通知",
+          "decision": "accept",
+          "reason": "今天仍可办（最晚期限 2026-10-25）"
+        },
+        {
+          "candidate_id": "244db099-a038-5004-8a15-89e235fc7cfb",
+          "title": "用人单位邀请函丨2026年天津大学化学化工类秋季专场双选会请您参加！",
+          "decision": "reject",
+          "reason": "所有截止时间都已过去（最晚 2026-09-17），对今天无事可办"
+        },
+        {
+          "candidate_id": "25577576-fc0d-592f-87d4-80b3f5a52adb",
+          "title": "天津大学2026年运动训练专业拟录取名单公示",
+          "decision": "review",
+          "reason": "没有可核对的截止时间：可能是长期参考，也可能是陈旧文档，留给人判断"
+        },
+        {
+          "candidate_id": "255f509d-ed75-5960-9930-d9bc8d3bb1f5",
+          "title": "天津大学医科春季专场招聘会邀请函",
+          "decision": "reject",
+          "reason": "所有截止时间都已过去（最晚 2026-04-09），对今天无事可办"
+        },
+        {
+          "candidate_id": "25d55ff4-8e29-5ab5-b242-bb3649901eaf",
+          "title": "天津大学机械工程学院2026年专业学位博士研究生拟录取名单公示（第六批）",
+          "decision": "review",
+          "reason": "没有可核对的截止时间：可能是长期参考，也可能是陈旧文档，留给人判断"
+        },
+        {
+          "candidate_id": "25e34f74-5312-5872-ac55-54d38d698a95",
+          "title": "关于开展2027年寒假剑桥大学学术科研项目 （系统设计与工程思维）报名工作的通知",
+          "decision": "accept",
+          "reason": "今天仍可办（最晚期限 2026-12-01）"
+        },
+        {
+          "candidate_id": "2b159998-c8f2-5fda-a53d-b191fa2bdf2e",
+          "title": "《国际化拔尖创新人才培养计划》课程选课通知",
+          "decision": "reject",
+          "reason": "所有截止时间都已过去（最晚 2026-03-25），对今天无事可办"
+        },
+        {
+          "candidate_id": "2ee08427-6ff3-5ea0-8243-94155dd22632",
+          "title": "【办事流程】关于研究生课程缓考申请的流程",
+          "decision": "review",
+          "reason": "没有可核对的截止时间：可能是长期参考，也可能是陈旧文档，留给人判断"
+        },
+        {
+          "candidate_id": "2f25957f-9ab7-5d3b-9238-44293cad548c",
+          "title": "关于举办国际工程教育发展会议的通知【行业协（学）会】",
+          "decision": "reject",
+          "reason": "所有截止时间都已过去（最晚 2025-09-22），对今天无事可办"
+        },
+        {
+          "candidate_id": "330d0328-ac5c-5044-b049-e3e973cdaa2f",
+          "title": "【办事流程】关于研究生个人培养计划变更的流程",
+          "decision": "review",
+          "reason": "没有可核对的截止时间：可能是长期参考，也可能是陈旧文档，留给人判断"
+        },
+        {
+          "candidate_id": "339777e9-2e43-5f62-a91f-337bdb32004a",
+          "title": "“2026年全国大学生先进成图技术与产品信息建模创新大赛天津赛区竞赛”获奖通知",
+          "decision": "review",
+          "reason": "没有可核对的截止时间：可能是长期参考，也可能是陈旧文档，留给人判断"
+        },
+        {
+          "candidate_id": "366eb57a-4612-5dbe-920b-74ac3782551c",
+          "title": "2026级新生缴学宿费的通知",
+          "decision": "reject",
+          "reason": "所有截止时间都已过去（最晚 2026-09-09），对今天无事可办"
+        },
+        {
+          "candidate_id": "37be6a54-6183-5a65-bb5b-5d68c1cb19ec",
+          "title": "【学籍管理】关于对超过最长学习年限研究生进行学籍处理预警的通知",
+          "decision": "review",
+          "reason": "没有可核对的截止时间：可能是长期参考，也可能是陈旧文档，留给人判断"
+        },
+        {
+          "candidate_id": "37c95caa-c364-5b06-8630-a22c21761abd",
+          "title": "总体情况",
+          "decision": "review",
+          "reason": "没有可核对的截止时间：可能是长期参考，也可能是陈旧文档，留给人判断"
+        },
+        {
+          "candidate_id": "38d7b339-c4fd-53c8-acdf-d030b3924979",
+          "title": "论文送审平台反馈评阅意见份数统计表（截至2026年10月19日8:54）",
+          "decision": "reject",
+          "reason": "标题是表格/附件类文档名，不是通知"
+        },
+        {
+          "candidate_id": "42415339-6a83-594f-a392-beb733283afd",
+          "title": "关于我校非上海生源在沪就业户籍申请中拥有“专利证书及申请”的毕业生名单公示",
+          "decision": "reject",
+          "reason": "所有截止时间都已过去（最晚 2026-07-28），对今天无事可办"
+        },
+        {
+          "candidate_id": "444365e2-51f4-5289-9817-55ba51e6448c",
+          "title": "关于开展“笃学・筑梦・智行",
+          "decision": "reject",
+          "reason": "所有截止时间都已过去（最晚 2026-10-15），对今天无事可办"
+        },
+        {
+          "candidate_id": "444b751c-c528-5428-9b5e-55a1c5b871d2",
+          "title": "天津大学2026",
+          "decision": "reject",
+          "reason": "所有截止时间都已过去（最晚 2026-06-24），对今天无事可办"
+        },
+        {
+          "candidate_id": "4672beac-bb48-5d36-adb2-5b92510d1aea",
+          "title": "2026年全国高校工程教育学学科建设联盟年会暨AI时代工程教育学与工程教育创新研讨会顺利召开",
+          "decision": "reject",
+          "reason": "像新闻/宣传稿，不是学生可办的事项"
+        },
+        {
+          "candidate_id": "4a6e0685-e842-550d-8446-e6443670f71a",
+          "title": "总体情况",
+          "decision": "review",
+          "reason": "没有可核对的截止时间：可能是长期参考，也可能是陈旧文档，留给人判断"
+        },
+        {
+          "candidate_id": "4f529917-7fcc-5724-811e-98a0b85898f8",
+          "title": "天津大学2026级新生线上入学教育通知",
+          "decision": "review",
+          "reason": "没有可核对的截止时间：可能是长期参考，也可能是陈旧文档，留给人判断"
+        },
+        {
+          "candidate_id": "545d6625-3616-5678-a2a3-c56553399894",
+          "title": "“从今天起，我想做你的一位‘新邻居’”",
+          "decision": "review",
+          "reason": "没有可核对的截止时间：可能是长期参考，也可能是陈旧文档，留给人判断"
+        },
+        {
+          "candidate_id": "54741dd9-67a6-5526-a81b-b8b9fc6d4d46",
+          "title": "天津大学关于2026年强基计划校考工作安排的通知",
+          "decision": "review",
+          "reason": "没有可核对的截止时间：可能是长期参考，也可能是陈旧文档，留给人判断"
+        },
+        {
+          "candidate_id": "569c2b5d-06e3-5160-9992-1e958f510499",
+          "title": "天津大学机械工程学院2026年专业学位博士研究生拟录取名单公示（第五批）",
+          "decision": "review",
+          "reason": "没有可核对的截止时间：可能是长期参考，也可能是陈旧文档，留给人判断"
+        },
+        {
+          "candidate_id": "5bf64ad4-68e3-5c4f-ac42-3890caef1a30",
+          "title": "2027年慕尼黑工业大学“未来技术”冬季项目报名通知",
+          "decision": "accept",
+          "reason": "今天仍可办（最晚期限 2027-02-21）"
+        },
+        {
+          "candidate_id": "6254121e-b6ac-578a-946d-3ade48141ca7",
+          "title": "第三届全国大学生职业规划大赛总决赛专场招聘会暨“千校万企供需对接会”",
+          "decision": "reject",
+          "reason": "所有截止时间都已过去（最晚 2026-04-15），对今天无事可办"
+        },
+        {
+          "candidate_id": "6315c51b-a242-5136-8fd8-f35efb7d9924",
+          "title": "关于举办国家级教学成果奖",
+          "decision": "reject",
+          "reason": "所有截止时间都已过去（最晚 2024-08-24），对今天无事可办"
+        },
+        {
+          "candidate_id": "638149c2-30bd-58e6-8ac5-98ade2dde9b3",
+          "title": "天津大学2026级研究生新生住宿申请须知",
+          "decision": "reject",
+          "reason": "所有截止时间都已过去（最晚 2026-08-22），对今天无事可办"
+        },
+        {
+          "candidate_id": "696f06f3-6bc9-59fe-900a-0fcae74f1a4d",
+          "title": "2027年春季学期交换生（第一批）项目通知",
+          "decision": "review",
+          "reason": "没有可核对的截止时间：可能是长期参考，也可能是陈旧文档，留给人判断"
+        },
+        {
+          "candidate_id": "69a622cc-cb19-59f1-ad0c-4d81ab46d054",
+          "title": "天津大学技术支撑起世界最大的醋酸乙烯合成反应器",
+          "decision": "review",
+          "reason": "没有可核对的截止时间：可能是长期参考，也可能是陈旧文档，留给人判断"
+        },
+        {
+          "candidate_id": "6c8465b6-ec64-5f02-8387-aad29bb71686",
+          "title": "图书馆档案馆党委组织学习贯彻习近平总书记给天津大学全体师生重要回信精神一周年专题师德师能培训",
+          "decision": "review",
+          "reason": "没有可核对的截止时间：可能是长期参考，也可能是陈旧文档，留给人判断"
+        },
+        {
+          "candidate_id": "6fb72a3c-86da-55b2-908e-90dcb2b54027",
+          "title": "天津大学关于启动2024级辅修专业报名工作的通知",
+          "decision": "review",
+          "reason": "没有可核对的截止时间：可能是长期参考，也可能是陈旧文档，留给人判断"
+        },
+        {
+          "candidate_id": "6fbdef82-cf9b-5c0e-8581-5ae84a549a2c",
+          "title": "2025级计算机科学与技术（拔尖班）选拔考试安排",
+          "decision": "reject",
+          "reason": "所有截止时间都已过去（最晚 2025-09-14），对今天无事可办"
+        },
+        {
+          "candidate_id": "7635ec30-9a9f-592c-9b30-e6281bd636f1",
+          "title": "2025级计算机科学与技术（拔尖班）选拔面试通知",
+          "decision": "reject",
+          "reason": "所有截止时间都已过去（最晚 2025-09-21），对今天无事可办"
+        },
+        {
+          "candidate_id": "7d268832-63d4-517b-86e7-afc85bf86e23",
+          "title": "【办事流程】关于研究生课程成绩复审申请的流程",
+          "decision": "review",
+          "reason": "没有可核对的截止时间：可能是长期参考，也可能是陈旧文档，留给人判断"
+        },
+        {
+          "candidate_id": "7e40239e-831b-55c5-8886-95934f2fb81d",
+          "title": "2026级新生党员党组织关系转接流程",
+          "decision": "review",
+          "reason": "没有可核对的截止时间：可能是长期参考，也可能是陈旧文档，留给人判断"
+        },
+        {
+          "candidate_id": "8038b02b-8c52-5f41-9910-9f09ec07e067",
+          "title": "天津大学2026年春季就业实习双选会邀请函",
+          "decision": "reject",
+          "reason": "所有截止时间都已过去（最晚 2026-05-14），对今天无事可办"
+        },
+        {
+          "candidate_id": "82c41dd6-2785-5bc4-b72a-3722e4a7ca96",
+          "title": "关于举办国际工程教育发展会议的通知【教指委】",
+          "decision": "reject",
+          "reason": "所有截止时间都已过去（最晚 2025-09-22），对今天无事可办"
+        },
+        {
+          "candidate_id": "8360392b-7b20-5e1a-8438-26d22c761ac0",
+          "title": "【办事流程】关于重修选课的流程",
+          "decision": "review",
+          "reason": "没有可核对的截止时间：可能是长期参考，也可能是陈旧文档，留给人判断"
+        },
+        {
+          "candidate_id": "8fdc83a4-2d9a-5137-bb3a-2231451f8b4f",
+          "title": "2026年暑期剑桥大学跨学科学术实践项目通知",
+          "decision": "reject",
+          "reason": "所有截止时间都已过去（最晚 2026-08-02），对今天无事可办"
+        },
+        {
+          "candidate_id": "8ff8cf2c-1a16-5b4b-8498-5aa303a40142",
+          "title": "工科试验班(全国新工科教育创新中心)可选大师班培养方案",
+          "decision": "review",
+          "reason": "没有可核对的截止时间：可能是长期参考，也可能是陈旧文档，留给人判断"
+        },
+        {
+          "candidate_id": "90b57e1c-3906-5074-962e-185d9e156099",
+          "title": "天津大学医科秋季专场招聘会邀请函",
+          "decision": "accept",
+          "reason": "今天仍可办（最晚期限 2026-10-22）"
+        },
+        {
+          "candidate_id": "9376c828-4c73-5dac-9534-84da025aa2b5",
+          "title": "教育部等五部门关于印发《普通高等教育学科专业设置调整优化改革方案》的通知",
+          "decision": "review",
+          "reason": "没有可核对的截止时间：可能是长期参考，也可能是陈旧文档，留给人判断"
+        },
+        {
+          "candidate_id": "944d2974-c48a-5565-9079-1f46af6c78d1",
+          "title": "24252学期研究生公共课考试安排",
+          "decision": "review",
+          "reason": "没有可核对的截止时间：可能是长期参考，也可能是陈旧文档，留给人判断"
+        },
+        {
+          "candidate_id": "9501343e-cd9d-5e03-9e22-5ff2bb3f98f9",
+          "title": "关于申请2024年秋季学期国际交流资助集中报销的通知",
+          "decision": "review",
+          "reason": "没有可核对的截止时间：可能是长期参考，也可能是陈旧文档，留给人判断"
+        },
+        {
+          "candidate_id": "96670f00-c761-587a-b6c1-e56595105005",
+          "title": "关于举办国际工程教育发展会议的通知【全国新工科教育创新中心联络组】",
+          "decision": "reject",
+          "reason": "所有截止时间都已过去（最晚 2025-09-22），对今天无事可办"
+        },
+        {
+          "candidate_id": "9b6aa158-b480-58a3-904a-36502f48d8ab",
+          "title": "天津大学智能与计算学部2026年博士研究生招生办法",
+          "decision": "reject",
+          "reason": "所有截止时间都已过去（最晚 2026-04-07），对今天无事可办"
+        },
+        {
+          "candidate_id": "9bea7e9e-5462-5124-b330-bd4c8efd24c5",
+          "title": "天津大学关于公示2026年强基计划录取标准的通知",
+          "decision": "review",
+          "reason": "没有可核对的截止时间：可能是长期参考，也可能是陈旧文档，留给人判断"
+        },
+        {
+          "candidate_id": "a3b2f55a-d421-5555-b230-684436d60ca9",
+          "title": "转发中国教育国际交流协会《关于邀请参加 2025博士生国际招生面试交流会的函》",
+          "decision": "review",
+          "reason": "没有可核对的截止时间：可能是长期参考，也可能是陈旧文档，留给人判断"
+        },
+        {
+          "candidate_id": "a811fae1-f722-59b4-b2e8-2964be8003be",
+          "title": "【办事流程】办理在读证明/中英文成绩单",
+          "decision": "review",
+          "reason": "没有可核对的截止时间：可能是长期参考，也可能是陈旧文档，留给人判断"
+        },
+        {
+          "candidate_id": "a83e1a3e-5114-58f1-bf45-5815ed6c6aab",
+          "title": "2026年暑期剑桥大学移动课堂跨学科学术实践项目宣讲会通知",
+          "decision": "reject",
+          "reason": "所有截止时间都已过去（最晚 2026-04-15），对今天无事可办"
+        },
+        {
+          "candidate_id": "aa5607b7-f5e0-5794-a5f2-2f4902472531",
+          "title": "2027寒假牛津五大门类跨学科学术项目报名通知",
+          "decision": "accept",
+          "reason": "今天仍可办（最晚期限 2026-10-30）"
+        },
+        {
+          "candidate_id": "aaa777b4-c3ab-5481-9c9f-e8a4833e0369",
+          "title": "24252学期同等学力硕士公共课考试安排",
+          "decision": "review",
+          "reason": "没有可核对的截止时间：可能是长期参考，也可能是陈旧文档，留给人判断"
+        },
+        {
+          "candidate_id": "ab4ff6d4-7cce-5470-a6b8-5e8df7bb6d12",
+          "title": "天津大学2026年本科生招生体检标准",
+          "decision": "review",
+          "reason": "没有可核对的截止时间：可能是长期参考，也可能是陈旧文档，留给人判断"
+        },
+        {
+          "candidate_id": "ab79ff5c-4a4b-5c5c-9cd7-e4a5171b229f",
+          "title": "关于2019年12月导师助研及研究生助学金发放时间变更的通知",
+          "decision": "reject",
+          "reason": "所有截止时间都已过去（最晚 2019-12-31），对今天无事可办"
+        },
+        {
+          "candidate_id": "ac81ae35-2d7f-57c6-9a73-be82af89b9dc",
+          "title": "智能与计算学部 2025 级智能与计算大类主修专业确认名单",
+          "decision": "reject",
+          "reason": "所有截止时间都已过去（最晚 2026-07-23），对今天无事可办"
+        },
+        {
+          "candidate_id": "b6b20c54-03ea-562c-ab6e-4dea189c8ae5",
+          "title": "转发中国教育国际交流协会《关于邀请参加 2024博士生国际招生面试交流会的函》",
+          "decision": "review",
+          "reason": "没有可核对的截止时间：可能是长期参考，也可能是陈旧文档，留给人判断"
+        },
+        {
+          "candidate_id": "b73cae87-84fa-5c52-b13e-9659611dbd27",
+          "title": "2026年暑期剑桥大学移动课堂跨学科学术实践项目宣讲会通知",
+          "decision": "reject",
+          "reason": "所有截止时间都已过去（最晚 2026-07-31），对今天无事可办"
+        },
+        {
+          "candidate_id": "b792ae54-b436-5786-90d1-b4f44845f9a8",
+          "title": "关于8月25日至8月31日暂停预约驾车进校的温馨提示",
+          "decision": "review",
+          "reason": "没有可核对的截止时间：可能是长期参考，也可能是陈旧文档，留给人判断"
+        },
+        {
+          "candidate_id": "b9bb1258-ee2b-57df-8979-b191c738c22e",
+          "title": "关于假期期间第二批次集中派遣时间变更的通知",
+          "decision": "reject",
+          "reason": "所有截止时间都已过去（最晚 2026-08-02），对今天无事可办"
+        },
+        {
+          "candidate_id": "b9d76788-acd8-5e8e-be38-5ca6bfc30659",
+          "title": "关于天津大学资助博士研究生短期出国访学的通知",
+          "decision": "reject",
+          "reason": "所有截止时间都已过去（最晚 2020-02-17），对今天无事可办"
+        },
+        {
+          "candidate_id": "baaca7bd-8c13-52de-b5ad-32edc5b5bc19",
+          "title": "关于我校非上海生源在沪就业户籍申请中拥有“专利证书及申请”的毕业生名单公示",
+          "decision": "reject",
+          "reason": "所有截止时间都已过去（最晚 2026-07-02），对今天无事可办"
+        },
+        {
+          "candidate_id": "bdb74560-1234-543e-bc19-15d38878500e",
+          "title": "关于研究生学位认证的操作步骤",
+          "decision": "reject",
+          "reason": "所有截止时间都已过去（最晚 2022-09-26），对今天无事可办"
+        },
+        {
+          "candidate_id": "bf7263e3-5886-5713-9eed-0e489f0ab262",
+          "title": "关于正式上线新导师助研金管理系统的通知",
+          "decision": "review",
+          "reason": "没有可核对的截止时间：可能是长期参考，也可能是陈旧文档，留给人判断"
+        },
+        {
+          "candidate_id": "c201ca13-1139-590e-9dc0-b0829c2067bb",
+          "title": "湖南省人大常委会党组成员、副主任陈飞一行来访我校",
+          "decision": "review",
+          "reason": "没有可核对的截止时间：可能是长期参考，也可能是陈旧文档，留给人判断"
+        },
+        {
+          "candidate_id": "c5cb1566-2f85-5857-8f02-78973c71e6a1",
+          "title": "2027年英国布里斯托大学3+1本硕连读项目报名通知",
+          "decision": "accept",
+          "reason": "今天仍可办（最晚期限 2027-07-31）"
+        },
+        {
+          "candidate_id": "c6899792-ed68-504b-9371-4035a42886bd",
+          "title": "智能与计算学部关于开展2026年硕博连读研究生选拔的通知",
+          "decision": "reject",
+          "reason": "所有截止时间都已过去（最晚 2025-11-10），对今天无事可办"
+        },
+        {
+          "candidate_id": "c78188dd-be04-53d1-b935-d1f490b827ca",
+          "title": "关于天津大学资助博士研究生参加国际学术会议的通知",
+          "decision": "review",
+          "reason": "没有可核对的截止时间：可能是长期参考，也可能是陈旧文档，留给人判断"
+        },
+        {
+          "candidate_id": "cb8d4587-fb2c-516c-9ae1-15196d84aebc",
+          "title": "长征胜利90周年",
+          "decision": "review",
+          "reason": "没有可核对的截止时间：可能是长期参考，也可能是陈旧文档，留给人判断"
+        },
+        {
+          "candidate_id": "d3a54dec-343c-5d51-996c-0632cf99b77c",
+          "title": "关于2026年研究生转专业申请工作的通知",
+          "decision": "reject",
+          "reason": "所有截止时间都已过去（最晚 2026-04-28），对今天无事可办"
+        },
+        {
+          "candidate_id": "d4cef425-63a0-5dff-accf-8778bb67a9e9",
+          "title": "天津大学机械工程学院2026年专业学位博士研究生拟录取名单公示（ZY专项）",
+          "decision": "review",
+          "reason": "没有可核对的截止时间：可能是长期参考，也可能是陈旧文档，留给人判断"
+        },
+        {
+          "candidate_id": "d5300860-68b7-508d-aa79-b8d80f995481",
+          "title": "天津大学2026年本科生招生章程",
+          "decision": "review",
+          "reason": "没有可核对的截止时间：可能是长期参考，也可能是陈旧文档，留给人判断"
+        },
+        {
+          "candidate_id": "d714ba10-5cb3-523c-85bb-135ff4b81028",
+          "title": "天津大学2026年艺术类招生简章",
+          "decision": "review",
+          "reason": "没有可核对的截止时间：可能是长期参考，也可能是陈旧文档，留给人判断"
+        },
+        {
+          "candidate_id": "d996e852-a4e4-5df3-8ea1-3c5f81b3c0a4",
+          "title": "智能与计算大类2025级本科生主修专业确认实施细则",
+          "decision": "reject",
+          "reason": "所有截止时间都已过去（最晚 2026-06-30），对今天无事可办"
+        },
+        {
+          "candidate_id": "d9e05843-6ce6-5832-899a-c9c6cf3ef27d",
+          "title": "关于研究生助学金发放系统延期开放的通知",
+          "decision": "reject",
+          "reason": "所有截止时间都已过去（最晚 2020-02-29），对今天无事可办"
+        },
+        {
+          "candidate_id": "daa21ecf-579c-55a7-8621-88039cf7e62b",
+          "title": "关于2026级新生直饮水定额补贴领用的通知",
+          "decision": "review",
+          "reason": "没有可核对的截止时间：可能是长期参考，也可能是陈旧文档，留给人判断"
+        },
+        {
+          "candidate_id": "db3c4ac8-ee4f-565d-b49c-4a4603f30e63",
+          "title": "关于研究生学费管理系统上线的通知",
+          "decision": "reject",
+          "reason": "所有截止时间都已过去（最晚 2022-08-31），对今天无事可办"
+        },
+        {
+          "candidate_id": "dc01c1ed-e150-5a64-a34b-e5853149d7dc",
+          "title": "关于申请2023年秋季学期国际交流资助集中报销的通知",
+          "decision": "reject",
+          "reason": "所有截止时间都已过去（最晚 2023-11-09），对今天无事可办"
+        },
+        {
+          "candidate_id": "df02b184-2aa1-5a1f-8241-6899d6ae40bc",
+          "title": "25261学期研究生公共课考试安排",
+          "decision": "reject",
+          "reason": "所有截止时间都已过去（最晚 2025-12-13），对今天无事可办"
+        },
+        {
+          "candidate_id": "e046b481-02c3-5923-b030-57f9d080b01d",
+          "title": "天津大学机械工程学院2027级推免生拟录取名单公示",
+          "decision": "review",
+          "reason": "没有可核对的截止时间：可能是长期参考，也可能是陈旧文档，留给人判断"
+        },
+        {
+          "candidate_id": "e8a9a7d5-5ed6-581e-a2dc-d27747c2661a",
+          "title": "25261学期全日制研究生公共课考试安排2",
+          "decision": "review",
+          "reason": "没有可核对的截止时间：可能是长期参考，也可能是陈旧文档，留给人判断"
+        },
+        {
+          "candidate_id": "ece92275-d509-5b1a-944c-37dde7ebebd4",
+          "title": "转发中国教育国际交流协会《关于商请贵校协助邀请师生参加2026博士生国际招生面试交流会的函》",
+          "decision": "review",
+          "reason": "没有可核对的截止时间：可能是长期参考，也可能是陈旧文档，留给人判断"
+        },
+        {
+          "candidate_id": "edfa4353-6ff9-563e-b289-1d07ef0bf9b4",
+          "title": "“千企万岗进校园”天津大学2026年秋季大型双选会邀请函",
+          "decision": "reject",
+          "reason": "所有截止时间都已过去（最晚 2026-09-18），对今天无事可办"
+        },
+        {
+          "candidate_id": "ef3a2af7-c809-5e6b-bc1d-b16d72639a18",
+          "title": "【北洋园校区】爱思开海力士半导体（大连）有限公司2027届校园招聘",
+          "decision": "review",
+          "reason": "没有可核对的截止时间：可能是长期参考，也可能是陈旧文档，留给人判断"
+        },
+        {
+          "candidate_id": "efc1620c-18f0-5ee2-a68f-9d0b9ac2cd17",
+          "title": "⟡68 个 CSC 全奖博士专项资源对接",
+          "decision": "reject",
+          "reason": "所有截止时间都已过去（最晚 2026-05-30），对今天无事可办"
+        },
+        {
+          "candidate_id": "f17ac53a-11d0-5500-85fc-f5950ca23799",
+          "title": "硕博研究生学位论文答辩公告",
+          "decision": "review",
+          "reason": "没有可核对的截止时间：可能是长期参考，也可能是陈旧文档，留给人判断"
+        },
+        {
+          "candidate_id": "f8fd46b0-bec6-58d8-b4c8-787e99b94d51",
+          "title": "《国际化拔尖创新人才培养计划》课程选课通知",
+          "decision": "reject",
+          "reason": "所有截止时间都已过去（最晚 2025-10-20），对今天无事可办"
+        },
+        {
+          "candidate_id": "fb8fe942-3db9-505f-b2ba-ea45d58de6b0",
+          "title": "【北洋园校区】辽宁省水资源管理和生态环保产业集团2026",
+          "decision": "accept",
+          "reason": "今天仍可办（最晚期限 2026-11-13）"
+        },
+        {
+          "candidate_id": "fe2b166b-5d5c-5509-a153-f741cf9b48a6",
+          "title": "天大校研〔2021〕8号（天津大学硕士、博士学位论文校级盲审办法）",
+          "decision": "review",
+          "reason": "没有可核对的截止时间：可能是长期参考，也可能是陈旧文档，留给人判断"
+        }
+      ],
+      "errors": [],
+      "planned_publish": 0
+    },
+    "withdraw": {
+      "applied": true,
+      "expired": [],
+      "unusable": []
+    }
+  },
+  "errors": [],
+  "exit_code": 0,
+  "finished_at": "2026-10-20T16:52:59.728945+00:00"
+}

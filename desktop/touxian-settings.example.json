@@ -1,0 +1,8 @@
+{
+  "port": 8765,
+  "admin_email": "operator@touxian.local",
+  "wechat_feed_enabled": false,
+  "wechat_feed_auto": true,
+  "wechat_feeds": [],
+  "trusted_origins": []
+}

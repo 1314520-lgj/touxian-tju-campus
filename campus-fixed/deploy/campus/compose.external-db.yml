@@ -1,0 +1,101 @@
+name: touxian-campus
+
+# 外部数据库版：为 2 GiB 内存 + 已有 RDS PostgreSQL 的场景准备。
+#
+# 与 compose.small.yml 的差异：
+#   - 不跑 postgres 容器，数据库指向外部（阿里云 RDS PostgreSQL / 自建 PG）
+#   - 省下约 300–400 MB 内存，可让偷闲与其它服务共存
+#   - 仍然不启用 Meilisearch（检索走内置 LocalTextIndex）
+#
+# 前置条件（外部数据库必须先建好库和用户）：
+#   CREATE DATABASE campus ENCODING 'UTF8';
+#   CREATE USER campus WITH ENCRYPTED PASSWORD '你的密码';
+#   GRANT ALL PRIVILEGES ON DATABASE campus TO campus;
+#
+# 用法：
+#   cd deploy/campus
+#   cp .env.example .env && chmod 600 .env
+#   在 .env 里填 CAMPUS_DATABASE_URL=postgresql+psycopg://campus:密码@RDS地址:5432/campus
+#   docker compose -f compose.external-db.yml build api
+#   docker compose -f compose.external-db.yml up -d
+
+x-campus-service: &campus-service
+  image: touxian-campus:local
+  build:
+    context: ../..
+    dockerfile: deploy/campus/Dockerfile
+  init: true
+  restart: unless-stopped
+  env_file: .env
+  environment: &campus-environment
+    CAMPUS_ENV: production
+    CAMPUS_DEV_AUTH: "false"
+    CAMPUS_DEMO: "false"
+    CAMPUS_EMBEDDED_WORKER: "false"
+    CAMPUS_DATA_DIR: /var/lib/touxian
+    # 关键差异：数据库由外部提供，从 .env 读取
+    CAMPUS_DATABASE_URL: ${CAMPUS_DATABASE_URL:?Set CAMPUS_DATABASE_URL in .env (external PostgreSQL)}
+    CAMPUS_SECRET: ${CAMPUS_SECRET:?Set a strong CAMPUS_SECRET in .env}
+    CAMPUS_ALLOWED_ORIGINS: ${CAMPUS_ALLOWED_ORIGINS:?Set the exact HTTPS origin in .env}
+    CAMPUS_ADMIN_EMAILS: ${CAMPUS_ADMIN_EMAILS:?Set administrator login email in .env}
+    # 不启用 Meilisearch
+    CAMPUS_MEILI_URL: ""
+    CAMPUS_MEILI_KEY: ""
+    CAMPUS_SMTP_HOST: ${CAMPUS_SMTP_HOST:?Set SMTP host for production login}
+    CAMPUS_SMTP_FROM: ${CAMPUS_SMTP_FROM:?Set SMTP sender for production login}
+    CAMPUS_SMTP_PORT: ${CAMPUS_SMTP_PORT:-587}
+    CAMPUS_SMTP_USERNAME: ${CAMPUS_SMTP_USERNAME:-}
+    CAMPUS_SMTP_PASSWORD: ${CAMPUS_SMTP_PASSWORD:-}
+    CAMPUS_SMTP_STARTTLS: ${CAMPUS_SMTP_STARTTLS:-true}
+    CAMPUS_SMTP_SSL: ${CAMPUS_SMTP_SSL:-false}
+    CAMPUS_WORKER_CONCURRENCY: ${CAMPUS_WORKER_CONCURRENCY:-1}
+  volumes:
+    - campus-data:/var/lib/touxian
+    - ../../config/campus-sources.json:/app/config/campus-sources.json:ro
+  read_only: true
+  tmpfs:
+    - /tmp:size=128m,mode=1777
+  security_opt:
+    - no-new-privileges:true
+  cap_drop:
+    - ALL
+  # 注意：没有 depends_on postgres —— 数据库是外部的
+
+services:
+  api:
+    <<: *campus-service
+    command:
+      - uvicorn
+      - server.campus_app:create_app
+      - --factory
+      - --host
+      - 0.0.0.0
+      - --port
+      - "8000"
+      - --workers
+      - "1"
+      - --no-access-log
+      - --proxy-headers
+      - --forwarded-allow-ips
+      - ${CAMPUS_FORWARDED_ALLOW_IPS:-127.0.0.1}
+    ports:
+      - "127.0.0.1:8000:8000"
+    stop_grace_period: 30s
+    deploy:
+      resources:
+        limits:
+          memory: 700M
+
+  worker:
+    <<: *campus-service
+    command: ["python", "-m", "server.campus_app", "worker"]
+    healthcheck:
+      disable: true
+    stop_grace_period: 12m
+    deploy:
+      resources:
+        limits:
+          memory: 512M
+
+volumes:
+  campus-data:

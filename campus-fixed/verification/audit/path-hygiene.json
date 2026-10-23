@@ -1,0 +1,89 @@
+{
+  "what": "Absolute build-machine paths were being shipped inside delivered evidence.",
+  "found_in": "verification/** report JSON, run/server logs and backend.xml; the JSON-escaped screenshot arrays were the ones the 1.8.0 pass missed.",
+  "example_before": "An absolute path rooted at the build machine's home directory, walked down through the workspace and the checkout, ending in verification/browser/a11y/artifacts/a11y-01-public-home.png. The literal is deliberately not reproduced here: writing it down is the very defect this file records, and the guard test would reject this file for it.",
+  "example_after": "verification/browser/a11y/artifacts/a11y-01-public-home.png",
+  "root_cause": "Each e2e entry pushed the absolute path it had just written into report.screenshots. The 1.8.0 release normalised the paths it found by hand and did not see the escaped ones inside JSON arrays.",
+  "fixes": [
+    {
+      "layer": "source",
+      "file": "src/campus/tests/playwright.mjs",
+      "change": "added relativeArtifact(), which resolves an artifact path against the repository root derived from the module location (not process.cwd()) and returns forward slashes."
+    },
+    {
+      "layer": "source",
+      "files": [
+        "src/campus/tests/a11y.e2e.mjs",
+        "src/campus/tests/browser.e2e.mjs",
+        "src/campus/tests/feed-mode.e2e.mjs",
+        "src/campus/tests/highlight-contrast.e2e.mjs",
+        "src/campus/tests/reliability.e2e.mjs",
+        "src/campus/tests/source-live.e2e.mjs",
+        "src/campus/tests/source-selection.e2e.mjs",
+        "src/campus/tests/ui-polish.e2e.mjs",
+        "src/campus/tests/ui-review.e2e.mjs"
+      ],
+      "change": "every report.screenshots.push(...) now records a repository-relative path."
+    },
+    {
+      "layer": "tool",
+      "file": "tools/normalize_evidence_paths.py",
+      "change": "rewrites absolute paths in shipped text evidence to relative ones; prefixes come from the running interpreter, never from a constant. Idempotent."
+    },
+    {
+      "layer": "guard",
+      "file": "server/campus/tests/test_evidence_tree_hygiene.py",
+      "change": "five tests: the tree is already normalised, no shipped file names a personal directory, every browser entry routes screenshots through the shared helper, a report that says it passed does not sit next to an earlier attempt's failure screenshot, and the release manifest is LF-only."
+    }
+  ],
+  "second_defect_found_while_auditing_the_first": {
+    "defect": "Three superseded failure screenshots (a11y-failure.png, ui-failure.png, review-failure.png) sat unreferenced beside reports that all said passed. Each entry writes <name>-failure.png only when it fails, and a later passing run overwrites the report but not that file, so a green report could ship next to a picture of the bug it claims to have fixed.",
+    "fix": "removed the three orphans and added the fourth guard test above.",
+    "checked": "68 screenshots were present and 65 referenced before the removal; after it, every remaining report reference resolves on disk and no report sits beside a failure screenshot.",
+    "deliberately_not_removed": "verification/task5/browser/*.png are unreferenced by any report but are prior-round evidence listed in the manifest, so they stay. A blanket 'every screenshot must be referenced by a JSON report' rule would have deleted them, which is why the guard checks the precise contradiction instead."
+  },
+  "measured": {
+    "files_normalised": 30,
+    "paths_normalised": 183,
+    "e2e_entries_updated": 9,
+    "residual_machine_identifying_paths": 0,
+    "invalid_json_after": 0,
+    "invalid_xml_after": 0,
+    "line_count_changes": 0,
+    "crlf_flips": 0,
+    "idempotent_second_run_rewrites": 0
+  },
+  "tool_defects_found_and_fixed_while_building_it": [
+    {
+      "defect": "The path token regex stopped at the first space, so a checkout under a folder whose name contains one was half-rewritten and the tail stayed absolute.",
+      "detected_by": "verification/backend.xml stopped parsing as XML; the skip reason read '<home>/<workspace>\\\\2026-...'."
+    },
+    {
+      "defect": "Placeholders were written as <home>/<site-packages>, which is illegal inside XML element content and corrupted backend.xml.",
+      "detected_by": "the same XML parse failure; placeholders are now bracketed."
+    },
+    {
+      "defect": "The hostname rule matched its own placeholder, so a second run reported a change instead of a no-op.",
+      "detected_by": "running the tool twice; the lookahead now skips an already-normalised value."
+    },
+    {
+      "defect": "A short binary file can lack a NUL byte, so the 'is this text?' check passed it and the decode raised UnicodeDecodeError, aborting the scan.",
+      "detected_by": "the guard test's negative control, which writes an 8-byte PNG stub; reading is now a single helper that returns None when the bytes are not UTF-8."
+    }
+  ],
+  "third_defect_found_while_finishing_the_release": {
+    "defect": "RELEASE_MANIFEST.json came back with CRLF line endings. Path.write_text() translates '\\n' to os.linesep, so on Windows every one of the manifest's 3,761 lines changed and the real content change was buried in a whole-file diff. An earlier round had already recorded this as a pitfall and restored the file by hand; the builder itself was never fixed, so it happened again.",
+    "fix": "tools/build_release_manifest.py now opens the manifest with newline='\\n', and the fifth guard test asserts the shipped manifest contains no carriage return.",
+    "negative_control": "Rewriting the manifest as CRLF fails exactly that one guard test and leaves the other four green.",
+    "measured": "3,761 lines CRLF before the fix, 0 after; the diff against the previous manifest went from a whole-file rewrite to 585 insertions / 75 deletions."
+  },
+  "negative_control": "Writing a file into verification/ that contains an absolute path rooted at the build machine's home directory fails 2 of the 5 guard tests (both the normalisation check and the personal-directory check); deleting the file returns them to green.",
+  "a11y_rerun_after_the_source_fix": {
+    "entry": "a11y",
+    "exit": 0,
+    "audits": 17,
+    "screenshots": 17,
+    "screenshot_paths_now_relative": true
+  },
+  "note": "Only path text changed. No measured value, verdict, count or screenshot was altered."
+}

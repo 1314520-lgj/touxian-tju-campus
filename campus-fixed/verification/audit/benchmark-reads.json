@@ -1,0 +1,17 @@
+{
+  "writer_hold_ms": 150,
+  "read_latency": {
+    "before": {
+      "median_ms": 167.488,
+      "min_ms": 152.474,
+      "max_ms": 178.755,
+      "samples": 9
+    },
+    "after": {
+      "median_ms": 0.432,
+      "min_ms": 0.318,
+      "max_ms": 0.843,
+      "samples": 9
+    }
+  }
+}

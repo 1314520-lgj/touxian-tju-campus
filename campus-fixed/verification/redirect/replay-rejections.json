@@ -1,0 +1,669 @@
+{
+ "window": [
+  "2026-10-20T23:30:00",
+  "2026-10-20T23:32:00"
+ ],
+ "code": "article_redirected_off_pattern",
+ "results": [
+  {
+   "source_id": "3434196e-1203-5543-87bb-d71e1c1fc1b2",
+   "url": "https://mp.weixin.qq.com/s/5KJJ9dwphI2qBbrvw6siKg",
+   "list_title": "新工科项目式课程设计大赛获奖课程 |《电子系统设计与实验》 2022-12-21",
+   "attempts": 4,
+   "last_attempt_at": "2026-10-20T23:30:42.207621+00:00",
+   "final_url": "https://mp.weixin.qq.com/mp/wappoc_appmsgcaptcha?poc_token=HAcL2GqjepBR_UOTVeSMWBcV8IRF19IUEa4X_mln&target_url=https%3A%2F%2Fmp.weixin.qq.com%2Fs%2F5KJJ9dwphI2qBbrvw6siKg",
+   "fetch_error": null,
+   "title": "",
+   "snippet": "环境异常 当前环境异常，完成验证后即可继续访问。 去验证 ： ， 。 视频 小程序 赞 ，轻点两下取消赞 在看 ，轻点两下取消在看",
+   "challenge_markers": [
+    "环境异常",
+    "完成验证后即可继续访问",
+    "去验证"
+   ],
+   "interstitial": true,
+   "verdict": "真拒绝：重定向到验证/反爬页",
+   "content_type": "text/html; charset=UTF-8",
+   "bytes": 18164
+  },
+  {
+   "source_id": "3434196e-1203-5543-87bb-d71e1c1fc1b2",
+   "url": "https://mp.weixin.qq.com/s/Ot0U7PX1JI9rWu1f8AhyGQ",
+   "list_title": "新工科项目式课程设计大赛获奖课程 |《强基项目制专业实践II》 2022-12-13",
+   "attempts": 4,
+   "last_attempt_at": "2026-10-20T23:30:42.624826+00:00",
+   "final_url": "https://mp.weixin.qq.com/mp/wappoc_appmsgcaptcha?poc_token=HAgL2GqjTj2yTgYF4-RF1Q8ympm5L_zobUuXZsyC&target_url=https%3A%2F%2Fmp.weixin.qq.com%2Fs%2FOt0U7PX1JI9rWu1f8AhyGQ",
+   "fetch_error": null,
+   "title": "",
+   "snippet": "环境异常 当前环境异常，完成验证后即可继续访问。 去验证 ： ， 。 视频 小程序 赞 ，轻点两下取消赞 在看 ，轻点两下取消在看",
+   "challenge_markers": [
+    "环境异常",
+    "完成验证后即可继续访问",
+    "去验证"
+   ],
+   "interstitial": true,
+   "verdict": "真拒绝：重定向到验证/反爬页",
+   "content_type": "text/html; charset=UTF-8",
+   "bytes": 18164
+  },
+  {
+   "source_id": "3434196e-1203-5543-87bb-d71e1c1fc1b2",
+   "url": "https://mp.weixin.qq.com/s/RFHh-8SUXEC4tC5s86GrsA",
+   "list_title": "关于举办2023年天津大学外语学科竞赛的通知 2023-09-04",
+   "attempts": 4,
+   "last_attempt_at": "2026-10-20T23:30:41.266302+00:00",
+   "final_url": "https://mp.weixin.qq.com/mp/wappoc_appmsgcaptcha?poc_token=HAgL2GqjU2jdIUsV136JVE2ek7UX5T1MizZU5Qkh&target_url=https%3A%2F%2Fmp.weixin.qq.com%2Fs%2FRFHh-8SUXEC4tC5s86GrsA",
+   "fetch_error": null,
+   "title": "",
+   "snippet": "环境异常 当前环境异常，完成验证后即可继续访问。 去验证 ： ， 。 视频 小程序 赞 ，轻点两下取消赞 在看 ，轻点两下取消在看",
+   "challenge_markers": [
+    "环境异常",
+    "完成验证后即可继续访问",
+    "去验证"
+   ],
+   "interstitial": true,
+   "verdict": "真拒绝：重定向到验证/反爬页",
+   "content_type": "text/html; charset=UTF-8",
+   "bytes": 18165
+  },
+  {
+   "source_id": "3434196e-1203-5543-87bb-d71e1c1fc1b2",
+   "url": "https://mp.weixin.qq.com/s/SVx5vJoLh-CQvjzDC72yWw",
+   "list_title": "新工科项目式课程设计大赛获奖课程 |《电工技术基础》 2023-01-03",
+   "attempts": 4,
+   "last_attempt_at": "2026-10-20T23:30:41.742297+00:00",
+   "final_url": "https://mp.weixin.qq.com/mp/wappoc_appmsgcaptcha?poc_token=HAkL2GqjFKwLH1gTXrUq9TsX1riTxN7bUlkQRhjE&target_url=https%3A%2F%2Fmp.weixin.qq.com%2Fs%2FSVx5vJoLh-CQvjzDC72yWw",
+   "fetch_error": null,
+   "title": "",
+   "snippet": "环境异常 当前环境异常，完成验证后即可继续访问。 去验证 ： ， 。 视频 小程序 赞 ，轻点两下取消赞 在看 ，轻点两下取消在看",
+   "challenge_markers": [
+    "环境异常",
+    "完成验证后即可继续访问",
+    "去验证"
+   ],
+   "interstitial": true,
+   "verdict": "真拒绝：重定向到验证/反爬页",
+   "content_type": "text/html; charset=UTF-8",
+   "bytes": 18165
+  },
+  {
+   "source_id": "3434196e-1203-5543-87bb-d71e1c1fc1b2",
+   "url": "https://mp.weixin.qq.com/s/sUunJ3xVvz3U-GAOXqeXNw",
+   "list_title": "天津大学第三届“康思普特杯” 大学生生命科学基本实验技能竞赛 2023-09-08",
+   "attempts": 4,
+   "last_attempt_at": "2026-10-20T23:30:40.706060+00:00",
+   "final_url": "https://mp.weixin.qq.com/mp/wappoc_appmsgcaptcha?poc_token=HAkL2GqjyOok5GhGBuhfn9RSuvweInDRTFH06CIo&target_url=https%3A%2F%2Fmp.weixin.qq.com%2Fs%2FsUunJ3xVvz3U-GAOXqeXNw",
+   "fetch_error": null,
+   "title": "",
+   "snippet": "环境异常 当前环境异常，完成验证后即可继续访问。 去验证 ： ， 。 视频 小程序 赞 ，轻点两下取消赞 在看 ，轻点两下取消在看",
+   "challenge_markers": [
+    "环境异常",
+    "完成验证后即可继续访问",
+    "去验证"
+   ],
+   "interstitial": true,
+   "verdict": "真拒绝：重定向到验证/反爬页",
+   "content_type": "text/html; charset=UTF-8",
+   "bytes": 18165
+  },
+  {
+   "source_id": "3434196e-1203-5543-87bb-d71e1c1fc1b2",
+   "url": "https://mp.weixin.qq.com/s/sohoCVugy2mO2nDLz73Lwg",
+   "list_title": "多图直击，创新潮涌！这项顶级赛事在天大举办！ 2023-12-20",
+   "attempts": 4,
+   "last_attempt_at": "2026-10-20T23:30:40.282585+00:00",
+   "final_url": "https://mp.weixin.qq.com/mp/wappoc_appmsgcaptcha?poc_token=HAkL2GqjIEZAuaTzeSVFTlNcqD6Kt91qLzUnTjDd&target_url=https%3A%2F%2Fmp.weixin.qq.com%2Fs%2FsohoCVugy2mO2nDLz73Lwg",
+   "fetch_error": null,
+   "title": "",
+   "snippet": "环境异常 当前环境异常，完成验证后即可继续访问。 去验证 ： ， 。 视频 小程序 赞 ，轻点两下取消赞 在看 ，轻点两下取消在看",
+   "challenge_markers": [
+    "环境异常",
+    "完成验证后即可继续访问",
+    "去验证"
+   ],
+   "interstitial": true,
+   "verdict": "真拒绝：重定向到验证/反爬页",
+   "content_type": "text/html; charset=UTF-8",
+   "bytes": 18164
+  },
+  {
+   "source_id": "3434196e-1203-5543-87bb-d71e1c1fc1b2",
+   "url": "https://mp.weixin.qq.com/s?__biz=Mzg2NTExMzQ2Ng==&mid=2247522511&idx=1&sn=dd720ee906c14f5662778220ebdebec5&chksm=cfd6ba908037d8745067558566f497f23e8813755e1baae86585056befc417a5aa71cbe7762f&scene=126&sessionid=1715758380&subscene=90&clicktime=1715758420&e",
+   "list_title": "天津大学召开首批本科生自主科研创新项目推动会 2024-05-15",
+   "attempts": 4,
+   "last_attempt_at": "2026-10-20T23:30:39.383894+00:00",
+   "final_url": "https://mp.weixin.qq.com/mp/wappoc_appmsgcaptcha?poc_token=HAoL2Gqjb13eSr_YYRjUdX6Obz-VRaFiR9YEJYqK&target_url=https%3A%2F%2Fmp.weixin.qq.com%2Fs%3F__biz%3DMzg2NTExMzQ2Ng%3D%3D%26mid%3D2247522511%26idx%3D1%26sn%3Ddd720ee906c14f5662778220ebdebec5%26chksm%3Dcfd6ba908037d8745067558566f497f23e8813755e1baae86585056befc417a5aa71cbe7762f%26scene%3D126%26sessionid%3D1715758380%26subscene%3D90%26clicktime%3D1715758420%26e",
+   "fetch_error": null,
+   "title": "",
+   "snippet": "环境异常 当前环境异常，完成验证后即可继续访问。 去验证 ： ， 。 视频 小程序 赞 ，轻点两下取消赞 在看 ，轻点两下取消在看",
+   "challenge_markers": [
+    "环境异常",
+    "完成验证后即可继续访问",
+    "去验证"
+   ],
+   "interstitial": true,
+   "verdict": "真拒绝：重定向到验证/反爬页",
+   "content_type": "text/html; charset=UTF-8",
+   "bytes": 18434
+  },
+  {
+   "source_id": "3434196e-1203-5543-87bb-d71e1c1fc1b2",
+   "url": "https://mp.weixin.qq.com/s?__biz=Mzg2NTExMzQ2Ng==&mid=2247523142&idx=1&sn=e6a262b3774ba9b191fc11b58369e52e&chksm=cfcbf3a3c0a785056f6f97b179f51fc1109ff616f949d00e2de2a788c1788f91bfa3247b8746&scene=0&xtrack=1&subscene=7&clicktime=1715755599&ascene=1&devicet",
+   "list_title": "大赛喜报|“天开杯”创聚津门全国大学生智能科技创新创业挑战赛终审项目名单公布！我校四个项目入围终审！ 2024-05-15",
+   "attempts": 4,
+   "last_attempt_at": "2026-10-20T23:30:39.848459+00:00",
+   "final_url": "https://mp.weixin.qq.com/mp/wappoc_appmsgcaptcha?poc_token=HAoL2GqjaR1u1oeS2RLDte8VCf-EifYCVsQr9A9D&target_url=https%3A%2F%2Fmp.weixin.qq.com%2Fs%3F__biz%3DMzg2NTExMzQ2Ng%3D%3D%26mid%3D2247523142%26idx%3D1%26sn%3De6a262b3774ba9b191fc11b58369e52e%26chksm%3Dcfcbf3a3c0a785056f6f97b179f51fc1109ff616f949d00e2de2a788c1788f91bfa3247b8746%26scene%3D0%26xtrack%3D1%26subscene%3D7%26clicktime%3D1715755599%26ascene%3D1%26devicet",
+   "fetch_error": null,
+   "title": "",
+   "snippet": "环境异常 当前环境异常，完成验证后即可继续访问。 去验证 ： ， 。 视频 小程序 赞 ，轻点两下取消赞 在看 ，轻点两下取消在看",
+   "challenge_markers": [
+    "环境异常",
+    "完成验证后即可继续访问",
+    "去验证"
+   ],
+   "interstitial": true,
+   "verdict": "真拒绝：重定向到验证/反爬页",
+   "content_type": "text/html; charset=UTF-8",
+   "bytes": 18441
+  },
+  {
+   "source_id": "56cd6e50-bf3d-5862-b1ce-d7ebaba3d902",
+   "url": "https://mp.weixin.qq.com/s/I2FFKb7jjCC9Dr2sX886yA",
+   "list_title": "【报名通知】关于举办“第十五届全国周培源大学生力学竞赛”及“第七届天津市大学生力学竞赛” 2025-03-06",
+   "attempts": 8,
+   "last_attempt_at": "2026-10-20T23:30:38.736549+00:00",
+   "final_url": "https://mp.weixin.qq.com/mp/wappoc_appmsgcaptcha?poc_token=HAsL2Gqj7ZzDzwwcRGFaJp2H5dqjuiyPenr5BSy2&target_url=https%3A%2F%2Fmp.weixin.qq.com%2Fs%2FI2FFKb7jjCC9Dr2sX886yA",
+   "fetch_error": null,
+   "title": "",
+   "snippet": "环境异常 当前环境异常，完成验证后即可继续访问。 去验证 ： ， 。 视频 小程序 赞 ，轻点两下取消赞 在看 ，轻点两下取消在看",
+   "challenge_markers": [
+    "环境异常",
+    "完成验证后即可继续访问",
+    "去验证"
+   ],
+   "interstitial": true,
+   "verdict": "真拒绝：重定向到验证/反爬页",
+   "content_type": "text/html; charset=UTF-8",
+   "bytes": 18164
+  },
+  {
+   "source_id": "56cd6e50-bf3d-5862-b1ce-d7ebaba3d902",
+   "url": "https://mp.weixin.qq.com/s/MJ7a4tCRYGu1nxpOooLtRw",
+   "list_title": "喜报 | 机械工程学院作品在第十八届“挑战杯”中国银行天津市大学生课外学术科技作品竞赛中斩获佳绩 2025-06-14",
+   "attempts": 8,
+   "last_attempt_at": "2026-10-20T23:30:36.932259+00:00",
+   "final_url": "https://mp.weixin.qq.com/mp/wappoc_appmsgcaptcha?poc_token=HAsL2Gqj9wZbn8GgvI-F6f8nsP_0miRwkW5syjAM&target_url=https%3A%2F%2Fmp.weixin.qq.com%2Fs%2FMJ7a4tCRYGu1nxpOooLtRw",
+   "fetch_error": null,
+   "title": "",
+   "snippet": "环境异常 当前环境异常，完成验证后即可继续访问。 去验证 ： ， 。 视频 小程序 赞 ，轻点两下取消赞 在看 ，轻点两下取消在看",
+   "challenge_markers": [
+    "环境异常",
+    "完成验证后即可继续访问",
+    "去验证"
+   ],
+   "interstitial": true,
+   "verdict": "真拒绝：重定向到验证/反爬页",
+   "content_type": "text/html; charset=UTF-8",
+   "bytes": 18164
+  },
+  {
+   "source_id": "56cd6e50-bf3d-5862-b1ce-d7ebaba3d902",
+   "url": "https://mp.weixin.qq.com/s/UjM55ocIqzC6pymASxU7IQ",
+   "list_title": "关于第十二届全国大学生机械创新设计大赛报名通知 2025-04-12",
+   "attempts": 8,
+   "last_attempt_at": "2026-10-20T23:30:37.810513+00:00",
+   "final_url": "https://mp.weixin.qq.com/mp/wappoc_appmsgcaptcha?poc_token=HAwL2Gqjs4LuGRyIO5iURIVtjz6YRmJpgC_QQPXh&target_url=https%3A%2F%2Fmp.weixin.qq.com%2Fs%2FUjM55ocIqzC6pymASxU7IQ",
+   "fetch_error": null,
+   "title": "",
+   "snippet": "环境异常 当前环境异常，完成验证后即可继续访问。 去验证 ： ， 。 视频 小程序 赞 ，轻点两下取消赞 在看 ，轻点两下取消在看",
+   "challenge_markers": [
+    "环境异常",
+    "完成验证后即可继续访问",
+    "去验证"
+   ],
+   "interstitial": true,
+   "verdict": "真拒绝：重定向到验证/反爬页",
+   "content_type": "text/html; charset=UTF-8",
+   "bytes": 18164
+  },
+  {
+   "source_id": "56cd6e50-bf3d-5862-b1ce-d7ebaba3d902",
+   "url": "https://mp.weixin.qq.com/s/VXK21hM6QrL30eBDrhICDw",
+   "list_title": "2025年天津大学外语学科竞赛（一号通知） 2025-06-27",
+   "attempts": 8,
+   "last_attempt_at": "2026-10-20T23:30:36.337924+00:00",
+   "final_url": "https://mp.weixin.qq.com/mp/wappoc_appmsgcaptcha?poc_token=HAwL2GqjoZB8aSxFwCCGswJt9mvOn85Q7gXKU2UW&target_url=https%3A%2F%2Fmp.weixin.qq.com%2Fs%2FVXK21hM6QrL30eBDrhICDw",
+   "fetch_error": null,
+   "title": "",
+   "snippet": "环境异常 当前环境异常，完成验证后即可继续访问。 去验证 ： ， 。 视频 小程序 赞 ，轻点两下取消赞 在看 ，轻点两下取消在看",
+   "challenge_markers": [
+    "环境异常",
+    "完成验证后即可继续访问",
+    "去验证"
+   ],
+   "interstitial": true,
+   "verdict": "真拒绝：重定向到验证/反爬页",
+   "content_type": "text/html; charset=UTF-8",
+   "bytes": 18165
+  },
+  {
+   "source_id": "56cd6e50-bf3d-5862-b1ce-d7ebaba3d902",
+   "url": "https://mp.weixin.qq.com/s/sNUCZFuleZcHwcl50i0TXg",
+   "list_title": "关于组织参加2025年“外教社杯”天津市大学生翻译竞赛的通知 2025-06-14",
+   "attempts": 8,
+   "last_attempt_at": "2026-10-20T23:30:37.333868+00:00",
+   "final_url": "https://mp.weixin.qq.com/mp/wappoc_appmsgcaptcha?poc_token=HA0L2GqjiRnsfpI7jenTVEAe3Ud-urwQ5Ii08iK7&target_url=https%3A%2F%2Fmp.weixin.qq.com%2Fs%2FsNUCZFuleZcHwcl50i0TXg",
+   "fetch_error": null,
+   "title": "",
+   "snippet": "环境异常 当前环境异常，完成验证后即可继续访问。 去验证 ： ， 。 视频 小程序 赞 ，轻点两下取消赞 在看 ，轻点两下取消在看",
+   "challenge_markers": [
+    "环境异常",
+    "完成验证后即可继续访问",
+    "去验证"
+   ],
+   "interstitial": true,
+   "verdict": "真拒绝：重定向到验证/反爬页",
+   "content_type": "text/html; charset=UTF-8",
+   "bytes": 18164
+  },
+  {
+   "source_id": "56cd6e50-bf3d-5862-b1ce-d7ebaba3d902",
+   "url": "https://mp.weixin.qq.com/s/ytqkabGtoGl1JW1PbfrOFw",
+   "list_title": "关于第18届全国三维数字化创新设计大赛——增减材复合制造及数字孪生创新应用专项赛&数字化设计与制造专... 2025-04-11",
+   "attempts": 8,
+   "last_attempt_at": "2026-10-20T23:30:38.223274+00:00",
+   "final_url": "https://mp.weixin.qq.com/mp/wappoc_appmsgcaptcha?poc_token=HA0L2GqjeKHwD5JnAC8faWfKwNXWFlk4evyDH4p-&target_url=https%3A%2F%2Fmp.weixin.qq.com%2Fs%2FytqkabGtoGl1JW1PbfrOFw",
+   "fetch_error": null,
+   "title": "",
+   "snippet": "环境异常 当前环境异常，完成验证后即可继续访问。 去验证 ： ， 。 视频 小程序 赞 ，轻点两下取消赞 在看 ，轻点两下取消在看",
+   "challenge_markers": [
+    "环境异常",
+    "完成验证后即可继续访问",
+    "去验证"
+   ],
+   "interstitial": true,
+   "verdict": "真拒绝：重定向到验证/反爬页",
+   "content_type": "text/html; charset=UTF-8",
+   "bytes": 18165
+  },
+  {
+   "source_id": "c4e00274-5b08-5d26-9a6d-19aed0d71571",
+   "url": "https://mp.weixin.qq.com/s/IvJVGhZCi22qdX5j3Jc5yw",
+   "list_title": "电工电子学习中心｜第八期：学路护航·答疑充电！面向全体正在学习电工学课程同学的答疑与辅导交流会 2026-01-09",
+   "attempts": 4,
+   "last_attempt_at": "2026-10-20T23:30:46.028826+00:00",
+   "final_url": "https://mp.weixin.qq.com/mp/wappoc_appmsgcaptcha?poc_token=HA4L2GqjPFh9828K6FxmtXBSTvzs8Te9opE14vB_&target_url=https%3A%2F%2Fmp.weixin.qq.com%2Fs%2FIvJVGhZCi22qdX5j3Jc5yw",
+   "fetch_error": null,
+   "title": "",
+   "snippet": "环境异常 当前环境异常，完成验证后即可继续访问。 去验证 ： ， 。 视频 小程序 赞 ，轻点两下取消赞 在看 ，轻点两下取消在看",
+   "challenge_markers": [
+    "环境异常",
+    "完成验证后即可继续访问",
+    "去验证"
+   ],
+   "interstitial": true,
+   "verdict": "真拒绝：重定向到验证/反爬页",
+   "content_type": "text/html; charset=UTF-8",
+   "bytes": 18164
+  },
+  {
+   "source_id": "c4e00274-5b08-5d26-9a6d-19aed0d71571",
+   "url": "https://mp.weixin.qq.com/s/JzzUqE602CaBwGHzNwG0KA",
+   "list_title": "数学学习中心讲座预告：从振动到特征值:特征值与特征向量的应用 2025-12-24",
+   "attempts": 4,
+   "last_attempt_at": "2026-10-20T23:30:46.448177+00:00",
+   "final_url": "https://mp.weixin.qq.com/mp/wappoc_appmsgcaptcha?poc_token=HA4L2GqjAvFlQsBSkzrv1y-EIH88L1LLnnnw8azx&target_url=https%3A%2F%2Fmp.weixin.qq.com%2Fs%2FJzzUqE602CaBwGHzNwG0KA",
+   "fetch_error": null,
+   "title": "",
+   "snippet": "环境异常 当前环境异常，完成验证后即可继续访问。 去验证 ： ， 。 视频 小程序 赞 ，轻点两下取消赞 在看 ，轻点两下取消在看",
+   "challenge_markers": [
+    "环境异常",
+    "完成验证后即可继续访问",
+    "去验证"
+   ],
+   "interstitial": true,
+   "verdict": "真拒绝：重定向到验证/反爬页",
+   "content_type": "text/html; charset=UTF-8",
+   "bytes": 18164
+  },
+  {
+   "source_id": "c4e00274-5b08-5d26-9a6d-19aed0d71571",
+   "url": "https://mp.weixin.qq.com/s/YSeieOD25kN9TEK0P1voVA",
+   "list_title": "2026TJUSLS_ChinaiGEM团队纳新第二弹 2026-03-18",
+   "attempts": 4,
+   "last_attempt_at": "2026-10-20T23:30:44.727731+00:00",
+   "final_url": "https://mp.weixin.qq.com/mp/wappoc_appmsgcaptcha?poc_token=HA4L2Gqj2ypkbI-K5iRd2MMVFt0yjdrIzioPuqU5&target_url=https%3A%2F%2Fmp.weixin.qq.com%2Fs%2FYSeieOD25kN9TEK0P1voVA",
+   "fetch_error": null,
+   "title": "",
+   "snippet": "环境异常 当前环境异常，完成验证后即可继续访问。 去验证 ： ， 。 视频 小程序 赞 ，轻点两下取消赞 在看 ，轻点两下取消在看",
+   "challenge_markers": [
+    "环境异常",
+    "完成验证后即可继续访问",
+    "去验证"
+   ],
+   "interstitial": true,
+   "verdict": "真拒绝：重定向到验证/反爬页",
+   "content_type": "text/html; charset=UTF-8",
+   "bytes": 18164
+  },
+  {
+   "source_id": "c4e00274-5b08-5d26-9a6d-19aed0d71571",
+   "url": "https://mp.weixin.qq.com/s/cYQEtF0DWBSR7upB6DhvwQ",
+   "list_title": "校选课新课程揭晓 | 快来pick你喜欢的吧！ 2026-03-13",
+   "attempts": 4,
+   "last_attempt_at": "2026-10-20T23:30:45.174106+00:00",
+   "final_url": "https://mp.weixin.qq.com/mp/wappoc_appmsgcaptcha?poc_token=HA8L2GqjSahBL6GfLpzCFhSqj2g1yVh9yuNdV8Hn&target_url=https%3A%2F%2Fmp.weixin.qq.com%2Fs%2FcYQEtF0DWBSR7upB6DhvwQ",
+   "fetch_error": null,
+   "title": "",
+   "snippet": "环境异常 当前环境异常，完成验证后即可继续访问。 去验证 ： ， 。 视频 小程序 赞 ，轻点两下取消赞 在看 ，轻点两下取消在看",
+   "challenge_markers": [
+    "环境异常",
+    "完成验证后即可继续访问",
+    "去验证"
+   ],
+   "interstitial": true,
+   "verdict": "真拒绝：重定向到验证/反爬页",
+   "content_type": "text/html; charset=UTF-8",
+   "bytes": 18163
+  },
+  {
+   "source_id": "c4e00274-5b08-5d26-9a6d-19aed0d71571",
+   "url": "https://mp.weixin.qq.com/s/f6qQG5XoHjXWL5JcwtvGVg",
+   "list_title": "【天津大学英语学习中心讲座预告】英语写作的审题、构思与润色——案例解析与实战方法分享 2026-01-09",
+   "attempts": 4,
+   "last_attempt_at": "2026-10-20T23:30:45.609076+00:00",
+   "final_url": "https://mp.weixin.qq.com/mp/wappoc_appmsgcaptcha?poc_token=HA8L2GqjHhWaGwKP8ockZdaWkWOTuGF1y8i4AJX5&target_url=https%3A%2F%2Fmp.weixin.qq.com%2Fs%2Ff6qQG5XoHjXWL5JcwtvGVg",
+   "fetch_error": null,
+   "title": "",
+   "snippet": "环境异常 当前环境异常，完成验证后即可继续访问。 去验证 ： ， 。 视频 小程序 赞 ，轻点两下取消赞 在看 ，轻点两下取消在看",
+   "challenge_markers": [
+    "环境异常",
+    "完成验证后即可继续访问",
+    "去验证"
+   ],
+   "interstitial": true,
+   "verdict": "真拒绝：重定向到验证/反爬页",
+   "content_type": "text/html; charset=UTF-8",
+   "bytes": 18164
+  },
+  {
+   "source_id": "c4e00274-5b08-5d26-9a6d-19aed0d71571",
+   "url": "https://mp.weixin.qq.com/s/z3iWt2HkBYPYCmR3wic0jw",
+   "list_title": "【讲座预告】实验教学创新设计中的若干关键问题——熊宏齐教授开讲 2026-04-07",
+   "attempts": 4,
+   "last_attempt_at": "2026-10-20T23:30:43.306450+00:00",
+   "final_url": "https://mp.weixin.qq.com/mp/wappoc_appmsgcaptcha?poc_token=HBAL2GqjLAw2OCQxDd4c56c2XFN71rxHCSJcXg0O&target_url=https%3A%2F%2Fmp.weixin.qq.com%2Fs%2Fz3iWt2HkBYPYCmR3wic0jw",
+   "fetch_error": null,
+   "title": "",
+   "snippet": "环境异常 当前环境异常，完成验证后即可继续访问。 去验证 ： ， 。 视频 小程序 赞 ，轻点两下取消赞 在看 ，轻点两下取消在看",
+   "challenge_markers": [
+    "环境异常",
+    "完成验证后即可继续访问",
+    "去验证"
+   ],
+   "interstitial": true,
+   "verdict": "真拒绝：重定向到验证/反爬页",
+   "content_type": "text/html; charset=UTF-8",
+   "bytes": 18164
+  },
+  {
+   "source_id": "ea4fa3a4-90fc-55c4-a5aa-cc6a389cb13d",
+   "url": "https://mp.weixin.qq.com/s/6n2NqnAHrj7VzQiXdWjcdw",
+   "list_title": "12 2026-05 沉浸式实验课丨把“AI+多屏联动”智慧教室用出“高阶感”",
+   "attempts": 6,
+   "last_attempt_at": "2026-10-20T23:30:49.162322+00:00",
+   "final_url": "https://mp.weixin.qq.com/mp/wappoc_appmsgcaptcha?poc_token=HBAL2Gqj7zK-my6gGzciCnlpT6_o4RciHR9HOb2r&target_url=https%3A%2F%2Fmp.weixin.qq.com%2Fs%2F6n2NqnAHrj7VzQiXdWjcdw",
+   "fetch_error": null,
+   "title": "",
+   "snippet": "环境异常 当前环境异常，完成验证后即可继续访问。 去验证 ： ， 。 视频 小程序 赞 ，轻点两下取消赞 在看 ，轻点两下取消在看",
+   "challenge_markers": [
+    "环境异常",
+    "完成验证后即可继续访问",
+    "去验证"
+   ],
+   "interstitial": true,
+   "verdict": "真拒绝：重定向到验证/反爬页",
+   "content_type": "text/html; charset=UTF-8",
+   "bytes": 18164
+  },
+  {
+   "source_id": "ea4fa3a4-90fc-55c4-a5aa-cc6a389cb13d",
+   "url": "https://mp.weixin.qq.com/s/Abq2NqGdUSYJv2rrehmOnw",
+   "list_title": "02 2024-09 天津大学知识创新平台建设启动暨《人工智能导论》智慧课程培训开班仪式顺利召开",
+   "attempts": 5,
+   "last_attempt_at": "2026-10-20T23:30:48.288417+00:00",
+   "final_url": "https://mp.weixin.qq.com/mp/wappoc_appmsgcaptcha?poc_token=HBEL2GqjJKv7eh7ic5sWXO8tb4pv2ePZGmtIZQHE&target_url=https%3A%2F%2Fmp.weixin.qq.com%2Fs%2FAbq2NqGdUSYJv2rrehmOnw",
+   "fetch_error": null,
+   "title": "",
+   "snippet": "环境异常 当前环境异常，完成验证后即可继续访问。 去验证 ： ， 。 视频 小程序 赞 ，轻点两下取消赞 在看 ，轻点两下取消在看",
+   "challenge_markers": [
+    "环境异常",
+    "完成验证后即可继续访问",
+    "去验证"
+   ],
+   "interstitial": true,
+   "verdict": "真拒绝：重定向到验证/反爬页",
+   "content_type": "text/html; charset=UTF-8",
+   "bytes": 18164
+  },
+  {
+   "source_id": "ea4fa3a4-90fc-55c4-a5aa-cc6a389cb13d",
+   "url": "https://mp.weixin.qq.com/s/CSniYqr1LfSYobIeCZA6nw",
+   "list_title": "14 2026-09 2026年下半年全国大学英语四、六级考试报名通知",
+   "attempts": 6,
+   "last_attempt_at": "2026-10-20T23:30:50.606296+00:00",
+   "final_url": "https://mp.weixin.qq.com/mp/wappoc_appmsgcaptcha?poc_token=HBEL2GqjJQjuiFVoJxRbklpBgwEmHB3Ft4e2LB7I&target_url=https%3A%2F%2Fmp.weixin.qq.com%2Fs%2FCSniYqr1LfSYobIeCZA6nw",
+   "fetch_error": null,
+   "title": "",
+   "snippet": "环境异常 当前环境异常，完成验证后即可继续访问。 去验证 ： ， 。 视频 小程序 赞 ，轻点两下取消赞 在看 ，轻点两下取消在看",
+   "challenge_markers": [
+    "环境异常",
+    "完成验证后即可继续访问",
+    "去验证"
+   ],
+   "interstitial": true,
+   "verdict": "真拒绝：重定向到验证/反爬页",
+   "content_type": "text/html; charset=UTF-8",
+   "bytes": 18165
+  },
+  {
+   "source_id": "ea4fa3a4-90fc-55c4-a5aa-cc6a389cb13d",
+   "url": "https://mp.weixin.qq.com/s/PCUu6wpOqStDqLB0BcwC1w",
+   "list_title": "02 2024-09 学校召开新一轮本科教育教学审核评估工作研讨会",
+   "attempts": 5,
+   "last_attempt_at": "2026-10-20T23:30:48.700939+00:00",
+   "final_url": "https://mp.weixin.qq.com/mp/wappoc_appmsgcaptcha?poc_token=HBIL2GqjKoc2MhTp8diMb1rYzWWx7G3dGg3UCq_6&target_url=https%3A%2F%2Fmp.weixin.qq.com%2Fs%2FPCUu6wpOqStDqLB0BcwC1w",
+   "fetch_error": null,
+   "title": "",
+   "snippet": "环境异常 当前环境异常，完成验证后即可继续访问。 去验证 ： ， 。 视频 小程序 赞 ，轻点两下取消赞 在看 ，轻点两下取消在看",
+   "challenge_markers": [
+    "环境异常",
+    "完成验证后即可继续访问",
+    "去验证"
+   ],
+   "interstitial": true,
+   "verdict": "真拒绝：重定向到验证/反爬页",
+   "content_type": "text/html; charset=UTF-8",
+   "bytes": 18165
+  },
+  {
+   "source_id": "ea4fa3a4-90fc-55c4-a5aa-cc6a389cb13d",
+   "url": "https://mp.weixin.qq.com/s/SaNp8-fXmS97LBN8YPLBgg",
+   "list_title": "02 2024-09 学校召开新一轮本科教育教学审核评估教师培训会",
+   "attempts": 5,
+   "last_attempt_at": "2026-10-20T23:30:47.757132+00:00",
+   "final_url": "https://mp.weixin.qq.com/mp/wappoc_appmsgcaptcha?poc_token=HBIL2GqjcH73GVaiFPdUPuvzO6AuWv1ogSLtm8o7&target_url=https%3A%2F%2Fmp.weixin.qq.com%2Fs%2FSaNp8-fXmS97LBN8YPLBgg",
+   "fetch_error": null,
+   "title": "",
+   "snippet": "环境异常 当前环境异常，完成验证后即可继续访问。 去验证 ： ， 。 视频 小程序 赞 ，轻点两下取消赞 在看 ，轻点两下取消在看",
+   "challenge_markers": [
+    "环境异常",
+    "完成验证后即可继续访问",
+    "去验证"
+   ],
+   "interstitial": true,
+   "verdict": "真拒绝：重定向到验证/反爬页",
+   "content_type": "text/html; charset=UTF-8",
+   "bytes": 18164
+  },
+  {
+   "source_id": "ea4fa3a4-90fc-55c4-a5aa-cc6a389cb13d",
+   "url": "https://mp.weixin.qq.com/s/iHWo1qK3Nn3yiXhQLQ8ydQ",
+   "list_title": "20 2026-04 天津大学英语学习中心系列讲座:不只是外语能力，而是全球竞争力｜两场讲座带你打开...",
+   "attempts": 6,
+   "last_attempt_at": "2026-10-20T23:30:50.175416+00:00",
+   "final_url": "https://mp.weixin.qq.com/mp/wappoc_appmsgcaptcha?poc_token=HBML2GqjlT4EL-xmN7mHxjdkG0Q1_kdcYnTyIiBZ&target_url=https%3A%2F%2Fmp.weixin.qq.com%2Fs%2FiHWo1qK3Nn3yiXhQLQ8ydQ",
+   "fetch_error": null,
+   "title": "",
+   "snippet": "环境异常 当前环境异常，完成验证后即可继续访问。 去验证 ： ， 。 视频 小程序 赞 ，轻点两下取消赞 在看 ，轻点两下取消在看",
+   "challenge_markers": [
+    "环境异常",
+    "完成验证后即可继续访问",
+    "去验证"
+   ],
+   "interstitial": true,
+   "verdict": "真拒绝：重定向到验证/反爬页",
+   "content_type": "text/html; charset=UTF-8",
+   "bytes": 18165
+  },
+  {
+   "source_id": "ea4fa3a4-90fc-55c4-a5aa-cc6a389cb13d",
+   "url": "https://mp.weixin.qq.com/s/jaw9-CDWW3G8gPNnsR5l2A",
+   "list_title": "24 2026-04 VR+AI 颠覆传统学习体验！来看看这门宝藏课程！",
+   "attempts": 6,
+   "last_attempt_at": "2026-10-20T23:30:49.718296+00:00",
+   "final_url": "https://mp.weixin.qq.com/mp/wappoc_appmsgcaptcha?poc_token=HBML2GqjbiydP7lvDXA8oeMrT7YCcfZuiU97ZkFc&target_url=https%3A%2F%2Fmp.weixin.qq.com%2Fs%2Fjaw9-CDWW3G8gPNnsR5l2A",
+   "fetch_error": null,
+   "title": "",
+   "snippet": "环境异常 当前环境异常，完成验证后即可继续访问。 去验证 ： ， 。 视频 小程序 赞 ，轻点两下取消赞 在看 ，轻点两下取消在看",
+   "challenge_markers": [
+    "环境异常",
+    "完成验证后即可继续访问",
+    "去验证"
+   ],
+   "interstitial": true,
+   "verdict": "真拒绝：重定向到验证/反爬页",
+   "content_type": "text/html; charset=UTF-8",
+   "bytes": 18164
+  },
+  {
+   "source_id": "fc64db2c-93fb-5ff8-ace0-aa0b0bcbe15c",
+   "url": "https://mp.weixin.qq.com/s/TJePm4UbeVNtZCHyv3k0pg",
+   "list_title": "从容开讲·自信表达——学术英语系列工作坊（三）来啦！ 2025-11-05",
+   "attempts": 4,
+   "last_attempt_at": "2026-10-20T23:30:33.084933+00:00",
+   "final_url": "https://mp.weixin.qq.com/mp/wappoc_appmsgcaptcha?poc_token=HBQL2GqjvTYT7Q1gZ7PsFGlQAtzuKkh68Dah602D&target_url=https%3A%2F%2Fmp.weixin.qq.com%2Fs%2FTJePm4UbeVNtZCHyv3k0pg",
+   "fetch_error": null,
+   "title": "",
+   "snippet": "环境异常 当前环境异常，完成验证后即可继续访问。 去验证 ： ， 。 视频 小程序 赞 ，轻点两下取消赞 在看 ，轻点两下取消在看",
+   "challenge_markers": [
+    "环境异常",
+    "完成验证后即可继续访问",
+    "去验证"
+   ],
+   "interstitial": true,
+   "verdict": "真拒绝：重定向到验证/反爬页",
+   "content_type": "text/html; charset=UTF-8",
+   "bytes": 18164
+  },
+  {
+   "source_id": "fc64db2c-93fb-5ff8-ace0-aa0b0bcbe15c",
+   "url": "https://mp.weixin.qq.com/s/XYf_LghDCmDZEPubXWD4dg",
+   "list_title": "校选课新课程揭晓 | 快来pick你喜欢的吧！ 2025-08-15",
+   "attempts": 4,
+   "last_attempt_at": "2026-10-20T23:30:35.292934+00:00",
+   "final_url": "https://mp.weixin.qq.com/mp/wappoc_appmsgcaptcha?poc_token=HBQL2Gqjq_jYkHhGX0uGkp25ZaUjn2VXtSM1-Ymr&target_url=https%3A%2F%2Fmp.weixin.qq.com%2Fs%2FXYf_LghDCmDZEPubXWD4dg",
+   "fetch_error": null,
+   "title": "",
+   "snippet": "环境异常 当前环境异常，完成验证后即可继续访问。 去验证 ： ， 。 视频 小程序 赞 ，轻点两下取消赞 在看 ，轻点两下取消在看",
+   "challenge_markers": [
+    "环境异常",
+    "完成验证后即可继续访问",
+    "去验证"
+   ],
+   "interstitial": true,
+   "verdict": "真拒绝：重定向到验证/反爬页",
+   "content_type": "text/html; charset=UTF-8",
+   "bytes": 18165
+  },
+  {
+   "source_id": "fc64db2c-93fb-5ff8-ace0-aa0b0bcbe15c",
+   "url": "https://mp.weixin.qq.com/s/Yp46RMc89s7eveXLlBsg0Q",
+   "list_title": "天津大学2025级拔尖创新人才选拔通知 2025-09-02",
+   "attempts": 4,
+   "last_attempt_at": "2026-10-20T23:30:34.885526+00:00",
+   "final_url": "https://mp.weixin.qq.com/mp/wappoc_appmsgcaptcha?poc_token=HBUL2Gqj7JHAGcjHoAIItLmTTgzIo7ssBLay_DX2&target_url=https%3A%2F%2Fmp.weixin.qq.com%2Fs%2FYp46RMc89s7eveXLlBsg0Q",
+   "fetch_error": null,
+   "title": "",
+   "snippet": "环境异常 当前环境异常，完成验证后即可继续访问。 去验证 ： ， 。 视频 小程序 赞 ，轻点两下取消赞 在看 ，轻点两下取消在看",
+   "challenge_markers": [
+    "环境异常",
+    "完成验证后即可继续访问",
+    "去验证"
+   ],
+   "interstitial": true,
+   "verdict": "真拒绝：重定向到验证/反爬页",
+   "content_type": "text/html; charset=UTF-8",
+   "bytes": 18165
+  },
+  {
+   "source_id": "fc64db2c-93fb-5ff8-ace0-aa0b0bcbe15c",
+   "url": "https://mp.weixin.qq.com/s/ffulaIMf3Nz__tV7ONbhDw",
+   "list_title": "教小务 ▪ 迎新季 | 解锁大学新姿势！天大学委会纳新：技能、伙伴、经历全打包 2025-09-29",
+   "attempts": 4,
+   "last_attempt_at": "2026-10-20T23:30:34.463588+00:00",
+   "final_url": "https://mp.weixin.qq.com/mp/wappoc_appmsgcaptcha?poc_token=HBUL2Gqj2IG3nM22y26htbnUNHIgxfmFKhai5rwM&target_url=https%3A%2F%2Fmp.weixin.qq.com%2Fs%2FffulaIMf3Nz__tV7ONbhDw",
+   "fetch_error": null,
+   "title": "",
+   "snippet": "环境异常 当前环境异常，完成验证后即可继续访问。 去验证 ： ， 。 视频 小程序 赞 ，轻点两下取消赞 在看 ，轻点两下取消在看",
+   "challenge_markers": [
+    "环境异常",
+    "完成验证后即可继续访问",
+    "去验证"
+   ],
+   "interstitial": true,
+   "verdict": "真拒绝：重定向到验证/反爬页",
+   "content_type": "text/html; charset=UTF-8",
+   "bytes": 18165
+  },
+  {
+   "source_id": "fc64db2c-93fb-5ff8-ace0-aa0b0bcbe15c",
+   "url": "https://mp.weixin.qq.com/s/zyfW1r_jfnmmGAUA4OmQ9Q",
+   "list_title": "速速围观：喊你做功课啦，全校性选修课重磅上线！ 2025-08-15",
+   "attempts": 4,
+   "last_attempt_at": "2026-10-20T23:30:35.766289+00:00",
+   "final_url": "https://mp.weixin.qq.com/mp/wappoc_appmsgcaptcha?poc_token=HBUL2GqjFKffYUUym-WVo6pdnbm13ei5pWwL8o-l&target_url=https%3A%2F%2Fmp.weixin.qq.com%2Fs%2FzyfW1r_jfnmmGAUA4OmQ9Q",
+   "fetch_error": null,
+   "title": "",
+   "snippet": "环境异常 当前环境异常，完成验证后即可继续访问。 去验证 ： ， 。 视频 小程序 赞 ，轻点两下取消赞 在看 ，轻点两下取消在看",
+   "challenge_markers": [
+    "环境异常",
+    "完成验证后即可继续访问",
+    "去验证"
+   ],
+   "interstitial": true,
+   "verdict": "真拒绝：重定向到验证/反爬页",
+   "content_type": "text/html; charset=UTF-8",
+   "bytes": 18164
+  },
+  {
+   "source_id": "fc64db2c-93fb-5ff8-ace0-aa0b0bcbe15c",
+   "url": "https://mp.weixin.qq.com/s?__biz=Mzg2NTExMzQ2Ng%3D%3D&mid=2247543912&idx=1&sn=e8b23712f789b026c859f08b8181504d&chksm=cfdbd07324a5ceee2487f157c37414818fb9617cb40192150f538e85bcf96d967433305af672&forbs=1&scene=126&subscene=91&sessionid=1761184040&flutter_po",
+   "list_title": "英语学习中心欢迎您来！ 2025-10-23",
+   "attempts": 4,
+   "last_attempt_at": "2026-10-20T23:30:33.546799+00:00",
+   "final_url": "https://mp.weixin.qq.com/mp/wappoc_appmsgcaptcha?poc_token=HBYL2GqjH-iST6ITT5YlhaJFf6kk11ISXY1d1Nom&target_url=https%3A%2F%2Fmp.weixin.qq.com%2Fs%3F__biz%3DMzg2NTExMzQ2Ng%253D%253D%26mid%3D2247543912%26idx%3D1%26sn%3De8b23712f789b026c859f08b8181504d%26chksm%3Dcfdbd07324a5ceee2487f157c37414818fb9617cb40192150f538e85bcf96d967433305af672%26forbs%3D1%26scene%3D126%26subscene%3D91%26sessionid%3D1761184040%26flutter_po",
+   "fetch_error": null,
+   "title": "",
+   "snippet": "环境异常 当前环境异常，完成验证后即可继续访问。 去验证 ： ， 。 视频 小程序 赞 ，轻点两下取消赞 在看 ，轻点两下取消在看",
+   "challenge_markers": [
+    "环境异常",
+    "完成验证后即可继续访问",
+    "去验证"
+   ],
+   "interstitial": true,
+   "verdict": "真拒绝：重定向到验证/反爬页",
+   "content_type": "text/html; charset=UTF-8",
+   "bytes": 18433
+  }
+ ]
+}

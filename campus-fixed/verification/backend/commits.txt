@@ -1,0 +1,3 @@
+fc0b6565d769d8ab798063360e6839224b4669cd fix: require human acceptance before candidate publication
+7fc6e83816fee1c47e22ed4238938b047f9986c2 perf: keep standalone reads off the SQLite writer lock
+1f2dc4a289484a2bd0d377199c856a9ba87de7bf perf: narrow search before reads with atomic index receipts

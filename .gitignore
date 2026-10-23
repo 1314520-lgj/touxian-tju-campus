@@ -1,0 +1,46 @@
+# 运行期数据（不进仓库）
+data/
+data-operator/
+.campus-sample/
+.review-t12-data/
+*.sqlite3
+*.sqlite3-shm
+*.sqlite3-wal
+*.db
+*.db-shm
+*.db-wal
+
+# 凭据
+.env
+.env.*
+!.env.campus.example
+**/session.json
+.server-secret
+.admin-session.json
+
+# Python / Node
+__pycache__/
+*.pyc
+.venv/
+venv/
+node_modules/
+.pytest_cache/
+.pytest_cache
+.test-temp-*/
+**/.test-temp-*/basetemp/
+
+# 打包产物
+build/
+dist-exe/
+exe-dist/
+*.spec
+python-stderr.txt
+python-stdout.txt
+
+# 日志与临时
+*.log
+!verification/**/*.log
+*.tmp
+.tmp-*
+.DS_Store
+Thumbs.db

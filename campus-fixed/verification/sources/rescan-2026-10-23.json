@@ -1,0 +1,1307 @@
+{
+  "today": "2026-10-23",
+  "hosts": [
+    "arch.tju.edu.cn",
+    "earth.tju.edu.cn",
+    "law.tju.edu.cn",
+    "math.tju.edu.cn",
+    "mse.tju.edu.cn",
+    "seea.tju.edu.cn",
+    "sme.tju.edu.cn",
+    "soe.tju.edu.cn",
+    "snmc.tju.edu.cn",
+    "scs.tju.edu.cn",
+    "sai.tju.edu.cn",
+    "imas.tju.edu.cn",
+    "molecularplus.tju.edu.cn",
+    "jgxy.tju.edu.cn",
+    "jyxy.tju.edu.cn",
+    "marine.tju.edu.cn",
+    "esse.tju.edu.cn",
+    "xschool.tju.edu.cn",
+    "tiei2014.tju.edu.cn",
+    "xxgkw.tju.edu.cn"
+  ],
+  "scanned": 240,
+  "active": 1,
+  "results": [
+    {
+      "host": "arch.tju.edu.cn",
+      "url": "https://arch.tju.edu.cn/index/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "arch.tju.edu.cn",
+      "url": "https://arch.tju.edu.cn/xwzx/tzgg.htm",
+      "reachable": true,
+      "page_title": "通知公告-天津大学建筑学院",
+      "notice_links": 131,
+      "list_items": 144,
+      "newest": null,
+      "age_days": null,
+      "tier": "dead"
+    },
+    {
+      "host": "arch.tju.edu.cn",
+      "url": "https://arch.tju.edu.cn/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "arch.tju.edu.cn",
+      "url": "https://arch.tju.edu.cn/tzgg/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "arch.tju.edu.cn",
+      "url": "https://arch.tju.edu.cn/xwgg/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "arch.tju.edu.cn",
+      "url": "https://arch.tju.edu.cn/xwgg/notices.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "arch.tju.edu.cn",
+      "url": "https://arch.tju.edu.cn/index/tztg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "arch.tju.edu.cn",
+      "url": "https://arch.tju.edu.cn/xwzx/tztg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "arch.tju.edu.cn",
+      "url": "https://arch.tju.edu.cn/tzgg/index.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "arch.tju.edu.cn",
+      "url": "https://arch.tju.edu.cn/news/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "arch.tju.edu.cn",
+      "url": "https://arch.tju.edu.cn/xxgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "arch.tju.edu.cn",
+      "url": "https://arch.tju.edu.cn/gggs.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "earth.tju.edu.cn",
+      "url": "https://earth.tju.edu.cn/index/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "earth.tju.edu.cn",
+      "url": "https://earth.tju.edu.cn/xwzx/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "earth.tju.edu.cn",
+      "url": "https://earth.tju.edu.cn/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "earth.tju.edu.cn",
+      "url": "https://earth.tju.edu.cn/tzgg/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "earth.tju.edu.cn",
+      "url": "https://earth.tju.edu.cn/xwgg/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "earth.tju.edu.cn",
+      "url": "https://earth.tju.edu.cn/xwgg/notices.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "earth.tju.edu.cn",
+      "url": "https://earth.tju.edu.cn/index/tztg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "earth.tju.edu.cn",
+      "url": "https://earth.tju.edu.cn/xwzx/tztg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "earth.tju.edu.cn",
+      "url": "https://earth.tju.edu.cn/tzgg/index.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "earth.tju.edu.cn",
+      "url": "https://earth.tju.edu.cn/news/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "earth.tju.edu.cn",
+      "url": "https://earth.tju.edu.cn/xxgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "earth.tju.edu.cn",
+      "url": "https://earth.tju.edu.cn/gggs.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "law.tju.edu.cn",
+      "url": "https://law.tju.edu.cn/index/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "law.tju.edu.cn",
+      "url": "https://law.tju.edu.cn/xwzx/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "law.tju.edu.cn",
+      "url": "https://law.tju.edu.cn/tzgg.htm",
+      "reachable": true,
+      "page_title": "通知公告-天津大学法学院",
+      "notice_links": 42,
+      "list_items": 43,
+      "newest": null,
+      "age_days": null,
+      "tier": "dead"
+    },
+    {
+      "host": "law.tju.edu.cn",
+      "url": "https://law.tju.edu.cn/tzgg/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "law.tju.edu.cn",
+      "url": "https://law.tju.edu.cn/xwgg/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "law.tju.edu.cn",
+      "url": "https://law.tju.edu.cn/xwgg/notices.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "law.tju.edu.cn",
+      "url": "https://law.tju.edu.cn/index/tztg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "law.tju.edu.cn",
+      "url": "https://law.tju.edu.cn/xwzx/tztg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "law.tju.edu.cn",
+      "url": "https://law.tju.edu.cn/tzgg/index.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "law.tju.edu.cn",
+      "url": "https://law.tju.edu.cn/news/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "law.tju.edu.cn",
+      "url": "https://law.tju.edu.cn/xxgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "law.tju.edu.cn",
+      "url": "https://law.tju.edu.cn/gggs.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "math.tju.edu.cn",
+      "url": "https://math.tju.edu.cn/index/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "math.tju.edu.cn",
+      "url": "https://math.tju.edu.cn/xwzx/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "math.tju.edu.cn",
+      "url": "https://math.tju.edu.cn/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "math.tju.edu.cn",
+      "url": "https://math.tju.edu.cn/tzgg/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "math.tju.edu.cn",
+      "url": "https://math.tju.edu.cn/xwgg/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "math.tju.edu.cn",
+      "url": "https://math.tju.edu.cn/xwgg/notices.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "math.tju.edu.cn",
+      "url": "https://math.tju.edu.cn/index/tztg.htm",
+      "reachable": true,
+      "page_title": "通知通告-天津大学数学学院",
+      "notice_links": 247,
+      "list_items": 252,
+      "newest": null,
+      "age_days": null,
+      "tier": "dead"
+    },
+    {
+      "host": "math.tju.edu.cn",
+      "url": "https://math.tju.edu.cn/xwzx/tztg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "math.tju.edu.cn",
+      "url": "https://math.tju.edu.cn/tzgg/index.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "math.tju.edu.cn",
+      "url": "https://math.tju.edu.cn/news/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "math.tju.edu.cn",
+      "url": "https://math.tju.edu.cn/xxgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "math.tju.edu.cn",
+      "url": "https://math.tju.edu.cn/gggs.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "mse.tju.edu.cn",
+      "url": "https://mse.tju.edu.cn/index/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "mse.tju.edu.cn",
+      "url": "https://mse.tju.edu.cn/xwzx/tzgg.htm",
+      "reachable": true,
+      "page_title": "通知公告-天津大学材料科学与工程学院",
+      "notice_links": 93,
+      "list_items": 93,
+      "newest": null,
+      "age_days": null,
+      "tier": "dead"
+    },
+    {
+      "host": "mse.tju.edu.cn",
+      "url": "https://mse.tju.edu.cn/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "mse.tju.edu.cn",
+      "url": "https://mse.tju.edu.cn/tzgg/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "mse.tju.edu.cn",
+      "url": "https://mse.tju.edu.cn/xwgg/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "mse.tju.edu.cn",
+      "url": "https://mse.tju.edu.cn/xwgg/notices.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "mse.tju.edu.cn",
+      "url": "https://mse.tju.edu.cn/index/tztg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "mse.tju.edu.cn",
+      "url": "https://mse.tju.edu.cn/xwzx/tztg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "mse.tju.edu.cn",
+      "url": "https://mse.tju.edu.cn/tzgg/index.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "mse.tju.edu.cn",
+      "url": "https://mse.tju.edu.cn/news/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "mse.tju.edu.cn",
+      "url": "https://mse.tju.edu.cn/xxgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "mse.tju.edu.cn",
+      "url": "https://mse.tju.edu.cn/gggs.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "seea.tju.edu.cn",
+      "url": "https://seea.tju.edu.cn/index/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "seea.tju.edu.cn",
+      "url": "https://seea.tju.edu.cn/xwzx/tzgg.htm",
+      "reachable": true,
+      "page_title": "通知公告-电气自动化与信息工程学院官网",
+      "notice_links": 94,
+      "list_items": 94,
+      "newest": null,
+      "age_days": null,
+      "tier": "dead"
+    },
+    {
+      "host": "seea.tju.edu.cn",
+      "url": "https://seea.tju.edu.cn/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "seea.tju.edu.cn",
+      "url": "https://seea.tju.edu.cn/tzgg/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "seea.tju.edu.cn",
+      "url": "https://seea.tju.edu.cn/xwgg/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "seea.tju.edu.cn",
+      "url": "https://seea.tju.edu.cn/xwgg/notices.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "seea.tju.edu.cn",
+      "url": "https://seea.tju.edu.cn/index/tztg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "seea.tju.edu.cn",
+      "url": "https://seea.tju.edu.cn/xwzx/tztg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "seea.tju.edu.cn",
+      "url": "https://seea.tju.edu.cn/tzgg/index.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "seea.tju.edu.cn",
+      "url": "https://seea.tju.edu.cn/news/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "seea.tju.edu.cn",
+      "url": "https://seea.tju.edu.cn/xxgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "seea.tju.edu.cn",
+      "url": "https://seea.tju.edu.cn/gggs.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "sme.tju.edu.cn",
+      "url": "https://sme.tju.edu.cn/index/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "sme.tju.edu.cn",
+      "url": "https://sme.tju.edu.cn/xwzx/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "sme.tju.edu.cn",
+      "url": "https://sme.tju.edu.cn/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "sme.tju.edu.cn",
+      "url": "https://sme.tju.edu.cn/tzgg/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "sme.tju.edu.cn",
+      "url": "https://sme.tju.edu.cn/xwgg/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "sme.tju.edu.cn",
+      "url": "https://sme.tju.edu.cn/xwgg/notices.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "sme.tju.edu.cn",
+      "url": "https://sme.tju.edu.cn/index/tztg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "sme.tju.edu.cn",
+      "url": "https://sme.tju.edu.cn/xwzx/tztg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "sme.tju.edu.cn",
+      "url": "https://sme.tju.edu.cn/tzgg/index.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "sme.tju.edu.cn",
+      "url": "https://sme.tju.edu.cn/news/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "sme.tju.edu.cn",
+      "url": "https://sme.tju.edu.cn/xxgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "sme.tju.edu.cn",
+      "url": "https://sme.tju.edu.cn/gggs.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "soe.tju.edu.cn",
+      "url": "https://soe.tju.edu.cn/index/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "soe.tju.edu.cn",
+      "url": "https://soe.tju.edu.cn/xwzx/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "soe.tju.edu.cn",
+      "url": "https://soe.tju.edu.cn/tzgg.htm",
+      "reachable": true,
+      "page_title": "通知公告-天津大学教育学院",
+      "notice_links": 124,
+      "list_items": 129,
+      "newest": "2026-04-07",
+      "age_days": 199,
+      "tier": "dead"
+    },
+    {
+      "host": "soe.tju.edu.cn",
+      "url": "https://soe.tju.edu.cn/tzgg/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "soe.tju.edu.cn",
+      "url": "https://soe.tju.edu.cn/xwgg/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "soe.tju.edu.cn",
+      "url": "https://soe.tju.edu.cn/xwgg/notices.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "soe.tju.edu.cn",
+      "url": "https://soe.tju.edu.cn/index/tztg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "soe.tju.edu.cn",
+      "url": "https://soe.tju.edu.cn/xwzx/tztg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "soe.tju.edu.cn",
+      "url": "https://soe.tju.edu.cn/tzgg/index.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "soe.tju.edu.cn",
+      "url": "https://soe.tju.edu.cn/news/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "soe.tju.edu.cn",
+      "url": "https://soe.tju.edu.cn/xxgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "soe.tju.edu.cn",
+      "url": "https://soe.tju.edu.cn/gggs.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "snmc.tju.edu.cn",
+      "url": "https://snmc.tju.edu.cn/index/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "snmc.tju.edu.cn",
+      "url": "https://snmc.tju.edu.cn/xwzx/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "snmc.tju.edu.cn",
+      "url": "https://snmc.tju.edu.cn/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "snmc.tju.edu.cn",
+      "url": "https://snmc.tju.edu.cn/tzgg/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "snmc.tju.edu.cn",
+      "url": "https://snmc.tju.edu.cn/xwgg/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "snmc.tju.edu.cn",
+      "url": "https://snmc.tju.edu.cn/xwgg/notices.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "snmc.tju.edu.cn",
+      "url": "https://snmc.tju.edu.cn/index/tztg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "snmc.tju.edu.cn",
+      "url": "https://snmc.tju.edu.cn/xwzx/tztg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "snmc.tju.edu.cn",
+      "url": "https://snmc.tju.edu.cn/tzgg/index.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "snmc.tju.edu.cn",
+      "url": "https://snmc.tju.edu.cn/news/tzgg.htm",
+      "reachable": true,
+      "page_title": "通知公告-天津大学新媒体与传播学院",
+      "notice_links": 75,
+      "list_items": 81,
+      "newest": "2026-09-11",
+      "age_days": 42,
+      "tier": "low"
+    },
+    {
+      "host": "snmc.tju.edu.cn",
+      "url": "https://snmc.tju.edu.cn/xxgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "snmc.tju.edu.cn",
+      "url": "https://snmc.tju.edu.cn/gggs.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "scs.tju.edu.cn",
+      "url": "https://scs.tju.edu.cn/index/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "scs.tju.edu.cn",
+      "url": "https://scs.tju.edu.cn/xwzx/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "scs.tju.edu.cn",
+      "url": "https://scs.tju.edu.cn/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "scs.tju.edu.cn",
+      "url": "https://scs.tju.edu.cn/tzgg/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "scs.tju.edu.cn",
+      "url": "https://scs.tju.edu.cn/xwgg/tzgg.htm",
+      "reachable": true,
+      "page_title": "通知公告-软件学院",
+      "notice_links": 63,
+      "list_items": 64,
+      "newest": null,
+      "age_days": null,
+      "tier": "dead"
+    },
+    {
+      "host": "scs.tju.edu.cn",
+      "url": "https://scs.tju.edu.cn/xwgg/notices.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "scs.tju.edu.cn",
+      "url": "https://scs.tju.edu.cn/index/tztg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "scs.tju.edu.cn",
+      "url": "https://scs.tju.edu.cn/xwzx/tztg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "scs.tju.edu.cn",
+      "url": "https://scs.tju.edu.cn/tzgg/index.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "scs.tju.edu.cn",
+      "url": "https://scs.tju.edu.cn/news/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "scs.tju.edu.cn",
+      "url": "https://scs.tju.edu.cn/xxgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "scs.tju.edu.cn",
+      "url": "https://scs.tju.edu.cn/gggs.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "sai.tju.edu.cn",
+      "url": "https://sai.tju.edu.cn/index/tzgg.htm",
+      "reachable": true,
+      "page_title": "通知公告-人工智能学院",
+      "notice_links": 34,
+      "list_items": 35,
+      "newest": null,
+      "age_days": null,
+      "tier": "dead"
+    },
+    {
+      "host": "sai.tju.edu.cn",
+      "url": "https://sai.tju.edu.cn/xwzx/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "sai.tju.edu.cn",
+      "url": "https://sai.tju.edu.cn/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "sai.tju.edu.cn",
+      "url": "https://sai.tju.edu.cn/tzgg/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "sai.tju.edu.cn",
+      "url": "https://sai.tju.edu.cn/xwgg/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "sai.tju.edu.cn",
+      "url": "https://sai.tju.edu.cn/xwgg/notices.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "sai.tju.edu.cn",
+      "url": "https://sai.tju.edu.cn/index/tztg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "sai.tju.edu.cn",
+      "url": "https://sai.tju.edu.cn/xwzx/tztg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "sai.tju.edu.cn",
+      "url": "https://sai.tju.edu.cn/tzgg/index.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "sai.tju.edu.cn",
+      "url": "https://sai.tju.edu.cn/news/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "sai.tju.edu.cn",
+      "url": "https://sai.tju.edu.cn/xxgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "sai.tju.edu.cn",
+      "url": "https://sai.tju.edu.cn/gggs.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "imas.tju.edu.cn",
+      "url": "https://imas.tju.edu.cn/index/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "imas.tju.edu.cn",
+      "url": "https://imas.tju.edu.cn/xwzx/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "imas.tju.edu.cn",
+      "url": "https://imas.tju.edu.cn/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "imas.tju.edu.cn",
+      "url": "https://imas.tju.edu.cn/tzgg/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "imas.tju.edu.cn",
+      "url": "https://imas.tju.edu.cn/xwgg/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "imas.tju.edu.cn",
+      "url": "https://imas.tju.edu.cn/xwgg/notices.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "imas.tju.edu.cn",
+      "url": "https://imas.tju.edu.cn/index/tztg.htm",
+      "reachable": true,
+      "page_title": "通知通告-天津大学分子聚集态科学研究院",
+      "notice_links": 26,
+      "list_items": 28,
+      "newest": "2026-10-13",
+      "age_days": 10,
+      "tier": "active"
+    },
+    {
+      "host": "imas.tju.edu.cn",
+      "url": "https://imas.tju.edu.cn/xwzx/tztg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "imas.tju.edu.cn",
+      "url": "https://imas.tju.edu.cn/tzgg/index.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "imas.tju.edu.cn",
+      "url": "https://imas.tju.edu.cn/news/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "imas.tju.edu.cn",
+      "url": "https://imas.tju.edu.cn/xxgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "imas.tju.edu.cn",
+      "url": "https://imas.tju.edu.cn/gggs.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "molecularplus.tju.edu.cn",
+      "url": "https://molecularplus.tju.edu.cn/index/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "molecularplus.tju.edu.cn",
+      "url": "https://molecularplus.tju.edu.cn/xwzx/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "molecularplus.tju.edu.cn",
+      "url": "https://molecularplus.tju.edu.cn/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "molecularplus.tju.edu.cn",
+      "url": "https://molecularplus.tju.edu.cn/tzgg/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "molecularplus.tju.edu.cn",
+      "url": "https://molecularplus.tju.edu.cn/xwgg/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "molecularplus.tju.edu.cn",
+      "url": "https://molecularplus.tju.edu.cn/xwgg/notices.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "molecularplus.tju.edu.cn",
+      "url": "https://molecularplus.tju.edu.cn/index/tztg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "molecularplus.tju.edu.cn",
+      "url": "https://molecularplus.tju.edu.cn/xwzx/tztg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "molecularplus.tju.edu.cn",
+      "url": "https://molecularplus.tju.edu.cn/tzgg/index.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "molecularplus.tju.edu.cn",
+      "url": "https://molecularplus.tju.edu.cn/news/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "molecularplus.tju.edu.cn",
+      "url": "https://molecularplus.tju.edu.cn/xxgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "molecularplus.tju.edu.cn",
+      "url": "https://molecularplus.tju.edu.cn/gggs.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "jgxy.tju.edu.cn",
+      "url": "https://jgxy.tju.edu.cn/index/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "jgxy.tju.edu.cn",
+      "url": "https://jgxy.tju.edu.cn/xwzx/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "jgxy.tju.edu.cn",
+      "url": "https://jgxy.tju.edu.cn/tzgg.htm",
+      "reachable": true,
+      "page_title": "通知公告-天津大学建筑工程学院",
+      "notice_links": 100,
+      "list_items": 104,
+      "newest": null,
+      "age_days": null,
+      "tier": "dead"
+    },
+    {
+      "host": "jgxy.tju.edu.cn",
+      "url": "https://jgxy.tju.edu.cn/tzgg/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "jgxy.tju.edu.cn",
+      "url": "https://jgxy.tju.edu.cn/xwgg/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "jgxy.tju.edu.cn",
+      "url": "https://jgxy.tju.edu.cn/xwgg/notices.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "jgxy.tju.edu.cn",
+      "url": "https://jgxy.tju.edu.cn/index/tztg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "jgxy.tju.edu.cn",
+      "url": "https://jgxy.tju.edu.cn/xwzx/tztg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "jgxy.tju.edu.cn",
+      "url": "https://jgxy.tju.edu.cn/tzgg/index.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "jgxy.tju.edu.cn",
+      "url": "https://jgxy.tju.edu.cn/news/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "jgxy.tju.edu.cn",
+      "url": "https://jgxy.tju.edu.cn/xxgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "jgxy.tju.edu.cn",
+      "url": "https://jgxy.tju.edu.cn/gggs.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "jyxy.tju.edu.cn",
+      "url": "https://jyxy.tju.edu.cn/index/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "jyxy.tju.edu.cn",
+      "url": "https://jyxy.tju.edu.cn/xwzx/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "jyxy.tju.edu.cn",
+      "url": "https://jyxy.tju.edu.cn/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "jyxy.tju.edu.cn",
+      "url": "https://jyxy.tju.edu.cn/tzgg/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "jyxy.tju.edu.cn",
+      "url": "https://jyxy.tju.edu.cn/xwgg/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "jyxy.tju.edu.cn",
+      "url": "https://jyxy.tju.edu.cn/xwgg/notices.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "jyxy.tju.edu.cn",
+      "url": "https://jyxy.tju.edu.cn/index/tztg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "jyxy.tju.edu.cn",
+      "url": "https://jyxy.tju.edu.cn/xwzx/tztg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "jyxy.tju.edu.cn",
+      "url": "https://jyxy.tju.edu.cn/tzgg/index.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "jyxy.tju.edu.cn",
+      "url": "https://jyxy.tju.edu.cn/news/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "jyxy.tju.edu.cn",
+      "url": "https://jyxy.tju.edu.cn/xxgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "jyxy.tju.edu.cn",
+      "url": "https://jyxy.tju.edu.cn/gggs.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "marine.tju.edu.cn",
+      "url": "https://marine.tju.edu.cn/index/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "marine.tju.edu.cn",
+      "url": "https://marine.tju.edu.cn/xwzx/tzgg.htm",
+      "reachable": true,
+      "page_title": "通知公告-天津大学海洋科学与技术学院",
+      "notice_links": 128,
+      "list_items": 134,
+      "newest": "2025-09-28",
+      "age_days": 390,
+      "tier": "dead"
+    },
+    {
+      "host": "marine.tju.edu.cn",
+      "url": "https://marine.tju.edu.cn/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "marine.tju.edu.cn",
+      "url": "https://marine.tju.edu.cn/tzgg/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "marine.tju.edu.cn",
+      "url": "https://marine.tju.edu.cn/xwgg/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "marine.tju.edu.cn",
+      "url": "https://marine.tju.edu.cn/xwgg/notices.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "marine.tju.edu.cn",
+      "url": "https://marine.tju.edu.cn/index/tztg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "marine.tju.edu.cn",
+      "url": "https://marine.tju.edu.cn/xwzx/tztg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "marine.tju.edu.cn",
+      "url": "https://marine.tju.edu.cn/tzgg/index.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "marine.tju.edu.cn",
+      "url": "https://marine.tju.edu.cn/news/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "marine.tju.edu.cn",
+      "url": "https://marine.tju.edu.cn/xxgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "marine.tju.edu.cn",
+      "url": "https://marine.tju.edu.cn/gggs.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "esse.tju.edu.cn",
+      "url": "https://esse.tju.edu.cn/index/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "esse.tju.edu.cn",
+      "url": "https://esse.tju.edu.cn/xwzx/tzgg.htm",
+      "reachable": true,
+      "page_title": "通知公告-天津大学-能源学院",
+      "notice_links": 77,
+      "list_items": 82,
+      "newest": null,
+      "age_days": null,
+      "tier": "dead"
+    },
+    {
+      "host": "esse.tju.edu.cn",
+      "url": "https://esse.tju.edu.cn/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "esse.tju.edu.cn",
+      "url": "https://esse.tju.edu.cn/tzgg/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "esse.tju.edu.cn",
+      "url": "https://esse.tju.edu.cn/xwgg/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "esse.tju.edu.cn",
+      "url": "https://esse.tju.edu.cn/xwgg/notices.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "esse.tju.edu.cn",
+      "url": "https://esse.tju.edu.cn/index/tztg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "esse.tju.edu.cn",
+      "url": "https://esse.tju.edu.cn/xwzx/tztg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "esse.tju.edu.cn",
+      "url": "https://esse.tju.edu.cn/tzgg/index.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "esse.tju.edu.cn",
+      "url": "https://esse.tju.edu.cn/news/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "esse.tju.edu.cn",
+      "url": "https://esse.tju.edu.cn/xxgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "esse.tju.edu.cn",
+      "url": "https://esse.tju.edu.cn/gggs.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "xschool.tju.edu.cn",
+      "url": "https://xschool.tju.edu.cn/index/tzgg.htm",
+      "error": "upstream_http_502"
+    },
+    {
+      "host": "xschool.tju.edu.cn",
+      "url": "https://xschool.tju.edu.cn/xwzx/tzgg.htm",
+      "error": "upstream_http_502"
+    },
+    {
+      "host": "xschool.tju.edu.cn",
+      "url": "https://xschool.tju.edu.cn/tzgg.htm",
+      "error": "upstream_http_502"
+    },
+    {
+      "host": "xschool.tju.edu.cn",
+      "url": "https://xschool.tju.edu.cn/tzgg/tzgg.htm",
+      "error": "upstream_http_502"
+    },
+    {
+      "host": "xschool.tju.edu.cn",
+      "url": "https://xschool.tju.edu.cn/xwgg/tzgg.htm",
+      "error": "upstream_http_502"
+    },
+    {
+      "host": "xschool.tju.edu.cn",
+      "url": "https://xschool.tju.edu.cn/xwgg/notices.htm",
+      "error": "upstream_http_502"
+    },
+    {
+      "host": "xschool.tju.edu.cn",
+      "url": "https://xschool.tju.edu.cn/index/tztg.htm",
+      "error": "upstream_http_502"
+    },
+    {
+      "host": "xschool.tju.edu.cn",
+      "url": "https://xschool.tju.edu.cn/xwzx/tztg.htm",
+      "error": "upstream_http_502"
+    },
+    {
+      "host": "xschool.tju.edu.cn",
+      "url": "https://xschool.tju.edu.cn/tzgg/index.htm",
+      "error": "upstream_http_502"
+    },
+    {
+      "host": "xschool.tju.edu.cn",
+      "url": "https://xschool.tju.edu.cn/news/tzgg.htm",
+      "error": "upstream_http_502"
+    },
+    {
+      "host": "xschool.tju.edu.cn",
+      "url": "https://xschool.tju.edu.cn/xxgg.htm",
+      "error": "upstream_http_502"
+    },
+    {
+      "host": "xschool.tju.edu.cn",
+      "url": "https://xschool.tju.edu.cn/gggs.htm",
+      "error": "upstream_http_502"
+    },
+    {
+      "host": "tiei2014.tju.edu.cn",
+      "url": "https://tiei2014.tju.edu.cn/index/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "tiei2014.tju.edu.cn",
+      "url": "https://tiei2014.tju.edu.cn/xwzx/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "tiei2014.tju.edu.cn",
+      "url": "https://tiei2014.tju.edu.cn/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "tiei2014.tju.edu.cn",
+      "url": "https://tiei2014.tju.edu.cn/tzgg/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "tiei2014.tju.edu.cn",
+      "url": "https://tiei2014.tju.edu.cn/xwgg/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "tiei2014.tju.edu.cn",
+      "url": "https://tiei2014.tju.edu.cn/xwgg/notices.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "tiei2014.tju.edu.cn",
+      "url": "https://tiei2014.tju.edu.cn/index/tztg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "tiei2014.tju.edu.cn",
+      "url": "https://tiei2014.tju.edu.cn/xwzx/tztg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "tiei2014.tju.edu.cn",
+      "url": "https://tiei2014.tju.edu.cn/tzgg/index.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "tiei2014.tju.edu.cn",
+      "url": "https://tiei2014.tju.edu.cn/news/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "tiei2014.tju.edu.cn",
+      "url": "https://tiei2014.tju.edu.cn/xxgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "tiei2014.tju.edu.cn",
+      "url": "https://tiei2014.tju.edu.cn/gggs.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "xxgkw.tju.edu.cn",
+      "url": "https://xxgkw.tju.edu.cn/index/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "xxgkw.tju.edu.cn",
+      "url": "https://xxgkw.tju.edu.cn/xwzx/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "xxgkw.tju.edu.cn",
+      "url": "https://xxgkw.tju.edu.cn/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "xxgkw.tju.edu.cn",
+      "url": "https://xxgkw.tju.edu.cn/tzgg/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "xxgkw.tju.edu.cn",
+      "url": "https://xxgkw.tju.edu.cn/xwgg/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "xxgkw.tju.edu.cn",
+      "url": "https://xxgkw.tju.edu.cn/xwgg/notices.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "xxgkw.tju.edu.cn",
+      "url": "https://xxgkw.tju.edu.cn/index/tztg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "xxgkw.tju.edu.cn",
+      "url": "https://xxgkw.tju.edu.cn/xwzx/tztg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "xxgkw.tju.edu.cn",
+      "url": "https://xxgkw.tju.edu.cn/tzgg/index.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "xxgkw.tju.edu.cn",
+      "url": "https://xxgkw.tju.edu.cn/news/tzgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "xxgkw.tju.edu.cn",
+      "url": "https://xxgkw.tju.edu.cn/xxgg.htm",
+      "error": "upstream_http_404"
+    },
+    {
+      "host": "xxgkw.tju.edu.cn",
+      "url": "https://xxgkw.tju.edu.cn/gggs.htm",
+      "error": "upstream_http_404"
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+# Runtime dependencies use the same frozen lock as local and deployed campus services.
+-r requirements-campus.lock.txt

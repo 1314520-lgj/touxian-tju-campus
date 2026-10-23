@@ -1,0 +1,322 @@
+[
+ {
+  "url": "https://qiushi.tju.edu.cn/tzgg.htm",
+  "unit": null,
+  "tier": "low",
+  "pattern": "^https?://qiushi\\.tju\\.edu\\.cn/info/1052/[^/]*\\d[^/]*\\.html?(?:[?#]|$)",
+  "directory": "/info/1052",
+  "directory_hits": 8,
+  "queued": 5,
+  "queued_sample": [
+   {
+    "url": "https://qiushi.tju.edu.cn/info/1052/4374.htm",
+    "title": "天津大学未来技术学院2027年推荐优秀应届本科毕业生免试攻读硕士学位研究生实施细则 2026-09-09",
+    "published_at": "2026-09-09T00:00:00+08:00"
+   },
+   {
+    "url": "https://qiushi.tju.edu.cn/info/1052/4044.htm",
+    "title": "天津大学未来技术学院2025-2026学年大学生创新创业训练计划项目（院级）拟立项名单公示 2026-03-31",
+    "published_at": "2026-03-31T00:00:00+08:00"
+   },
+   {
+    "url": "https://qiushi.tju.edu.cn/info/1052/3504.htm",
+    "title": "2025级新生党员党组织关系转接流程 2025-06-03",
+    "published_at": "2025-06-03T00:00:00+08:00"
+   }
+  ],
+  "column_title": "通知公告-未来技术学院",
+  "article": "https://qiushi.tju.edu.cn/info/1052/4374.htm",
+  "list_title": "天津大学未来技术学院2027年推荐优秀应届本科毕业生免试攻读硕士学位研究生实施细则 2026-09-09",
+  "h1": "天津大学未来技术学院2027年推荐优秀应届本科毕业生免试攻读硕士学位研究生实施细则",
+  "title_tag": "天津大学未来技术学院2027年推荐优秀应届本科毕业生免试攻读硕士学位研究生实施细则-未来技术学院",
+  "checks": [
+   {
+    "url": "https://qiushi.tju.edu.cn/info/1052/4374.htm",
+    "list_title": "天津大学未来技术学院2027年推荐优秀应届本科毕业生免试攻读硕士学位研究生实施细则 2026-09-09",
+    "h1": "天津大学未来技术学院2027年推荐优秀应届本科毕业生免试攻读硕士学位研究生实施细则",
+    "title_tag": "天津大学未来技术学院2027年推荐优秀应届本科毕业生免试攻读硕士学位研究生实施细则-未来技术学院"
+   },
+   {
+    "url": "https://qiushi.tju.edu.cn/info/1052/4044.htm",
+    "list_title": "天津大学未来技术学院2025-2026学年大学生创新创业训练计划项目（院级）拟立项名单公示 2026-03-31",
+    "h1": "天津大学未来技术学院2025-2026学年大学生创新创业训练计划项目（院级）拟立项名单公示",
+    "title_tag": "天津大学未来技术学院2025-2026学年大学生创新创业训练计划项目（院级）拟立项名单公示-未来技术学院"
+   }
+  ],
+  "independent_title": true,
+  "fallback_to_list_title": false,
+  "any_h1": true
+ },
+ {
+  "url": "https://rwys.tju.edu.cn/xydt/tztg.htm",
+  "unit": null,
+  "tier": "low",
+  "pattern": "^https?://rwys\\.tju\\.edu\\.cn/info/1015/[^/]*\\d[^/]*\\.html?(?:[?#]|$)",
+  "directory": "/info/1015",
+  "directory_hits": 12,
+  "queued": 5,
+  "queued_sample": [
+   {
+    "url": "https://rwys.tju.edu.cn/info/1015/4678.htm",
+    "title": "2026-09-14 天津大学人文艺术学院招收2027级推荐免试攻读硕士学位研究生复试安排",
+    "published_at": "2026-09-14T00:00:00+08:00"
+   },
+   {
+    "url": "https://rwys.tju.edu.cn/info/1015/4658.htm",
+    "title": "2026-09-11 天津大学人文艺术学院2027年推荐优秀应届本科毕业生免试攻读硕士学位研究生招生录取工作办法",
+    "published_at": "2026-09-11T00:00:00+08:00"
+   },
+   {
+    "url": "https://rwys.tju.edu.cn/info/1015/3988.htm",
+    "title": "2026-03-24 人文艺术学院2026年硕士研究生招生复试方案及安排",
+    "published_at": "2026-03-24T00:00:00+08:00"
+   }
+  ],
+  "column_title": "通知通告-天津大学人文艺术学院",
+  "article": "https://rwys.tju.edu.cn/info/1015/4678.htm",
+  "list_title": "2026-09-14 天津大学人文艺术学院招收2027级推荐免试攻读硕士学位研究生复试安排",
+  "h1": "天津大学人文艺术学院招收2027级推荐免试攻读硕士学位研究生复试安排",
+  "title_tag": "天津大学人文艺术学院招收2027级推荐免试攻读硕士学位研究生复试安排-天津大学人文艺术学院",
+  "checks": [
+   {
+    "url": "https://rwys.tju.edu.cn/info/1015/4678.htm",
+    "list_title": "2026-09-14 天津大学人文艺术学院招收2027级推荐免试攻读硕士学位研究生复试安排",
+    "h1": "天津大学人文艺术学院招收2027级推荐免试攻读硕士学位研究生复试安排",
+    "title_tag": "天津大学人文艺术学院招收2027级推荐免试攻读硕士学位研究生复试安排-天津大学人文艺术学院"
+   },
+   {
+    "url": "https://rwys.tju.edu.cn/info/1015/4658.htm",
+    "list_title": "2026-09-11 天津大学人文艺术学院2027年推荐优秀应届本科毕业生免试攻读硕士学位研究生招生录取工作办法",
+    "h1": "天津大学人文艺术学院2027年推荐优秀应届本科毕业生免试攻读硕士学位研究生招生录取工作办法",
+    "title_tag": "天津大学人文艺术学院2027年推荐优秀应届本科毕业生免试攻读硕士学位研究生招生录取工作办法-天津大学人文艺术学院"
+   }
+  ],
+  "independent_title": true,
+  "fallback_to_list_title": false,
+  "any_h1": true
+ },
+ {
+  "url": "https://scet.tju.edu.cn/xwzx/tzgg.htm",
+  "unit": null,
+  "tier": "active",
+  "pattern": "^https?://scet\\.tju\\.edu\\.cn/info/1019/[^/]*\\d[^/]*\\.html?(?:[?#]|$)",
+  "directory": "/info/1019",
+  "directory_hits": 15,
+  "queued": 5,
+  "queued_sample": [
+   {
+    "url": "https://scet.tju.edu.cn/info/1019/10408.htm",
+    "title": "2026-10-13 天津大学化工学院大型仪器测试平台2026年下半年培训和讲座通知 13 2026-10 天津大学化工学院大型仪器测试平台2026年下半年培训和讲座通知 查看更多+",
+    "published_at": "2026-10-13T00:00:00+08:00"
+   },
+   {
+    "url": "https://scet.tju.edu.cn/info/1019/10098.htm",
+    "title": "2026-09-14 天津大学化工学院2027年推荐优秀应届本科毕业生免试攻读硕士学位研究生和直接攻读博士... 14 2026-09 天津大学化工学院2027年推荐优秀应届本科毕业生免试攻读硕士学位研究生和直接攻读博士... 查看更多+",
+    "published_at": "2026-09-14T00:00:00+08:00"
+   },
+   {
+    "url": "https://scet.tju.edu.cn/info/1019/9988.htm",
+    "title": "2026-09-03 用人单位邀请函丨2026年天津大学化学化工类秋季专场双选会请您参加！ 03 2026-09 用人单位邀请函丨2026年天津大学化学化工类秋季专场双选会请您参加！ 查看更多+",
+    "published_at": "2026-09-03T00:00:00+08:00"
+   }
+  ],
+  "column_title": "通知公告-天津大学化工学院",
+  "article": "https://scet.tju.edu.cn/info/1019/10408.htm",
+  "list_title": "2026-10-13 天津大学化工学院大型仪器测试平台2026年下半年培训和讲座通知 13 2026-10 天津大学化工学院大型仪器测试平台2026年下半年培训和讲座通知 查看更多+",
+  "h1": "",
+  "title_tag": "天津大学化工学院大型仪器测试平台2026年下半年培训和讲座通知-天津大学化工学院",
+  "checks": [
+   {
+    "url": "https://scet.tju.edu.cn/info/1019/10408.htm",
+    "list_title": "2026-10-13 天津大学化工学院大型仪器测试平台2026年下半年培训和讲座通知 13 2026-10 天津大学化工学院大型仪器测试平台2026年下半年培训和讲座通知 查看更多+",
+    "h1": "",
+    "title_tag": "天津大学化工学院大型仪器测试平台2026年下半年培训和讲座通知-天津大学化工学院"
+   },
+   {
+    "url": "https://scet.tju.edu.cn/info/1019/10098.htm",
+    "list_title": "2026-09-14 天津大学化工学院2027年推荐优秀应届本科毕业生免试攻读硕士学位研究生和直接攻读博士... 14 2026-09 天津大学化工学院2027年推荐优秀应届本科毕业生免试攻读硕士学位研究生和直接攻读博士... 查看更多+",
+    "h1": "",
+    "title_tag": "天津大学化工学院2027年推荐优秀应届本科毕业生免试攻读硕士学位研究生和直接攻读博士学位研究生招生录取工作办法-天津大学化工学院"
+   }
+  ],
+  "independent_title": false,
+  "fallback_to_list_title": true,
+  "any_h1": false
+ },
+ {
+  "url": "https://sdce.tju.edu.cn/wljy/wltzgg.htm",
+  "unit": null,
+  "tier": "low",
+  "pattern": "^https?://sdce\\.tju\\.edu\\.cn/info/1262/[^/]*\\d[^/]*\\.html?(?:[?#]|$)",
+  "directory": "/info/1262",
+  "directory_hits": 1,
+  "queued": 1,
+  "queued_sample": [
+   {
+    "url": "https://sdce.tju.edu.cn/info/1262/2764.htm",
+    "title": "关于做好2026年秋季网络教育本科毕业生成人学士学位申报工作的通知 2026-08-26",
+    "published_at": "2026-08-26T00:00:00+08:00"
+   }
+  ],
+  "column_title": "通知公告-天津大学远程与继续教育学院",
+  "article": "https://sdce.tju.edu.cn/info/1262/2764.htm",
+  "list_title": "关于做好2026年秋季网络教育本科毕业生成人学士学位申报工作的通知 2026-08-26",
+  "h1": "",
+  "title_tag": "关于做好2026年秋季网络教育本科毕业生成人学士学位申报工作的通知-天津大学远程与继续教育学院",
+  "checks": [
+   {
+    "url": "https://sdce.tju.edu.cn/info/1262/2764.htm",
+    "list_title": "关于做好2026年秋季网络教育本科毕业生成人学士学位申报工作的通知 2026-08-26",
+    "h1": "",
+    "title_tag": "关于做好2026年秋季网络教育本科毕业生成人学士学位申报工作的通知-天津大学远程与继续教育学院"
+   }
+  ],
+  "independent_title": false,
+  "fallback_to_list_title": true,
+  "any_h1": false
+ },
+ {
+  "url": "https://sdem.tju.edu.cn/tzgg.htm",
+  "unit": null,
+  "tier": "active",
+  "pattern": "^https?://sdem\\.tju\\.edu\\.cn/info/1104/[^/]*\\d[^/]*\\.html?(?:[?#]|$)",
+  "directory": "/info/1104",
+  "directory_hits": 14,
+  "queued": 5,
+  "queued_sample": [
+   {
+    "url": "https://sdem.tju.edu.cn/info/1104/9600.htm",
+    "title": "28 2026-09 天津大学卫生应急学院2027级推免生拟录取名单公示 天津大学卫生应急学院2027级推免生拟录取名单公示2026-09-28（公示已结束）根据教育部和天津大...",
+    "published_at": "2026-09-28T00:00:00+08:00"
+   },
+   {
+    "url": "https://sdem.tju.edu.cn/info/1104/9350.htm",
+    "title": "12 2026-09 天津大学卫生应急学院2027年推荐优秀应届本科毕业生免试攻读硕士学位研究生招生录取工作办法 天津大学卫生应急学院2027年推荐优秀应届本科毕业生免试攻读硕士学位研究生招生录取工作办法 推...",
+    "published_at": null
+   },
+   {
+    "url": "https://sdem.tju.edu.cn/info/1104/9340.htm",
+    "title": "15 2026-08 【重要通知】关于天津大学卫生应急学院2027年接收优秀应届本科毕业生免试攻读研究生预报名的通知 关于天津大学卫生应急学院2027年接收优秀应届本科毕业生免试攻读研究生预报名的通知 一 、申请...",
+    "published_at": null
+   }
+  ],
+  "column_title": "通知公告-卫生应急学院",
+  "article": "https://sdem.tju.edu.cn/info/1104/9600.htm",
+  "list_title": "28 2026-09 天津大学卫生应急学院2027级推免生拟录取名单公示 天津大学卫生应急学院2027级推免生拟录取名单公示2026-09-28（公示已结束）根据教育部和天津大...",
+  "h1": "天津大学卫生应急学院2027级推免生拟录取名单公示",
+  "title_tag": "天津大学卫生应急学院2027级推免生拟录取名单公示-卫生应急学院",
+  "checks": [
+   {
+    "url": "https://sdem.tju.edu.cn/info/1104/9600.htm",
+    "list_title": "28 2026-09 天津大学卫生应急学院2027级推免生拟录取名单公示 天津大学卫生应急学院2027级推免生拟录取名单公示2026-09-28（公示已结束）根据教育部和天津大...",
+    "h1": "天津大学卫生应急学院2027级推免生拟录取名单公示",
+    "title_tag": "天津大学卫生应急学院2027级推免生拟录取名单公示-卫生应急学院"
+   },
+   {
+    "url": "https://sdem.tju.edu.cn/info/1104/9350.htm",
+    "list_title": "12 2026-09 天津大学卫生应急学院2027年推荐优秀应届本科毕业生免试攻读硕士学位研究生招生录取工作办法 天津大学卫生应急学院2027年推荐优秀应届本科毕业生免试攻读硕士学位研究生招生录取工作办法 推...",
+    "h1": "天津大学卫生应急学院2027年推荐优秀应届本科毕业生免试攻读硕士学位研究生招生录取工作办法",
+    "title_tag": "天津大学卫生应急学院2027年推荐优秀应届本科毕业生免试攻读硕士学位研究生招生录取工作办法-卫生应急学院"
+   }
+  ],
+  "independent_title": true,
+  "fallback_to_list_title": false,
+  "any_h1": true
+ },
+ {
+  "url": "https://smxy.tju.edu.cn/xwzx/tzgg.htm",
+  "unit": null,
+  "tier": "low",
+  "pattern": "^https?://smxy\\.tju\\.edu\\.cn/info/1018/[^/]*\\d[^/]*\\.html?(?:[?#]|$)",
+  "directory": "/info/1018",
+  "directory_hits": 6,
+  "queued": 5,
+  "queued_sample": [
+   {
+    "url": "https://smxy.tju.edu.cn/info/1018/5486.htm",
+    "title": "2026级研究生（硕博）调档及党团组织关系转接说明 2026-05-29",
+    "published_at": "2026-05-29T00:00:00+08:00"
+   },
+   {
+    "url": "https://smxy.tju.edu.cn/info/1018/5866.htm",
+    "title": "天津大学生命科学学院2027年推荐优秀应届本科毕业生免试攻读硕士学位和直接攻读博士学位研究生招生录取... 2026-09-16",
+    "published_at": "2026-09-16T00:00:00+08:00"
+   },
+   {
+    "url": "https://smxy.tju.edu.cn/info/1018/5456.htm",
+    "title": "天津大学生命科学学院2026年本科生转专业综合成绩及拟录取名单公示 2026-05-19",
+    "published_at": "2026-05-19T00:00:00+08:00"
+   }
+  ],
+  "column_title": "通知公告-天津大学生命科学学院",
+  "article": "https://smxy.tju.edu.cn/info/1018/5486.htm",
+  "list_title": "2026级研究生（硕博）调档及党团组织关系转接说明 2026-05-29",
+  "h1": "2026级研究生（硕博）调档及党团组织关系转接说明",
+  "title_tag": "2026级研究生（硕博）调档及党团组织关系转接说明-天津大学生命科学学院",
+  "checks": [
+   {
+    "url": "https://smxy.tju.edu.cn/info/1018/5486.htm",
+    "list_title": "2026级研究生（硕博）调档及党团组织关系转接说明 2026-05-29",
+    "h1": "2026级研究生（硕博）调档及党团组织关系转接说明",
+    "title_tag": "2026级研究生（硕博）调档及党团组织关系转接说明-天津大学生命科学学院"
+   },
+   {
+    "url": "https://smxy.tju.edu.cn/info/1018/5866.htm",
+    "list_title": "天津大学生命科学学院2027年推荐优秀应届本科毕业生免试攻读硕士学位和直接攻读博士学位研究生招生录取... 2026-09-16",
+    "h1": "天津大学生命科学学院2027年推荐优秀应届本科毕业生免试攻读硕士学位和直接攻读博士学位研究生招生录取工作办法",
+    "title_tag": "天津大学生命科学学院2027年推荐优秀应届本科毕业生免试攻读硕士学位和直接攻读博士学位研究生招生录取工作办法-天津大学生命科学学院"
+   }
+  ],
+  "independent_title": true,
+  "fallback_to_list_title": false,
+  "any_h1": true
+ },
+ {
+  "url": "https://synbm.tju.edu.cn/xwzx/tzgg.htm",
+  "unit": null,
+  "tier": "active",
+  "pattern": "^https?://synbm\\.tju\\.edu\\.cn/info/1271/[^/]*\\d[^/]*\\.html?(?:[?#]|$)",
+  "directory": "/info/1271",
+  "directory_hits": 9,
+  "queued": 5,
+  "queued_sample": [
+   {
+    "url": "https://synbm.tju.edu.cn/info/1271/5365.htm",
+    "title": "天津大学合成生物与生物制造学院2027级推免生拟录取名单公示",
+    "published_at": "2026-09-29T00:00:00+08:00"
+   },
+   {
+    "url": "https://synbm.tju.edu.cn/info/1271/5345.htm",
+    "title": "合成生物与生物制造学院2026级本科生二次选拔拟录取名单公示",
+    "published_at": "2026-09-15T00:00:00+08:00"
+   },
+   {
+    "url": "https://synbm.tju.edu.cn/info/1271/5335.htm",
+    "title": "合成生物学院2027年推荐优秀应届本科毕业生免试攻读研究生拟推荐名单公示",
+    "published_at": "2026-09-14T00:00:00+08:00"
+   }
+  ],
+  "column_title": "通知公告-天津大学合成生物与生物制造学院",
+  "article": "https://synbm.tju.edu.cn/info/1271/5365.htm",
+  "list_title": "天津大学合成生物与生物制造学院2027级推免生拟录取名单公示",
+  "h1": "",
+  "title_tag": "天津大学合成生物与生物制造学院2027级推免生拟录取名单公示-天津大学合成生物与生物制造学院",
+  "checks": [
+   {
+    "url": "https://synbm.tju.edu.cn/info/1271/5365.htm",
+    "list_title": "天津大学合成生物与生物制造学院2027级推免生拟录取名单公示",
+    "h1": "",
+    "title_tag": "天津大学合成生物与生物制造学院2027级推免生拟录取名单公示-天津大学合成生物与生物制造学院"
+   },
+   {
+    "url": "https://synbm.tju.edu.cn/info/1271/5345.htm",
+    "list_title": "合成生物与生物制造学院2026级本科生二次选拔拟录取名单公示",
+    "h1": "",
+    "title_tag": "合成生物与生物制造学院2026级本科生二次选拔拟录取名单公示-天津大学合成生物与生物制造学院"
+   }
+  ],
+  "independent_title": false,
+  "fallback_to_list_title": true,
+  "any_h1": false
+ }
+]

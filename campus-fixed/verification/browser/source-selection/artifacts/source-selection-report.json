@@ -1,0 +1,105 @@
+{
+  "fixture_mode": "Explicit route fixtures; verifies UI behavior only. Real source feeds, authorization and Cloud Run are not exercised.",
+  "checks": [
+    "Source directory searches name and URL, separates website/WeChat/other and shows actual health",
+    "Legacy empty subscriptions mean all; explicit zero saves correctly and preserves newest event categories",
+    "Account subscription settings retain explicit mode while editing categories",
+    "Students submit website and name-only WeChat requests and see pending state without fabricated crawling",
+    "Mobile directory and requests fit viewport and remain reachable through keyboard-friendly menu",
+    "Admin connects only ready sources and a server conflict keeps the request unresolved",
+    "Admin rejects an unavailable WeChat request with a visible note and mobile modal focus containment",
+    "Student status history shows connected and rejected outcomes with operator explanation"
+  ],
+  "errors": [],
+  "screenshots": [
+    "verification/browser/source-selection/artifacts/sources-student-desktop.png",
+    "verification/browser/source-selection/artifacts/sources-student-mobile.png",
+    "verification/browser/source-selection/artifacts/sources-admin-mobile-resolution.png"
+  ],
+  "status": "passed",
+  "writes": [
+    {
+      "path": "/me/subscriptions",
+      "body": {
+        "source_ids": [],
+        "source_mode": "selected",
+        "event_types": [
+          "activity",
+          "academic"
+        ]
+      }
+    },
+    {
+      "path": "/me/subscriptions",
+      "body": {
+        "source_ids": [
+          "10000000-0000-4000-8000-000000000001"
+        ],
+        "source_mode": "selected",
+        "event_types": [
+          "activity",
+          "academic"
+        ]
+      }
+    },
+    {
+      "path": "/me/subscriptions",
+      "body": {
+        "source_ids": [
+          "10000000-0000-4000-8000-000000000001"
+        ],
+        "event_types": [
+          "activity"
+        ],
+        "source_mode": "selected"
+      }
+    },
+    {
+      "path": "/me/source-requests",
+      "body": {
+        "name": "希望接入的学院官网",
+        "kind": "website",
+        "url": "https://college.tju.edu.cn/",
+        "auto_subscribe": true
+      },
+      "key": "e648ec0e-5dfd-41e0-b9bb-d502f41c49e6"
+    },
+    {
+      "path": "/me/source-requests",
+      "body": {
+        "name": "尚未提供授权的公众号",
+        "kind": "wechat",
+        "url": null,
+        "auto_subscribe": true
+      },
+      "key": "0564e0bc-a6f5-4f7e-b98a-f55456d5acd9"
+    },
+    {
+      "path": "/admin/source-requests/10000000-0000-4000-8000-000000000100/resolve",
+      "body": {
+        "decision": "connect",
+        "source_id": "10000000-0000-4000-8000-000000000001",
+        "note": "已核验官网并完成一次采集。"
+      },
+      "key": "af4b16fd-423b-4131-b410-5d9b95ef9277"
+    },
+    {
+      "path": "/admin/source-requests/10000000-0000-4000-8000-000000000100/resolve",
+      "body": {
+        "decision": "connect",
+        "source_id": "10000000-0000-4000-8000-000000000001",
+        "note": "已核验官网并完成一次采集。"
+      },
+      "key": "af4b16fd-423b-4131-b410-5d9b95ef9277"
+    },
+    {
+      "path": "/admin/source-requests/10000000-0000-4000-8000-000000000101/resolve",
+      "body": {
+        "decision": "reject",
+        "source_id": null,
+        "note": "暂未取得可用授权订阅渠道，请补充后重新申请。"
+      },
+      "key": "7c7f66f7-b741-4b16-8880-0f7641c9ea2d"
+    }
+  ]
+}

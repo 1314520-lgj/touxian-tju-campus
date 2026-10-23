@@ -1,0 +1,116 @@
+{
+ "collected_at": "2026-10-13",
+ "collector": "server-side fetch (WorkBuddy web fetch), one request per URL, no product collector involved",
+ "operator_input": "2026-10-13 运营方在对话中提供 11 个官网首页与 16 个 mp.weixin.qq.com/s 文章链接，要求真实接入",
+ "method_note": "每条 URL 单独服务端抓取一次并人工判读返回页。这与产品 SafeFetcher 的健康检查是两回事：本文件证明「页面存在且可解析」，不证明「本服务采集成功」；本机与托管沙盒均不可达这些域名（见 source-reachability-2026-10-13.json），真实采集仍须在可达主机上按 REAL_INGESTION.md 四级验收。",
+ "official_sites": {
+  "https://www.tju.edu.cn/": {
+   "result": "reachable_parseable",
+   "site": "天津大学官网首页",
+   "finding": "首页为 news.tju.edu.cn 内容的聚合展示（天大要闻/学术天大等），没有独立的「通知公告」列表页；通知类条目多为 mp.weixin.qq.com/s 链接（校园看点栏目）。新闻网 itself 已在注册表（news 综合新闻）。未新增来源。",
+   "registered": false
+  },
+  "https://scet.tju.edu.cn/": {
+   "result": "reachable_notice_column_found",
+   "site": "天津大学化工学院",
+   "finding": "首页可抓取；其本科教学通知栏目 rcpy/bksjy/tzgg.htm 实测有效（2026-09 双选会邀请函、卓越领军班笔试安排），已在第 5 轮注册表内（scet-undergraduate）。首页本身无独立通知列表页，未重复注册。",
+   "registered": "already_in_catalog"
+  },
+  "https://oaa.tju.edu.cn/": {
+   "result": "reachable_notice_column_found",
+   "site": "天津大学教务处",
+   "finding": "首页可抓取；「通知公告」总览 tzgg.htm 与子栏目 js_kc.htm（竞赛科创，含四六级报名通知）本次新注册；原有 bszy/tzgg.htm、tzgg/xyzd.htm、cxsj/xsjs.htm 已在册。列表同时混合 /info/<n>/<n>.htm 与 mp.weixin.qq.com/s 两类文章链接，article_url_pattern 已同时接受。",
+   "registered": true
+  },
+  "https://i.tju.edu.cn/": {
+   "result": "fetch_failed",
+   "site": "未知（抓取失败）",
+   "finding": "首页与 /index/tzgg.htm 两次抓取均 fetch failed，无法确认站点存在或栏目形态。留学生教育相关站点实测为 sie.tju.edu.cn。未注册——需要运营方确认该域名的正确用途或提供可达 URL。",
+   "registered": false
+  },
+  "https://lib.tju.edu.cn/": {
+   "result": "reachable_no_structured_list",
+   "site": "天津大学图书馆",
+   "finding": "www.lib.tju.edu.cn 抓取成功但正文为智慧门户平台宣传文案，实际站点在 home.lib.tju.edu.cn，为 JS 驱动的单页（动态/资源/服务锚点），没有可稳定解析的通知列表 URL。图书馆「天圕简讯」等栏目时效性低、面向教职工。未注册。",
+   "registered": false
+  },
+  "https://www.twt.edu.cn/": {
+   "result": "reachable_no_structured_list",
+   "site": "天外天工作室",
+   "finding": "网站可抓取，但它是学生工作室介绍站（微北洋 APP、党建系统等），没有面向学生的「通知公告」列表。未注册。",
+   "registered": false
+  },
+  "https://job.tju.edu.cn/": {
+   "result": "reachable_notice_column_found",
+   "site": "天津大学就业指导中心",
+   "finding": "首页可抓取；通知公告 news/index/cate/1 与招聘会 recruitment/index 均在册（job-notices/job-fairs），本轮复测列表有效（双选会、求职补贴、选调生公告等）。",
+   "registered": "already_in_catalog"
+  },
+  "https://gs.tju.edu.cn/": {
+   "result": "reachable_notice_column_found",
+   "site": "天津大学研究生院",
+   "finding": "首页可抓取；通知公告 tzgg/pytz.htm 等 5 个栏目在册，本轮复测有效（学位申请安排、征文活动通知等）。",
+   "registered": "already_in_catalog"
+  },
+  "https://yx.tju.edu.cn/": {
+   "result": "reachable_notice_column_found",
+   "site": "天津大学迎新网",
+   "finding": "首页可抓取，「迎新快讯」栏目即最新通知列表（2026 级缴费、直饮水补贴、入学教育、研究生住宿申请），文章形如 /yxkx/bks/202608/t20260815_324689.htm。站点无 /yxkx.htm 或 /yxkx/bks.htm 列表页（均 404），故以首页为 origin_url。本次新注册。",
+   "registered": true
+  },
+  "https://zzzx.tju.edu.cn/": {
+   "result": "fetch_failed",
+   "site": "未知（抓取失败）",
+   "finding": "两次抓取均 fetch failed，无法确认站点存在。可能与 yx/gs 等域名形态不同或未部署。未注册——需要运营方确认该域名用途。",
+   "registered": false
+  },
+  "https://zs.tju.edu.cn/": {
+   "result": "reachable_notice_column_found",
+   "site": "天津大学本科招生网",
+   "finding": "首页可抓取；「通知公告」ym21/bkzn/tzgg.htm 实测有效（本科生招生章程、强基计划校考安排、拟录取公示等），文章形如 /info/1116/4829.htm。本次新注册。",
+   "registered": true
+  }
+ },
+ "wechat_articles": {
+  "result": "all_invalid",
+  "tested": 16,
+  "invalid_parameter": 16,
+  "note": "16 条链接逐条服务端抓取：微信公众平台统一返回「参数错误」页（其中 4 条首次抓取遇传输层失败，重试后同样为「参数错误」）。即这些 /s/<slug> 均不对应任何真实文章——可能为占位/示例链接或已失效。真实的教务处公众号文章（如 2026-10-13 实测的 https://mp.weixin.qq.com/s/CSniYqr1LfSYobIeCZA6nw 「2026年下半年全国大学英语四、六级考试报名通知」）产品已能正确解析；采集入口是列表页而非单篇文章链接，因此单篇文章链接本来也不作为来源注册。",
+  "real_articles_verified_elsewhere": [
+   "https://mp.weixin.qq.com/s/CSniYqr1LfSYobIeCZA6nw（教务处四六级报名，2026-10-13 服务端解析成功）"
+  ],
+  "registered": false
+ },
+ "catalog_changes_round8": {
+  "added_sources": [
+   {
+    "id": "ea4fa3a4-90fc-55c4-a5aa-cc6a389cb13d",
+    "name": "天津大学教务处 · 通知公告总览",
+    "origin_url": "https://oaa.tju.edu.cn/tzgg.htm"
+   },
+   {
+    "id": "3434196e-1203-5543-87bb-d71e1c1fc1b2",
+    "name": "天津大学教务处 · 竞赛科创通知",
+    "origin_url": "https://oaa.tju.edu.cn/tzgg/js_kc.htm"
+   },
+   {
+    "id": "dca313cc-2acc-5d35-98ff-1cbbf4d03452",
+    "name": "天津大学本科招生网 · 通知公告",
+    "origin_url": "https://zs.tju.edu.cn/ym21/bkzn/tzgg.htm"
+   },
+   {
+    "id": "92d2251d-d0cb-5f9d-824d-3b836f8ddf71",
+    "name": "天津大学迎新网 · 本科迎新快讯",
+    "origin_url": "https://yx.tju.edu.cn/"
+   }
+  ],
+  "catalog_size_before": 15,
+  "catalog_size_after": 19,
+  "mechanism": "config/campus-sources.json 增加条目 + server/campus/sources.py builtins 同步登记（seed 只接受两侧一致的来源）；test_source_catalog 新增 round8 专测与 yx URL 分支；test_network_probe 计数钉住 15→19"
+ },
+ "not_verified": [
+  "本服务 SafeFetcher 对 19 个来源的实际健康检查：本机与托管沙盒均不可达 *.tju.edu.cn，只能在可达主机上按 REAL_INGESTION.md 执行",
+  "i.tju.edu.cn 与 zzzx.tju.edu.cn 的真实用途（抓取失败）",
+  "运营方 16 个公众号链接指向的真实文章（全部参数错误）"
+ ]
+}

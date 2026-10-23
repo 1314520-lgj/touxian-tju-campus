@@ -1,0 +1,43 @@
+{
+  "base": "http://127.0.0.1:64937",
+  "fixture": "reliability-v1",
+  "mode": "Real browser and API, synthetic fixture, no intercepted requests",
+  "checks": [
+    "public detail warns about the failed restricted attachment",
+    "unconfigured student push is disabled and status belongs to the session",
+    "three approved versions show both changes and a refresh follows version four",
+    "nested attachment dialog isolates lower layers and Escape restores parent focus",
+    "authorized upload remains pending and public evidence stays unchanged",
+    "operator review publishes the attachment with visible authorization provenance"
+  ],
+  "screenshots": [
+    "verification/browser/reliability/artifacts/01-public-restricted-attachment.png",
+    "verification/browser/reliability/artifacts/02-student-push-unconfigured.png",
+    "verification/browser/reliability/artifacts/03-three-version-history.png",
+    "verification/browser/reliability/artifacts/04-current-version-history-refresh.png",
+    "verification/browser/reliability/artifacts/05-upload-pending-review.png",
+    "verification/browser/reliability/artifacts/06-approved-attachment-provenance.png"
+  ],
+  "pageErrors": [],
+  "failedResponses": [],
+  "failedRequests": [],
+  "boundaries": [
+    "No real school data, SMTP delivery, public-account authorization or external push is tested"
+  ],
+  "browser": "156.0.8078.4",
+  "nested_dialog": {
+    "background_isolated": true,
+    "parent_isolated": true,
+    "keyboard_stays_in_child": true,
+    "escape_restores_parent": true,
+    "focus_restored_to_trigger": true,
+    "closing_parent_restores_background": true
+  },
+  "replacement": {
+    "snapshot_id": "a864bb1e-22d5-573e-9c59-f3dd094b79a2",
+    "replaces_snapshot_id": "c81ed27c-938b-55e2-9144-6bddb7e54a72",
+    "candidate_id": "1a57771b-b47d-59b2-9a97-da027a40a78d",
+    "revision": 3
+  },
+  "status": "passed"
+}

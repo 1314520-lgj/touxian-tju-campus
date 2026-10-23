@@ -1,0 +1,54 @@
+# Ruff configuration for 偷闲·天大版.
+#
+# Pinned so every contributor and CI runner gets identical results regardless of
+# machine-level defaults (AI_PENDING_TASKS T16: "仓库没有 ruff 配置").
+#
+# Rule set is deliberately conservative — this codebase is correctness-first and
+# a large auto-rewrite would bury real changes in noise. Broader sets (SIM, PLW,
+# DTZ, S) are intentionally NOT selected; see the decisions at the bottom.
+#
+# Run:  ruff check .        ruff format --diff .
+target-version = "py312"   # 产品要求 Python 3.12+；不要建议只有 3.13 才有的写法
+line-length = 120          # 与既有密集语句一致；E5（含 E501）未选入，此值只影响格式化器
+
+src = ["server", "tools", "app.py"]
+
+[lint]
+select = [
+    "F",        # pyflakes：未使用导入/名称、重定义 —— 默认推荐集的主体
+    "E4",       # pycodestyle 错误：import 相关
+    "E7",       # pycodestyle 错误：语句相关
+    "E9",       # pycodestyle 错误：语法相关
+    "I",        # isort：导入排序
+    "B",        # flake8-bugbear：真实缺陷模式
+    "UP",       # pyupgrade：按 target-version 现代化
+    "RUF100",   # 失效的 noqa 必须清掉，否则掩盖真问题
+]
+ignore = [
+    # FastAPI/Body() 在默认参数里是框架惯例写法，不是缺陷。
+    "B008",
+    # 三处 B023 均经逐点核验：闭包在同一个循环迭代内定义并立即调用，
+    # 不存在延迟调用捕获循环变量的问题（search.py:321-328、
+    # tests/test_pipeline.py:68、tests/test_push_channels.py:148）。
+    # 若将来出现跨迭代延迟调用，此豁免必须重新评估。
+    "B023",
+]
+
+[lint.per-file-ignores]
+# 测试里大量复用其他测试模块的 fixture 名（import env 与参数 env 同名），
+# 这是 pytest 的常见组织方式，不是重定义缺陷。
+"server/campus/tests/*" = ["F811"]
+# 下面两个文件要在插入 sys.path 之后才能导入 server.*，
+# 报 E402 的是这段有意的引导，不是乱放的 import。
+"server/campus/tests/test_integration.py" = ["E402"]
+"scripts/evaluate_notice_corpus.py" = ["E402"]
+
+[lint.isort]
+# 与 .gitignore 的 LF/CRLF 约定无关；isort 只排顺序。
+known-first-party = ["server", "tools"]
+
+[format]
+# 1.9 轮已用 ruff 格式化 content/delivery/events；本轮补齐全仓，保持单一风格。
+quote-style = "double"
+indent-style = "space"
+docstring-code-format = false

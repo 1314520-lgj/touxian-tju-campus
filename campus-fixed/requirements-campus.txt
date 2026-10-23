@@ -1,0 +1,7 @@
+-r server/requirements.txt
+SQLAlchemy>=2.0,<3
+psycopg[binary]>=3.2,<4
+jsonschema>=4.23,<5
+pypdf>=5,<7
+trafilatura>=2,<3
+pytest>=8,<10

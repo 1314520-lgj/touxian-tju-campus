@@ -1,0 +1,157 @@
+{
+  "collected": false,
+  "prune": {
+    "expired": [],
+    "applied": true,
+    "reason": "截止时间已过（2026-10-20），自动下架",
+    "unusable": [
+      {
+        "id": "04e0baed-9b56-4232-afbf-204f2377472d",
+        "title": "线上答辩 问卷星答辩评议书模板与EV录屏软件操作",
+        "reason": "文档/附件名"
+      },
+      {
+        "id": "11c177ea-1cc5-4dad-b6a1-ce6cc7c4a2f1",
+        "title": "2026年全国高校工程教育学学科建设联盟年会暨AI时代工程教育学与工程教育创新研讨会顺利召开",
+        "reason": "新闻稿"
+      },
+      {
+        "id": "152cf1c0-d5af-4d4c-9cf7-3cea0fd5bfbd",
+        "title": "【考试安排】2021",
+        "reason": "栏目碎片"
+      },
+      {
+        "id": "33b779f3-e6b9-409b-8f8e-af41a55faefc",
+        "title": "文件来源：http://www.moe.gov.cn/srcsite/A22/s7065/202506/t20250611_1193766.html",
+        "reason": "裸链接"
+      },
+      {
+        "id": "39d397d0-8831-4ed6-81d3-80fa229a930d",
+        "title": "总体情况",
+        "reason": "栏目名/导航页"
+      },
+      {
+        "id": "4768879b-00b8-4633-a67f-9282d9ae9fb5",
+        "title": "一级学科博士硕士学位授权点申请基本条件（20170317）",
+        "reason": "文档/附件名"
+      },
+      {
+        "id": "4d9260fb-c1d0-4172-bf50-989578235e45",
+        "title": "天津大学天津医院召开建院165周年高质量发展大会",
+        "reason": "新闻稿"
+      },
+      {
+        "id": "61743749-4f19-4e6f-b736-db25eb5a0f26",
+        "title": "学位论文评阅专家聘书",
+        "reason": "文档/附件名"
+      },
+      {
+        "id": "6d5e207f-0c72-4bed-aa64-fdc1cfeeb838",
+        "title": "2026年CCF中国智能机器人学术年会在天津盛大开幕",
+        "reason": "新闻稿"
+      },
+      {
+        "id": "80da2082-0669-4b89-a4f0-2bf547430842",
+        "title": "【考试安排】2022",
+        "reason": "栏目碎片"
+      },
+      {
+        "id": "85eb958b-5543-494d-b309-fd2d308f59fc",
+        "title": "【考试安排】2022",
+        "reason": "栏目碎片"
+      },
+      {
+        "id": "8d26e9d6-96fa-428d-942c-f38ff91784c8",
+        "title": "优博基金验收报告",
+        "reason": "文档/附件名"
+      },
+      {
+        "id": "8d58d8cd-cc17-494c-a998-454b2a1b73d9",
+        "title": "天津大学新版学位论文封面",
+        "reason": "文档/附件名"
+      },
+      {
+        "id": "8d85ab9d-15de-4ba9-bb06-5f2bbe64b51b",
+        "title": "天津大学学位授权点情况表（供校盲审论文填写二级学科信息用）",
+        "reason": "文档/附件名"
+      },
+      {
+        "id": "9aff8ff7-b155-413d-be85-e2bb4a479ba1",
+        "title": "【校报特稿】牢记嘱托 勇担使命：我校召开学习贯彻习近平总书记重要回信精神一周年座谈会",
+        "reason": "新闻稿"
+      },
+      {
+        "id": "9e21b915-86fa-466e-9c65-034d8bc4f6af",
+        "title": "【考试安排】2022",
+        "reason": "栏目碎片"
+      },
+      {
+        "id": "a53a5ea6-e485-41a4-ab49-aca3547747cd",
+        "title": "天津大学研发产教融合信息平台亮相2026年世界职业技术教育发展大会",
+        "reason": "新闻稿"
+      },
+      {
+        "id": "a5cdc086-0033-40a5-b88f-c55642d5bb3f",
+        "title": "总体情况",
+        "reason": "栏目名/导航页"
+      },
+      {
+        "id": "ac44b273-1834-444f-a54e-3522c5587f9b",
+        "title": "机械工程学院召开学习贯彻习近平总书记给天津大学全体师生重要回信精神一周年工作推进会",
+        "reason": "新闻稿"
+      },
+      {
+        "id": "c9d7ec35-ac41-4a6c-825a-53fca2847d46",
+        "title": "下载中心",
+        "reason": "栏目名/导航页"
+      },
+      {
+        "id": "cf74a8f4-ca8e-4c88-bba3-45e98b3dc5c8",
+        "title": "1.行业引领的薪资水平",
+        "reason": "正文条目片段"
+      },
+      {
+        "id": "d0802b42-2f4c-48ca-8ab3-1efed511cbbf",
+        "title": "工程类专业学位类别和专业领域名称的中英文对照（建议稿）",
+        "reason": "文档/附件名"
+      },
+      {
+        "id": "d26f1971-51b1-4192-ade9-df0a0dc714b5",
+        "title": "天津大学博士学位论文国际评阅评审表（含邀请函、评审信息汇总表）",
+        "reason": "文档/附件名"
+      },
+      {
+        "id": "d89005ae-361c-4bfe-8c3d-6ad582136082",
+        "title": "学位审批书、评阅书、评议书及表决票202509",
+        "reason": "文档/附件名"
+      },
+      {
+        "id": "f71e80d9-c807-473d-b2c6-ee34c1af985f",
+        "title": "总体情况",
+        "reason": "栏目名/导航页"
+      }
+    ]
+  },
+  "sources": [],
+  "totals": {
+    "sources": 22,
+    "documents": 409,
+    "events_published": 100,
+    "events_expired": 0,
+    "events_unusable": 25
+  },
+  "command": "prune",
+  "data_dir": "data-operator",
+  "gateway": {
+    "source": "none",
+    "origins": []
+  },
+  "registration": {
+    "new": 0,
+    "existing": 22
+  },
+  "created_directory": false,
+  "started_at": "2026-10-20T06:54:02.183194+00:00",
+  "finished_at": "2026-10-20T06:54:04.261936+00:00",
+  "exit_code": 0
+}

@@ -1,0 +1,77 @@
+冷启动验收 t13 · 跑过的命令与关键输出（已去掉构建机绝对路径，只留可读摘要）
+=========================================================================
+
+【A · 随包 zip，学生一键路径】
+1) 解压
+   Expand-Archive campus-fixed-realuse.zip -> shipped/campus-fixed
+   结果：876 个文件、48.3 MB；顶层含 data/ dist/ web/ scripts/ tools/ server/ src/ docs/ …
+   缺：scripts/daily_update.py、tools/install_daily_task.ps1、verification/mobile/
+   dist/assets 仍是 campus-Cijd-lvv.js + campus-DmiF_3lD.css（t11 之前的构建）
+
+2) 照文档启动（README：Windows 双击/命令行 run-demo.bat [port]）
+   cd shipped/campus-fixed && run-demo.bat 8531
+   第一次：卡在 ">> Installing dependencies"（pip install -r requirements.txt）
+          20 分钟无进展：CPU 617s、无 established 连接、.venv\Lib\site-packages 仍只有 pip 自己
+   换源重装：.venv\Scripts\python.exe -m pip install --no-cache-dir \
+             -i https://pypi.tuna.tsinghua.edu.cn/simple -r requirements.txt
+          结果：exit 0（3 分钟内装完）
+   再跑文档命令：run-demo.bat 8531
+          结果：uvicorn 监听 127.0.0.1:8531；/healthz -> {"status":"ok"}；/ 标题 '偷闲 · 天大版'
+   旁证：pypi.org / 清华 / 阿里镜像 HEAD 全部 200（约 1 秒）——不是网络问题
+
+3) 浏览器走查（真实浏览器，1280x900）
+   首页 73 张卡片、登录按钮在；登录页显示开发验证码；填码后登录成功（coldstart@tju.edu.cn）
+   默认筛选「需要我行动」= 空（“当前没有需要处理的信息”）
+   切「待核实」后 4 张可见卡片；卡片截止时间是原始 ISO 文本（旧构建）
+   截图：A-01 … A-05
+
+【B · 当前源码树导出的等价包，运营路径】
+4) 导出等价包
+   python verification/coldstart-t13/build_equivalent_package.py <目标目录>
+   结果：copied 924 files；scripts/daily_update.py=True、tools/install_daily_task.ps1=True、
+        dist/campus.html=True、data-operator present=False（真正的冷启动）
+   另按打包脚本的做法补入 RELEASE_MANIFEST.json
+
+5) 启动 operator（docs/REAL-DATA-RUNBOOK.md §3 的原始命令与变量）
+   $env:CAMPUS_CLOUD_MODE='operator'; $env:CAMPUS_DATA_DIR='<B>/data-operator'
+   $env:CAMPUS_TRUSTED_GATEWAY_ORIGINS='<runbook 里那 11 个 origin>'; $env:PORT='8532'
+   python serve_cloud.py
+   结果：uvicorn 监听 127.0.0.1:8532；/ 标题 '偷闲 · 天大版'（assets campus-CcCC4W4i.css / campus-BcOJCb7S.js）
+   注意：operator 模式没有 /healthz（404），首页与 /api/v1/* 正常
+
+6) 日常更新（t9 的命令）
+   python scripts/daily_update.py --apply --data-dir data-operator --gateway-from-config
+   第 1 次：新增快照 160 · 新候选 109 → 接受 7 · 拒绝 44 · 留给人 58 → 发布 7 条，退出码 0
+   第 2 次：新增快照 26 · 新候选 15 → 接受 2 · 拒绝 60 → 发布 3 条（“已发布过的不会重复计入”），退出码 0
+          公开列表 7 → 7 条、0 个新标题、0 个重复标题
+   契约原文（演练）：python scripts/daily_update.py --data-dir data-operator
+          退出码 0；提示“受信网关：未设置（本机 fake-IP 环境下会得到 unsafe_address）”；不写任何数据
+
+7) 坏来源注入
+   把「天津大学研究生院 · 培养办事流程」origin 改成 https://broken-t13.invalid/notice/list.htm
+   python scripts/daily_update.py --apply --data-dir data-operator --gateway-from-config
+   结果：该来源报 unsafe_address；20 个来源：成功 17 · 降级 2 · 失败 1；退出码 1（有失败但未阻断）
+        复核/下架照常；events=7、event_versions=9 不变；公开列表 7 条无重复；
+        记录总数 5510 → 5958（只增不毁：新增的是健康来源的证据/快照/候选）
+
+8) 真实杀进程 + 重启
+   Stop-Process <uvicorn pid>  -> 端口释放
+   python serve_cloud.py       -> 新 PID 监听 8532
+   浏览器刷新：会话仍有效（仍显示登录邮箱）、我的事项仍有个人事项、事项详情仍 state=todo
+
+9) 契约三条 verify
+   powershell -ExecutionPolicy Bypass -File tools/install_daily_task.ps1 -Status
+       -> 退出码 0（在 B 里跑；在 A 里因文件缺失失败）
+   python scripts/daily_update.py --data-dir data-operator
+       -> 退出码 0（见第 6 条）
+   python -m pytest server/campus/tests -q --basetemp=.test-temp-coldstart/basetemp
+       -> 目录不存在时：655 passed, 8 skipped, 226 errors（FileNotFoundError: basetemp 路径不存在）
+       -> 先建目录再跑：881 passed, 8 skipped, 0 failed, 132 subtests passed（3 分 09 秒）
+
+【独立发现：start-campus.ps1 解析失败】
+   [System.Management.Automation.Language.Parser]::ParseFile('start-campus.ps1') -> 11 个 parse error
+   仓库副本与随包副本 SHA256 前缀相同（均为同一文件），两边都失败
+   实际调用报：Missing closing '}' in statement block or type definition（脚本一行都没执行）
+
+【清理】
+   验收期间起的服务都已停：8531 / 8532 已释放；8501 不是本任务的进程（BeamPilot 项目的 streamlit），未动

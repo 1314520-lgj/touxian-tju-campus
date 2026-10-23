@@ -1,0 +1,395 @@
+{
+  "extractor_version": "campus-rules-1.2",
+  "corpus_verified_on": "2026-10-08",
+  "corpus_fingerprint_sha256": "0e9ca1175c32f004a9a0a1aed08aacc7bbb5a00af55ae6904bd7d9e907526a2c",
+  "scope": "short_official_excerpt_fields",
+  "limits": [
+    "Hand-picked excerpts, not a random or held-out test set.",
+    "Absolute date and role are compared; this does not evaluate exact clocks, audience, full notices, live ingestion, or student time saved.",
+    "The expected requires_review flag describes missing excerpt context and is not scored as an automatic candidate state."
+  ],
+  "totals": {
+    "date_true": 11,
+    "date_false": 0,
+    "date_missed": 0,
+    "material_true": 4,
+    "material_false": 0,
+    "material_missed": 0,
+    "items": 20,
+    "exact_items": 20,
+    "unknown_cases": 1,
+    "unknown_cases_preserved": 1
+  },
+  "items": [
+    {
+      "id": "gs-plan",
+      "source_url": "https://gs.tju.edu.cn/info/1131/14012.htm",
+      "exact_fields": true,
+      "expected_absolute_dates": [],
+      "observed_absolute_dates": [],
+      "expected_materials": [
+        "《研究生个人培养计划变更申请表》"
+      ],
+      "observed_materials": [
+        "《研究生个人培养计划变更申请表》"
+      ],
+      "unknown_year_preserved": true,
+      "review_signals": []
+    },
+    {
+      "id": "gs-deferred",
+      "source_url": "https://gs.tju.edu.cn/info/1131/14022.htm",
+      "exact_fields": true,
+      "expected_absolute_dates": [],
+      "observed_absolute_dates": [],
+      "expected_materials": [
+        "《天津大学研究生课程缓考申请表》"
+      ],
+      "observed_materials": [
+        "《天津大学研究生课程缓考申请表》"
+      ],
+      "unknown_year_preserved": true,
+      "review_signals": []
+    },
+    {
+      "id": "gs-score-review",
+      "source_url": "https://gs.tju.edu.cn/info/1131/14032.htm",
+      "exact_fields": true,
+      "expected_absolute_dates": [],
+      "observed_absolute_dates": [],
+      "expected_materials": [],
+      "observed_materials": [],
+      "unknown_year_preserved": true,
+      "review_signals": []
+    },
+    {
+      "id": "gs-retake-waiver",
+      "source_url": "https://gs.tju.edu.cn/info/1131/14042.htm",
+      "exact_fields": true,
+      "expected_absolute_dates": [],
+      "observed_absolute_dates": [],
+      "expected_materials": [],
+      "observed_materials": [],
+      "unknown_year_preserved": true,
+      "review_signals": []
+    },
+    {
+      "id": "gs-self-print",
+      "source_url": "https://gs.tju.edu.cn/info/1131/14052.htm",
+      "exact_fields": true,
+      "expected_absolute_dates": [],
+      "observed_absolute_dates": [],
+      "expected_materials": [],
+      "observed_materials": [],
+      "unknown_year_preserved": true,
+      "review_signals": []
+    },
+    {
+      "id": "gs-transfer-close",
+      "source_url": "https://gs.tju.edu.cn/info/1111/18052.htm",
+      "exact_fields": true,
+      "expected_absolute_dates": [
+        {
+          "date": "2026-04-28",
+          "kind": "deadline",
+          "count": 1
+        }
+      ],
+      "observed_absolute_dates": [
+        {
+          "date": "2026-04-28",
+          "kind": "deadline",
+          "count": 1
+        }
+      ],
+      "expected_materials": [],
+      "observed_materials": [],
+      "unknown_year_preserved": true,
+      "review_signals": []
+    },
+    {
+      "id": "gs-essay",
+      "source_url": "https://gs.tju.edu.cn/info/1271/21622.htm",
+      "exact_fields": true,
+      "expected_absolute_dates": [
+        {
+          "date": "2026-10-15",
+          "kind": "deadline",
+          "count": 1
+        }
+      ],
+      "observed_absolute_dates": [
+        {
+          "date": "2026-10-15",
+          "kind": "deadline",
+          "count": 1
+        }
+      ],
+      "expected_materials": [],
+      "observed_materials": [],
+      "unknown_year_preserved": true,
+      "review_signals": []
+    },
+    {
+      "id": "gs-stipend",
+      "source_url": "https://gs.tju.edu.cn/info/1271/17832.htm",
+      "exact_fields": true,
+      "expected_absolute_dates": [],
+      "observed_absolute_dates": [],
+      "expected_materials": [],
+      "observed_materials": [],
+      "unknown_year_preserved": true,
+      "review_signals": []
+    },
+    {
+      "id": "ico-cambridge",
+      "source_url": "https://ico.tju.edu.cn/info/1011/5862.htm",
+      "exact_fields": true,
+      "expected_absolute_dates": [
+        {
+          "date": "2026-12-01",
+          "kind": "deadline",
+          "count": 1
+        }
+      ],
+      "observed_absolute_dates": [
+        {
+          "date": "2026-12-01",
+          "kind": "deadline",
+          "count": 1
+        }
+      ],
+      "expected_materials": [],
+      "observed_materials": [],
+      "unknown_year_preserved": true,
+      "review_signals": []
+    },
+    {
+      "id": "ico-oxford-capacity",
+      "source_url": "https://ico.tju.edu.cn/info/1011/5852.htm",
+      "exact_fields": true,
+      "expected_absolute_dates": [],
+      "observed_absolute_dates": [],
+      "expected_materials": [],
+      "observed_materials": [],
+      "unknown_year_preserved": true,
+      "review_signals": [
+        "报名截止：各模块名额满即停止招生"
+      ]
+    },
+    {
+      "id": "ico-madrid",
+      "source_url": "https://ico.tju.edu.cn/info/1011/5572.htm",
+      "exact_fields": true,
+      "expected_absolute_dates": [],
+      "observed_absolute_dates": [],
+      "expected_materials": [
+        "《天津大学境外交流申请表》"
+      ],
+      "observed_materials": [
+        "《天津大学境外交流申请表》"
+      ],
+      "unknown_year_preserved": true,
+      "review_signals": []
+    },
+    {
+      "id": "ico-munich",
+      "source_url": "https://ico.tju.edu.cn/info/1011/5472.htm",
+      "exact_fields": true,
+      "expected_absolute_dates": [
+        {
+          "date": "2026-07-20",
+          "kind": "event_time",
+          "count": 1
+        },
+        {
+          "date": "2026-08-02",
+          "kind": "event_time",
+          "count": 1
+        }
+      ],
+      "observed_absolute_dates": [
+        {
+          "date": "2026-07-20",
+          "kind": "event_time",
+          "count": 1
+        },
+        {
+          "date": "2026-08-02",
+          "kind": "event_time",
+          "count": 1
+        }
+      ],
+      "expected_materials": [],
+      "observed_materials": [],
+      "unknown_year_preserved": true,
+      "review_signals": []
+    },
+    {
+      "id": "ico-guangzhou",
+      "source_url": "https://ico.tju.edu.cn/info/1011/4684.htm",
+      "exact_fields": true,
+      "expected_absolute_dates": [
+        {
+          "date": "2025-06-30",
+          "kind": "deadline",
+          "count": 1
+        }
+      ],
+      "observed_absolute_dates": [
+        {
+          "date": "2025-06-30",
+          "kind": "deadline",
+          "count": 1
+        }
+      ],
+      "expected_materials": [],
+      "observed_materials": [],
+      "unknown_year_preserved": true,
+      "review_signals": []
+    },
+    {
+      "id": "ico-leuven",
+      "source_url": "https://ico.tju.edu.cn/info/1011/5452.htm",
+      "exact_fields": true,
+      "expected_absolute_dates": [
+        {
+          "date": "2026-04-01",
+          "kind": "deadline",
+          "count": 1
+        }
+      ],
+      "observed_absolute_dates": [
+        {
+          "date": "2026-04-01",
+          "kind": "deadline",
+          "count": 1
+        }
+      ],
+      "expected_materials": [],
+      "observed_materials": [],
+      "unknown_year_preserved": true,
+      "review_signals": []
+    },
+    {
+      "id": "cic-selection",
+      "source_url": "https://cic.tju.edu.cn/info/1041/5956.htm",
+      "exact_fields": true,
+      "expected_absolute_dates": [
+        {
+          "date": "2025-09-07",
+          "kind": "deadline",
+          "count": 1
+        }
+      ],
+      "observed_absolute_dates": [
+        {
+          "date": "2025-09-07",
+          "kind": "deadline",
+          "count": 1
+        }
+      ],
+      "expected_materials": [],
+      "observed_materials": [],
+      "unknown_year_preserved": true,
+      "review_signals": []
+    },
+    {
+      "id": "me-phd",
+      "source_url": "https://me.tju.edu.cn/info/1041/46461.htm",
+      "exact_fields": true,
+      "expected_absolute_dates": [
+        {
+          "date": "2026-01-05",
+          "kind": "deadline",
+          "count": 1
+        }
+      ],
+      "observed_absolute_dates": [
+        {
+          "date": "2026-01-05",
+          "kind": "deadline",
+          "count": 1
+        }
+      ],
+      "expected_materials": [],
+      "observed_materials": [],
+      "unknown_year_preserved": true,
+      "review_signals": []
+    },
+    {
+      "id": "scet-summer",
+      "source_url": "https://scet.tju.edu.cn/info/1019/9418.htm",
+      "exact_fields": true,
+      "expected_absolute_dates": [],
+      "observed_absolute_dates": [],
+      "expected_materials": [],
+      "observed_materials": [],
+      "unknown_year_preserved": true,
+      "review_signals": [
+        "截止时间（7月4日）以寄出时间为准。"
+      ]
+    },
+    {
+      "id": "job-dispatch-change",
+      "source_url": "https://job.tju.edu.cn/news/content/id/2728.html",
+      "exact_fields": true,
+      "expected_absolute_dates": [
+        {
+          "date": "2026-08-02",
+          "kind": "deadline",
+          "count": 1
+        }
+      ],
+      "observed_absolute_dates": [
+        {
+          "date": "2026-08-02",
+          "kind": "deadline",
+          "count": 1
+        }
+      ],
+      "expected_materials": [],
+      "observed_materials": [],
+      "unknown_year_preserved": true,
+      "review_signals": []
+    },
+    {
+      "id": "job-employer-fair",
+      "source_url": "https://job.tju.edu.cn/news/content/id/2730.html",
+      "exact_fields": true,
+      "expected_absolute_dates": [
+        {
+          "date": "2026-09-18",
+          "kind": "event_time",
+          "count": 1
+        }
+      ],
+      "observed_absolute_dates": [
+        {
+          "date": "2026-09-18",
+          "kind": "event_time",
+          "count": 1
+        }
+      ],
+      "expected_materials": [],
+      "observed_materials": [],
+      "unknown_year_preserved": true,
+      "review_signals": []
+    },
+    {
+      "id": "oaa-withdraw",
+      "source_url": "https://oaa.tju.edu.cn/info/1056/5688.htm",
+      "exact_fields": true,
+      "expected_absolute_dates": [],
+      "observed_absolute_dates": [],
+      "expected_materials": [
+        "《天津大学本科生放弃辅修双学位申请表》"
+      ],
+      "observed_materials": [
+        "《天津大学本科生放弃辅修双学位申请表》"
+      ],
+      "unknown_year_preserved": true,
+      "review_signals": []
+    }
+  ]
+}

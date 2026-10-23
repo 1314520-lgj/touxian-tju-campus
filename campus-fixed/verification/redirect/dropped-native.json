@@ -1,0 +1,52 @@
+[
+ {
+  "source": "天津大学教务处 · 竞赛科创通知",
+  "backlog": 20,
+  "completed": 0,
+  "cap_full": false,
+  "discovered": 8,
+  "native": 0,
+  "native_missing": 0,
+  "missing_urls": []
+ },
+ {
+  "source": "天津大学教务处 · 学生竞赛",
+  "backlog": 6,
+  "completed": 0,
+  "cap_full": false,
+  "discovered": 6,
+  "native": 0,
+  "native_missing": 0,
+  "missing_urls": []
+ },
+ {
+  "source": "天津大学教务处 · 通知公告总览",
+  "backlog": 20,
+  "completed": 0,
+  "cap_full": false,
+  "discovered": 8,
+  "native": 0,
+  "native_missing": 0,
+  "missing_urls": []
+ },
+ {
+  "source": "天津大学教务处 · 通知公告",
+  "backlog": 15,
+  "completed": 0,
+  "cap_full": false,
+  "discovered": 8,
+  "native": 0,
+  "native_missing": 0,
+  "missing_urls": []
+ },
+ {
+  "source": "天津大学教务处 · 学业指导",
+  "backlog": 20,
+  "completed": 0,
+  "cap_full": false,
+  "discovered": 8,
+  "native": 0,
+  "native_missing": 0,
+  "missing_urls": []
+ }
+]

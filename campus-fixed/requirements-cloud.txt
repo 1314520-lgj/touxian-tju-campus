@@ -1,0 +1,2 @@
+-r requirements-campus.lock.txt
+google-cloud-storage==3.16.0

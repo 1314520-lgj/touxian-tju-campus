@@ -1,0 +1,97 @@
+{
+  "checked_at": "2026-10-09T02:26:32.963018+00:00",
+  "method": "Actual product SafeFetcher (DNS-pinned HTTP/TLS, 12s, two concurrent public listing reads). No source database health changed.",
+  "limits": "Listing-only diagnostics from this machine. No complete notice, attachments, WeChat authorization, deployment or campus-wide coverage is established.",
+  "results": [
+    {
+      "source_id": "c4e00274-5b08-5d26-9a6d-19aed0d71571",
+      "url": "https://oaa.tju.edu.cn/bszy/tzgg.htm",
+      "status": "blocked_or_failed",
+      "error_code": "unsafe_address"
+    },
+    {
+      "source_id": "3ac23043-2575-53d7-8a38-45b8d090b6cc",
+      "url": "https://cic.tju.edu.cn/xwzx/tzgg.htm",
+      "status": "blocked_or_failed",
+      "error_code": "unsafe_address"
+    },
+    {
+      "source_id": "ba303189-9801-5add-9b5b-924e8c5575b1",
+      "url": "https://news.tju.edu.cn/xw/zhxw.htm",
+      "status": "blocked_or_failed",
+      "error_code": "unsafe_address"
+    },
+    {
+      "source_id": "fc64db2c-93fb-5ff8-ace0-aa0b0bcbe15c",
+      "url": "https://oaa.tju.edu.cn/tzgg/xyzd.htm",
+      "status": "blocked_or_failed",
+      "error_code": "unsafe_address"
+    },
+    {
+      "source_id": "56cd6e50-bf3d-5862-b1ce-d7ebaba3d902",
+      "url": "https://oaa.tju.edu.cn/cxsj/xsjs.htm",
+      "status": "blocked_or_failed",
+      "error_code": "unsafe_address"
+    },
+    {
+      "source_id": "8bd43bba-7ae5-5a05-8c7e-08aa41dcf700",
+      "url": "https://gs.tju.edu.cn/tzgg/pytz.htm",
+      "status": "blocked_or_failed",
+      "error_code": "unsafe_address"
+    },
+    {
+      "source_id": "439b89ae-6232-5ea7-b595-e7dd695c1fb3",
+      "url": "https://gs.tju.edu.cn/tzgg/xwtz.htm",
+      "status": "blocked_or_failed",
+      "error_code": "unsafe_address"
+    },
+    {
+      "source_id": "3dd0449a-a81d-5199-a345-9d04a5da1f6e",
+      "url": "https://gs.tju.edu.cn/tzgg/jztz.htm",
+      "status": "blocked_or_failed",
+      "error_code": "unsafe_address"
+    },
+    {
+      "source_id": "09ae8359-d53d-5eec-8f90-b976fa6dc011",
+      "url": "https://gs.tju.edu.cn/pygz/pyfa.htm",
+      "status": "blocked_or_failed",
+      "error_code": "unsafe_address"
+    },
+    {
+      "source_id": "35bd445b-d3b1-5057-a746-8cd2c08b2be4",
+      "url": "https://gs.tju.edu.cn/pygz/gjjl.htm",
+      "status": "blocked_or_failed",
+      "error_code": "unsafe_address"
+    },
+    {
+      "source_id": "c2a586e4-f367-512a-a828-5ca3762b3cb6",
+      "url": "https://job.tju.edu.cn/news/index/cate/1/p/1.html",
+      "status": "blocked_or_failed",
+      "error_code": "unsafe_address"
+    },
+    {
+      "source_id": "37e33c84-53a2-5ba9-a793-6f8bd33a46fb",
+      "url": "https://job.tju.edu.cn/recruitment/index.html",
+      "status": "blocked_or_failed",
+      "error_code": "unsafe_address"
+    },
+    {
+      "source_id": "22e1eb54-a004-57fb-a806-0b6b711f9ee9",
+      "url": "https://ico.tju.edu.cn/hdyg/xsxmtz.htm",
+      "status": "blocked_or_failed",
+      "error_code": "unsafe_address"
+    },
+    {
+      "source_id": "31126592-7bce-514c-a018-6e701349e384",
+      "url": "https://me.tju.edu.cn/xwzx/tzgg.htm",
+      "status": "blocked_or_failed",
+      "error_code": "unsafe_address"
+    },
+    {
+      "source_id": "b887b3d5-aec8-5185-9547-9eebc0d32f3b",
+      "url": "https://scet.tju.edu.cn/rcpy/bksjy/tzgg.htm",
+      "status": "blocked_or_failed",
+      "error_code": "unsafe_address"
+    }
+  ]
+}

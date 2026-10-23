@@ -1,0 +1,799 @@
+From fc0b6565d769d8ab798063360e6839224b4669cd Mon Sep 17 00:00:00 2001
+From: Codex <codex@local.invalid>
+Date: Sat, 10 Oct 2026 16:16:43 +0200
+Subject: [PATCH 1/3] fix: require human acceptance before candidate
+ publication
+
+---
+ server/campus/content.py                      |  32 +++---
+ server/campus/events.py                       |   9 +-
+ server/campus/tests/test_data_audit.py        |  16 ++-
+ .../campus/tests/test_extraction_accuracy.py  |  20 ++--
+ .../campus/tests/test_ingestion_backfill.py   |   4 +-
+ .../campus/tests/test_manual_review_gate.py   | 103 ++++++++++++++++++
+ server/campus/tests/test_pipeline.py          |  11 +-
+ 7 files changed, 153 insertions(+), 42 deletions(-)
+ create mode 100644 server/campus/tests/test_manual_review_gate.py
+
+diff --git a/server/campus/content.py b/server/campus/content.py
+index d2008db..21c54b2 100644
+--- a/server/campus/content.py
++++ b/server/campus/content.py
+@@ -23,7 +23,7 @@ from .sources import (
+ )
+ 
+ PARSER_VERSION = "campus-body-1.4"
+-EXTRACTOR_VERSION = "campus-rules-1.3"
++EXTRACTOR_VERSION = "campus-rules-1.4"
+ MAX_SEGMENTS, MAX_TEXT, MAX_PAGES, MAX_ARCHIVE_EXPANSION = (
+     500,
+     500_000,
+@@ -816,11 +816,17 @@ class Pipeline:
+         candidate = self.core.store.get(
+             "candidate_versions", f"{candidate_id}:{revision}"
+         )
+-        return (
+-            candidate
+-            if candidate and candidate["review_status"] == "accepted"
+-            else None
++        if not candidate or candidate["review_status"] != "accepted":
++            return None
++        # Old extractors could set accepted without a human decision. A queued
++        # legacy revision must not become publishable just because of that flag.
++        reviewed = any(
++            review.get("candidate_id") == candidate_id
++            and review.get("revision") == revision
++            and review.get("decision") == "accept"
++            for review in self.core.store.list("reviews")
+         )
++        return candidate if reviewed else None
+ 
+     def register_evidence(self, snapshot_id, segment_id, quote):
+         snapshot = _get(self.core, "snapshots", snapshot_id)
+@@ -1508,7 +1514,9 @@ sys.stdout.write(json.dumps({'pages':pages,'truncated':remaining<=0}))
+         # Cancellation/update target linking is always reviewed; no fuzzy auto-cancel.
+         if cancelled:
+             warnings.append("cancellation_target_requires_review")
+-        review_required = bool(warnings)
++        # Extraction only proposes facts; even a clear notice needs a human
++        # decision before the accepted outbox event may authorize publication.
++        review_required = True
+         event_type = next(
+             (
+                 kind
+@@ -1528,7 +1536,7 @@ sys.stdout.write(json.dumps({'pages':pages,'truncated':remaining<=0}))
+         candidate = {
+             "candidate_id": candidate_id,
+             "revision": next_revision,
+-            "review_status": "pending" if review_required else "accepted",
++            "review_status": "pending",
+             "change_kind": "cancel" if cancelled else "update" if previous else "new",
+             "target_event_id": previous.get("target_event_id") if previous else None,
+             "proposed_status": "cancelled" if cancelled else "active",
+@@ -1567,16 +1575,6 @@ sys.stdout.write(json.dumps({'pages':pages,'truncated':remaining<=0}))
+                 candidate,
+                 expected_revision=0,
+             )
+-            if not review_required:
+-                self.core.store.emit(
+-                    "candidate.accepted",
+-                    candidate_id,
+-                    next_revision,
+-                    candidate_id=candidate_id,
+-                    candidate_revision=next_revision,
+-                    snapshot_id=sid,
+-                    source_id=snapshot["source_id"],
+-                )
+         return candidate
+ 
+     def review(self, candidate_id, body, user):
+diff --git a/server/campus/events.py b/server/campus/events.py
+index 2f2ecb9..0d642ab 100644
+--- a/server/campus/events.py
++++ b/server/campus/events.py
+@@ -554,12 +554,9 @@ class Events:
+             newer_accepted = (
+                 latest
+                 and latest["revision"] > revision
+-                and (
+-                    latest["review_status"] == "accepted"
+-                    or any(
+-                        self.core.pipeline.get_accepted_candidate(candidate_id, n)
+-                        for n in range(revision + 1, latest["revision"])
+-                    )
++                and any(
++                    self.core.pipeline.get_accepted_candidate(candidate_id, n)
++                    for n in range(revision + 1, latest["revision"] + 1)
+                 )
+             )
+             if newer_accepted or self._older_than_current(candidate, existing):
+diff --git a/server/campus/tests/test_data_audit.py b/server/campus/tests/test_data_audit.py
+index a8f2ca4..9450266 100644
+--- a/server/campus/tests/test_data_audit.py
++++ b/server/campus/tests/test_data_audit.py
+@@ -65,10 +65,10 @@ def test_out_of_order_older_accepted_snapshot_cannot_undo_new_deadline(env):
+ 
+ def test_out_of_order_old_review_revision_is_skipped(env):
+     _, core, _, accept = env
+-    first = notice(core)
++    first = accept(notice(core), apply=False)
+     # Legal re-review increments a candidate revision without fabricating fields.
+-    later = accept(first, replacement=first['candidate'])
+-    current = core.events.reconcile_candidate(first['candidate']['candidate_id'], first['candidate']['revision'])
++    later = accept({**first, 'candidate': first['accepted']}, replacement=first['accepted'])
++    current = core.events.reconcile_candidate(first['accepted']['candidate_id'], first['accepted']['revision'])
+     assert current == later['event']
+     assert current['version'] == 1
+ 
+@@ -219,8 +219,8 @@ def test_reviewed_requirement_or_audience_correction_flags_saved_item(env, manua
+     _, core, auth, accept = env
+     from server.campus.sources import FetchResult
+     source = synthetic_source(core); title = '合成专业确认'
+-    # Simulate an accepted 1.1 record already in the database. This test covers
+-    # correcting historical output, independently of the current extractor.
++    # Simulate a manually accepted 1.1 record, including its persisted decision.
++    # Historical rules allowed these errors; today's validator must reject them.
+     text = ('全体本科生请于2030-01-03前自愿提交确认表。' if manual_field == 'action_required'
+         else '全体具有本科学历的硕士生请于2030-01-03前提交确认表。')
+     snapshot, _ = core.pipeline.sources.persist(source, FetchResult('https://example.com/'+uid(),
+@@ -234,7 +234,13 @@ def test_reviewed_requirement_or_audience_correction_flags_saved_item(env, manua
+     validate('ExtractionCandidate', candidate)
+     core.store.put('candidates', candidate['candidate_id'], candidate)
+     core.store.put('candidate_versions', f"{candidate['candidate_id']}:{candidate['revision']}", candidate)
++    review_id = uid()
++    core.store.put('reviews', review_id, {'id': review_id, 'candidate_id': candidate['candidate_id'],
++        'revision': candidate['revision'], 'decision': 'accept', 'reviewer_id': uid(),
++        'reason': 'Synthetic historical review under version 1.1'})
+     fixture = {'candidate': candidate}; first = accept(fixture)
++    candidate = first['accepted']
++    fixture = {'candidate': candidate}
+     client, user, headers = auth(); path = '/api/v1/me/events/'+first['event']['id']+'/state'
+     client.patch(path, json={'expected_state_revision': 0, 'acknowledged_event_version': 1, 'saved': True}, headers=headers)
+     corrected = copy.deepcopy(candidate)
+diff --git a/server/campus/tests/test_extraction_accuracy.py b/server/campus/tests/test_extraction_accuracy.py
+index a0ee74c..0a2e7dd 100644
+--- a/server/campus/tests/test_extraction_accuracy.py
++++ b/server/campus/tests/test_extraction_accuracy.py
+@@ -205,19 +205,23 @@ def test_required_missing_attachment_cannot_auto_publish(pipeline):
+ 
+ def test_attached_form_word_alone_does_not_imply_missing_attachment(pipeline):
+     candidate = extract(pipeline, '全体本科生请于2026年10月20日前提交申请表。')
+-    assert candidate['review_status'] == 'accepted'
++    assert candidate['review_status'] == 'pending'
++    assert 'referenced_attachment_missing_requires_review' not in candidate['warnings']
+ 
+ 
+ def test_old_candidate_version_stays_available_after_rule_upgrade(pipeline):
+     candidate = extract(pipeline, '全体本科生请于2026年10月20日前提交申请表。')
++    candidate = pipeline.core.pipeline.review(candidate['candidate_id'], {
++        'expected_candidate_revision': candidate['revision'], 'decision': 'accept',
++        'reason': '核对旧版候选', 'replacement_candidate': None}, {'id': uid()})
+     prior = copy.deepcopy(candidate)
+     prior['extractor_version'] = 'campus-rules-1.1'
+     pipeline.core.store.put('candidates', candidate['candidate_id'], prior)
+-    pipeline.core.store.put('candidate_versions', f"{candidate['candidate_id']}:1", prior)
++    pipeline.core.store.put('candidate_versions', f"{candidate['candidate_id']}:2", prior)
+     updated = pipeline.core.pipeline.extract_candidates({'snapshot_id': candidate['snapshot_ids'][0]})
+-    assert updated['revision'] == 2
++    assert updated['revision'] == 3
+     assert updated['review_status'] == 'pending'
+-    assert pipeline.core.pipeline.get_accepted_candidate(candidate['candidate_id'], 1) == prior
++    assert pipeline.core.pipeline.get_accepted_candidate(candidate['candidate_id'], 2) == prior
+ 
+ 
+ def test_ingestion_warning_change_reparses_and_revises_candidate(pipeline):
+@@ -240,7 +244,8 @@ def test_ingestion_warning_change_reparses_and_revises_candidate(pipeline):
+     assert pipeline.core.pipeline.parsed(sid)['state'] == 'ok'
+     assert 'attachment_fetch_timeout' not in recovered['warnings']
+     assert 'parsed_input_changed_requires_review' in recovered['warnings']
+-    assert pipeline.core.pipeline.get_accepted_candidate(candidate['candidate_id'], 1) == candidate
++    assert pipeline.core.store.get('candidate_versions', f"{candidate['candidate_id']}:1") == candidate
++    assert pipeline.core.pipeline.get_accepted_candidate(candidate['candidate_id'], 1) is None
+     assert pipeline.core.pipeline.extract_candidates({'snapshot_id': sid}) == recovered
+ 
+ 
+@@ -279,7 +284,7 @@ def test_reactivated_original_body_creates_review_revision_without_rewriting_his
+     first_input = pipeline.core.store.get('candidate_inputs', f"{first['candidate_id']}:1")
+     changed = pipeline.notice('全体本科生请于2026年10月22日前提交申请表。')
+     second = pipeline.core.pipeline.extract_candidates({'snapshot_id': changed['snapshot_id']})
+-    assert first['review_status'] == second['review_status'] == 'accepted'
++    assert first['review_status'] == second['review_status'] == 'pending'
+     # Sources owns the A -> B -> A observation change; emulate its persisted
+     # boundary here so this test does not depend on the parallel fetcher edit.
+     document = pipeline.core.store.get('documents', original['document_id'])
+@@ -292,7 +297,8 @@ def test_reactivated_original_body_creates_review_revision_without_rewriting_his
+     assert reactivated['revision'] == first['revision'] + 1
+     assert reactivated['review_status'] == 'pending'
+     assert 'document_reactivation_requires_review' in reactivated['warnings']
+-    assert pipeline.core.pipeline.get_accepted_candidate(first['candidate_id'], 1) == first
++    assert pipeline.core.store.get('candidate_versions', f"{first['candidate_id']}:1") == first
++    assert pipeline.core.pipeline.get_accepted_candidate(first['candidate_id'], 1) is None
+     assert pipeline.core.pipeline.extract_candidates({'snapshot_id': sid}) == reactivated
+     frozen = pipeline.core.store.get('candidate_inputs', f"{first['candidate_id']}:2")
+     assert frozen[sid]['observed_at'] == '2026-10-08T13:00:00+08:00'
+diff --git a/server/campus/tests/test_ingestion_backfill.py b/server/campus/tests/test_ingestion_backfill.py
+index 743d7b5..50c65cd 100644
+--- a/server/campus/tests/test_ingestion_backfill.py
++++ b/server/campus/tests/test_ingestion_backfill.py
+@@ -200,9 +200,9 @@ class BackfillTests(unittest.TestCase):
+                 decision='accept', reason='Synthetic review', replacement_candidate=None), {'id': uid()})
+         def publish(value): return self.core.events.reconcile_candidate(value['candidate_id'], value['revision'])
+         self.fetcher.mapping['https://public.test/0'] = body(20)
+-        self.fetch(); first = candidate(); event = publish(first)
++        self.fetch(); first = approve(candidate()); event = publish(first)
+         self.fetcher.mapping['https://public.test/0'] = body(25)
+-        self.fetch(); second = candidate(); changed = publish(second)
++        self.fetch(); second = approve(candidate()); changed = publish(second)
+         self.assertEqual(changed['id'], event['id'])
+         self.assertEqual(changed['deadlines'][0]['date'], '2026-10-25')
+         delayed = approve(second)  # Accepted before reactivation, queue execution intentionally delayed.
+diff --git a/server/campus/tests/test_manual_review_gate.py b/server/campus/tests/test_manual_review_gate.py
+new file mode 100644
+index 0000000..2e7bf29
+--- /dev/null
++++ b/server/campus/tests/test_manual_review_gate.py
+@@ -0,0 +1,103 @@
++"""Automatic extraction and replayed queues must never authorize publication."""
++import copy
++
++import pytest
++
++from server.campus.platform import APIError
++from server.campus.schema import uid
++from server.campus.tests.test_data_audit import env, notice
++from server.campus.worker import Worker
++
++
++def test_clear_notice_stays_pending_until_a_human_accepts(env):
++    _, core, _, accept = env
++    fixture = notice(core)
++    candidate = fixture['candidate']
++    assert candidate['review_status'] == 'pending'
++    assert candidate['review_required'] is True
++    assert core.pipeline.get_accepted_candidate(candidate['candidate_id'], 1) is None
++    assert not any(e['topic'] == 'candidate.accepted' for e in core.store.pending_outbox())
++    reviewed = accept(fixture)
++    assert reviewed['accepted']['revision'] == 2
++    assert core.pipeline.get_accepted_candidate(candidate['candidate_id'], 2) == reviewed['accepted']
++    assert core.store.get('candidate_versions', f"{candidate['candidate_id']}:1") == candidate
++
++
++def test_worker_cannot_publish_an_unreviewed_notice(env):
++    _, core, _, accept = env
++    fixture = notice(core)
++    worker = Worker(core)
++    for _ in range(5):
++        assert worker.run_once(max_jobs=100, sweep=False)['failed'] == 0
++    assert core.store.list('events') == []
++    assert core.store.list('reviews') == []
++    accept(fixture, apply=False)
++    for _ in range(5):
++        assert worker.run_once(max_jobs=100, sweep=False)['failed'] == 0
++    assert len(core.store.list('events')) == 1
++
++
++@pytest.mark.parametrize('audit', ['missing', 'wrong_revision', 'wrong_candidate', 'rejected'])
++def test_legacy_accepted_flag_does_not_replace_a_matching_accept_review(env, audit):
++    _, core, _, _ = env
++    candidate = copy.deepcopy(notice(core)['candidate'])
++    candidate.update(review_status='accepted', review_required=False)
++    key = f"{candidate['candidate_id']}:{candidate['revision']}"
++    core.store.put('candidates', candidate['candidate_id'], candidate)
++    core.store.put('candidate_versions', key, candidate)
++    if audit != 'missing':
++        review_id = uid()
++        core.store.put('reviews', review_id, {
++            'id': review_id,
++            'candidate_id': uid() if audit == 'wrong_candidate' else candidate['candidate_id'],
++            'revision': candidate['revision'] + (audit == 'wrong_revision'),
++            'decision': 'reject' if audit == 'rejected' else 'accept',
++        })
++    with pytest.raises(APIError) as caught:
++        core.events.reconcile_candidate(candidate['candidate_id'], candidate['revision'])
++    assert caught.value.code == 'candidate_not_accepted'
++    assert core.store.list('events') == []
++    assert core.store.get('candidate_versions', key) == candidate
++
++
++def test_legacy_accepted_queue_job_is_blocked(env):
++    _, core, _, _ = env
++    candidate = copy.deepcopy(notice(core)['candidate'])
++    candidate.update(review_status='accepted', review_required=False)
++    core.store.put('candidates', candidate['candidate_id'], candidate)
++    core.store.put('candidate_versions', f"{candidate['candidate_id']}:1", candidate)
++    job = core.store.enqueue('reconcile_event', {
++        'candidate_id': candidate['candidate_id'], 'candidate_revision': 1,
++        'correlation_id': uid(),
++    }, 'legacy-auto-accepted')
++    worker = Worker(core, handlers={'reconcile_event': core.handlers['reconcile_event']})
++    result = worker.run_once(max_jobs=100, sweep=False)
++    assert result['failed'] == 1
++    assert core.store.get_job(job['id'])['last_error_code'] == 'candidate_not_accepted'
++    assert core.store.list('events') == []
++
++
++def test_reextracting_a_legacy_automatic_accept_requires_a_new_manual_review(env):
++    _, core, _, _ = env
++    fixture = notice(core)
++    candidate = copy.deepcopy(fixture['candidate'])
++    candidate.update(extractor_version='campus-rules-1.3', review_status='accepted', review_required=False)
++    core.store.put('candidates', candidate['candidate_id'], candidate)
++    core.store.put('candidate_versions', f"{candidate['candidate_id']}:1", candidate)
++    updated = core.pipeline.extract_candidates({'snapshot_id': fixture['snapshot']['snapshot_id']})
++    assert updated['revision'] == 2
++    assert updated['review_status'] == 'pending'
++    assert updated['review_required'] is True
++    assert core.store.get('candidate_versions', f"{candidate['candidate_id']}:1") == candidate
++
++
++def test_unaudited_newer_flag_cannot_supersede_a_human_decision(env):
++    _, core, _, accept = env
++    reviewed = accept(notice(core), apply=False)['accepted']
++    legacy = copy.deepcopy(reviewed)
++    legacy['revision'] += 1
++    core.store.put('candidates', legacy['candidate_id'], legacy)
++    core.store.put('candidate_versions', f"{legacy['candidate_id']}:{legacy['revision']}", legacy)
++    event = core.events.reconcile_candidate(reviewed['candidate_id'], reviewed['revision'])
++    assert event is not None
++    assert event['publication_state'] == 'published'
+diff --git a/server/campus/tests/test_pipeline.py b/server/campus/tests/test_pipeline.py
+index 4e8ca56..d68c508 100644
+--- a/server/campus/tests/test_pipeline.py
++++ b/server/campus/tests/test_pipeline.py
+@@ -118,12 +118,12 @@ class PipelineTests(unittest.TestCase):
+         a=self.core.pipeline.register_evidence(sid,segment['id'],'提交申请表'); b=self.core.pipeline.register_evidence(sid,segment['id'],'提交申请表')
+         self.assertEqual(a,b)
+         with self.assertRaises(APIError): self.core.pipeline.register_evidence(sid,segment['id'],'不存在的材料')
+-    def test_clear_candidate_autoaccepts_and_keeps_evidence(self):
++    def test_clear_candidate_requires_review_and_keeps_evidence(self):
+         snapshot=self.notice(); c=self.core.pipeline.extract_candidates({'snapshot_id':snapshot['snapshot_id']})
+-        validate('ExtractionCandidate',c); self.assertEqual(c['review_status'],'accepted'); self.assertTrue(c['action_required'])
++        validate('ExtractionCandidate',c); self.assertEqual(c['review_status'],'pending'); self.assertTrue(c['action_required'])
+         self.assertEqual(c['audience']['education_levels'],['undergraduate']); self.assertEqual(c['deadlines'][0]['precision'],'date')
+-        self.assertEqual(self.core.pipeline.get_accepted_candidate(c['candidate_id'],1),c)
+-        self.assertTrue(any(e['topic']=='candidate.accepted' for e in self.core.store.pending_outbox()))
++        self.assertIsNone(self.core.pipeline.get_accepted_candidate(c['candidate_id'],1))
++        self.assertFalse(any(e['topic']=='candidate.accepted' for e in self.core.store.pending_outbox()))
+     def test_unknown_time_requires_review_and_revision_conflicts(self):
+         snapshot=self.notice('全体本科生请于周五前提交申请表。',published=None)
+         candidate=self.core.pipeline.extract_candidates({'snapshot_id':snapshot['snapshot_id']}); self.assertTrue(candidate['review_required'])
+@@ -217,7 +217,8 @@ class PipelineTests(unittest.TestCase):
+         second=self.core.pipeline.extract_candidates({'snapshot_id':changed['snapshot_id']})
+         self.assertEqual(first['candidate_id'],second['candidate_id']); self.assertEqual(second['revision'],2)
+         self.assertNotIn(child['snapshot_id'],second['snapshot_ids']); self.assertIn(changed['snapshot_id'],second['snapshot_ids'])
+-        self.assertEqual(self.core.pipeline.get_accepted_candidate(first['candidate_id'],1),first)
++        self.assertEqual(self.core.store.get('candidate_versions',f"{first['candidate_id']}:1"),first)
++        self.assertIsNone(self.core.pipeline.get_accepted_candidate(first['candidate_id'],1))
+     def test_url_date_never_becomes_deadline(self):
+         values=date_values('请于稍后提交，入口 https://public.test/2026/10/20/form','2026-10-08T00:00:00Z',uid())
+         self.assertFalse(any(i['date'] for i in values))
+
+From 7fc6e83816fee1c47e22ed4238938b047f9986c2 Mon Sep 17 00:00:00 2001
+From: Codex <codex@local.invalid>
+Date: Sat, 10 Oct 2026 16:19:08 +0200
+Subject: [PATCH 2/3] perf: keep standalone reads off the SQLite writer lock
+
+---
+ server/campus/db.py                     |  45 ++++++++---
+ server/campus/tests/test_store_reads.py | 103 ++++++++++++++++++++++++
+ 2 files changed, 136 insertions(+), 12 deletions(-)
+ create mode 100644 server/campus/tests/test_store_reads.py
+
+diff --git a/server/campus/db.py b/server/campus/db.py
+index f665707..4267254 100644
+--- a/server/campus/db.py
++++ b/server/campus/db.py
+@@ -191,6 +191,25 @@ class Store:
+         """The connection bound to the active transaction, or None outside one."""
+         return getattr(self._local, "connection", None)
+ 
++    @contextmanager
++    def read_connection(self):
++        """Read without reserving the SQLite writer; reuse enclosing writes.
++
++        Explicit BEGIN keeps multiple SQLite SELECTs on one committed snapshot.
++        A standalone read is not bound as a write transaction in thread-local
++        state. In-memory SQLite still serializes access to its single connection.
++        """
++        if self.connection is not None:
++            with self.transaction():
++                yield self.connection
++            return
++        lock = self._memory_lock if self._memory else nullcontext()
++        with lock:
++            with self.engine.connect() as connection, connection.begin():
++                if self.engine.dialect.name == "sqlite":
++                    connection.exec_driver_sql("BEGIN")
++                yield connection
++
+     def execute(self, statement, parameters=()):
+         """Run raw SQL inside the active transaction.
+ 
+@@ -203,27 +222,29 @@ class Store:
+             raise RuntimeError("raw SQL requires an open transaction")
+         return connection.exec_driver_sql(statement, parameters)
+ 
+-    def _row(self, collection, key, lock=False):
++    def _row(self, collection, key, lock=False, connection=None):
+         statement = select(self.records).where(
+             self.records.c.collection == collection, self.records.c.key == str(key))
+         if lock and self.engine.dialect.name == "postgresql":
+             statement = statement.with_for_update()
+-        return self._local.connection.execute(statement).mappings().first()
++        if connection is None:
++            connection = self._local.connection
++        return connection.execute(statement).mappings().first()
+ 
+     def get(self, collection, key):
+-        with self.transaction():
+-            row = self._row(collection, key, lock=True)
++        with self.read_connection() as connection:
++            row = self._row(collection, key, lock=self.connection is not None, connection=connection)
+             return copy.deepcopy(row["data"]) if row else None
+ 
+     def list(self, collection):
+-        with self.transaction():
+-            result = self._local.connection.execute(select(self.records.c.data).where(
++        with self.read_connection() as connection:
++            result = connection.execute(select(self.records.c.data).where(
+                 self.records.c.collection == collection).order_by(self.records.c.key)).scalars().all()
+             return copy.deepcopy(result)
+ 
+     def revision(self, collection, key):
+-        with self.transaction():
+-            row = self._row(collection, key, lock=True)
++        with self.read_connection() as connection:
++            row = self._row(collection, key, lock=self.connection is not None, connection=connection)
+             return row["revision"] if row else 0
+ 
+     def put(self, collection, key, data, expected_revision=None):
+@@ -321,13 +342,13 @@ class Store:
+             return copy.deepcopy(job)
+ 
+     def jobs(self):
+-        with self.transaction():
+-            return copy.deepcopy(self._local.connection.execute(select(self.job_table.c.data)
++        with self.read_connection() as connection:
++            return copy.deepcopy(connection.execute(select(self.job_table.c.data)
+                 .order_by(self.job_table.c.created_at, self.job_table.c.id)).scalars().all())
+ 
+     def get_job(self, job_id):
+-        with self.transaction():
+-            value = self._local.connection.execute(select(self.job_table.c.data).where(
++        with self.read_connection() as connection:
++            value = connection.execute(select(self.job_table.c.data).where(
+                 self.job_table.c.id == job_id)).scalar_one_or_none()
+             return copy.deepcopy(value)
+ 
+diff --git a/server/campus/tests/test_store_reads.py b/server/campus/tests/test_store_reads.py
+new file mode 100644
+index 0000000..5ab69bd
+--- /dev/null
++++ b/server/campus/tests/test_store_reads.py
+@@ -0,0 +1,103 @@
++"""Committed reads coexist with writers without weakening transaction safety."""
++from concurrent.futures import ThreadPoolExecutor, TimeoutError
++from unittest.mock import patch
++
++import pytest
++from sqlalchemy import select
++
++from server.campus.db import Store
++from server.campus.platform import APIError
++from server.campus.schema import uid
++
++
++@pytest.mark.parametrize('operation', ['get', 'list', 'revision', 'jobs', 'get_job'])
++def test_committed_read_completes_while_another_connection_holds_a_write(tmp_path, operation):
++    url = f"sqlite:///{tmp_path / 'concurrent.sqlite3'}"
++    writer, reader = Store(url), Store(url)
++    try:
++        writer.put('items', 'a', {'value': ['committed']})
++        job = writer.enqueue('parse_document', {'snapshot_id': uid()}, 'read-fixture')
++        reads = {
++            'get': lambda: reader.get('items', 'a'),
++            'list': lambda: reader.list('items'),
++            'revision': lambda: reader.revision('items', 'a'),
++            'jobs': reader.jobs,
++            'get_job': lambda: reader.get_job(job['id']),
++        }
++        before = reads[operation]()
++        blocked = False
++        with ThreadPoolExecutor(max_workers=1) as pool:
++            with writer.transaction():
++                writer.put('items', 'a', {'value': ['uncommitted']})
++                writer.claim_job('fixture-worker')
++                future = pool.submit(reads[operation])
++                try:
++                    during = future.result(timeout=1)
++                except TimeoutError:
++                    blocked = True
++            # Release the writer before joining even if the regression recurs.
++            future.result(timeout=5)
++        assert not blocked, 'A read waited for the unrelated writer to commit'
++        assert during == before, 'Readers must not expose uncommitted writes'
++        assert reads[operation]() != before
++    finally:
++        reader.close()
++        writer.close()
++
++
++def test_read_connection_keeps_one_sqlite_snapshot_without_blocking_a_commit(tmp_path):
++    url = f"sqlite:///{tmp_path / 'snapshot.sqlite3'}"
++    reader, writer = Store(url), Store(url)
++    try:
++        writer.put('items', 'a', {'value': 1})
++        query = select(reader.records.c.data).where(reader.records.c.collection == 'items')
++        with reader.read_connection() as connection:
++            assert connection.execute(query).scalar_one() == {'value': 1}
++            writer.put('items', 'a', {'value': 2})
++            assert connection.execute(query).scalar_one() == {'value': 1}
++        assert reader.get('items', 'a') == {'value': 2}
++    finally:
++        reader.close()
++        writer.close()
++
++
++@pytest.fixture(params=['file', 'memory'])
++def store(request, tmp_path):
++    value = Store('sqlite://' if request.param == 'memory' else f"sqlite:///{tmp_path / 'local.sqlite3'}")
++    yield value
++    value.close()
++
++
++def test_reads_inside_a_write_see_own_changes_and_rollback_together(store):
++    store.put('items', 'a', {'value': 1})
++    with pytest.raises(ValueError):
++        with store.transaction():
++            store.put('items', 'a', {'value': 2})
++            assert store.get('items', 'a') == {'value': 2}
++            assert store.list('items') == [{'value': 2}]
++            assert store.revision('items', 'a') == 2
++            raise ValueError('synthetic rollback')
++    assert store.get('items', 'a') == {'value': 1}
++    assert store.revision('items', 'a') == 1
++
++
++def test_caught_read_failure_still_aborts_its_outer_write_transaction(store):
++    store.put('items', 'a', {'value': 1})
++    with pytest.raises(APIError) as caught:
++        with store.transaction():
++            store.put('items', 'a', {'value': 2})
++            with patch.object(store, '_row', side_effect=ValueError('synthetic read failure')):
++                with pytest.raises(ValueError):
++                    store.get('items', 'a')
++    assert caught.value.code == 'TRANSACTION_ABORTED'
++    assert store.get('items', 'a') == {'value': 1}
++
++
++def test_read_results_remain_detached_and_missing_values_unchanged(store):
++    store.put('items', 'a', {'value': [1]})
++    store.get('items', 'a')['value'].append(2)
++    store.list('items')[0]['value'].append(3)
++    assert store.get('items', 'a') == {'value': [1]}
++    assert store.get('items', 'missing') is None
++    assert store.revision('items', 'missing') == 0
++    assert store.get_job(uid()) is None
+
+From 1f2dc4a289484a2bd0d377199c856a9ba87de7bf Mon Sep 17 00:00:00 2001
+From: Codex <codex@local.invalid>
+Date: Sat, 10 Oct 2026 16:24:18 +0200
+Subject: [PATCH 3/3] perf: narrow search before reads with atomic index
+ receipts
+
+---
+ server/campus/search.py                       |  14 ++-
+ .../campus/tests/test_search_consistency.py   | 115 ++++++++++++++++++
+ server/campus/zh_index.py                     |  23 +++-
+ 3 files changed, 142 insertions(+), 10 deletions(-)
+ create mode 100644 server/campus/tests/test_search_consistency.py
+
+diff --git a/server/campus/search.py b/server/campus/search.py
+index d6fdf71..9dd030f 100644
+--- a/server/campus/search.py
++++ b/server/campus/search.py
+@@ -93,7 +93,7 @@ class Search:
+                 self._index_local(current)
+ 
+     def _index_local(self, event):
+-        """Refresh the local BM25 rows, then stamp the version they describe.
++        """Refresh the local FTS5 rows, then stamp the version they describe.
+ 
+         The receipt is what lets the scan trust the index: a query may narrow an
+         event only when the indexed version is the one being served.
+@@ -177,17 +177,21 @@ class Search:
+         """
+         narrowed, receipts = None, {}
+         if not include_historical:
+-            narrowed = self.local.keys(terms)
+-            if narrowed is not None: receipts = self.local.receipts()
++            narrowed, receipts = self.local.lookup(terms)
+         found = []
+         for event in versions:
+             current = published.get(event['id'])
+             if not current or not self._eligible(event,college_id,education_level): continue
++            allowed = None
++            if narrowed is not None and receipts.get(event['id']) == event['version']:
++                allowed = narrowed.get(event['id']) or set()
++                # A current index can reject an event before fetching snapshots
++                # or copying parsed bodies. Stale/missing receipts still scan.
++                if not allowed: continue
+             historical = event['version'] != current['version']
+             snapshot_ids = self.core.events.snapshot_ids(event['id'],event['version']) if historical else self.core.events.current_snapshot_ids(event['id'])
+             segments = list(self.core.pipeline.segments(snapshot_ids))
+-            if narrowed is not None and receipts.get(event['id']) == event['version']:
+-                allowed = narrowed.get(event['id']) or set()
++            if allowed is not None:
+                 segments = [s for s in segments if (s['snapshot_id'], s['id']) in allowed]
+             title = event['title'].lower()
+             # The score is deliberately small and explainable, because a reader
+diff --git a/server/campus/tests/test_search_consistency.py b/server/campus/tests/test_search_consistency.py
+new file mode 100644
+index 0000000..1197ee8
+--- /dev/null
++++ b/server/campus/tests/test_search_consistency.py
+@@ -0,0 +1,115 @@
++"""Index acceleration preserves the scanner's results, including concurrent refreshes."""
++from unittest.mock import patch
++
++import pytest
++from sqlalchemy import event as sql_event
++
++from server.campus.db import Store
++from server.campus.tests.test_data_audit import env, notice
++from server.campus.tests.test_search_index import indexed, unindexed
++from server.campus.zh_index import LocalTextIndex
++
++
++def test_current_index_no_match_does_not_load_notice_bodies(env):
++    _, core, _, accept = env
++    for title in ['合成通知甲', '合成通知乙', '合成通知丙']:
++        accept(notice(core, title=title))
++    indexed(core)
++    with patch.object(core.events, 'current_snapshot_ids', side_effect=AssertionError('unneeded snapshots')):
++        with patch.object(core.pipeline, 'segments', side_effect=AssertionError('unneeded body read')):
++            assert core.search.hits('银河计数器') == []
++
++
++def test_current_index_loads_only_events_with_possible_matches(env):
++    _, core, _, accept = env
++    matched = accept(notice(core, title='合成通知甲', extra='<p>银河计数器标记。</p>'))
++    accept(notice(core, title='合成通知乙'))
++    indexed(core)
++    with patch.object(core.events, 'current_snapshot_ids', wraps=core.events.current_snapshot_ids) as snapshots:
++        rows = core.search.hits('银河计数器')
++    assert [row[1]['event_id'] for row in rows] == [matched['event']['id']]
++    assert snapshots.call_args_list == [((matched['event']['id'],), {})]
++
++
++def test_index_refresh_between_lookup_and_scanning_cannot_hide_a_new_match(env):
++    _, core, _, accept = env
++    first = accept(notice(core))
++    indexed(core, first['event'])
++    current = accept(notice(core, source=first['source'], url=first['url'], extra='<p>银河计数器标记。</p>'))
++    queried, refreshed = False, False
++
++    def observe_match(connection, cursor, statement, parameters, context, executemany):
++        nonlocal queried
++        if 'WHERE campus_segment_fts MATCH' in statement:
++            queried = True
++
++    def refresh_after_connection_returns(connection, record):
++        nonlocal refreshed
++        if queried and not refreshed:
++            refreshed = True
++            indexed(core, current['event'])
++
++    # Deterministically commit a refresh after the key SELECT's connection is
++    # returned. Separate keys()/receipts() calls then combine old keys with a
++    # new receipt, incorrectly skipping the new paragraph.
++    sql_event.listen(core.store.engine, 'after_cursor_execute', observe_match)
++    sql_event.listen(core.store.engine, 'checkin', refresh_after_connection_returns)
++    try:
++        rows = core.search.hits('银河计数器')
++    finally:
++        sql_event.remove(core.store.engine, 'after_cursor_execute', observe_match)
++        sql_event.remove(core.store.engine, 'checkin', refresh_after_connection_returns)
++    assert refreshed
++    assert [row[1]['event_id'] for row in rows] == [current['event']['id']]
++    assert rows[0][1]['event_version'] == current['event']['version']
++
++
++def test_index_keys_and_receipts_share_a_snapshot_during_a_concurrent_commit(env):
++    _, core, _, accept = env
++    first = accept(notice(core))
++    indexed(core, first['event'])
++    current = accept(notice(core, source=first['source'], url=first['url'], extra='<p>银河计数器标记。</p>'))
++    segments = core.pipeline.segments(core.events.current_snapshot_ids(current['event']['id']))
++    writer = Store(core.store.database_url)
++    other_index = LocalTextIndex(writer)
++    assert other_index.supported
++    refreshed = False
++
++    def refresh_during_select(connection, cursor, statement, parameters, context, executemany):
++        nonlocal refreshed
++        if 'WHERE campus_segment_fts MATCH' in statement and not refreshed:
++            refreshed = True
++            with writer.transaction():
++                other_index.replace(current['event'], segments)
++                writer.put('local_index_receipts', current['event']['id'], {
++                    'event_id': current['event']['id'], 'version': current['event']['version'],
++                })
++
++    sql_event.listen(core.store.engine, 'after_cursor_execute', refresh_during_select)
++    try:
++        keys, receipts = core.search.local.lookup(['银河计数器'])
++    finally:
++        sql_event.remove(core.store.engine, 'after_cursor_execute', refresh_during_select)
++        writer.close()
++    assert refreshed
++    assert keys == {}
++    assert receipts[first['event']['id']] == first['event']['version']
++    assert core.search.local.receipts()[first['event']['id']] == current['event']['version']
++
++
++@pytest.mark.parametrize('query', ['银河计数器', 'GPA', '申请', '不存在词', '合成通知甲'])
++def test_index_preserves_scores_order_and_verbatim_evidence(env, query):
++    _, core, _, accept = env
++    accept(notice(core, title='合成通知甲', extra='<p>银河计数器 GPA3.5 报名说明。</p>'))
++    accept(notice(core, title='合成通知乙', extra='<p>银河计数器 申请说明。</p>'))
++    accept(notice(core, title='合成通知丙', extra='<p>无关的正文。</p>'))
++    indexed(core)
++    with unindexed():
++        expected = core.search.hits(query)
++    actual = core.search.hits(query)
++    assert actual == expected
++    for _, hit, evidence, _ in actual:
++        parsed = core.pipeline.parsed(evidence['snapshot_id'])
++        segment = next(s for s in parsed['segments'] if s['id'] == evidence['segment_id'])
++        assert hit['excerpt'] == evidence['quote']
++        assert evidence['quote'] in segment['text']
+diff --git a/server/campus/zh_index.py b/server/campus/zh_index.py
+index a3e5916..68a6e05 100644
+--- a/server/campus/zh_index.py
++++ b/server/campus/zh_index.py
+@@ -37,6 +37,8 @@ from __future__ import annotations
+ 
+ import re
+ 
++from sqlalchemy import select
++
+ TABLE = "campus_segment_fts"
+ RECEIPTS = "local_index_receipts"
+ 
+@@ -146,19 +148,30 @@ class LocalTextIndex:
+         "no match" apart from "no index". The result is never truncated: a cap
+         would silently drop the weakest matches that a full scan would keep.
+         """
++        return self.lookup(terms)[0]
++
++    def lookup(self, terms):
++        """Return matching keys and their receipts from one SQLite snapshot.
++
++        Separate reads can pair old keys with a freshly committed receipt and
++        falsely exclude new matches. The caller must use this pair together.
++        ``(None, {})`` means the query needs the full substring scan.
++        """
+         if not self.supported or not narrowable(terms):
+-            return None
++            return None, {}
+         expression = match_expression(terms)
+         if not expression:
+-            return None
+-        with self.store.transaction():
+-            rows = self.store.execute(
++            return None, {}
++        with self.store.read_connection() as connection:
++            rows = connection.exec_driver_sql(
+                 f"SELECT event_id, snapshot_id, segment_id FROM {TABLE} "
+                 f"WHERE {TABLE} MATCH ?", (expression,)).fetchall()
++            receipts = connection.execute(select(self.store.records.c.data).where(
++                self.store.records.c.collection == RECEIPTS)).scalars().all()
+         grouped = {}
+         for event_id, snapshot_id, segment_id in rows:
+             grouped.setdefault(event_id, set()).add((snapshot_id, segment_id))
+-        return grouped
++        return grouped, {row["event_id"]: row["version"] for row in receipts}
+ 
+     def receipts(self):
+         """``{event_id: version}`` for events whose rows are known to be current."""

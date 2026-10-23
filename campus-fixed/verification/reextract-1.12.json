@@ -1,0 +1,64 @@
+{
+  "collected": false,
+  "reextract": {
+    "scanned": 8,
+    "upgraded": 0,
+    "superseded": [
+      {
+        "candidate_id": "22c8d158-5ff1-5743-89c0-dbbcc39ab694",
+        "title": "市教委关于举办 2026 年天津市大学生新工科实践创新大赛的通知"
+      },
+      {
+        "candidate_id": "51bab79f-a96b-55af-97ef-fa895f76d81e",
+        "title": "关于征集2025届新工科毕业设计研究与实践项目选题的通知"
+      },
+      {
+        "candidate_id": "7fab9fb9-d23e-57a8-8fdb-67f07a6b5047",
+        "title": "教育部等五部门关于印发《普通高等教育学科专业设置调整优化改革方案》的通知"
+      },
+      {
+        "candidate_id": "877bdce5-8114-5d65-b430-e899a0df6ad0",
+        "title": "承前启后 再出发——地方高校新工科建设湘潭高峰论坛"
+      },
+      {
+        "candidate_id": "c713b571-d107-5741-b9b4-7313b8716351",
+        "title": "关于举办国际工程教育发展会议的通知【教指委】"
+      },
+      {
+        "candidate_id": "c756e647-a2f6-5dcd-a2a5-aa006bc4fb83",
+        "title": "关于举办国际工程教育发展会议的通知【全国新工科教育创新中心联络组】"
+      },
+      {
+        "candidate_id": "ea35dd95-ecea-57e2-9b40-054efdd18036",
+        "title": "关于举办国际工程教育发展会议的通知【行业协（学）会】"
+      },
+      {
+        "candidate_id": "f94f7b61-be84-554f-9d53-61364310ef8e",
+        "title": "关于举办国家级教学成果奖"
+      }
+    ],
+    "failed": [],
+    "extractor_version": "campus-rules-1.12"
+  },
+  "sources": [],
+  "totals": {
+    "sources": 22,
+    "documents": 409,
+    "candidates_total": 257,
+    "candidates_pending": 249
+  },
+  "command": "reextract",
+  "data_dir": "data-operator",
+  "gateway": {
+    "source": "none",
+    "origins": []
+  },
+  "registration": {
+    "new": 0,
+    "existing": 22
+  },
+  "created_directory": false,
+  "started_at": "2026-10-20T06:04:16.648663+00:00",
+  "finished_at": "2026-10-20T06:04:17.636151+00:00",
+  "exit_code": 0
+}

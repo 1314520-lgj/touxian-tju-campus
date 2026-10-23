@@ -1,0 +1,68 @@
+{
+  "base": "http://127.0.0.1:64937",
+  "fixture": "reliability-v1",
+  "axe": "4.10.2",
+  "mode": "Offline vendored axe-core in a real browser, no intercepted requests",
+  "tags": [
+    "wcag2a",
+    "wcag2aa",
+    "wcag21a",
+    "wcag21aa",
+    "best-practice"
+  ],
+  "scenarios": [
+    {
+      "label": "unconfigured student push",
+      "screenshot": "verification/browser/reliability/artifacts/a11y-push-unconfigured.png",
+      "violations": [],
+      "incomplete": [],
+      "passed_rules": 39
+    },
+    {
+      "label": "authorized attachment replacement form",
+      "screenshot": "verification/browser/reliability/artifacts/a11y-attachment-replacement.png",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "count": 2,
+          "nodes": [
+            {
+              "target": [
+                ".modal-body > p"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it partially overlaps other elements"
+            },
+            {
+              "target": [
+                "textarea"
+              ],
+              "summary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+            }
+          ]
+        },
+        {
+          "id": "link-in-text-block",
+          "impact": "serious",
+          "help": "Links must be distinguishable without relying on color",
+          "count": 1,
+          "nodes": [
+            {
+              "target": [
+                ".modal-body > a[target=\"_blank\"][rel=\"noopener noreferrer\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element's contrast ratio could not be determined because of element overlap"
+            }
+          ]
+        }
+      ],
+      "passed_rules": 34
+    }
+  ],
+  "boundaries": [
+    "Automated checks do not establish complete accessibility; incomplete results require separate review"
+  ],
+  "status": "passed"
+}
