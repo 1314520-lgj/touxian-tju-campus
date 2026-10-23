@@ -94,10 +94,12 @@ def scrape_official(fetcher, limit: int, with_body: bool, pause: float, name_fil
             print(f"  跳过 {source['name']}：{error}", file=sys.stderr)
             continue
         for item in items[:limit]:
+            from server.campus.content import _clean_listing_title
+
             row = {
                 "kind": "official",
                 "source": source["name"],
-                "title": item.get("title"),
+                "title": _clean_listing_title(item.get("title") or ""),
                 "url": item.get("url"),
                 "published_at": item.get("published_at"),
                 "fetched_at": datetime.now(timezone.utc).isoformat(),
